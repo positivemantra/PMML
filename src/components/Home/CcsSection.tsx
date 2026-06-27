@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Spectral } from 'next/font/google';
 
 const spectral = Spectral({
@@ -26,6 +26,13 @@ const IMAGES = [
 
 export default function CcsSection() {
   const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIdx((prev) => (prev + 1) % IMAGES.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [activeIdx]);
 
   const handleNext = () => {
     setActiveIdx((prev) => (prev + 1) % IMAGES.length);

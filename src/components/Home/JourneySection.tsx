@@ -16,7 +16,7 @@ const PM_DATA = [
     role: "14th Prime Minister",
     dates: "26 May 2014 – Present",
     image: "/leaders/modi.png",
-    bio: "Shri Narendra Modi is the current and the fourth longest-serving Prime Minister of India. He served as the Chief Minister of Gujarat for 14 years. As Prime Minister, he is known for campaigns like Swachh Bharat and Make in India."
+    bio: "Shri Narendra Modi is the current and the longest-serving Prime Minister of India. He served as the Chief Minister of Gujarat for 14 years. As Prime Minister, he is known for campaigns like Swachh Bharat and Make in India."
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const PM_DATA = [
     role: "13th Prime Minister",
     dates: "22 May 2004 – 26 May 2014",
     image: "/leaders/manmohan.png",
-    bio: "Dr. Manmohan Singh served as Prime Minister of India from 2004 to 2014. Under his tenure, key acts like NREGA and the Right to Information Act were passed. He is widely credited for carrying out key economic reforms."
+    bio: "Dr. Manmohan Singh served as Prime Minister of India from 2004 to 2014. During his tenure, key acts like NREGA and the Right to Information Act were passed. He is widely credited for carrying out key economic reforms."
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const PM_DATA = [
     role: "10th Prime Minister",
     dates: "19 March 1998 – 10 May 2004",
     image: "/leaders/vajpayee.png",
-    bio: "Shri Atal Bihari Vajpayee served as Prime Minister of India from 1998 to 2004, and briefly in 1996. He is known for his contribution to India's economic growth and for making India a nuclear weapons power."
+    bio: "Shri Atal Bihari Vajpayee served as Prime Minister of India from 1998 to 2004, and briefly in 1996. He is known for his contribution to India's economic growth and for making India a nuclear power."
   },
   {
     id: 4,

@@ -82,7 +82,7 @@ export default function WelcomeSection() {
 
             <p className="max-w-[620px] text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
               The Prime Ministers Museum and Library is housed in the sprawling Thirty Acre historic Teen Murti campus located south of Rashtrapati Bhavan in New Delhi.
-              Designed by Robert Tor Russell and built in 1929–30 as part of Edwin Lutyens' imperial capital, Teen Murti House was originally built as the official residence
+              Designed by Robert Tor Russell and built in 1929-30 as part of Edwin Lutyens' imperial capital, Teen Murti House was originally built as the official residence
               of the British Commander-in-Chief in India
             </p>
 

@@ -53,7 +53,7 @@ export default function PlanetariumSection() {
       />
 
       {/* Content Container (Constrained Width matching page grids) */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 w-full flex flex-col md:flex-row items-center relative z-20 h-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center relative z-20 h-full">
         
         {/* Text content (Left side - overlays the blue background on mobile, slanted blue block on desktop) */}
         <div className="w-full md:w-[40%] py-12 md:py-0 text-left flex flex-col justify-center h-full relative z-30">

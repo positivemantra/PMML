@@ -354,7 +354,7 @@ export default function PmmlSocietyMembers() {
                             <span
                               className={`inline-block px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide ${
                                 isPresident
-                                  ? "bg-red-50 text-red-600 border border-red-100"
+                                  ? "bg-orange-50 text-[#f37021] border border-orange-100"
                                   : isVicePresident
                                   ? "bg-orange-50 text-[#f37021] border border-orange-100"
                                   : isExOfficio

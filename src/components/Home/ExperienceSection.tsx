@@ -208,10 +208,10 @@ export default function ExperienceSection() {
         }}
       />
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center relative z-10">
+      <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center relative z-10">
 
         {/* Title Header Section */}
-        <div className="w-full text-left mb-6 px-4 md:px-8">
+        <div className="w-full text-left mb-6">
           <div className="w-12 h-1 bg-[#f37021] mb-3"></div>
           <h2 className={`${spectral.className} text-3xl md:text-[36px] font-semibold text-[#0a1835] leading-tight`}>
             Pradhanmantri Sangrahalaya

@@ -1,45 +1,71 @@
 "use client";
 
 import React, { useState } from 'react';
-
-type Tab = 'enquiry' | 'feedback';
-type Sentiment = 'Excellent' | 'Good' | 'Average';
+import FeedbackModal from './FeedbackModal';
 
 export default function ContactForm() {
-  const [activeTab, setActiveTab] = useState<Tab>('enquiry');
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
   
   // Enquiry form state
   const [enquiryName, setEnquiryName] = useState("");
   const [enquiryEmail, setEnquiryEmail] = useState("");
   const [enquiryMobile, setEnquiryMobile] = useState("");
   const [enquiryMessage, setEnquiryMessage] = useState("");
+  
+  // Validation errors state
+  const [errors, setErrors] = useState<{
+    name?: string;
+    email?: string;
+    mobile?: string;
+    message?: string;
+  }>({});
 
-  // Feedback form state
-  const [feedbackName, setFeedbackName] = useState("");
-  const [feedbackEmail, setFeedbackEmail] = useState("");
-  const [feedbackMobile, setFeedbackMobile] = useState("");
-  const [selectedSentiment, setSelectedSentiment] = useState<Sentiment>('Good');
-  const [feedbackText, setFeedbackText] = useState("");
+  const validate = (): boolean => {
+    const newErrors: typeof errors = {};
+    
+    // Name validation: Only letters and spaces, 3-50 chars
+    if (!enquiryName.trim()) {
+      newErrors.name = "Full Name is required.";
+    } else if (!/^[a-zA-Z\s]{3,50}$/.test(enquiryName.trim())) {
+      newErrors.name = "Name must be between 3 and 50 characters and contain only letters.";
+    }
+
+    // Email validation
+    if (!enquiryEmail.trim()) {
+      newErrors.email = "Email address is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(enquiryEmail.trim())) {
+      newErrors.email = "Please enter a valid email address (e.g. name@domain.com).";
+    }
+
+    // Mobile validation: 10-digit Indian number starting with 6-9
+    if (!enquiryMobile.trim()) {
+      newErrors.mobile = "Mobile number is required.";
+    } else if (!/^[6-9]\d{9}$/.test(enquiryMobile.trim())) {
+      newErrors.mobile = "Please enter a valid 10-digit mobile number starting with 6-9.";
+    }
+
+    // Message validation
+    if (!enquiryMessage.trim()) {
+      newErrors.message = "Message is required.";
+    } else if (enquiryMessage.trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters long.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleEnquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validate()) return;
+
     alert(`Enquiry submitted!\nName: ${enquiryName}\nEmail: ${enquiryEmail}\nMobile: ${enquiryMobile}\nMessage: ${enquiryMessage}`);
     // Clear state
     setEnquiryName("");
     setEnquiryEmail("");
     setEnquiryMobile("");
     setEnquiryMessage("");
-  };
-
-  const handleFeedbackSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Feedback submitted!\nName: ${feedbackName}\nEmail: ${feedbackEmail}\nMobile: ${feedbackMobile}\nSentiment: ${selectedSentiment}\nFeedback: ${feedbackText}`);
-    // Clear state
-    setFeedbackName("");
-    setFeedbackEmail("");
-    setFeedbackMobile("");
-    setSelectedSentiment('Good');
-    setFeedbackText("");
+    setErrors({});
   };
 
   return (
@@ -52,216 +78,114 @@ export default function ContactForm() {
         </span>
       </div>
 
-      {/* Box-shadowed White Card Card */}
-      <div className="w-full flex-grow bg-white rounded-2xl border border-gray-100 shadow-md p-6 sm:p-8 flex flex-col gap-6">
+      {/* Box-shadowed White Card */}
+      <div className="w-full flex-grow bg-white rounded-2xl border border-gray-100 shadow-md p-6 sm:p-8 flex flex-col gap-6 relative">
         
-        {/* Tab Switcher */}
-        <div className="flex border-b border-gray-100 pb-1 gap-6 text-xs sm:text-sm font-semibold select-none">
-          <button
-            onClick={() => setActiveTab('enquiry')}
-            className={`pb-3.5 transition-all border-b-2 outline-none cursor-pointer ${
-              activeTab === 'enquiry'
-                ? 'border-[#052356] text-[#052356] font-bold'
-                : 'border-transparent text-gray-400 hover:text-gray-600'
-            }`}
-          >
+        {/* Header containing title and orange Give Feedback button */}
+        <div className="flex items-center justify-between border-b border-gray-100 pb-4 select-none">
+          <div className="pb-1 text-sm sm:text-base font-bold text-[#052356] border-b-2 border-[#052356] -mb-[18px]">
             General Enquiry
-          </button>
+          </div>
           <button
-            onClick={() => setActiveTab('feedback')}
-            className={`pb-3.5 transition-all border-b-2 outline-none cursor-pointer ${
-              activeTab === 'feedback'
-                ? 'border-[#052356] text-[#052356] font-bold'
-                : 'border-transparent text-gray-400 hover:text-gray-600'
-            }`}
+            onClick={() => setIsFeedbackOpen(true)}
+            className="bg-[#f37021] hover:bg-[#d85c15] text-white text-xs sm:text-sm font-bold px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer active:scale-95 outline-none"
           >
             Give Feedback
           </button>
         </div>
 
-        {/* Form rendering */}
-        {activeTab === 'enquiry' ? (
-          /* GENERAL ENQUIRY FORM */
-          <form onSubmit={handleEnquirySubmit} className="flex flex-col gap-6 flex-grow">
-            {/* Full Name */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="enquiry-name" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Full Name
-              </label>
-              <input
-                id="enquiry-name"
-                type="text"
-                required
-                value={enquiryName}
-                onChange={(e) => setEnquiryName(e.target.value)}
-                placeholder="Enter your full name"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
+        {/* GENERAL ENQUIRY FORM */}
+        <form noValidate onSubmit={handleEnquirySubmit} className="flex flex-col gap-6 flex-grow mt-2">
+          {/* Full Name */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="enquiry-name" className="text-[11px] font-bold text-black uppercase tracking-wide">
+              Full Name
+            </label>
+            <input
+              id="enquiry-name"
+              type="text"
+              value={enquiryName}
+              onChange={(e) => {
+                setEnquiryName(e.target.value);
+                if (errors.name) setErrors(prev => ({ ...prev, name: undefined }));
+              }}
+              placeholder="Enter your full name"
+              className={`w-full border-t-0 border-x-0 border-b ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all`}
+            />
+            {errors.name && <span className="text-xs text-red-500 font-semibold">{errors.name}</span>}
+          </div>
 
-            {/* Email Address */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="enquiry-email" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Email Address
-              </label>
-              <input
-                id="enquiry-email"
-                type="email"
-                required
-                value={enquiryEmail}
-                onChange={(e) => setEnquiryEmail(e.target.value)}
-                placeholder="Enter your email address"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
+          {/* Email Address */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="enquiry-email" className="text-[11px] font-bold text-black uppercase tracking-wide">
+              Email Address
+            </label>
+            <input
+              id="enquiry-email"
+              type="email"
+              value={enquiryEmail}
+              onChange={(e) => {
+                setEnquiryEmail(e.target.value);
+                if (errors.email) setErrors(prev => ({ ...prev, email: undefined }));
+              }}
+              placeholder="Enter your email address"
+              className={`w-full border-t-0 border-x-0 border-b ${errors.email ? 'border-red-500' : 'border-gray-200'} focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all`}
+            />
+            {errors.email && <span className="text-xs text-red-500 font-semibold">{errors.email}</span>}
+          </div>
 
-            {/* Mobile Number */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="enquiry-mobile" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Mobile Number
-              </label>
-              <input
-                id="enquiry-mobile"
-                type="tel"
-                required
-                value={enquiryMobile}
-                onChange={(e) => setEnquiryMobile(e.target.value)}
-                placeholder="Enter your mobile number"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
+          {/* Mobile Number */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="enquiry-mobile" className="text-[11px] font-bold text-black uppercase tracking-wide">
+              Mobile Number
+            </label>
+            <input
+              id="enquiry-mobile"
+              type="tel"
+              value={enquiryMobile}
+              onChange={(e) => {
+                setEnquiryMobile(e.target.value);
+                if (errors.mobile) setErrors(prev => ({ ...prev, mobile: undefined }));
+              }}
+              placeholder="Enter your mobile number"
+              className={`w-full border-t-0 border-x-0 border-b ${errors.mobile ? 'border-red-500' : 'border-gray-200'} focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all`}
+            />
+            {errors.mobile && <span className="text-xs text-red-500 font-semibold">{errors.mobile}</span>}
+          </div>
 
-            {/* Message Area */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="enquiry-message" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Message
-              </label>
-              <textarea
-                id="enquiry-message"
-                required
-                rows={3}
-                value={enquiryMessage}
-                onChange={(e) => setEnquiryMessage(e.target.value)}
-                placeholder="Type your query message here..."
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all resize-none"
-              />
-            </div>
+          {/* Message Area */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="enquiry-message" className="text-[11px] font-bold text-black uppercase tracking-wide">
+              Message
+            </label>
+            <textarea
+              id="enquiry-message"
+              rows={3}
+              value={enquiryMessage}
+              onChange={(e) => {
+                setEnquiryMessage(e.target.value);
+                if (errors.message) setErrors(prev => ({ ...prev, message: undefined }));
+              }}
+              placeholder="Type your query message here..."
+              className={`w-full border-t-0 border-x-0 border-b ${errors.message ? 'border-red-500' : 'border-gray-200'} focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all resize-none`}
+            />
+            {errors.message && <span className="text-xs text-red-500 font-semibold">{errors.message}</span>}
+          </div>
 
-            {/* Submit */}
-            <div className="pt-2 mt-auto">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-8 py-2.5 bg-[#052356] hover:bg-[#f37021] text-white text-xs sm:text-sm font-bold tracking-wider rounded-full shadow-md hover:shadow-lg transition-all duration-200 select-none cursor-pointer transform hover:-translate-y-0.5 active:scale-95 outline-none"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
-        ) : (
-          /* GIVE FEEDBACK FORM */
-          <form onSubmit={handleFeedbackSubmit} className="flex flex-col gap-6 flex-grow">
-            {/* Full Name */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="feedback-name" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Full Name
-              </label>
-              <input
-                id="feedback-name"
-                type="text"
-                required
-                value={feedbackName}
-                onChange={(e) => setFeedbackName(e.target.value)}
-                placeholder="Enter your full name"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
-
-            {/* Email Address */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="feedback-email" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Email Address
-              </label>
-              <input
-                id="feedback-email"
-                type="email"
-                required
-                value={feedbackEmail}
-                onChange={(e) => setFeedbackEmail(e.target.value)}
-                placeholder="Enter your email address"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
-
-            {/* Mobile Number */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="feedback-mobile" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Mobile Number
-              </label>
-              <input
-                id="feedback-mobile"
-                type="tel"
-                required
-                value={feedbackMobile}
-                onChange={(e) => setFeedbackMobile(e.target.value)}
-                placeholder="Enter your mobile number"
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all"
-              />
-            </div>
-
-            {/* Sentiment Selector Row */}
-            <div className="flex flex-col gap-2.5">
-              <span className="text-[11px] font-bold text-black uppercase tracking-wide">
-                How was your experience?
-              </span>
-              <div className="flex items-center gap-3">
-                {(['Excellent', 'Good', 'Average'] as Sentiment[]).map((sentiment) => {
-                  const isActive = selectedSentiment === sentiment;
-                  return (
-                    <button
-                      key={sentiment}
-                      type="button"
-                      onClick={() => setSelectedSentiment(sentiment)}
-                      className={`px-5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer outline-none select-none active:scale-95 ${
-                        isActive
-                          ? 'bg-[#f37021] border-[#f37021] text-white shadow-sm'
-                          : 'bg-transparent border-gray-200 text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                      }`}
-                    >
-                      {sentiment}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Feedback Text Area */}
-            <div className="flex flex-col gap-1.5">
-              <label htmlFor="feedback-text" className="text-[11px] font-bold text-black uppercase tracking-wide">
-                Feedback
-              </label>
-              <textarea
-                id="feedback-text"
-                required
-                rows={3}
-                value={feedbackText}
-                onChange={(e) => setFeedbackText(e.target.value)}
-                placeholder="Type your feedback message here..."
-                className="w-full border-t-0 border-x-0 border-b border-gray-200 focus:border-[#052356] rounded-none outline-none focus:ring-0 px-0 pb-2 text-sm text-black placeholder-gray-300 transition-all resize-none"
-              />
-            </div>
-
-            {/* Submit */}
-            <div className="pt-2 mt-auto">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-8 py-2.5 bg-[#052356] hover:bg-[#f37021] text-white text-xs sm:text-sm font-bold tracking-wider rounded-full shadow-md hover:shadow-lg transition-all duration-200 select-none cursor-pointer transform hover:-translate-y-0.5 active:scale-95 outline-none"
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
-        )}
+          {/* Submit */}
+          <div className="pt-2 mt-auto">
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center px-8 py-2.5 bg-[#052356] hover:bg-[#f37021] text-white text-xs sm:text-sm font-bold tracking-wider rounded-full shadow-md hover:shadow-lg transition-all duration-200 select-none cursor-pointer transform hover:-translate-y-0.5 active:scale-95 outline-none"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </form>
       </div>
+
+      {/* Popup Feedback Modal */}
+      <FeedbackModal isOpen={isFeedbackOpen} onClose={() => setIsFeedbackOpen(false)} />
 
     </div>
   );

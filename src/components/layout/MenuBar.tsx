@@ -59,27 +59,27 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/archives",
     dropdown: [
       { label: "PMML Digital Archives", href: "https://pmmlarchives.in/login" },
-      { label: "Catalogue of Holdings", href: "/archives#catalogue-holdings" },
+      { label: "Catalogue of Holdings", href: "/archives/catalogue-holdings" },
       { label: "SOP for Remote Access", href: "/archives#sop-remote-access" },
     ],
   },
   {
     label: "CCS",
-    href: "#ccs",
+    href: "/ccs/about",
     dropdown: [
-      { label: "Fellowship", href: "#ccs-fellowship" },
-      { label: "Seminars/Publications", href: "#ccs-seminars-publications" },
-      { label: "Occasional Papers", href: "#ccs-occasional-papers" },
+      { label: "Fellowship", href: "/ccs/fellowship" },
+      { label: "Seminars/Publications", href: "/ccs/about#ccs-seminars-publications" },
+      { label: "Occasional Papers", href: "/ccs/occasional-papers" },
     ],
   },
   {
     label: "Research",
-    href: "#research",
+    href: "/research",
     dropdown: [
-      { label: "Publications", href: "#publications" },
-      { label: "Reprography Division", href: "#reprography-division" },
-      { label: "Oral History Division", href: "#oral-history-division" },
-      { label: "Projects", href: "#projects" },
+      { label: "Publications", href: "/research/publications" },
+      { label: "Reprography Division", href: "/research/reprography-division" },
+      { label: "Oral History Division", href: "/research/oral-history-division" },
+      { label: "Projects", href: "/research/projects" },
     ],
   },
    {
@@ -87,7 +87,7 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "#events",
     dropdown: [
       { label: "Sangrahalaya Events", href: "#sangrahalaya-events" },
-      { label: "CCS Events", href: "#ccs-events" },
+      { label: "CCS Events", href: "/ccs/about#ccs-seminars-publications" },
       { label: "Planetarium Events", href: "#planetarium-events" },
     ],
   },

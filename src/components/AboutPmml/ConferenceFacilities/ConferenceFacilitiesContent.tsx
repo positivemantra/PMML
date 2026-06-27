@@ -402,9 +402,9 @@ export default function ConferenceFacilitiesContent() {
                 {[
                   {
                     section: 'Centre for Contemporary Studies',
-                    name: 'Mr. Iqbal Ahmad',
-                    desig: 'Assistant Research Officer',
-                    email: 'iqbalahmad(dot)nmml(at)gov(dot)in',
+                    name: '',
+                    desig: '',
+                    email: '',
                     phone: '',
                   },
                   {

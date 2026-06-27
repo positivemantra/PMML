@@ -67,6 +67,7 @@ export default function ArchivesAboutContent() {
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [galleryVisible, setGalleryVisible] = useState(3);
   const [activeContactTab, setActiveContactTab] = useState("reading-room");
+  const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -139,15 +140,15 @@ export default function ArchivesAboutContent() {
               </p>
 
               <div>
-                <a
-                  href="#read-more"
-                  className="inline-flex items-center gap-2 bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-[11px] sm:text-[12px] tracking-wider uppercase rounded-lg px-5 py-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
+                <button
+                  onClick={() => setIsReadMoreOpen(true)}
+                  className="inline-flex items-center gap-2 bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-[11px] sm:text-[12px] tracking-wider uppercase rounded-lg px-5 py-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none outline-none"
                 >
                   <span>Read More</span>
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -328,6 +329,38 @@ export default function ArchivesAboutContent() {
           </div>
         </div>
       </section>
+
+      {/* Read More Modal */}
+      {isReadMoreOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 sm:p-6 transition-opacity duration-300">
+          <div className="relative max-w-2xl w-full max-h-[85vh] bg-white rounded-3xl shadow-2xl flex flex-col p-6 sm:p-8 animate-in fade-in zoom-in-95 duration-200">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-gray-100 pb-4 flex-shrink-0">
+              <h3 className={`${spectral.className} text-xl md:text-2xl font-bold text-[#052356]`}>
+                About the Archives
+              </h3>
+              <button
+                onClick={() => setIsReadMoreOpen(false)}
+                className="p-2 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer outline-none"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Scrollable Text Content */}
+            <div className="flex-grow overflow-y-auto mt-4 pr-2 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed space-y-4 text-justify">
+              <p>
+                The Prime Ministers Museum and Library (PMML) came into existence on 1 April 1966. One of the principal objectives of PMML was the promotion of original research in modern and contemporary Indian history. To achieve this objective, PMML established the Archives, which was created to acquire, preserve, classify, and maintain primary and non-official source material for research. The Archives was initially formed with the acquisition of two collections viz. Jawaharlal Nehru papers and the All-India Congress Committee papers. In due course of time, a reservoir of nearly 1300 collections of personal papers of eminent leaders, freedom fighters, politicians, educationists, scientists, jurists and industrialists who contributed to the making of modern India and institutional records were acquired from different parts of India and abroad. Some of the individual records include papers of eminent personalities like M. K. Gandhi, C. Rajagopalachari, Syama Prasad Mookerjee, B.S. Moonje, V. K. Krishna Menon, Jayaprakash Narayan, Charan Singh, Sarojini Naidu and Rajkumari Amrit Kaur. In the list of Institutional records, one can find papers of the All-India Congress Committee, All India Hindu Mahasabha, All India Trade Union Congress, Indian Merchants Chamber, D.A.V. College Trust and Management Society, etc. The records in the Archives comprise original letters, writings, speeches, notes, memoirs and diaries besides handwritten documents, typed documents, press clippings and printed material.
+              </p>
+              <p>
+                Today, the PMML Archives is one of the largest repositories of primary and non-governmental source material for research on modern and contemporary studies. With a view to enhancing access, preservation, and usability of its holdings, the Archives have undertaken large-scale digitization projects. These digitized materials are being made available to bona-fide researchers around the world through the PMML Digital Archives.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -17,11 +17,6 @@ const MinistryOfCultureLogo = () => (
   </div>
 );
 
-// 2. Swachh Bharat Logo using user image
-const SwachhBharatLogo = () => (
-  <img src="/swach bharat.jpeg" alt="Swachh Bharat" className="h-10 w-auto object-contain flex-shrink-0" />
-);
-
 // 4. Digital India Logo using user image
 const DigitalIndiaLogo = () => (
   <img src="/digitalindia.jpeg" alt="Digital India" className="h-10 w-auto object-contain flex-shrink-0" />
@@ -62,12 +57,7 @@ const PORTALS = [
     logo: MinistryOfCultureLogo,
     url: 'https://www.indiaculture.gov.in/'
   },
-  {
-    id: 'swachh-bharat',
-    name: 'Swachh Bharat',
-    logo: SwachhBharatLogo,
-    url: 'https://swachhbharatmission.gov.in/'
-  },
+
   {
     id: 'digital-india',
     name: 'Digital India',

@@ -28,7 +28,7 @@ const EXPLORE_ITEMS: ExploreItem[] = [
     label: "Nehru Planetarium",
     blueIcon: "/planetarium-blue.png",
     orangeIcon: "/planetarium-icon-clean.png",
-    href: "#planetarium",
+    href: "/about-pmml/nehru-planetarium",
   },
   {
     label: "Library",
@@ -46,19 +46,19 @@ const EXPLORE_ITEMS: ExploreItem[] = [
     label: "CCS",
     blueIcon: "/ccs-blue.png",
     orangeIcon: "/ccs-orange.png",
-    href: "#ccs",
+    href: "/ccs/about",
   },
   {
     label: "Reprography",
     blueIcon: "/reprography-blue.png",
     orangeIcon: "/reprography-icon-clean.png",
-    href: "#reprography",
+    href: "/research/reprography-division",
   },
   {
     label: "Oral History",
     blueIcon: "/oral-history-blue.png",
     orangeIcon: "/oral-history-icon-clean.png",
-    href: "#oral-history",
+    href: "/research/oral-history-division",
   },
 ];
 

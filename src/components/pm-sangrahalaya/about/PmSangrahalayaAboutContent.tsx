@@ -22,7 +22,7 @@ const SPECIAL_FEATURES = [
   },
   {
     title: 'Letter from Prime Minister',
-    description: 'Receive a personalized letter handwritten in the style of India\'s great Prime Ministers — a unique and inspirational keepsake crafted through precision robotic replication technology.',
+    description: 'Receive a personalized letter handwritten in the style of India\'s great Prime Ministers - a unique and inspirational keepsake crafted through precision robotic replication technology.',
     image: '/robotic.png',
     icon: Mail,
     exploreUrl: '/pm-sangrahalaya#letter-from-pm',
@@ -79,7 +79,7 @@ const SPECIAL_SHOWS = [
   },
   {
     title: 'Pokhran',
-    description: 'Relive India\'s historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee — an immersive control room simulation with dramatic audiovisuals.',
+    description: 'Relive India\'s historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee : an immersive control room simulation with dramatic audiovisuals.',
     image: '/nuclear test.jpg',
     exploreUrl: '/pm-sangrahalaya#nuclear-test',
   },

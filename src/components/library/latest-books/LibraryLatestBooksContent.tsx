@@ -174,7 +174,6 @@ export default function LibraryLatestBooksContent() {
                 <thead>
                   <tr className="bg-[#f4f4f4] text-[#052356] border-b border-gray-200">
                     <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider">Title</th>
-                    <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-40 whitespace-nowrap">Published Year</th>
                     <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-36">Type/Size</th>
                     <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-32">Action</th>
                   </tr>
@@ -196,10 +195,7 @@ export default function LibraryLatestBooksContent() {
                           </a>
                         </td>
                         
-                        {/* Published Year */}
-                        <td className="py-4 px-6 text-sm text-gray-600 text-center font-medium">
-                          {doc.year}
-                        </td>
+
 
                         {/* Type/Size */}
                         <td className="py-4 px-6 text-center">
@@ -227,7 +223,7 @@ export default function LibraryLatestBooksContent() {
                     ))
                   ) : (
                     <tr>
-                      <td colSpan={4} className="py-12 text-center text-gray-500">
+                      <td colSpan={3} className="py-12 text-center text-gray-500">
                         <div className="flex flex-col items-center justify-center gap-2">
                           <svg className="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

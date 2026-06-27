@@ -84,6 +84,7 @@ export default function LibraryAboutContent() {
   const [activeTab, setActiveTab] = useState("head");
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [galleryVisible, setGalleryVisible] = useState(3);
+  const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -156,15 +157,15 @@ export default function LibraryAboutContent() {
               </p>
 
               <div>
-                <a
-                  href="#read-more"
-                  className="inline-flex items-center gap-2 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-[11px] sm:text-[12px] tracking-wider uppercase rounded-lg px-5 py-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
+                <button
+                  onClick={() => setIsReadMoreOpen(true)}
+                  className="inline-flex items-center gap-2 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-[11px] sm:text-[12px] tracking-wider uppercase rounded-lg px-5 py-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none outline-none"
                 >
                   <span>Read More</span>
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -437,6 +438,41 @@ export default function LibraryAboutContent() {
           </div>
         </div>
       </section>
+
+      {/* Read More Modal */}
+      {isReadMoreOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-xs p-4 sm:p-6 transition-opacity duration-300">
+          <div className="relative max-w-2xl w-full max-h-[85vh] bg-white rounded-3xl shadow-2xl flex flex-col p-6 sm:p-8 animate-in fade-in zoom-in-95 duration-200">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-gray-100 pb-4 flex-shrink-0">
+              <h3 className={`${spectral.className} text-xl md:text-2xl font-bold text-[#052356]`}>
+                About the Library
+              </h3>
+              <button
+                onClick={() => setIsReadMoreOpen(false)}
+                className="p-2 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer outline-none"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Scrollable Text Content */}
+            <div className="flex-grow overflow-y-auto mt-4 pr-2 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed space-y-4 text-justify">
+              <p>
+                The Library of the Prime Ministers Museum and Library is one of the foremost research libraries in the country for the study of modern and contemporary Indian history. Established as a core component of the institution in 1966, the Library supports advanced research and scholarly inquiry across disciplines related to India&apos;s political, social, economic, and cultural development. The Library holds an extensive and diverse collection of printed and reference material, including books, journals, newspapers, government publications, reports, pamphlets, and rare publications. Its holdings cover a wide range of subjects such as the Indian national movement, constitutional and political history, public administration, international relations, economic development, social change, culture, and science and technology.
+              </p>
+              <p>
+                The collection is continuously expanded and updated to meet evolving research requirements. The Library provides reading and research facilities to scholars, faculty members, students, and other authorised users in a dedicated Library building inaugurated in January 1974. Professional library staff offer reference and research support, assist users in accessing catalogues and databases, and facilitate coordinated use of archival, manuscript, and oral history resources within the institution.
+              </p>
+              <p>
+                The Library is integrated with the One Nation One Subscription (ONOS) programme, enabling access to a wide range of national and international academic journals and digital resources. The Library is also undertaking systematic digitisation of its collections. At present, 3.5 lakh pages of newspapers, 167 Microfilm rolls of Sardar Patel Papers, 41,690 Pages of Dharmyug magazine, 70 lakh pages of India House Collection, 1.5 lakh (approx.) pages of rare books have been digitized.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

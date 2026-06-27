@@ -12,12 +12,6 @@ const spectral = Spectral({
 
 const SLIDES = [
   {
-    src: "/banner-1.jpg",
-    title: "Citadel Of Democracy",
-    subtitle: "Discover the World's Only Museum dedicated to India's legacy and leadership",
-    cta: { label: "Explore", href: "#explore" },
-  },
-  {
     src: "/light-sound.png",
     title: "A Journey Through Time",
     subtitle: "Walk through the chronicles of India's Prime Ministers and their enduring impact",
