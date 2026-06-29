@@ -67,7 +67,7 @@ export default function CcsSection() {
             {/* Know More CTA */}
             <div className="flex justify-center md:justify-start mt-2">
               <a
-                href="#ccs"
+                href="/ccs/about"
                 className="flex items-center gap-3 text-[#0a1835] hover:text-[#f37021] font-bold text-sm tracking-wide transition-colors group cursor-pointer"
               >
                 <span className="text-xs sm:text-sm font-bold">Know More</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Landmark, Sparkles, Globe, BookOpen, Mic2, Search } from 'lucide-react';
 import { Spectral } from 'next/font/google';
@@ -141,7 +142,7 @@ const attractions: AttractionItem[] = [
       </div>
     ),
     image: { src: '/library.jpg', alt: 'PMML Library', caption: 'Library' },
-    link: '#library'
+    link: '/library'
   },
   {
     tag: 'Archives',
@@ -166,7 +167,7 @@ const attractions: AttractionItem[] = [
       </div>
     ),
     image: { src: '/NMM_2386.jpg', alt: 'PMML Archives', caption: 'Archives' },
-    link: '#archives'
+    link: '/archives'
   },
 ];
 
@@ -288,7 +289,11 @@ export default function PmmlAttractions() {
               {/* Home-style Explore Button CTA */}
               <div className="flex justify-start relative z-20 mt-6">
                 <a
-                  href="/pm-sangrahalaya"
+                  href={
+                    BLOCK_1_ITEMS[block1Idx].title === 'Nehru Gallery-1'
+                      ? '/pm-sangrahalaya/pms-of-india#shri-jawaharlal-nehru'
+                      : '/pm-sangrahalaya/key-galleries'
+                  }
                   className="flex items-center gap-3 text-[#052356] hover:text-[#f37021] font-bold text-sm tracking-wide transition-colors group cursor-pointer"
                 >
                   <span className="text-xs sm:text-sm font-bold">Explore</span>
@@ -366,15 +371,34 @@ export default function PmmlAttractions() {
                     {/* Click-controlled Dropdown: Gallery-2 to Gallery-15 */}
                     {galleryOpen && (
                       <div className="absolute left-0 top-full mt-1.5 z-50 bg-white border border-gray-100 rounded-xl shadow-lg py-1.5 min-w-[140px] max-h-60 overflow-y-auto">
-                        {Array.from({ length: 14 }, (_, i) => i + 2).map((num) => (
-                          <button
-                            key={`gallery-${num}`}
-                            onClick={() => setGalleryOpen(false)}
-                            className="w-full text-left px-4 py-1.5 text-xs font-semibold text-slate-600 hover:bg-[#f37021]/10 hover:text-[#f37021] transition-colors"
-                          >
-                            Gallery-{num}
-                          </button>
-                        ))}
+                        {Array.from({ length: 14 }, (_, i) => i + 2).map((num) => {
+                          const pmMapping: Record<number, string> = {
+                            2: 'shri-gulzari-lal-nanda',
+                            3: 'shri-lal-bahadur-shastri',
+                            4: 'smt-indira-gandhi',
+                            5: 'shri-morarji-desai',
+                            6: 'chaudhary-charan-singh',
+                            7: 'shri-rajiv-gandhi',
+                            8: 'shri-v-p-singh',
+                            9: 'shri-chandra-shekhar',
+                            10: 'shri-p-v-narasimha-rao',
+                            11: 'shri-atal-bihari-vajpayee',
+                            12: 'shri-h-d-deve-gowda',
+                            13: 'shri-inder-kumar-gujral',
+                            14: 'dr-manmohan-singh',
+                            15: 'shri-narendra-modi',
+                          };
+                          return (
+                            <Link
+                              key={`gallery-${num}`}
+                              href={`/pm-sangrahalaya/pms-of-india#${pmMapping[num]}`}
+                              onClick={() => setGalleryOpen(false)}
+                              className="block w-full text-left px-4 py-1.5 text-xs font-semibold text-slate-600 hover:bg-[#f37021]/10 hover:text-[#f37021] transition-colors"
+                            >
+                              Gallery-{num}
+                            </Link>
+                          );
+                        })}
                       </div>
                     )}
                   </div>
@@ -407,7 +431,11 @@ export default function PmmlAttractions() {
               {/* Home-style Explore Button CTA */}
               <div className="flex justify-start relative z-20 mt-6">
                 <a
-                  href="/pm-sangrahalaya"
+                  href={
+                    BLOCK_2_ITEMS[block2Idx].title === 'Anubhuti Zone'
+                      ? '/pm-sangrahalaya/anubhuti-zone'
+                      : '/pm-sangrahalaya/key-galleries'
+                  }
                   className="flex items-center gap-3 text-[#052356] hover:text-[#f37021] font-bold text-sm tracking-wide transition-colors group cursor-pointer"
                 >
                   <span className="text-xs sm:text-sm font-bold">Explore</span>
@@ -549,7 +577,15 @@ export default function PmmlAttractions() {
               {/* Home-style Explore Button CTA */}
               <div className="flex justify-start relative z-20 mt-6">
                 <a
-                  href="/about-pmml/annual-reports"
+                  href={
+                    RESEARCH_TABS[researchIdx].title === 'Fellowship'
+                      ? '/ccs/fellowship'
+                      : RESEARCH_TABS[researchIdx].title === 'Talks & Seminars'
+                      ? '/ccs/events'
+                      : RESEARCH_TABS[researchIdx].title === 'Publications'
+                      ? '/research/publications'
+                      : '/ccs/about'
+                  }
                   className="flex items-center gap-3 text-[#052356] hover:text-[#f37021] font-bold text-sm tracking-wide transition-colors group cursor-pointer"
                 >
                   <span className="text-xs sm:text-sm font-bold">Explore</span>

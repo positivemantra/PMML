@@ -9,7 +9,7 @@ export default function PmmlSocietyHero() {
     <section className="relative w-full h-[60vh] min-h-[420px] lg:h-[70vh] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/heroimage.png"
+        src="/hero section/Frount loan.jpg.jpeg"
         alt="Teen Murti Campus — Prime Ministers Museum & Library"
         fill
         priority
@@ -17,9 +17,8 @@ export default function PmmlSocietyHero() {
         className="object-cover object-center"
       />
 
-      {/* Layered Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#031730]/90 via-[#052356]/70 to-[#052356]/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#031730]/80 via-transparent to-transparent" />
+      {/* Layered Overlays (Subtle shadow for text legibility) */}
+      <div className="absolute inset-0 bg-black/10" />
 
       {/* Decorative diagonal stripe */}
       <div

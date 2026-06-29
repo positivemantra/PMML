@@ -126,24 +126,37 @@ export default function GovernmentPortalsSection() {
     }
   }, [isTransitioning]);
 
+  // Timer-based boundary check to reset carousel index even in background tabs
+  useEffect(() => {
+    if (currentIndex >= PORTALS.length * 2) {
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(currentIndex - PORTALS.length);
+      }, 500); // Wait for transition duration (500ms)
+      return () => clearTimeout(timer);
+    } else if (currentIndex < PORTALS.length) {
+      const timer = setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(currentIndex + PORTALS.length);
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex]);
+
   const handlePrev = () => {
     if (!isTransitioning) return;
-    setCurrentIndex((prev) => prev - 1);
+    setCurrentIndex((prev) => {
+      if (prev <= 0) return prev;
+      return prev - 1;
+    });
   };
 
   const handleNext = () => {
     if (!isTransitioning) return;
-    setCurrentIndex((prev) => prev + 1);
-  };
-
-  const handleTransitionEnd = () => {
-    if (currentIndex >= PORTALS.length * 2) {
-      setIsTransitioning(false);
-      setCurrentIndex(currentIndex - PORTALS.length);
-    } else if (currentIndex < PORTALS.length) {
-      setIsTransitioning(false);
-      setCurrentIndex(currentIndex + PORTALS.length);
-    }
+    setCurrentIndex((prev) => {
+      if (prev >= PORTALS.length * 2) return prev;
+      return prev + 1;
+    });
   };
 
   const extendedPortals = [...PORTALS, ...PORTALS, ...PORTALS];
@@ -165,7 +178,7 @@ export default function GovernmentPortalsSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-
+ 
           {/* Right Arrow Button */}
           <button
             onClick={handleNext}
@@ -176,13 +189,12 @@ export default function GovernmentPortalsSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
-
+ 
           {/* Slider viewport */}
           <div className="w-full overflow-hidden">
             <div 
               className={`flex items-center ${isTransitioning ? 'transition-transform duration-500 ease-out' : ''}`}
               style={{ transform: `translateX(-${currentIndex * (100 / cardsToShow)}%)` }}
-              onTransitionEnd={handleTransitionEnd}
             >
               {extendedPortals.map((portal, index) => {
                 const LogoComponent = portal.logo;

@@ -47,9 +47,9 @@ const OFFERINGS: Offering[] = [
 const GALLERY_IMAGES = [
   { src: "/DSC_0038.JPG", alt: "Nehru Planetarium Exhibition Area" },
   { src: "/planetarium-home.jpg", alt: "Full Dome Sky Theatre" },
-  { src: "/planetarium.png", alt: "Planetarium Building Exterior" },
-  { src: "/light-sound.png", alt: "Light and Sound Show" },
-  { src: "/bhavishya.png", alt: "Bhavishya Exhibition" }
+  { src: "/01.JPG", alt: "Planetarium Building Exterior" },
+  { src: "/08.jpg", alt: "Light and Sound Show" },
+  { src: "/05.jpg", alt: "Bhavishya Exhibition" }
 ];
 
 export default function NehruPlanetariumDetails() {

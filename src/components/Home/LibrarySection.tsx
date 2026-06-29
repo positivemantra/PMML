@@ -80,6 +80,8 @@ export default function LibrarySection() {
 
               <a
                 href="https://pmmlcatalog.ltsinformatics.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[#f37021] hover:text-[#d85c15] font-extrabold text-xs sm:text-sm tracking-wider transition-colors cursor-pointer"
               >
                 <span className="uppercase tracking-wide font-bold">Koha Opac</span>

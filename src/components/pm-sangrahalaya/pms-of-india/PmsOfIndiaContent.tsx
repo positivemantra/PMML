@@ -306,11 +306,17 @@ export default function PmsOfIndiaContent() {
       {PM_LIST.map((pm, index) => {
         const isReversed = index % 2 !== 0;
         const isLightBg = index % 2 === 0;
+        const pmAnchorId = pm.name
+          .toLowerCase()
+          .replace(/[^a-z0-9 ]/g, '')
+          .trim()
+          .replace(/\s+/g, '-');
 
         return (
           <section
             key={pm.id}
-            className={`w-full border-b border-slate-100/60 ${isLightBg ? 'bg-white' : 'bg-[#f4f4f4]/25'}`}
+            id={pmAnchorId}
+            className={`w-full border-b border-slate-100/60 scroll-mt-36 ${isLightBg ? 'bg-white' : 'bg-[#f4f4f4]/25'}`}
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
               <div className={`flex flex-col ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 lg:gap-14`}>
@@ -357,7 +363,7 @@ export default function PmsOfIndiaContent() {
                     {/* Explore Gallery button */}
                     <div className="mt-5">
                       <Link
-                        href="/pm-sangrahalaya"
+                        href="/pm-sangrahalaya/key-galleries"
                         className="group inline-flex items-center justify-center bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-[0_4px_14px_rgba(243,112,33,0.2)] hover:shadow-[0_6px_20px_rgba(243,112,33,0.35)] transition-all duration-300 hover:-translate-y-0.5 active:scale-95 select-none cursor-pointer"
                       >
                         <span>Explore Gallery</span>

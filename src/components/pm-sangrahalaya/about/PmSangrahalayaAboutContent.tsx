@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Spectral } from 'next/font/google';
 import HeroSection from '@/components/Home/HeroSection';
@@ -18,49 +19,49 @@ const SPECIAL_FEATURES = [
     description: 'Have interactive conversations with 3D holographic projections of former Prime Ministers, powered by real-time AI technology.',
     image: '/ai-holobox.png',
     icon: Cpu,
-    exploreUrl: '/pm-sangrahalaya#ai-holobox',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone#ai-holobox-new',
   },
   {
     title: 'Letter from Prime Minister',
     description: 'Receive a personalized letter handwritten in the style of India\'s great Prime Ministers - a unique and inspirational keepsake crafted through precision robotic replication technology.',
     image: '/robotic.png',
     icon: Mail,
-    exploreUrl: '/pm-sangrahalaya#letter-from-pm',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
     title: 'Walk with Prime Minister',
     description: 'Walk alongside holographic projections of India\'s Prime Ministers in an immersive corridor experience, reliving landmark moments in the nation\'s democratic journey.',
     image: '/selfie.png',
     icon: User2,
-    exploreUrl: '/pm-sangrahalaya#walk-with-pm',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
     title: 'Selfie with Prime Minister',
     description: 'Step into an augmented reality booth and capture a virtual selfie alongside your favourite Prime Minister — a fun and memorable interactive experience.',
     image: '/selfie.png',
     icon: Camera,
-    exploreUrl: '/pm-sangrahalaya#selfie-with-pm',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
-    title: 'Suraksha',
-    description: 'An interactive exhibit dedicated to India\'s security and defence achievements, showcasing the strategic decisions and sacrifices that have safeguarded the nation.',
-    image: '/nuclear test.jpg',
+    title: 'Lal Qile Ki Prachir Se',
+    description: 'An immersive 360-degree experience that transports you to the ramparts of the Red Fort, where Prime Ministers have addressed the nation. Witness historical Independence Day speeches, understand the significance of the occasion, and feel the weight of the moment through state-of-the-art audio-visual technology.',
+    image: '/hologram.jpeg',
     icon: ShieldCheck,
-    exploreUrl: '/pm-sangrahalaya#suraksha',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
     title: 'Bhavishya ki Jhalkiyan',
     description: 'A futuristic showcase of India\'s developmental roadmap, scientific, space, and economic achievements.',
     image: '/bhavishya.png',
     icon: Globe,
-    exploreUrl: '/pm-sangrahalaya#bhavishya',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
     title: 'Nuclear Journey to Dream Reality',
     description: 'A virtual reality flight simulation showcasing the modern developmental milestones of India from an aerial view.',
     image: '/time-machine.png',
     icon: Compass,
-    exploreUrl: '/pm-sangrahalaya#time-machine',
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
   },
 ];
 
@@ -69,19 +70,19 @@ const SPECIAL_SHOWS = [
     title: 'Light & Sound Show',
     description: 'The museum comes alive as night falls with our flagship Light & Sound Show (Son-et-Lumiere). Using state-of-the-art projection mapping technology onto the facade of Building 2, the show narrates the history of Indian democracy, space programs, and the accomplishments of our Prime Ministers. Shows are held daily in both Hindi and English.',
     image: '/light-sound.png',
-    exploreUrl: '/pm-sangrahalaya#special-shows',
+    exploreUrl: '/pm-sangrahalaya/special-shows',
   },
   {
     title: 'Suraksha',
     description: 'An interactive exhibit dedicated to India\'s security and defence achievements, showcasing the strategic decisions and sacrifices that have safeguarded the nation.',
     image: '/nuclear test.jpg',
-    exploreUrl: '/pm-sangrahalaya#suraksha',
+    exploreUrl: '/pm-sangrahalaya/special-shows',
   },
   {
     title: 'Pokhran',
     description: 'Relive India\'s historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee : an immersive control room simulation with dramatic audiovisuals.',
     image: '/nuclear test.jpg',
-    exploreUrl: '/pm-sangrahalaya#nuclear-test',
+    exploreUrl: '/pm-sangrahalaya/special-shows',
   },
 ];
 
@@ -272,7 +273,7 @@ export default function PmSangrahalayaAboutContent() {
                   <p className="text-white text-xs sm:text-sm leading-relaxed max-w-xl font-medium text-justify">
                     {SPECIAL_FEATURES[activeFeature].description}
                   </p>
-                  <a
+                  <Link
                     href={SPECIAL_FEATURES[activeFeature].exploreUrl}
                     className="flex items-center gap-2 text-[#f37021] hover:text-white font-bold text-xs sm:text-sm tracking-wide transition-colors group cursor-pointer whitespace-nowrap mt-0.5"
                   >
@@ -282,7 +283,7 @@ export default function PmSangrahalayaAboutContent() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -356,7 +357,7 @@ export default function PmSangrahalayaAboutContent() {
 
                 {/* Explore Button CTA */}
                 <div className="flex justify-start relative z-20 mt-4">
-                  <a
+                  <Link
                     href={SPECIAL_SHOWS[activeShow].exploreUrl}
                     className="flex items-center gap-3 text-[#052356] hover:text-[#f37021] font-bold text-sm tracking-wide transition-colors group cursor-pointer"
                   >
@@ -366,7 +367,7 @@ export default function PmSangrahalayaAboutContent() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
 

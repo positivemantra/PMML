@@ -12,28 +12,35 @@ const spectral = Spectral({
 
 const SLIDES = [
   {
-    src: "/light-sound.png",
-    title: "A Journey Through Time",
-    subtitle: "Walk through the chronicles of India's Prime Ministers and their enduring impact",
-    cta: { label: "Discover More", href: "#discover" },
+    src: "/hero section/h1.jpg",
+    title: "Teen Murti House",
+    subtitle: "The historic home of India's first Prime Minister, Jawaharlal Nehru",
+    cta: { label: "Discover More", href: "/about-pmml" },
   },
   {
-    src: "/hero-slide-2.png",
-    title: "Preserving Our Heritage",
-    subtitle: "Explore rare archives, documents and artefacts from India's rich political history",
-    cta: { label: "View Archives", href: "/archives" },
+    src: "/hero section/Picture Museum copy.jpg",
+    title: "Pradhanmantri Sangrahalaya",
+    subtitle: "A tribute to every Prime Minister of India since independence",
+    cta: { label: "Explore Museum", href: "/pm-sangrahalaya" },
   },
   {
-    src: "/hero-slide-3.png",
+    src: "/hero section/Library_Panorama1.jpg",
+    title: "Teen Murti Library",
+    subtitle: "One of the premier research libraries on modern Indian history and politics",
+    cta: { label: "Visit Library", href: "/library" },
+  },
+  {
+    src: "/hero section/DSC_0038.JPG",
     title: "Nehru Planetarium",
-    subtitle: "Experience the wonders of the cosmos at the iconic Nehru Planetarium",
-    cta: { label: "Book a Show", href: "#planetarium" },
+    subtitle: "Discover the wonders of astronomy and the celestial science dome",
+    cta: { label: "Book a Show", href: "/about-pmml/nehru-planetarium" },
   },
+
   {
-    src: "/hero-slide-4.png",
-    title: "Light & Sound Show",
-    subtitle: "A spectacular multimedia experience bringing India's history alive after dark",
-    cta: { label: "Learn More", href: "#show" },
+    src: "/hero section/DSC_4568.jpg",
+    title: "Exhibition Galleries & Collections",
+    subtitle: "Immersive multimedia exhibits depicting the journey of Indian democracy",
+    cta: { label: "View Archives", href: "/archives" },
   },
 ];
 
@@ -115,9 +122,6 @@ export default function HeroSection() {
               sizes="100vw"
               className="object-cover object-center"
             />
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
           </div>
         );
       })}
@@ -141,18 +145,6 @@ export default function HeroSection() {
             }}
           />
         ))}
-      </div>
-
-      {/* ── Progress Bar ── */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 h-0.5 bg-white/10">
-        <div
-          key={current + "_progress"}
-          className="h-full bg-[#f37021] hero-progress"
-          style={{
-            animationDuration: `${INTERVAL_MS}ms`,
-            animationPlayState: paused ? "paused" : "running",
-          }}
-        />
       </div>
 
       {/* ── Scroll To Explore (arrow in orange) ── */}

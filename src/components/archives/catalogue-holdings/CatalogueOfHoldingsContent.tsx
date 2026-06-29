@@ -30,7 +30,7 @@ const LEFT_ITEMS: CatalogueItem[] = [
   },
   {
     title: "Digital Archives",
-    href: "https://pmmlarchives.in/login",
+    href: "#",
   },
 ];
 

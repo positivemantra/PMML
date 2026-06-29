@@ -6,6 +6,7 @@ import Link from 'next/link';
 export interface SubItem {
   label: string;
   href: string;
+  target?: string;
 }
 
 export interface MenuItem {
@@ -39,9 +40,9 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/pm-sangrahalaya",
     dropdown: [
       { label: "Know Your Prime Minister", href: "/pm-sangrahalaya/pms-of-india" },
-      { label: "Key Galleries", href: "/pm-sangrahalaya#key-galleries" },
-      { label: "Anubhuti Zone", href: "/pm-sangrahalaya#special-features" },
-      { label: "Special Shows", href: "/pm-sangrahalaya#special-shows" },
+      { label: "Key Galleries", href: "/pm-sangrahalaya/key-galleries" },
+      { label: "Anubhuti Zone", href: "/pm-sangrahalaya/anubhuti-zone" },
+      { label: "Special Shows", href: "/pm-sangrahalaya/special-shows" },
       { label: "Virtual Tour", href: "/pm-sangrahalaya#virtual-tour" },
     ],
   },
@@ -50,7 +51,7 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/library",
     dropdown: [
       { label: "Latest Books", href: "/library/latest-books" },
-      { label: "Koha OPAC", href: "https://pmmlcatalog.ltsinformatics.com/" },
+      { label: "Koha OPAC", href: "https://pmmlcatalog.ltsinformatics.com/", target: "_blank" },
       { label: "Rare Books", href: "/library/rare-books" },
     ],
   },
@@ -58,7 +59,7 @@ export const NAV_ITEMS: MenuItem[] = [
     label: "Archives",
     href: "/archives",
     dropdown: [
-      { label: "PMML Digital Archives", href: "https://pmmlarchives.in/login" },
+      { label: "PMML Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
       { label: "Catalogue of Holdings", href: "/archives/catalogue-holdings" },
       { label: "SOP for Remote Access", href: "/archives#sop-remote-access" },
     ],
@@ -84,19 +85,19 @@ export const NAV_ITEMS: MenuItem[] = [
   },
    {
     label: "Events",
-    href: "#events",
+    href: "/events",
     dropdown: [
-      { label: "Sangrahalaya Events", href: "#sangrahalaya-events" },
-      { label: "CCS Events", href: "/ccs/about#ccs-seminars-publications" },
-      { label: "Planetarium Events", href: "#planetarium-events" },
+      { label: "Sangrahalaya Events", href: "/pm-sangrahalaya/events" },
+      { label: "CCS Events", href: "/ccs/events" },
+      { label: "Planetarium Events", href: "/about-pmml/nehru-planetarium/events" },
     ],
   },
   {
     label: "Media",
-    href: "#media",
+    href: "/media/photo-gallery",
     dropdown: [
-      { label: " Photo Gallery", href: "#photo-gallery" },
-      { label: "News", href: "#news" },
+      { label: "Photo Gallery", href: "/media/photo-gallery" },
+      { label: "News", href: "/media/news" },
     ],
   },
  
@@ -197,6 +198,8 @@ export default function MenuBar() {
                       <li key={subItem.label}>
                         <Link
                           href={subItem.href}
+                          target={subItem.target}
+                          rel={subItem.target === "_blank" ? "noopener noreferrer" : undefined}
                           onClick={() => setOpenDropdown(null)}
                           className="block px-5 py-2.5 text-xs xl:text-[13px] text-[#052356] hover:text-[#f37021] hover:bg-orange-50/70 border-l-2 border-transparent hover:border-[#f37021] font-medium transition-all duration-200 text-left"
                         >

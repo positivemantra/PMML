@@ -17,12 +17,16 @@ export default function Footer() {
             </h4>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", fontSize: "10px", color: "#d1d5db", rowGap: "6px" }}>
               {[
-                { name: "RTI", href: "#" },
-                { name: "Sitemap", href: "#" },
-                { name: "Disclaimer", href: "#" },
-                { name: "Privacy Policy", href: "#" },
-                { name: "Terms & Conditions", href: "#" },
-                { name: "Help", href: "#" }
+                { name: "RTI", href: "/rti" },
+                { name: "Sitemap", href: "/sitemap" },
+                { name: "Disclaimer", href: "/disclaimer" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Terms & Conditions", href: "/terms-conditions" },
+                { name: "Help", href: "/help" },
+                { name: "Copyright Policy", href: "/copyright-policy" },
+                { name: "Hyperlink Policy", href: "/hyperlink-policy" },
+                { name: "Refund & Cancellation Policy", href: "/refund-cancellation-policy" },
+              
               ].map((link, idx, arr) => (
                 <React.Fragment key={link.name}>
                   {idx > 0 && <span style={{ margin: "0 6px", color: "#6b7280" }}>|</span>}
@@ -41,16 +45,10 @@ export default function Footer() {
             </h4>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", fontSize: "10px", color: "#d1d5db", rowGap: "6px" }}>
               {[
-                { name: "Museum", href: "#" },
-                { name: "Library", href: "#" },
-                 { name: "Archives", href: "#" },
-                { name: "Digital Collections", href: "#" },
-                { name: "E-Resources", href: "#" },
-                { name: "Research", href: "#" },
-                { name: "Media Gallery", href: "#" },
+            
                 { name: "Nehru Portal", href: "http://nehruportal.nic.in", target: "_blank", rel: "noopener noreferrer" },
-                { name: "Tenders", href: "#" },
-                { name: "Vacancies", href: "#" }
+                { name: "Tenders", href: "/tenders" },
+                { name: "Vacancies", href: "/vacancies" }
               ].map((link, idx) => (
                 <React.Fragment key={link.name}>
                   {idx > 0 && <span style={{ margin: "0 6px", color: "#6b7280" }}>|</span>}
