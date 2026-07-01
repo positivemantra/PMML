@@ -44,7 +44,7 @@ const WHOS_WHO_DATA: WhosWhoMember[] = [
   { sNo: 23, department: "Oral History Division", name: "Shri Pankaj Meena", designation: "Assistant Research Officer", email: "aropankajpmml@gmail.com", contact: "" },
   { sNo: 24, department: "The Archives", name: "Shri Neeraj Kumar", designation: "Assistant Research Officer", email: "neerajkumar11june@gmail.com", contact: "" },
   { sNo: 25, department: "Museum", name: "Shri Anurag Arora", designation: "Manager (Administration)", email: "aao@nmml.gov.in", contact: "23014504" },
-  { sNo: 26, department: "Conference Facilities / Programmes", name: "Shri Rajnish Ranjan", designation: "Programme Officer", email: "rajnish@nmml.gov.in", contact: "23010666" }
+  { sNo: 26, department: "Conference Facilities / Programmes/CCS", name: "Shri Rajnish Ranjan", designation: "Assistant Research Officer", email: "rajnish@nmml.gov.in", contact: "23010666" }
 ];
 
 export default function WhosWhoMembers() {

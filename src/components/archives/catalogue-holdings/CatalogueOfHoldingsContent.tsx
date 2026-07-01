@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Spectral } from "next/font/google";
 
 const spectral = Spectral({
@@ -18,38 +19,39 @@ interface CatalogueItem {
 const LEFT_ITEMS: CatalogueItem[] = [
   {
     title: "Institutional Collections",
-    href: "#",
+    href: "/archives/catalogue-holdings/institutional-collections",
   },
-  {
-    title: "Miscellaneous Collections",
-    href: "#",
+   {
+    title: "Individual Collections",
+    href: "/archives/catalogue-holdings/individual-collections",
   },
+  
   {
     title: "PMML Manuscripts",
     href: "#",
   },
   {
     title: "Digital Archives",
-    href: "#",
+    href: "/archives/catalogue-holdings/digital-archives",
   },
 ];
 
 const RIGHT_ITEMS: CatalogueItem[] = [
-  {
-    title: "Individual Collections",
-    href: "#",
+ {
+    title: "Miscellaneous Collections",
+    href: "/archives/catalogue-holdings/miscellaneous-collections",
   },
   {
     title: "Recent Acquisitions",
-    href: "#",
+    href: "/archives/catalogue-holdings/recent-acquisitions",
   },
   {
-    title: "Oral History Transcript",
-    href: "#",
+    title: "Oral History Transcripts",
+    href: "/archives/catalogue-holdings/oral-history-transcripts",
   },
   {
     title: "Reading Room",
-    href: "#",
+    href: "/archives/catalogue-holdings/reading-room",
   },
 ];
 
@@ -118,7 +120,7 @@ export default function CatalogueOfHoldingsContent() {
                         </span>
 
                         {/* View Button */}
-                        <a
+                        <Link
                           href={item.href}
                           className="inline-flex items-center gap-1.5 border-[1.5px] border-[#f37021] text-[#f37021] hover:bg-[#f37021] hover:text-white rounded-[8px] px-3.5 py-1 text-[11px] font-bold transition-all duration-300 cursor-pointer w-fit group"
                         >
@@ -127,7 +129,7 @@ export default function CatalogueOfHoldingsContent() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.644C3.764 7.733 7.828 4.5 12 4.5c4.172 0 8.236 3.233 9.964 7.178.07.158.07.344 0 .502-1.728 3.945-5.792 7.248-9.964 7.248-4.172 0-8.236-3.233-9.964-7.22z" />
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>
@@ -173,7 +175,7 @@ export default function CatalogueOfHoldingsContent() {
                         </span>
 
                         {/* View Button */}
-                        <a
+                        <Link
                           href={item.href}
                           className="inline-flex items-center gap-1.5 border-[1.5px] border-[#f37021] text-[#f37021] hover:bg-[#f37021] hover:text-white rounded-[8px] px-3.5 py-1 text-[11px] font-bold transition-all duration-300 cursor-pointer w-fit group"
                         >
@@ -182,7 +184,7 @@ export default function CatalogueOfHoldingsContent() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.644C3.764 7.733 7.828 4.5 12 4.5c4.172 0 8.236 3.233 9.964 7.178.07.158.07.344 0 .502-1.728 3.945-5.792 7.248-9.964 7.248-4.172 0-8.236-3.233-9.964-7.22z" />
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                           </svg>
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>

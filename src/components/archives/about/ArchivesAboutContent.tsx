@@ -50,15 +50,15 @@ const CONTACT_TABS = [
     label: "READING ROOM",
     name: "Ms. Jyothi Luthra",
     designation: "Research Associate",
-    contact: "8800183507",
-    email: "readingroommss-nmm[at]gov[dot]in",
+    contact: "8800183507/9013536643",
+    email: "pmmlmss1[at]gmail[dot]com",
   },
   {
-    id: "manuscript-section",
-    label: "MANUSCRIPT SECTION",
+    id: "the-archives",
+    label: "THE ARCHIVES",
     name: "Smt. Priyamvada Shome",
     designation: "Consultant (Archives)",
-    contact: "23014475",
+    contact: "9811312752/9711594864",
     email: "pmmlmss1[at]gmail[dot]com",
   },
 ];
@@ -319,9 +319,6 @@ export default function ArchivesAboutContent() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                       className="object-cover hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-5">
-                      <span className="text-white text-xs sm:text-sm font-bold tracking-wide">{img.alt}</span>
-                    </div>
                   </div>
                 ))}
               </div>

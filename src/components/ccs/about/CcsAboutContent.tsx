@@ -71,7 +71,7 @@ export default function CcsAboutContent() {
 
                 {/* Stat Box 2 */}
                 <div className="flex flex-col items-center justify-center bg-white rounded-[11px] border-b-[4px] sm:border-b-[6px] border-[#E88B1D] shadow-[0_4px_20px_rgba(0,0,0,0.05)] w-full h-[80px] sm:h-[90px] lg:h-[95px] px-2 text-center transition-all duration-200 hover:shadow-md">
-                  <span className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#052356] leading-none mb-1 sm:mb-1.5">500+</span>
+                  <span className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#052356] leading-none mb-1 sm:mb-1.5">2.5K+</span>
                   <span className="text-[8px] sm:text-[9px] lg:text-[10px] text-[#444651] font-bold tracking-wider uppercase">Seminars Hosted</span>
                 </div>
 

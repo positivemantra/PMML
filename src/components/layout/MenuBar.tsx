@@ -70,7 +70,7 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/ccs/about",
     dropdown: [
       { label: "Fellowship", href: "/ccs/fellowship" },
-      { label: "Seminars/Publications", href: "/ccs/about#ccs-seminars-publications" },
+      { label: "Seminars/Lectures", href: "/ccs/about#ccs-seminars-publications" },
       { label: "Occasional Papers", href: "/ccs/occasional-papers" },
     ],
   },

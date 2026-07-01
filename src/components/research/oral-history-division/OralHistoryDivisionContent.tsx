@@ -73,7 +73,7 @@ export default function OralHistoryDivisionContent() {
 
                   <div className="space-y-4 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
                     <p>
-                      The Oral History Project of the Prime Ministers&apos; Museum and Library (PMML) was conceived as part of its research activities. The first steps towards organising it were taken in the summer of 1966. So far, the PMML has conducted about 1,378 interviews. Out of these, 930 have been transcribed, edited, and prepared in book form. These are available to scholars and researchers for consultation in the Reading Room of the Manuscripts Section.
+                      The Oral History Project of the Prime Ministers Museum and Library (PMML) was conceived as part of its research activities. The first steps towards organising it were taken in the summer of 1966. So far, the PMML has conducted till now 1,376 interviews. Out of these, 990 have been transcribed, edited, and prepared in book form. These are available to scholars and researchers for consultation in the Reading Room of the Manuscripts Section.
                     </p>
                     <p>
                       In the initial phase of the PMML&apos;s oral history project, the emphasis was on the recollections of men and women who came into contact with India&apos;s great leaders or were associated with important political events or movements, either as participants or as witnesses. Gradually, the oral history canvas expanded to include subjects concerning overall national development, including the economy, foreign policy, art and culture, sports, institution-building, etc.

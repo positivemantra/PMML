@@ -11,7 +11,7 @@ const spectral = Spectral({
 
 const STATS = [
   {
-    value: '2L+',
+    value: '2.5Cr+',
     label: 'Documents & Archival Records',
   },
   {
@@ -19,12 +19,8 @@ const STATS = [
     label: 'Private papers',
   },
   {
-    value: '10K+',
-    label: 'Audio Visual Records',
-  },
-  {
-    value: '100+',
-    label: 'Personalities Featured',
+    value: '1.3Cr+',
+    label: 'Digitized Documents',
   },
 ];
 
@@ -89,13 +85,13 @@ export default function ArchivesSection() {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-3 w-full max-w-[560px] mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-[560px] mb-6">
               {STATS.map((stat, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-start gap-3 p-4 bg-white border border-black/5 rounded-none shadow-sm hover:shadow-md transition-shadow"
+                  className="flex flex-col justify-center items-start gap-2 p-4 bg-white border border-black/5 rounded-none shadow-sm hover:shadow-md transition-shadow min-h-[100px]"
                 >
-                  <span className="text-2xl md:text-[30px] font-bold text-[#0a1835] tracking-tight leading-none select-none">
+                  <span className="text-2xl md:text-[28px] font-bold text-[#0a1835] tracking-tight leading-none select-none text-left">
                     {stat.value}
                   </span>
                   <span className="text-[11px] sm:text-xs font-semibold text-gray-700 leading-tight text-left">
