@@ -32,7 +32,6 @@ export const NAV_ITEMS: MenuItem[] = [
       { label: "MoU with Ministry of Culture", href: "/about-pmml/mou-culture" },
       { label: "Directory", href: "/about-pmml/whos-who" },
       { label: "Conference Facilities", href: "/about-pmml/conference-facilities" },
-      { label: "Nehru Planetarium", href: "/about-pmml/nehru-planetarium" },
       { label: "Hindi Division", href: "/about-pmml/hindi-division" },
     ],
   },
@@ -46,6 +45,10 @@ export const NAV_ITEMS: MenuItem[] = [
       { label: "Special Shows", href: "/pm-sangrahalaya/special-shows" },
       { label: "Virtual Tour", href: "/pm-sangrahalaya#virtual-tour" },
     ],
+  },
+  {
+    label: "Planetarium",
+    href: "/about-pmml/nehru-planetarium",
   },
   {
     label: "Library",

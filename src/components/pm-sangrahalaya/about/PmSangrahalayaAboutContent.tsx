@@ -57,7 +57,7 @@ const SPECIAL_FEATURES = [
     exploreUrl: '/pm-sangrahalaya/special-shows',
   },
   {
-    title: 'Nuclear Journey to Dream Reality',
+    title: 'Nuclear Journey Dream to Reality',
     description: 'A virtual reality flight simulation showcasing the modern developmental milestones of India from an aerial view.',
     image: '/special shows/timemachine.jpg',
     icon: Compass,
@@ -68,7 +68,7 @@ const SPECIAL_FEATURES = [
 const SPECIAL_SHOWS = [
   {
     title: 'Light & Sound Show',
-    description: 'The museum comes alive as night falls with our flagship Light & Sound Show (Son-et-Lumiere). Using state-of-the-art projection mapping technology onto the facade of Building 2, the show narrates the history of Indian democracy, space programs, and the accomplishments of our Prime Ministers. Shows are held daily in both Hindi and English.',
+    description: 'The museum comes alive as night falls with our flagship Light & Sound Show (Son-et-Lumiere). Using state-of-the-art projection mapping technology onto the facade of Building 2, the show narrates the history of Indian democracy, space programs, and the accomplishments of our Prime Ministers. Ticketed shows are held daily in both Hindi and English.',
     image: '/special shows/light and sound show.jpg',
     exploreUrl: '/pm-sangrahalaya/special-shows',
   },
@@ -79,8 +79,8 @@ const SPECIAL_SHOWS = [
     exploreUrl: '/pm-sangrahalaya/special-shows',
   },
   {
-    title: 'Pokhran',
-    description: 'Relive India\'s historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee : an immersive control room simulation with dramatic audiovisuals.',
+    title: 'Pokhran  II',
+    description: 'Relive India\'s historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee: an immersive control room simulation with dramatic audiovisuals.',
     image: '/nuclear test.jpg',
     exploreUrl: '/pm-sangrahalaya/special-shows',
   },
@@ -134,7 +134,7 @@ export default function PmSangrahalayaAboutContent() {
               </h2>
               
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
-                The Pradhanmantri Sangrahalaya is a tribute to every Prime Minister of India since Independence, and a narrative record of how each one has contributed to the development of our nation over the last 75 years. It is a history of collective effort, and powerful evidence of the creative success of India's democracy. Our Prime Ministers came from every class and tier of society, for the gates of democracy were equally open to all. Each one left an important footprint on the journey of development, social harmony and economic empowerment that has enabled India to give true meaning to freedom. We inherited an impoverished land from the debris of British colonialism, and together gave it a new life, lifting our country from famished deprivation to food-surplus status, and creating infrastructure over barren territory for the benefit of the people.
+                The Pradhanmantri Sangrahalaya is a tribute to every Prime Minister of India since Independence, and a narrative record of how each one has contributed to the development of our nation over the last 75 years. It is a history of collective effort, and powerful evidence of the success of India's democracy. Our Prime Ministers came from every class and tier of society, for the gates of democracy were equally open to all. Each left an important footprint on the journey of development, social harmony and economic empowerment that has enabled India to give true meaning to freedom. We inherited an impoverished land from the debris of British colonialism, and together gave it a new life . This has lifted our country from famished deprivation to food-surplus status, and creating infrastructure over barren territory for the benefit of the people.
               </p>
 
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed text-justify">
@@ -154,11 +154,11 @@ export default function PmSangrahalayaAboutContent() {
             {/* Left Column: Title and Content */}
             <div className="lg:col-span-7 flex flex-col text-left justify-center">
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
-                The Sangrahalaya is a seamless blend which begins at the renovated and refurbished Nehru Museum building, now completely updated and technologically advanced displays on the life and contribution of Shri Jawaharlal Nehru. The new panorama includes a section which exhibits a large number of rare gifts received by him from all over the world but never put on display.
+                The Sangrahalaya is a seamless blend which begins at the renovated and refurbished Nehru Museum building, now completely updated and technologically advanced displays on the life and contribution of Shri Jawaharlal Nehru. The new panorama includes a section which exhibits a large number of rare gifts received by him from all across the world but never put on display.
               </p>
 
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed text-justify">
-                .The saga of modern India starts with the freedom struggle and the making of a great Constitution. The Sangrahalaya goes on to tell the story of how our Prime Ministers navigated the nation through various challenges and ensured the all-round progress of the country. Within this story is a message for the younger generation: there are greater horizons to conquer as we transform India into New India.
+                The saga of modern India starts with the freedom struggle and the making of a great Constitution. The Sangrahalaya goes on to tell the story of how our Prime Ministers navigated the nation through various challenges and ensured the all-round progress of the country. Within this story is a message for the younger generation: there are greater horizons to conquer as we transform India into New India.
               </p>
             </div>
 
@@ -435,7 +435,7 @@ export default function PmSangrahalayaAboutContent() {
                     Book Tickets Online
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed">
-                    Plan your visit to Teen Murti Estate today. Pre-book your entry passes, light and sound show tickets, and helicopter ride slots online to avoid long queues.
+                    Plan your visit to Pradhanmantri Sangrahalaya today. Pre-book your entry passes, light and sound show tickets, and helicopter ride slots online to avoid long queues.
                   </p>
                 </div>
                 <a

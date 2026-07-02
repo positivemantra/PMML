@@ -45,13 +45,6 @@ const EXPLORE_ITEMS = [
 
 const TEAM_DATA = [
   {
-    id: "head",
-    role: "HEAD OF LIBRARY",
-    name: "Dr. Ravi K Mishra",
-    contact: "23017599",
-    email: "deputydirector.nmml@gov.in",
-  },
-  {
     id: "librarian",
     role: "LIBRARIAN",
     name: "Shri Vikas Kumar",
@@ -65,26 +58,25 @@ const TEAM_DATA = [
     contact: "23013203",
     email: "sharmasangeeta0212@gmail.com",
   },
-  {
-    id: "committee",
-    role: "BOOK SELECTION COMMITTEE MEMBERS",
-    name: "Prof. Raghuvendra Tanwar",
-    contact: "23017220",
-    email: "committee.library@pmml.gov.in",
-  },
 ];
 
 const GALLERY_IMAGES = [
   { src: "/DSC_3203 copy.jpg", alt: "Research Study Area" },
   { src: "/library.jpg", alt: "Library Corridor" },
   { src: "/DSC_3206 copy.jpg", alt: "Book Stacks" },
+  { src: "/hero section/Library_Panorama1.jpg", alt: "Main Reading Hall" },
+  { src: "/DSC_3203 copy.jpg", alt: "Periodicals & Reference Section" }
 ];
 
+const EXTENDED_GALLERY_IMAGES = [...GALLERY_IMAGES, ...GALLERY_IMAGES.slice(0, 3)];
+
 export default function LibraryAboutContent() {
-  const [activeTab, setActiveTab] = useState("head");
+  const [activeTab, setActiveTab] = useState("librarian");
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [galleryVisible, setGalleryVisible] = useState(3);
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
+  const [isPausedGallery, setIsPausedGallery] = useState(false);
+  const [galleryTransitionEnabled, setGalleryTransitionEnabled] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -97,16 +89,52 @@ export default function LibraryAboutContent() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Infinite Gallery Carousel auto-moving logic
+  useEffect(() => {
+    if (isPausedGallery) return;
+    const interval = setInterval(() => {
+      setGalleryTransitionEnabled(true);
+      setGalleryIndex((prev) => prev + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isPausedGallery]);
+
+  useEffect(() => {
+    if (galleryIndex === GALLERY_IMAGES.length) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(false);
+        setGalleryIndex(0);
+      }, 300); // Wait for transition duration (300ms)
+      return () => clearTimeout(timer);
+    }
+  }, [galleryIndex]);
+
+  useEffect(() => {
+    if (!galleryTransitionEnabled) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [galleryTransitionEnabled]);
+
   const handlePrevGallery = () => {
-    if (galleryIndex > 0) {
+    if (galleryIndex === 0) {
+      setGalleryTransitionEnabled(false);
+      setGalleryIndex(GALLERY_IMAGES.length);
+      setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+        setGalleryIndex(GALLERY_IMAGES.length - 1);
+      }, 50);
+    } else {
+      setGalleryTransitionEnabled(true);
       setGalleryIndex((prev) => prev - 1);
     }
   };
 
   const handleNextGallery = () => {
-    if (galleryIndex < GALLERY_IMAGES.length - galleryVisible) {
-      setGalleryIndex((prev) => prev + 1);
-    }
+    setGalleryTransitionEnabled(true);
+    setGalleryIndex((prev) => prev + 1);
   };
 
   const galleryGap = 20;
@@ -215,151 +243,60 @@ export default function LibraryAboutContent() {
         </div>
       </section>
 
-      {/* ── Library Team & Ask Librarian Section ── */}
+      {/* ── Library Team Section ── */}
       <section className="w-full py-6 lg:py-8 bg-[#FDFBF7] border-t border-b border-[#F4EFE6]/60 text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-
-            {/* Left Column: Library Team */}
-            <div className="flex flex-col justify-between h-full pt-4 sm:pt-5">
-              {/* Heading */}
-              <div>
-                <div className="w-12 h-1 bg-[#f37021] mb-2" />
-                <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight mb-6`}>
-                  Library Team
-                </h3>
-              </div>
-
-              {/* Grid for Tabs & Details */}
-              <div className="grid grid-cols-1 md:grid-cols-[190px_1fr] gap-5 items-stretch flex-grow">
-                {/* Vertical Tabs (Left - OUTSIDE the white box) */}
-                <div className="flex flex-col gap-2.5 justify-start pt-1.5">
-                  {TEAM_DATA.map((member) => (
-                    <button
-                      key={member.id}
-                      type="button"
-                      onClick={() => setActiveTab(member.id)}
-                      className={`text-left text-xs font-bold py-2.5 px-4 transition-all duration-200 w-fit ${activeTab === member.id
-                          ? "bg-white text-[#f37021] rounded-lg shadow-sm border border-gray-100/50"
-                          : "text-[#052356]/60 hover:text-[#052356] bg-transparent"
-                        }`}
-                    >
-                      {member.role}
-                    </button>
-                  ))}
-                </div>
-
-                {/* Details Panel (Right - INSIDE the white box) */}
-                <div className="bg-white border border-gray-200 rounded-3xl p-4 sm:p-5 shadow-[0_4px_25px_rgba(0,0,0,0.02)] flex flex-col justify-center">
-                  {(() => {
-                    const activeMember = TEAM_DATA.find((m) => m.id === activeTab) || TEAM_DATA[0];
-                    return (
-                      <div className="space-y-3.5">
-                        <div className="border-b border-gray-100 pb-2">
-                          <span className="block text-xs font-bold text-[#052356] mb-0.5">Name</span>
-                          <span className="text-sm font-medium text-gray-500">{activeMember.name}</span>
-                        </div>
-                        <div className="border-b border-gray-100 pb-2">
-                          <span className="block text-xs font-bold text-[#052356] mb-0.5">Contact Number</span>
-                          <span className="text-sm font-medium text-gray-500">{activeMember.contact}</span>
-                        </div>
-                        <div className="pb-0.5">
-                          <span className="block text-xs font-bold text-[#052356] mb-0.5">Email ID</span>
-                          <span className="text-sm font-medium text-gray-500 break-all">{activeMember.email}</span>
-                        </div>
-                      </div>
-                    );
-                  })()}
-                </div>
-              </div>
+          <div className="w-full pt-4 sm:pt-5">
+            {/* Heading */}
+            <div>
+              <div className="w-12 h-1 bg-[#f37021] mb-2" />
+              <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight mb-6`}>
+                Library Team
+              </h3>
             </div>
 
-            {/* Right Column: Ask Librarian */}
-            <div className="flex flex-col justify-between h-full">
-              {/* Form Card */}
-              <div className="bg-white border border-gray-200 rounded-3xl p-4 sm:p-5 shadow-[0_4px_25px_rgba(0,0,0,0.02)] flex-grow flex flex-col justify-center">
-                <div>
-                  {/* Orange Accent Line */}
-                  <div className="w-12 h-1 bg-[#f37021] mb-2" />
+            {/* Grid for Tabs & Details */}
+            <div className="grid grid-cols-1 md:grid-cols-[190px_1fr] gap-6 items-stretch w-full">
+              {/* Vertical Tabs (Left - OUTSIDE the white box) */}
+              <div className="flex flex-col gap-2.5 justify-start pt-1.5">
+                {TEAM_DATA.map((member) => (
+                  <button
+                    key={member.id}
+                    type="button"
+                    onClick={() => setActiveTab(member.id)}
+                    className={`text-left text-xs font-bold py-2.5 px-4 transition-all duration-200 w-fit ${activeTab === member.id
+                        ? "bg-white text-[#f37021] rounded-lg shadow-sm border border-gray-100/50"
+                        : "text-[#052356]/60 hover:text-[#052356] bg-transparent"
+                      }`}
+                  >
+                    {member.role}
+                  </button>
+                ))}
+              </div>
 
-                  {/* Title inside card */}
-                  <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight mb-5`}>
-                    Ask Librarian
-                  </h3>
-                </div>
-
-                <form className="flex-grow flex flex-col justify-between mt-4" onSubmit={(e) => e.preventDefault()}>
-                  <div className="space-y-3.5">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                      <div>
-                        <label className="block text-[11px] font-bold text-[#052356] mb-0.5">Name</label>
-                        <input
-                          type="text"
-                          placeholder="Max. 30 characters"
-                          maxLength={30}
-                          className="w-full bg-transparent border-b border-gray-200 focus:border-[#f37021] border-t-0 border-l-0 border-r-0 rounded-none px-0 py-1 text-xs text-gray-600 focus:outline-none focus:ring-0 transition-all font-semibold placeholder-gray-400"
-                        />
+              {/* Details Panel (Right - INSIDE the white box) */}
+              <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.02)] flex flex-col justify-center">
+                {(() => {
+                  const activeMember = TEAM_DATA.find((m) => m.id === activeTab) || TEAM_DATA[0];
+                  return (
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-1">
+                      <div className="border-b md:border-b-0 md:border-r border-gray-100 pb-3 md:pb-0 md:pr-6 text-left">
+                        <span className="block text-xs font-bold text-[#052356] mb-1.5 uppercase tracking-wider">Name</span>
+                        <span className="text-sm sm:text-base font-semibold text-gray-700">{activeMember.name}</span>
                       </div>
-                      <div>
-                        <label className="block text-[11px] font-bold text-[#052356] mb-0.5">Contact number</label>
-                        <input
-                          type="text"
-                          placeholder="Max. 10 characters"
-                          maxLength={10}
-                          className="w-full bg-transparent border-b border-gray-200 focus:border-[#f37021] border-t-0 border-l-0 border-r-0 rounded-none px-0 py-1 text-xs text-gray-600 focus:outline-none focus:ring-0 transition-all font-semibold placeholder-gray-400"
-                        />
+                      <div className="border-b md:border-b-0 md:border-r border-gray-100 pb-3 md:pb-0 md:pr-6 text-left">
+                        <span className="block text-xs font-bold text-[#052356] mb-1.5 uppercase tracking-wider">Contact Number</span>
+                        <span className="text-sm sm:text-base font-semibold text-gray-700">{activeMember.contact}</span>
                       </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                      <div>
-                        <label className="block text-[11px] font-bold text-[#052356] mb-0.5">Email-ID</label>
-                        <input
-                          type="email"
-                          placeholder="Input your email"
-                          className="w-full bg-transparent border-b border-gray-200 focus:border-[#f37021] border-t-0 border-l-0 border-r-0 rounded-none px-0 py-1 text-xs text-gray-600 focus:outline-none focus:ring-0 transition-all font-semibold placeholder-gray-400"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-[11px] font-bold text-[#052356] mb-0.5">Library Question</label>
-                        <div className="relative">
-                          <select className="w-full bg-transparent border-b border-gray-200 focus:border-[#f37021] border-t-0 border-l-0 border-r-0 rounded-none px-0 py-1 text-xs text-gray-600 focus:outline-none focus:ring-0 transition-all appearance-none cursor-pointer font-semibold placeholder-gray-400">
-                            <option>Choose question</option>
-                            <option>Membership Inquiries</option>
-                            <option>Book/Manuscript Availability</option>
-                            <option>Archives Access SOP</option>
-                            <option>Other Inquiries</option>
-                          </select>
-                          <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[#f37021]">
-                            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3.5}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                            </svg>
-                          </div>
-                        </div>
+                      <div className="text-left">
+                        <span className="block text-xs font-bold text-[#052356] mb-1.5 uppercase tracking-wider">Email ID</span>
+                        <span className="text-sm sm:text-base font-semibold text-gray-700 break-all">{activeMember.email}</span>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="flex-grow flex flex-col mt-4 min-h-[60px]">
-                    <label className="block text-[11px] font-bold text-[#052356] mb-0.5">Message</label>
-                    <textarea
-                      placeholder="Input your message"
-                      className="w-full flex-grow bg-[#f4f4f4] border border-transparent rounded-xl px-3.5 py-2 text-xs text-gray-600 focus:outline-none focus:bg-[#ebebeb] transition-all font-semibold placeholder-gray-400 resize-none"
-                    />
-                  </div>
-
-                  <div className="pt-3 flex justify-start">
-                    <button
-                      type="submit"
-                      className="w-fit px-6 py-2 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-xs tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
-                    >
-                      <span>Submit Query</span>
-                    </button>
-                  </div>
-                </form>
+                  );
+                })()}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -375,61 +312,64 @@ export default function LibraryAboutContent() {
           </div>
 
           {/* Photos Carousel/Row */}
-          <div className="relative -mx-4 sm:-mx-10 lg:-mx-14 px-4 sm:px-10 lg:px-14">
+          <div 
+            onMouseEnter={() => setIsPausedGallery(true)}
+            onMouseLeave={() => setIsPausedGallery(false)}
+            className="relative -mx-4 sm:-mx-10 lg:-mx-14 px-4 sm:px-10 lg:px-14"
+          >
             {/* Left Chevron */}
-            {galleryIndex > 0 && (
-              <button
-                type="button"
-                onClick={handlePrevGallery}
-                className="absolute left-1 sm:left-2 lg:left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Previous image"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={handlePrevGallery}
+              className="absolute left-1 sm:left-2 lg:left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Previous image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
 
             {/* Right Chevron */}
-            {galleryIndex < GALLERY_IMAGES.length - galleryVisible && (
-              <button
-                type="button"
-                onClick={handleNextGallery}
-                className="absolute right-1 sm:right-2 lg:right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Next image"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={handleNextGallery}
+              className="absolute right-1 sm:right-2 lg:right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Next image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
 
             {/* Inner Images Row */}
             <div className="w-full overflow-hidden">
               <div
-                className="flex transition-transform duration-300 ease-in-out w-full"
+                className={`flex w-full ${galleryTransitionEnabled ? 'transition-transform duration-300 ease-in-out' : ''}`}
                 style={{
                   transform: `translateX(${galleryTransformX})`,
                   gap: `${galleryGap}px`,
                 }}
               >
-                {GALLERY_IMAGES.map((img, idx) => (
+                {EXTENDED_GALLERY_IMAGES.map((img, idx) => (
                   <div
-                    key={idx}
+                    key={`${img.src}-${idx}`}
                     style={{
                       width: `calc((100% - ${(galleryVisible - 1) * galleryGap}px) / ${galleryVisible})`,
                     }}
-                    className="flex-shrink-0 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md bg-gray-100 hover:shadow-lg transition-shadow duration-300"
+                    className="flex-shrink-0 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md bg-gray-100 hover:shadow-lg transition-shadow duration-300 group"
                   >
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-5">
-                      <span className="text-white text-xs sm:text-sm font-bold tracking-wide">{img.alt}</span>
+                    {/* Caption directly on image in white color */}
+                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10">
+                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                        {img.alt}
+                      </p>
                     </div>
                   </div>
                 ))}
