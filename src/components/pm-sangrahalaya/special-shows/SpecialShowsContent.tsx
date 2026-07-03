@@ -148,9 +148,8 @@ export default function SpecialShowsContent() {
       <section className="w-full py-12 lg:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
             {/* Left Column: Sidebar Menu */}
-            <div className="col-span-1 lg:col-span-4 flex flex-col select-none w-full gap-1">
+            <div className="col-span-1 lg:col-span-5 flex flex-col select-none w-full gap-1">
               {filteredShows.length > 0 ? (
                 filteredShows.map((item) => {
                   const isActive = item.id === activeId;
@@ -183,58 +182,45 @@ export default function SpecialShowsContent() {
             </div>
 
             {/* Right Column: Active Show Display Card */}
-            <div className="col-span-1 lg:col-span-8 flex flex-col items-center justify-center relative w-full">
+            <div className="col-span-1 lg:col-span-7 flex flex-col items-start justify-center relative w-full">
               {filteredShows.length > 0 ? (
-                <div className="relative w-full flex items-center justify-between gap-4">
-                  {/* Left Arrow Button */}
-                  <button
-                    onClick={handlePrev}
-                    className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
-                    aria-label="Previous show"
-                  >
-                    <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
-                  </button>
+                <div className="w-full flex flex-col items-start gap-4">
+                  {/* Show Image Display */}
+                  <div className="relative w-full aspect-[16/10] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
+                    <Image
+                      src={activeShow.image}
+                      alt={activeShow.title}
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 100vw, 800px"
+                      className="object-cover"
+                    />
 
-                  {/* Show Display Box */}
-                  <div className="flex-1 flex flex-col items-start text-left gap-4">
-                    {/* Show Heading Above Image */}
-                    <div className="w-full px-2">
-                      <h2 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356]`}>
-                        {activeShow.title}
-                      </h2>
-                    </div>
+                    {/* Left Arrow Button */}
+                    <button
+                      onClick={handlePrev}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
+                      aria-label="Previous show"
+                    >
+                      <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
+                    </button>
 
-                    {/* Image Container with Description Overlay */}
-                    <div className="relative w-full aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50">
-                      <Image
-                        src={activeShow.image}
-                        alt={activeShow.title}
-                        fill
-                        priority
-                        sizes="(max-width: 1024px) 100vw, 800px"
-                        className="object-cover"
-                      />
-                      
-                      {/* Gradient Overlay at Bottom */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none" />
-
-                      {/* Description Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex flex-col items-start text-left">
-                        <p className="text-white/95 text-xs sm:text-[14px] leading-relaxed max-w-xl font-medium">
-                          {activeShow.description}
-                        </p>
-                      </div>
-                    </div>
+                    {/* Right Arrow Button */}
+                    <button
+                      onClick={handleNext}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
+                      aria-label="Next show"
+                    >
+                      <ChevronRight className="w-5 h-5 stroke-[2.5]" />
+                    </button>
                   </div>
 
-                  {/* Right Arrow Button */}
-                  <button
-                    onClick={handleNext}
-                    className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
-                    aria-label="Next show"
-                  >
-                    <ChevronRight className="w-5 h-5 stroke-[2.5]" />
-                  </button>
+                  {/* Description below the image */}
+                  <div className="w-full text-left">
+                    <p className="text-[#052356]/85 text-xs sm:text-[14px] md:text-[15px] leading-relaxed text-justify font-medium">
+                      {activeShow.description}
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <div className="w-full aspect-[16/10] rounded-3xl bg-slate-50 flex items-center justify-center border border-dashed border-slate-200">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import { Spectral } from 'next/font/google';
 import { ChevronDown, ArrowRight, Play } from 'lucide-react';
@@ -46,7 +46,7 @@ const ALBUMS_DATA = [
     title: 'Nehru Planetarium Dome Celestial Show',
     category: 'Planetarium',
     date: '22/07/2026',
-    image: '/nehru-planetarium.png',
+    image: '/planetarium-home.jpg',
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const IMAGES_DATA = [
     title: 'Planetarium Projection System',
     category: 'Planetarium',
     date: '15/08/2026',
-    image: '/nehru-planetarium.png',
+    image: '/planetarium-home.jpg',
   },
   {
     id: 104,
@@ -113,7 +113,7 @@ const IMAGES_DATA = [
     title: 'Student Astronomy Camp Workshop',
     category: 'Planetarium',
     date: '10/07/2026',
-    image: '/nehru-planetarium.png',
+    image: '/planetarium-home.jpg',
   },
   {
     id: 109,
@@ -139,7 +139,7 @@ const VIDEOS_DATA = [
     title: 'Astronomy Day Celestial Dome Highlights',
     category: 'Planetarium',
     date: '10/08/2026',
-    image: '/nehru-planetarium.png',
+    image: '/01.jpg',
     duration: '5:12',
   },
   {
@@ -179,9 +179,15 @@ const VIDEOS_DATA = [
 export default function PhotoGalleryContent() {
   const [activeTab, setActiveTab] = useState<'albums' | 'images' | 'videos'>('albums');
   const [sortBy, setSortBy] = useState<'featured' | 'recent' | 'oldest'>('featured');
+  const [currentPage, setCurrentPage] = useState(1);
 
-  // Parse DD/MM/YYYY into timestamp
-  const parseDateStr = (dateStr: string) => {
+  // Reset pagination on filter or tab change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeTab, sortBy]);
+
+  // Convert "DD/MM/YYYY" to timestamp
+  const parseDateStr = (dateStr: string): number => {
     const [day, month, year] = dateStr.split('/').map(Number);
     return new Date(year, month - 1, day).getTime();
   };
@@ -211,6 +217,15 @@ export default function PhotoGalleryContent() {
       return sortBy === 'recent' ? timeB - timeA : timeA - timeB;
     });
   }, [activeDataset, sortBy]);
+
+  const ITEMS_PER_PAGE = 6;
+  const totalPages = Math.ceil(processedData.length / ITEMS_PER_PAGE);
+
+  // Get current page subset
+  const paginatedData = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return processedData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [processedData, currentPage]);
 
   return (
     <div className="w-full flex flex-col bg-white">
@@ -329,7 +344,7 @@ export default function PhotoGalleryContent() {
 
           {/* Photo Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {processedData.map((item) => (
+            {paginatedData.map((item) => (
               <div 
                 key={item.id} 
                 className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden group shadow-sm border border-gray-100 bg-[#f4f4f4] cursor-pointer"
@@ -373,23 +388,41 @@ export default function PhotoGalleryContent() {
           </div>
 
           {/* Centered Pagination (matches style) */}
-          <div className="flex items-center justify-center gap-4 text-xs font-bold text-[#f37021] select-none mt-4">
-            <button className="hover:underline opacity-30 cursor-not-allowed" disabled>
-              &lt;
-            </button>
-            <button className="w-7 h-7 rounded flex items-center justify-center bg-[#f37021] text-white">
-              1
-            </button>
-            <button className="w-7 h-7 rounded flex items-center justify-center text-[#052356] hover:bg-slate-50">
-              2
-            </button>
-            <button className="w-7 h-7 rounded flex items-center justify-center text-[#052356] hover:bg-slate-50">
-              3
-            </button>
-            <button className="hover:underline cursor-pointer">
-              Next &gt;
-            </button>
-          </div>
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-4 text-xs font-bold text-[#f37021] select-none mt-4">
+              <button
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                className={`hover:underline cursor-pointer ${currentPage === 1 ? "opacity-30 cursor-not-allowed" : ""}`}
+                disabled={currentPage === 1}
+              >
+                &lt; Prev
+              </button>
+              {Array.from({ length: totalPages }).map((_, idx) => {
+                const pageNum = idx + 1;
+                const isActive = pageNum === currentPage;
+                return (
+                  <button
+                    key={pageNum}
+                    onClick={() => setCurrentPage(pageNum)}
+                    className={`w-7 h-7 rounded flex items-center justify-center transition-colors cursor-pointer ${
+                      isActive
+                        ? "bg-[#f37021] text-white"
+                        : "text-[#052356] hover:bg-slate-50"
+                    }`}
+                  >
+                    {pageNum}
+                  </button>
+                );
+              })}
+              <button
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                className={`hover:underline cursor-pointer ${currentPage === totalPages ? "opacity-30 cursor-not-allowed" : ""}`}
+                disabled={currentPage === totalPages}
+              >
+                Next &gt;
+              </button>
+            </div>
+          )}
 
         </div>
       </section>

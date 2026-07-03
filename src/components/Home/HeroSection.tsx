@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ const SLIDES = [
     cta: { label: "Visit Library", href: "/library" },
   },
   {
-    src: "/hero section/nehru-planetarium.JPG",
+    src: "/hero section/planet.jpg",
     title: "Nehru Planetarium",
     subtitle: "Discover the wonders of astronomy and the celestial science dome",
     cta: { label: "Book a Show", href: "/about-pmml/nehru-planetarium" },
@@ -146,6 +147,25 @@ export default function HeroSection() {
           />
         ))}
       </div>
+
+      {/* ── Corner Navigation Arrows ── */}
+      {/* Left Arrow Button */}
+      <button
+        onClick={goPrev}
+        className="absolute left-4 sm:left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/35 backdrop-blur-xs border border-white/10 text-white flex items-center justify-center hover:bg-[#f37021] hover:border-[#f37021] hover:scale-105 transition-all cursor-pointer z-30 shadow-lg active:scale-95"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
+      </button>
+
+      {/* Right Arrow Button */}
+      <button
+        onClick={goNext}
+        className="absolute right-4 sm:right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/35 backdrop-blur-xs border border-white/10 text-white flex items-center justify-center hover:bg-[#f37021] hover:border-[#f37021] hover:scale-105 transition-all cursor-pointer z-30 shadow-lg active:scale-95"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
+      </button>
 
       {/* ── Scroll To Explore (arrow in orange) ── */}
       <button

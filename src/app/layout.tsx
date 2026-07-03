@@ -30,30 +30,33 @@ export default function RootLayout({
     >
       <head />
       <body className="min-h-full flex flex-col">
-        <Script id="accessibility-patches" strategy="beforeInteractive">
-          {`
-            (function() {
-              // Patch SVGElement.prototype.innerText to avoid crashes in the accessibility widget
-              if (typeof SVGElement !== "undefined" && !("innerText" in SVGElement.prototype)) {
-                Object.defineProperty(SVGElement.prototype, "innerText", {
-                  get() {
-                    return this.textContent || "";
-                  },
-                  configurable: true,
-                });
-              }
-              // Patch document.addEventListener for DOMContentLoaded to support dynamic script loading after page load
-              const originalAddEventListener = document.addEventListener;
-              document.addEventListener = function (type, listener, options) {
-                if (type === "DOMContentLoaded" && document.readyState !== "loading") {
-                  setTimeout(listener, 0);
-                } else {
-                  originalAddEventListener.call(this, type, listener, options);
+        <script
+          id="accessibility-patches"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Patch SVGElement.prototype.innerText to avoid crashes in the accessibility widget
+                if (typeof SVGElement !== "undefined" && !("innerText" in SVGElement.prototype)) {
+                  Object.defineProperty(SVGElement.prototype, "innerText", {
+                    get() {
+                      return this.textContent || "";
+                    },
+                    configurable: true,
+                  });
                 }
-              };
-            })();
-          `}
-        </Script>
+                // Patch document.addEventListener for DOMContentLoaded to support dynamic script loading after page load
+                const originalAddEventListener = document.addEventListener;
+                document.addEventListener = function (type, listener, options) {
+                  if (type === "DOMContentLoaded" && document.readyState !== "loading") {
+                    setTimeout(listener, 0);
+                  } else {
+                    originalAddEventListener.call(this, type, listener, options);
+                  }
+                };
+              })();
+            `
+          }}
+        />
         {children}
       </body>
     </html>

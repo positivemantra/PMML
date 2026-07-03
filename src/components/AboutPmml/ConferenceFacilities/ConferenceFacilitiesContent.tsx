@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Spectral } from 'next/font/google';
 import {
   Building2, Users, Clock, CreditCard, FileText, Shield,
-  Music, XCircle, Info, MapPin, Phone, Mail, ChevronDown, ChevronUp
+  Music, XCircle, Info, MapPin, Phone, Mail, ChevronDown, ChevronUp,
+  ChevronRight
 } from 'lucide-react';
 import HeroSection from '@/components/Home/HeroSection';
 
@@ -90,7 +91,33 @@ function SectionLabel({ text }: { text: string }) {
   );
 }
 
+const AUDITORIUM_IMAGES = [
+  {
+    src: '/audi-1.JPG',
+    label: 'Auditorium Main Stage',
+    alt: 'Auditorium View 1'
+  },
+  {
+    src: '/audi-2.JPG',
+    label: 'Auditorium Seating',
+    alt: 'Auditorium View 2'
+  }
+];
+
 export default function ConferenceFacilitiesContent() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % AUDITORIUM_IMAGES.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleNext = () => {
+    setActiveIndex((prev) => (prev + 1) % AUDITORIUM_IMAGES.length);
+  };
+
   return (
     <div className="w-full bg-white">
       <HeroSection />
@@ -159,18 +186,51 @@ export default function ConferenceFacilitiesContent() {
                 </div>
               </div>
 
-              {/* Image Card 1 */}
-              <div className="lg:col-span-1 relative h-[220px] lg:h-auto min-h-[220px] rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm">
-                <Image src="/audi-1.JPG" alt="Auditorium View 1" fill sizes="(max-w-7xl) 33vw, 100vw" className="object-cover hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#052356]/40 via-transparent to-transparent pointer-events-none" />
-                <p className="absolute bottom-3 left-4 text-white text-[11px] font-bold uppercase tracking-wider">Auditorium Main Stage</p>
-              </div>
+              {/* Carousel Image Card */}
+              <div className="lg:col-span-2 relative h-[260px] lg:h-auto min-h-[260px] rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm group">
+                {AUDITORIUM_IMAGES.map((img, idx) => (
+                  <div
+                    key={img.src}
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                      idx === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                    }`}
+                  >
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(max-w-7xl) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#052356]/50 via-transparent to-transparent pointer-events-none" />
+                    <p className="absolute bottom-3 left-4 text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider z-20">
+                      {img.label}
+                    </p>
+                  </div>
+                ))}
 
-              {/* Image Card 2 */}
-              <div className="lg:col-span-1 relative h-[220px] lg:h-auto min-h-[220px] rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm">
-                <Image src="/audi-2.JPG" alt="Auditorium View 2" fill sizes="(max-w-7xl) 33vw, 100vw" className="object-cover hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#052356]/40 via-transparent to-transparent pointer-events-none" />
-                <p className="absolute bottom-3 left-4 text-white text-[11px] font-bold uppercase tracking-wider">Auditorium Seating</p>
+                {/* Arrow at Right Side */}
+                <button
+                  onClick={handleNext}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 active:bg-white/60 text-white p-2.5 rounded-full backdrop-blur-md transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-md flex items-center justify-center cursor-pointer"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="w-5 h-5 stroke-[2.5]" />
+                </button>
+
+                {/* Indicators */}
+                <div className="absolute bottom-3.5 right-4 z-30 flex gap-1.5">
+                  {AUDITORIUM_IMAGES.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setActiveIndex(idx)}
+                      className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                        idx === activeIndex ? 'bg-white w-4' : 'bg-white/50'
+                      }`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
             <p className="text-[12px] text-gray-500 italic mt-2">* All the above rates are excluding 18% GST.</p>
@@ -238,7 +298,7 @@ export default function ConferenceFacilitiesContent() {
                 {/* Image */}
                 <div className="w-[180px] h-[150px] sm:w-[260px] sm:h-[200px] md:w-[280px] md:h-[210px] relative rounded-[20px] overflow-hidden border border-slate-200/80 shadow-md flex-shrink-0">
                   <Image 
-                    src="/dsc_0038.JPG" 
+                    src="/building 2/prastuti conference room.jpg" 
                     alt="Prastuti Room" 
                     fill 
                     sizes="(max-width: 640px) 180px, 280px"

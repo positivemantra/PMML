@@ -13,9 +13,11 @@ const spectral = Spectral({
 const GALLERY_IMAGES = [
   { src: "/NMM_2386.jpg", alt: "Archival Collections & Storage" },
   { src: "/DSC_0278.JPG", alt: "Historical Documents & Letters" },
-  { src: "/DSC_0561.jpg", alt: "Rare Preserved Manuscripts" },
+  { src: "/DSC_0561.JPG", alt: "Rare Preserved Manuscripts" },
   { src: "/DSC_4568.jpg", alt: "Archival Research Section" },
 ];
+
+const EXTENDED_GALLERY_IMAGES = [...GALLERY_IMAGES, ...GALLERY_IMAGES.slice(0, 3)];
 
 const DOWNLOADS = [
   {
@@ -66,6 +68,8 @@ const CONTACT_TABS = [
 export default function ArchivesAboutContent() {
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [galleryVisible, setGalleryVisible] = useState(3);
+  const [isPausedGallery, setIsPausedGallery] = useState(false);
+  const [galleryTransitionEnabled, setGalleryTransitionEnabled] = useState(true);
   const [activeContactTab, setActiveContactTab] = useState("reading-room");
   const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
 
@@ -80,16 +84,52 @@ export default function ArchivesAboutContent() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Infinite Gallery Carousel auto-moving logic
+  useEffect(() => {
+    if (isPausedGallery) return;
+    const interval = setInterval(() => {
+      setGalleryTransitionEnabled(true);
+      setGalleryIndex((prev) => prev + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isPausedGallery]);
+
+  useEffect(() => {
+    if (galleryIndex === GALLERY_IMAGES.length) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(false);
+        setGalleryIndex(0);
+      }, 300); // Wait for transition duration (300ms)
+      return () => clearTimeout(timer);
+    }
+  }, [galleryIndex]);
+
+  useEffect(() => {
+    if (!galleryTransitionEnabled) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [galleryTransitionEnabled]);
+
   const handlePrevGallery = () => {
-    if (galleryIndex > 0) {
+    if (galleryIndex === 0) {
+      setGalleryTransitionEnabled(false);
+      setGalleryIndex(GALLERY_IMAGES.length);
+      setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+        setGalleryIndex(GALLERY_IMAGES.length - 1);
+      }, 50);
+    } else {
+      setGalleryTransitionEnabled(true);
       setGalleryIndex((prev) => prev - 1);
     }
   };
 
   const handleNextGallery = () => {
-    if (galleryIndex < GALLERY_IMAGES.length - galleryVisible) {
-      setGalleryIndex((prev) => prev + 1);
-    }
+    setGalleryTransitionEnabled(true);
+    setGalleryIndex((prev) => prev + 1);
   };
 
   const galleryGap = 20;
@@ -266,59 +306,65 @@ export default function ArchivesAboutContent() {
           </div>
 
           {/* Photos Carousel/Row */}
-          <div className="relative -mx-4 sm:-mx-10 lg:-mx-14 px-4 sm:px-10 lg:px-14">
+          <div 
+            onMouseEnter={() => setIsPausedGallery(true)}
+            onMouseLeave={() => setIsPausedGallery(false)}
+            className="relative -mx-4 sm:-mx-10 lg:-mx-14 px-4 sm:px-10 lg:px-14"
+          >
             {/* Left Chevron */}
-            {galleryIndex > 0 && (
-              <button
-                type="button"
-                onClick={handlePrevGallery}
-                className="absolute left-1 sm:left-2 lg:left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Previous image"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={handlePrevGallery}
+              className="absolute left-1 sm:left-2 lg:left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Previous image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
 
             {/* Right Chevron */}
-            {galleryIndex < GALLERY_IMAGES.length - galleryVisible && (
-              <button
-                type="button"
-                onClick={handleNextGallery}
-                className="absolute right-1 sm:right-2 lg:right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
-                aria-label="Next image"
-              >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={handleNextGallery}
+              className="absolute right-1 sm:right-2 lg:right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Next image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
 
             {/* Inner Images Row */}
             <div className="w-full overflow-hidden">
               <div
-                className="flex transition-transform duration-300 ease-in-out w-full"
+                className={`flex w-full ${galleryTransitionEnabled ? 'transition-transform duration-300 ease-in-out' : ''}`}
                 style={{
                   transform: `translateX(${galleryTransformX})`,
                   gap: `${galleryGap}px`,
                 }}
               >
-                {GALLERY_IMAGES.map((img, idx) => (
+                {EXTENDED_GALLERY_IMAGES.map((img, idx) => (
                   <div
-                    key={idx}
+                    key={`${img.src}-${idx}`}
                     style={{
                       width: `calc((100% - ${(galleryVisible - 1) * galleryGap}px) / ${galleryVisible})`,
                     }}
-                    className="flex-shrink-0 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md bg-gray-100 hover:shadow-lg transition-shadow duration-300"
+                    className="flex-shrink-0 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md bg-gray-100 hover:shadow-lg transition-shadow duration-300 group"
                   >
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                      className="object-cover hover:scale-105 transition-transform duration-500"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
+                    {/* Caption directly on image in white color */}
+                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10">
+                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                        {img.alt}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>

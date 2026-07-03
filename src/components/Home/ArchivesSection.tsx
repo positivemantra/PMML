@@ -30,7 +30,7 @@ const IMAGES = [
     alt: 'PMML Archives Records',
   },
   {
-    src: '/DSC_0561.jpg',
+    src: '/DSC_0561.JPG',
     alt: 'PMML Archives Records',
   },
   {

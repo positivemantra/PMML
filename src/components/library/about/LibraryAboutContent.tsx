@@ -162,7 +162,7 @@ export default function LibraryAboutContent() {
             {/* Left Image column */}
             <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
               <Image
-                src="/DSC_3203 copy.JPG"
+                src="/DSC_3203 copy.jpg"
                 alt="Research Reading Room inside the Library"
                 fill
                 sizes="(max-w-1024px) 100vw, 550px"

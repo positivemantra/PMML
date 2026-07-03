@@ -49,7 +49,7 @@ export default function InaugurationCeremonyContent() {
             </div>
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
               <Image
-                src="/inauguration of museum/EY2B4281.JPG"
+                src="/Inauguration of Museum/EY2B4281.JPG"
                 alt="Honoring every Prime Minister"
                 fill
                 priority
@@ -67,7 +67,7 @@ export default function InaugurationCeremonyContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
               <Image
-                src="/inauguration of museum/EY2B4034 copy.jpg"
+                src="/Inauguration of Museum/EY2B4034 copy.jpg"
                 alt="First ticket purchased by PM Modi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -108,7 +108,7 @@ export default function InaugurationCeremonyContent() {
             </div>
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
               <Image
-                src="/inauguration of museum/EY2B4177.JPG"
+                src="/Inauguration of Museum/EY2B4177.JPG"
                 alt="Architecture and Venue"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -324,9 +324,9 @@ export default function InaugurationCeremonyContent() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { src: "/inauguration of museum/EY2B4034 copy.jpg", caption: "Prime Minister purchasing the first ticket at the counter." },
-              { src: "/inauguration of museum/EY2B4177.JPG", caption: "Hon’ble PM inspecting the newly designed corridors of Block II." },
-              { src: "/inauguration of museum/EY2B4281.JPG", caption: "PM Narendra Modi addressing the delegates at the ceremony." }
+              { src: "/Inauguration of Museum/EY2B4034 copy.jpg", caption: "Prime Minister purchasing the first ticket at the counter." },
+              { src: "/Inauguration of Museum/EY2B4177.JPG", caption: "Hon’ble PM inspecting the newly designed corridors of Block II." },
+              { src: "/Inauguration of Museum/EY2B4281.JPG", caption: "PM Narendra Modi addressing the delegates at the ceremony." }
             ].map((photo, idx) => (
               <div 
                 key={idx} 

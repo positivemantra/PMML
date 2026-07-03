@@ -65,7 +65,7 @@ const NEHRU_PLANETARIUM_ITEMS = [
   {
     title: 'Aryabhata Gallery',
     description: 'Explore India\'s rich astronomical heritage and achievements in modern space science at the Aryabhata Gallery. Interactive exhibits and digital installations trace India\'s journey from ancient astronomical traditions to contemporary space missions, celebrating the legacy of great Indian astronomers.',
-    image: '/dsc_0038.JPG',
+    image: '/DSC_0038.jpg',
     alt: 'Aryabhata Gallery'
   },
   {
@@ -87,7 +87,7 @@ const RESEARCH_TABS = [
   {
     title: 'Talks & Seminars',
     description: 'As a centre of academic excellence, PMML organizes regular academic talks, lectures, and seminars to showcase and debate elements of modern and contemporary Indian history. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: '/research-publication.png',
+    image: '/room.JPG',
     alt: 'Talks and Seminars'
   },
   {
@@ -99,7 +99,7 @@ const RESEARCH_TABS = [
   {
     title: 'CCS',
     description: 'The Centre for Contemporary Studies (CCS) was set up as a new unit of PMML in 1990 to provide an active forum for fellowship research and contemporary historical studies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: '/ccs.png',
+    image: '/hero section/ccs-building.jpg',
     alt: 'Centre for Contemporary Studies'
   }
 ];

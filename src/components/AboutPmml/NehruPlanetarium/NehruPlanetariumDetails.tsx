@@ -47,9 +47,9 @@ const OFFERINGS: Offering[] = [
 const EXTENDED_OFFERINGS = [...OFFERINGS, ...OFFERINGS.slice(0, 3)];
 
 const GALLERY_IMAGES = [
-  { src: "/hero section/nehru-planetarium.JPG", alt: "Nehru Planetarium Exhibition Area" },
+  { src: "/hero section/planet.jpg", alt: "Nehru Planetarium Exhibition Area" },
   { src: "/planetarium-home.jpg", alt: "Full Dome Sky Theatre" },
-  { src: "/01.JPG", alt: "Planetarium Building Exterior" },
+  { src: "/01.jpg", alt: "Planetarium Building Exterior" },
   { src: "/08.jpg", alt: "Light and Sound Show" },
   { src: "/05.jpg", alt: "Bhavishya Exhibition" }
 ];
@@ -66,44 +66,7 @@ export default function NehruPlanetariumDetails() {
   const [isPausedGallery, setIsPausedGallery] = useState(false);
   const [galleryTransitionEnabled, setGalleryTransitionEnabled] = useState(true);
 
-  const [visitors, setVisitors] = useState(1);
-  const [isEditing, setIsEditing] = useState(false);
-  const [tempValue, setTempValue] = useState("1");
 
-  const increment = () => {
-    setVisitors((prev) => prev + 1);
-  };
-
-  const decrement = () => {
-    setVisitors((prev) => Math.max(1, prev - 1));
-  };
-
-  const handleNumberClick = () => {
-    setTempValue(visitors.toString());
-    setIsEditing(true);
-  };
-
-  const handleInputBlur = () => {
-    setIsEditing(false);
-    const parsed = parseInt(tempValue, 10);
-    if (!isNaN(parsed) && parsed >= 1) {
-      setVisitors(parsed);
-    }
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      handleInputBlur();
-    }
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    // Only allow positive integers
-    const val = e.target.value;
-    if (val === "" || /^[0-9]+$/.test(val)) {
-      setTempValue(val);
-    }
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -235,7 +198,7 @@ export default function NehruPlanetariumDetails() {
           {/* Left Column: Image */}
           <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full">
             <Image
-              src="/DSC_0038.JPG"
+              src="/01.jpg"
               alt="Nehru Planetarium Exhibition Area"
               fill
               sizes="(max-width: 1024px) 100vw, 550px"
@@ -389,7 +352,7 @@ export default function NehruPlanetariumDetails() {
             </div>
 
             <div className="flex flex-col gap-4 text-left w-full">
-              {[1, 2, 3].map((_, i) => (
+              {[1, 2].map((_, i) => (
                 <div key={i} className="bg-[#f4f4f4] rounded-[8px] px-5 py-3.5 flex flex-col text-left transition-all duration-200">
                   <span className="block text-[11px] font-semibold text-gray-400 pb-2 border-b border-gray-200/80">20 May 2026</span>
                   <h4 className="text-sm sm:text-base font-bold text-[#052356] py-2.5 border-b border-gray-200/80 hover:text-[#f37021] transition-colors cursor-pointer leading-snug">
@@ -423,78 +386,7 @@ export default function NehruPlanetariumDetails() {
                 <span>Open: Tuesday to Sunday (Closed on Mondays)</span>
               </div>
 
-              {/* Form Input fields */}
-              <div className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1.5">Select Date</label>
-                    <input 
-                      type="date" 
-                      className="w-full bg-white border border-gray-200 rounded-xl px-3.5 py-2.5 text-xs text-gray-600 focus:outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021] transition-all cursor-pointer font-semibold" 
-                      defaultValue="2026-06-23" 
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1.5">No. of Visitors</label>
-                    <div className="flex items-center justify-between bg-white border border-gray-200 rounded-xl px-2 py-1.5 w-full h-[38px] transition-all focus-within:border-[#f37021] focus-within:ring-1 focus-within:ring-[#f37021]">
-                      <button
-                        type="button"
-                        onClick={decrement}
-                        className="w-7 h-7 rounded-lg flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 active:scale-90 transition-all font-bold text-base select-none"
-                      >
-                        -
-                      </button>
-                      
-                      {isEditing ? (
-                        <input
-                          type="text"
-                          pattern="[0-9]*"
-                          inputMode="numeric"
-                          autoFocus
-                          value={tempValue}
-                          onChange={handleInputChange}
-                          onBlur={handleInputBlur}
-                          onKeyDown={handleKeyDown}
-                          className="w-12 text-center bg-transparent border-none outline-none focus:outline-none focus:ring-0 text-xs font-semibold text-gray-600 p-0"
-                        />
-                      ) : (
-                        <span
-                          onClick={handleNumberClick}
-                          className="w-12 text-center text-xs font-semibold text-gray-600 cursor-pointer hover:bg-gray-50 py-1 rounded transition-colors select-none"
-                          title="Click to edit number of visitors"
-                        >
-                          {visitors}
-                        </span>
-                      )}
-                      
-                      <button
-                        type="button"
-                        onClick={increment}
-                        className="w-7 h-7 rounded-lg flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-100 active:scale-90 transition-all font-bold text-base select-none"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
-                </div>
 
-                <div>
-                  <label className="block text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1.5">Show Type</label>
-                  <div className="relative">
-                    <select className="w-full bg-white border border-gray-200 rounded-xl px-3.5 py-2.5 text-xs text-gray-600 focus:outline-none focus:border-[#f37021] focus:ring-1 focus:ring-[#f37021] transition-all appearance-none cursor-pointer font-semibold">
-                      <option>3D Show - Hindi</option>
-                      <option>3D Show - English</option>
-                      <option>2D Show - Hindi</option>
-                      <option>2D Show - English</option>
-                    </select>
-                    <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               {/* Timings & Price summary details inside a grey strap */}
               <div className="bg-[#f4f4f4] rounded-[8px] p-4 space-y-2.5 w-full text-xs">
@@ -510,7 +402,9 @@ export default function NehruPlanetariumDetails() {
 
               {/* Booking CTA Button */}
               <a 
-                href="/plan-a-visit#book-tickets" 
+                href="https://www.google.com/search?q=bookmyshow+nehru+planetarium" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full py-3 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
               >
                 <span>Book Now</span>

@@ -34,7 +34,7 @@ export default function CcsAboutContent() {
             <div className="lg:col-span-5 w-full">
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
                 <Image
-                  src="/DSC_0598.jpg"
+                  src="/room.JPG"
                   alt="Academic Disk at Center for Contemporary Studies"
                   fill
                   sizes="(max-width: 1024px) 100vw, 550px"

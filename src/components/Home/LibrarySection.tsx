@@ -15,11 +15,11 @@ const IMAGES = [
     alt: 'PMML Library Main Hall',
   },
   {
-    src: '/DSC_3203 copy.JPG',
+    src: '/DSC_3203 copy.jpg',
     alt: 'PMML Library',
   },
   {
-    src: '/DSC_3206 copy.JPG',
+    src: '/DSC_3206 copy.jpg',
     alt: 'PMML Library',
   }
 ];

@@ -49,7 +49,7 @@ const EXHIBITS = [
     id: 'holobox',
     title: 'Ask The Visionary',
     description: 'Interactive holographic conversations with archival reconstructions of visionary leaders.',
-    image: '/anubhuti/ai holobox.jpg',
+    image: '/anubhuti/ai holobox.JPG',
     link: '/pm-sangrahalaya/anubhuti-zone',
   },
   {

@@ -11,11 +11,11 @@ const spectral = Spectral({
 
 const IMAGES = [
   {
-    src: '/DSC_4568.jpg',
+    src: '/hero section/ccs-building.jpg',
     alt: 'Center for Contemporary Studies Building',
   },
   {
-    src: '/ccs.png',
+    src: '/room.JPG',
     alt: 'Center for Contemporary Studies Seminar',
   },
   {

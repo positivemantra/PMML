@@ -76,7 +76,7 @@ const EXHIBITS: Exhibit[] = [
     title: "Ask the Visionary",
     menuLabel: "Ask the Visionary/AI Holobox",
     description: "Have interactive, real-time conversations with 3D holographic projections of former Prime Ministers.",
-    image: "/anubhuti/ai holobox.jpg"
+    image: "/anubhuti/ai holobox.JPG"
   }
 ];
 
@@ -189,20 +189,11 @@ export default function AnubhutiZoneContent() {
             </div>
 
             {/* Right Column: Active Exhibit Display Card */}
-            <div className="col-span-1 lg:col-span-8 flex flex-col items-center justify-center relative w-full">
+            <div className="col-span-1 lg:col-span-8 flex flex-col items-start justify-center relative w-full">
               {filteredExhibits.length > 0 ? (
-                <div className="relative w-full flex items-center justify-between gap-4">
-                  {/* Left Arrow Button */}
-                  <button
-                    onClick={handlePrev}
-                    className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
-                    aria-label="Previous exhibit"
-                  >
-                    <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
-                  </button>
-
+                <div className="w-full flex flex-col items-start gap-4">
                   {/* Exhibit Image Display */}
-                  <div className="relative flex-1 aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50">
+                  <div className="relative w-full aspect-[16/10] sm:aspect-[2/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
                     <Image
                       src={activeExhibit.image}
                       alt={activeExhibit.title}
@@ -211,29 +202,32 @@ export default function AnubhutiZoneContent() {
                       sizes="(max-width: 1024px) 100vw, 800px"
                       className="object-cover"
                     />
-                    
-                    {/* Gradient Overlay at Bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none" />
 
-                    {/* Text Overlay */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex flex-col items-start text-left">
-                      <h2 className={`${spectral.className} text-xl sm:text-2xl font-bold text-white mb-2`}>
-                        {activeExhibit.title}
-                      </h2>
-                      <p className="text-white/90 text-xs sm:text-[14px] leading-relaxed max-w-xl">
-                        {activeExhibit.description}
-                      </p>
-                    </div>
+                    {/* Left Arrow Button */}
+                    <button
+                      onClick={handlePrev}
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
+                      aria-label="Previous exhibit"
+                    >
+                      <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
+                    </button>
+
+                    {/* Right Arrow Button */}
+                    <button
+                      onClick={handleNext}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
+                      aria-label="Next exhibit"
+                    >
+                      <ChevronRight className="w-5 h-5 stroke-[2.5]" />
+                    </button>
                   </div>
 
-                  {/* Right Arrow Button */}
-                  <button
-                    onClick={handleNext}
-                    className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
-                    aria-label="Next exhibit"
-                  >
-                    <ChevronRight className="w-5 h-5 stroke-[2.5]" />
-                  </button>
+                  {/* Description below the image */}
+                  <div className="w-full text-left">
+                    <p className="text-[#052356]/85 text-xs sm:text-[14px] md:text-[15px] leading-relaxed text-justify font-medium">
+                      {activeExhibit.description}
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <div className="w-full aspect-[16/10] rounded-3xl bg-slate-50 flex items-center justify-center border border-dashed border-slate-200">
