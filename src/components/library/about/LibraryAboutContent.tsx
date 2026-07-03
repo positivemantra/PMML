@@ -54,9 +54,9 @@ const TEAM_DATA = [
   {
     id: "staff",
     role: "OFFICE STAFF",
-    name: "Smt. Sangeeta Sharma",
-    contact: "23013203",
-    email: "sharmasangeeta0212@gmail.com",
+    name: "Shri Vikas Kumar",
+    contact: "21411895",
+    email: "lio@nmml.gov.in",
   },
 ];
 

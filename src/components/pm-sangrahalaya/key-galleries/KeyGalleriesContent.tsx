@@ -447,6 +447,16 @@ export default function KeyGalleriesContent() {
   const activeGallery = GALLERIES.find((g) => g.id === activeId) || null;
   const activeIndex = filteredGalleries.findIndex((g) => g.id === activeId);
 
+  // Auto-change active gallery every 3 seconds
+  useEffect(() => {
+    if (filteredGalleries.length <= 1) return;
+    const timer = setTimeout(() => {
+      const nextIndex = (activeIndex + 1) % filteredGalleries.length;
+      setActiveId(filteredGalleries[nextIndex].id);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [activeId, filteredGalleries, activeIndex]);
+
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollContainerRef.current) return;
     setIsDragging(true);
@@ -555,6 +565,7 @@ export default function KeyGalleriesContent() {
               onClick={() => {
                 setBuilding(1);
                 setSearchQuery("");
+                setActiveId("nehru-gallery");
               }}
               className={`px-5 py-2 rounded-lg text-sm font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                 building === 1
@@ -568,6 +579,7 @@ export default function KeyGalleriesContent() {
               onClick={() => {
                 setBuilding(2);
                 setSearchQuery("");
+                setActiveId("pm-gallery-2");
               }}
               className={`px-5 py-2 rounded-lg text-sm font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                 building === 2
@@ -600,7 +612,7 @@ export default function KeyGalleriesContent() {
                     return (
                       <div key={category} className="flex flex-row lg:flex-col items-center lg:items-stretch gap-2 lg:gap-1 flex-shrink-0 lg:flex-shrink w-auto lg:w-full">
                         {/* Category Header */}
-                        <div className="text-[10px] lg:text-xs font-bold uppercase tracking-wider text-[#052356] bg-[#052356]/10 px-2.5 py-2 lg:py-2.5 lg:px-4 rounded-lg lg:mb-1.5 lg:mt-3 whitespace-nowrap select-none">
+                        <div className="text-xs sm:text-[13px] font-bold uppercase tracking-wider text-[#052356] bg-[#052356]/10 px-2.5 py-2 lg:py-2.5 lg:px-4 rounded-lg lg:mb-1.5 lg:mt-3 whitespace-nowrap select-none">
                           {category}
                         </div>
 
@@ -657,34 +669,32 @@ export default function KeyGalleriesContent() {
             <div className="col-span-1 lg:col-span-8 flex flex-col items-start w-full">
               {activeGallery ? (
                 <>
-                  <div className="relative w-full flex items-center justify-between gap-4">
+                  <div className="relative w-full aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
+                    {/* Gallery Image Display */}
+                    <div className="absolute inset-x-0 top-0 w-full overflow-hidden" style={{ height: "135%" }}>
+                      <Image
+                        src={activeGallery.image}
+                        alt={activeGallery.title}
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 800px"
+                        className="object-cover object-top"
+                      />
+                    </div>
+
                     {/* Left Arrow Button */}
                     <button
                       onClick={handlePrev}
-                      className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
                       aria-label="Previous gallery"
                     >
                       <ChevronLeft className="w-5 h-5 stroke-[2.5]" />
                     </button>
 
-                    {/* Gallery Image Display */}
-                    <div className="relative flex-1 aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50">
-                      <div className="absolute inset-x-0 top-0 w-full overflow-hidden" style={{ height: "135%" }}>
-                        <Image
-                          src={activeGallery.image}
-                          alt={activeGallery.title}
-                          fill
-                          priority
-                          sizes="(max-width: 1024px) 100vw, 800px"
-                          className="object-cover object-top"
-                        />
-                      </div>
-                    </div>
-
                     {/* Right Arrow Button */}
                     <button
                       onClick={handleNext}
-                      className="w-10 h-10 rounded-full border border-[#f37021] text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-colors cursor-pointer flex-shrink-0"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200/50 text-[#f37021] flex items-center justify-center hover:bg-[#f37021] hover:text-white transition-all cursor-pointer z-10 shadow-md active:scale-95"
                       aria-label="Next gallery"
                     >
                       <ChevronRight className="w-5 h-5 stroke-[2.5]" />

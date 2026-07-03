@@ -32,10 +32,11 @@ export default function InaugurationCeremonyContent() {
       </div>
 
       {/* ── Section 1: Overview & Vision ── */}
-      <section className="w-full py-16 sm:py-20 bg-white text-left">
+      <section className="w-full py-10 sm:py-12 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-7 flex flex-col">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-6 flex flex-col justify-center">
+              <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-4 leading-tight`}>
                 Honoring Every Prime Minister of India
               </h2>
@@ -46,7 +47,7 @@ export default function InaugurationCeremonyContent() {
                 The museum honors their unique leadership, vision, and contributions in rebuilding the nation, irrespective of their ideology or political tenure, aiming to inspire the younger generation to take pride in India's robust democratic journey.
               </p>
             </div>
-            <div className="lg:col-span-5 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/inauguration of museum/EY2B4281.JPG"
                 alt="Honoring every Prime Minister"
@@ -61,10 +62,10 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 2: Ceremony Highlights ── */}
-      <section className="w-full py-16 sm:py-20 bg-slate-50 text-left border-t border-b border-slate-100">
+      <section className="w-full py-10 sm:py-12 bg-slate-50 text-left border-t border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/inauguration of museum/EY2B4034 copy.jpg"
                 alt="First ticket purchased by PM Modi"
@@ -73,7 +74,8 @@ export default function InaugurationCeremonyContent() {
                 className="object-cover"
               />
             </div>
-            <div className="lg:col-span-7 flex flex-col lg:order-2">
+            <div className="lg:col-span-6 flex flex-col lg:order-2 justify-center">
+              <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-4 leading-tight`}>
                 The Historic Launch Ceremony
               </h2>
@@ -89,10 +91,11 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 3: The Venue & Design ── */}
-      <section className="w-full py-16 sm:py-20 bg-white text-left">
+      <section className="w-full py-10 sm:py-12 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-7 flex flex-col">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-6 flex flex-col justify-center">
+              <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-4 leading-tight`}>
                 Integration of Heritage and Modernity
               </h2>
@@ -103,7 +106,7 @@ export default function InaugurationCeremonyContent() {
                 It seamlessly integrates the renovated Block I (the former residence of Pandit Jawaharlal Nehru) and Block II (the new structure representing a rising India). The building design is inspired by the narrative of a growing India, constructed with sustainable guidelines ensuring no trees were felled.
               </p>
             </div>
-            <div className="lg:col-span-5 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/inauguration of museum/EY2B4177.JPG"
                 alt="Architecture and Venue"
@@ -117,10 +120,10 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 4: Dharma Chakra Logo ── */}
-      <section className="w-full py-16 sm:py-20 bg-slate-50 text-left border-t border-b border-slate-100">
+      <section className="w-full py-10 sm:py-12 bg-slate-50 text-left border-t border-b border-slate-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-5 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/building 2/reception.jpg"
                 alt="Ashoka Chakra Lobby"
@@ -129,7 +132,8 @@ export default function InaugurationCeremonyContent() {
                 className="object-cover"
               />
             </div>
-            <div className="lg:col-span-7 flex flex-col lg:order-2">
+            <div className="lg:col-span-6 flex flex-col lg:order-2 justify-center">
+              <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-4 leading-tight`}>
                 The Logo: Dharma Chakra
               </h2>
@@ -145,51 +149,88 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 5: Speeches & Highlights ── */}
-      <section className="w-full py-16 sm:py-20 bg-white text-left">
+      <section className="w-full py-10 sm:py-12 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
-            <div className="lg:col-span-7 aspect-video rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 relative">
-              <iframe
-                src="https://www.youtube.com/embed/1F42P7n1a_k"
-                title="Speech by Shri Narendra Modi, Hon'ble Prime Minister"
-                className="w-full h-full border-none"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
+            <div className="lg:col-span-6 aspect-video rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 relative group">
+              <a
+                href="https://youtu.be/5abCdIvOs0Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full h-full block relative"
+              >
+                <img
+                  src="https://img.youtube.com/vi/5abCdIvOs0Q/maxresdefault.jpg"
+                  alt="Speech by Shri Narendra Modi, Hon'ble Prime Minister"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://img.youtube.com/vi/5abCdIvOs0Q/hqdefault.jpg";
+                  }}
+                />
+                <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 flex items-center justify-center transition-colors duration-300">
+                  <div className="w-16 h-16 bg-[#f37021] rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110">
+                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+
+              </a>
             </div>
-            <div className="lg:col-span-5 flex flex-col">
-              <h3 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356] mb-4`}>
-                Hon’ble Shri Narendra Modi
-              </h3>
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="w-12 h-1 bg-[#f37021] mb-4" />
+              <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-4 leading-tight`}>
+                Prime Minister's Speech
+              </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 text-justify">
                 Hon'ble Prime Minister Shri Narendra Modi delivered an inspiring speech celebrating the journey of India and the flag bearers of the nation at the Inauguration Ceremony of the Pradhanmantri Sangrahalaya.
               </p>
               <button
                 onClick={() => setIsSpeechModalOpen(true)}
-                className="inline-flex items-center justify-center bg-[#052356] hover:bg-[#f37021] text-white hover:text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-lg transition-all duration-300 w-fit cursor-pointer animate-pulse border-none"
+                className="inline-flex items-center gap-2 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-[11px] sm:text-[12px] tracking-wider uppercase rounded-lg px-5 py-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none outline-none border-none w-fit"
               >
-                Read More
+                <span>Read More</span>
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
               </button>
             </div>
           </div>
 
           {/* Key Highlights (3 columns) */}
-          <div className="border-t border-slate-100 pt-16">
-            <h4 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356] mb-8`}>
-              Key Highlights & Speeches
-            </h4>
+          <div className="border-t border-slate-100 pt-10">
+            <div className="w-12 h-1 bg-[#f37021] mb-4" />
+            <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] mb-8 leading-tight`}>
+              Key Highlights
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Chairman's Speech */}
               <div className="flex flex-col">
-                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4">
-                  <iframe
-                    src="https://www.youtube.com/embed/1F42P7n1a_k"
-                    title="Chairman's Speech"
-                    className="w-full h-full border-none"
-                    allowFullScreen
-                  />
+                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4 relative group">
+                  <a
+                    href="https://youtu.be/ZOIf6dQGrw0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full h-full block relative"
+                  >
+                    <img
+                      src="https://img.youtube.com/vi/ZOIf6dQGrw0/maxresdefault.jpg"
+                      alt="Chairman's Speech"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "https://img.youtube.com/vi/ZOIf6dQGrw0/hqdefault.jpg";
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 flex items-center justify-center transition-colors duration-300">
+                      <div className="w-12 h-12 bg-[#f37021] rounded-full flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110">
+                        <svg className="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <h5 className="text-[#052356] text-xs font-extrabold uppercase tracking-wider mb-1">
                   Chairman's Speech
@@ -201,13 +242,29 @@ export default function InaugurationCeremonyContent() {
 
               {/* Minister of Culture's Speech */}
               <div className="flex flex-col">
-                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4">
-                  <iframe
-                    src="https://www.youtube.com/embed/1F42P7n1a_k"
-                    title="Minister of Culture's Speech"
-                    className="w-full h-full border-none"
-                    allowFullScreen
-                  />
+                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4 relative group">
+                  <a
+                    href="https://youtu.be/SEjUTfHY9bc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full h-full block relative"
+                  >
+                    <img
+                      src="https://img.youtube.com/vi/SEjUTfHY9bc/maxresdefault.jpg"
+                      alt="Minister of Culture's Speech"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "https://img.youtube.com/vi/SEjUTfHY9bc/hqdefault.jpg";
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 flex items-center justify-center transition-colors duration-300">
+                      <div className="w-12 h-12 bg-[#f37021] rounded-full flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110">
+                        <svg className="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <h5 className="text-[#052356] text-xs font-extrabold uppercase tracking-wider mb-1">
                   Minister of Culture's Speech
@@ -219,13 +276,29 @@ export default function InaugurationCeremonyContent() {
 
               {/* Vice-Chairman's Speech */}
               <div className="flex flex-col">
-                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4">
-                  <iframe
-                    src="https://www.youtube.com/embed/1F42P7n1a_k"
-                    title="Vice-Chairman's Speech"
-                    className="w-full h-full border-none"
-                    allowFullScreen
-                  />
+                <div className="aspect-video rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 mb-4 relative group">
+                  <a
+                    href="https://youtu.be/4iodpC3GWTM"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full h-full block relative"
+                  >
+                    <img
+                      src="https://img.youtube.com/vi/4iodpC3GWTM/maxresdefault.jpg"
+                      alt="Vice-Chairman's Speech"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "https://img.youtube.com/vi/4iodpC3GWTM/hqdefault.jpg";
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 flex items-center justify-center transition-colors duration-300">
+                      <div className="w-12 h-12 bg-[#f37021] rounded-full flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110">
+                        <svg className="w-6 h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
                 </div>
                 <h5 className="text-[#052356] text-xs font-extrabold uppercase tracking-wider mb-1">
                   Vice-Chairman's Speech
@@ -240,9 +313,10 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 6: Inaugural Photo Gallery ── */}
-      <section className="w-full py-16 sm:py-20 bg-white text-left">
+      <section className="w-full py-10 sm:py-12 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-10">
+            <div className="w-12 h-1 bg-[#f37021] mb-4" />
             <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] leading-tight`}>
               Glimpses of the Historic Day
             </h2>

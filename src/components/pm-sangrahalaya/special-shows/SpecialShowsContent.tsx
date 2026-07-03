@@ -55,7 +55,7 @@ const SHOWS: Show[] = [
     title: "Lal Qile ki Prachir Se",
     menuLabel: "Lal Qile ki Prachir Se",
     description: "Witness the memorable speeches given by the Prime Ministers at the Red Fort.",
-    image: "/special shows/pokhran.jpg"
+    image: "/anubhuti/hologram.jpeg"
   },
   {
     id: "parichay-show",
@@ -75,7 +75,7 @@ const SHOWS: Show[] = [
 
 export default function SpecialShowsContent() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeId, setActiveId] = useState("bhavishya-jhalkiyan");
+  const [activeId, setActiveId] = useState("light-sound-show");
 
   // Filter shows by search query
   const filteredShows = SHOWS.filter((item) =>
