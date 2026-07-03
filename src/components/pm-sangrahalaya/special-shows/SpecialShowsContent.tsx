@@ -21,6 +21,20 @@ interface Show {
 }
 
 const SHOWS: Show[] = [
+   {
+    id: "light-sound-show",
+    title: "Light and Sound Show",
+    menuLabel: "Light and Sound Show",
+    description: "Watch an Immersive tale of Valliant Women Warriors, &quot;Veeranganaon ki Mahagatha&quot; who strived to uphold the nation&apos;s pride, in Hindi at 6:30 pm. Also, watch the story of India&apos;s space programme and other important achievements of the last 75 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
+    image: "/special shows/light and sound show.jpg"
+  },
+   {
+    id: "suraksha-show",
+    title: "Suraksha",
+    menuLabel: "Suraksha",
+    description: "An immersive 360-degree cinematic experience that takes you on a journey through India&apos;s advancements in science and technology.",
+    image: "/special shows/suraksha.jpg"
+  },
   {
     id: "bhavishya-jhalkiyan",
     title: "Bhavishya ki Jhalkiyan",
@@ -31,17 +45,11 @@ const SHOWS: Show[] = [
   {
     id: "time-machine-show",
     title: "Time Machine",
-    menuLabel: "Time Machine",
+    menuLabel: "Nuclear Journey Dream to Reality",
     description: "Ride back in time and relive the past through our time machine. Watch India change and transform before your eyes.",
     image: "/special shows/timemachine.jpg"
   },
-  {
-    id: "light-sound-show",
-    title: "Light and Sound Show",
-    menuLabel: "Light and Sound Show",
-    description: "Watch an Immersive tale of Valliant Women Warriors, &quot;Veeranganaon ki Mahagatha&quot; who strived to uphold the nation&apos;s pride, in Hindi at 6:30 pm. Also, watch the story of India&apos;s space programme and other important achievements of the last 75 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
-    image: "/special shows/light and sound show.jpg"
-  },
+ 
   {
     id: "lal-qila-prachir",
     title: "Lal Qile ki Prachir Se",

@@ -43,13 +43,6 @@ const EXHIBITS: Exhibit[] = [
     image: "/anubhuti/unitychain.jpg"
   },
   {
-    id: "levitating-emblem",
-    title: "Levitating Emblem",
-    menuLabel: "Levitating Emblem",
-    description: "Witness a physical emblem levitating in mid-air and explore interactive scientific milestones.",
-    image: "/anubhuti/levitating.jpg"
-  },
-  {
     id: "shatabdi-sankalp",
     title: "Shatabdi Sankalp",
     menuLabel: "Shatabdi Sankalp",
@@ -63,13 +56,7 @@ const EXHIBITS: Exhibit[] = [
     description: "Take a journey through India&apos;s most iconic moments from the ramparts of the Red Fort, experiencing the Prime Ministers who have addressed the nation from this historic site.",
     image: "/anubhuti/hologram.jpeg"
   },
-  {
-    id: "audio-guide",
-    title: "Audio Guide",
-    menuLabel: "Audio Guide",
-    description: "Experience a fully narrated audio tour as you navigate through the exhibits and halls of the museum.",
-    image: "/anubhuti/ag.jpg"
-  },
+  
   {
     id: "sketch-mission",
     title: "Sketch and Bring a Mission to Life",
@@ -87,7 +74,7 @@ const EXHIBITS: Exhibit[] = [
   {
     id: "ai-holobox-new",
     title: "Ask the Visionary",
-    menuLabel: "Ask the Visionary",
+    menuLabel: "Ask the Visionary/AI Holobox",
     description: "Have interactive, real-time conversations with 3D holographic projections of former Prime Ministers.",
     image: "/anubhuti/ai holobox.jpg"
   }

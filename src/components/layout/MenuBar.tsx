@@ -39,11 +39,12 @@ export const NAV_ITEMS: MenuItem[] = [
     label: "Sangrahalaya",
     href: "/pm-sangrahalaya",
     dropdown: [
+      { label: "Inauguration Ceremony", href: "/pm-sangrahalaya/inaguration-ceremony" },
       { label: "Know Your Prime Minister", href: "/pm-sangrahalaya/pms-of-india" },
-      { label: "Key Galleries", href: "/pm-sangrahalaya/key-galleries" },
+      { label: "Galleries", href: "/pm-sangrahalaya/key-galleries" },
       { label: "Anubhuti Zone", href: "/pm-sangrahalaya/anubhuti-zone" },
       { label: "Special Shows", href: "/pm-sangrahalaya/special-shows" },
-      { label: "Virtual Tour", href: "/pm-sangrahalaya#virtual-tour" },
+      { label: "Virtual Tour", href: "/pm-sangrahalaya/virtual-tour" },
     ],
   },
   {
@@ -55,7 +56,7 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/library",
     dropdown: [
       { label: "Latest Books", href: "/library/latest-books" },
-      { label: "Koha OPAC", href: "https://pmmlcatalog.ltsinformatics.com/", target: "_blank" },
+      { label: "Catalogue-Koha OPAC", href: "https://pmmlcatalog.ltsinformatics.com/", target: "_blank" },
       { label: "Rare Books", href: "/library/rare-books" },
     ],
   },
@@ -91,9 +92,10 @@ export const NAV_ITEMS: MenuItem[] = [
     label: "Events",
     href: "/events",
     dropdown: [
-      { label: "Sangrahalaya Events", href: "/pm-sangrahalaya/events" },
-      { label: "CCS Events", href: "/ccs/events" },
-      { label: "Planetarium Events", href: "/about-pmml/nehru-planetarium/events" },
+      { label: "Sangrahalaya", href: "/pm-sangrahalaya/events" },
+      { label: "Planetarium", href: "/about-pmml/nehru-planetarium/events" },
+      { label: "Center for Contemporary Studies", href: "/ccs/events" },
+
     ],
   },
   {

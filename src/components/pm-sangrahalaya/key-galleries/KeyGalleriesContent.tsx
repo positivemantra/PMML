@@ -18,6 +18,7 @@ interface Gallery {
   description: string;
   image: string;
   building: 1 | 2;
+  category: string;
 }
 
 const GALLERIES: Gallery[] = [
@@ -28,7 +29,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Nehru Gallery",
     description: "The Nehru Gallery presents a holistic view of a newly-independent India and the political developments that followed. It talks about the reorganisations of states, the Kashmir War 1947-48, the projects that Pandit Nehru called 'temples' of modern India, the first general elections, among others.",
     image: "/building 1/nehru gallery.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "tryst-destiny",
@@ -36,7 +38,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Tryst with Destiny",
     description: "Experience the iconic, historical speech 'Tryst with Destiny' delivered by Jawaharlal Nehru on the eve of India's independence, welcoming the birth of a free nation.",
     image: "/building 1/tryst of destiny.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "india-china-war",
@@ -44,7 +47,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "India China War",
     description: "A comprehensive archival exhibit documenting the events, maps, military strategies, and national response during the 1962 conflict.",
     image: "/building 1/india-china war.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "toshakhana-zone",
@@ -52,7 +56,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Toshakhana Zone",
     description: "Explore the collection of precious gifts, artistic crafts, and ceremonial treasures presented to India's Prime Ministers during their official visits abroad.",
     image: "/building 1/toshakhana.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "reception-1",
@@ -60,7 +65,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Reception",
     description: "The welcoming foyer of Building I, providing visitor navigation, interactive digital directories, and ticket scanning facilities.",
     image: "/building 1/reception.jpg",
-    building: 1
+    building: 1,
+    category: "Facilities"
   },
   {
     id: "audio-guide-1",
@@ -68,7 +74,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Audio Guide Room",
     description: "Collect your interactive audio guides equipped with multi-lingual narrations to enrich your walkthrough of the historical museum.",
     image: "/building 1/audio guide room.jpg",
-    building: 1
+    building: 1,
+    category: "Facilities"
   },
   {
     id: "welcome-area",
@@ -76,7 +83,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Welcome Area",
     description: "The initial exhibition area introducing visitors to the rich history and democratic heritage of India.",
     image: "/building 1/welcome area.jpg",
-    building: 1
+    building: 1,
+    category: "Facilities"
   },
   {
     id: "early-life-journey",
@@ -84,7 +92,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Early Life & Political Journey",
     description: "Traces the early childhood, academic years, and rise of Jawaharlal Nehru within the Indian National Congress leading up to independence.",
     image: "/building 1/early life and political journey till 1946.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "making-constitution",
@@ -92,7 +101,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Making of Constitution",
     description: "Relive the intellectual debates and drafting sessions of the Constituent Assembly that established the framework of modern India.",
     image: "/building 1/making of indian constitution.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "makers-constitution",
@@ -100,7 +110,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Makers of Constitution",
     description: "A tribute to the visionary members of the Constituent Assembly who labored to frame a representative constitution for a diverse nation.",
     image: "/building 1/makers of indian constitution.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "partition-1947",
@@ -108,7 +119,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Partition",
     description: "A solemn display exploring the massive migration, human stories, and institutional challenges during the partition of 1947.",
     image: "/building 1/partition.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "nehru-bedroom",
@@ -116,7 +128,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Bedroom",
     description: "The preserved bedroom of the first Prime Minister of India, capturing the simple and elegant setting of his personal life.",
     image: "/building 1/bedroom.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "nehru-sitting",
@@ -124,7 +137,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Sitting Room",
     description: "The historical room where Prime Minister Nehru engaged in discussions with international leaders, diplomats, and close associates.",
     image: "/building 1/sitting room.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "nehru-study",
@@ -132,7 +146,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Study",
     description: "The private study room lined with books and writing tables where the Prime Minister drafted critical policies and letters.",
     image: "/building 1/study.jpg",
-    building: 1
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "india-republic",
@@ -140,7 +155,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "India Becomes Republic",
     description: "Commemorating 26th January 1950, when the Constitution of India came into effect and India transitioned to a sovereign democratic republic.",
     image: "/building 1/india becomes republic.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "democratic-india-exhibit",
@@ -148,7 +164,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Democratic India",
     description: "Celebrates the democratic traditions, general elections, and the strength of the voting system that empowers every Indian citizen.",
     image: "/building 1/democratic india.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "constitutional-amendments-exhibit",
@@ -156,7 +173,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Constitutional Amendments",
     description: "Displays the evolution of the Constitution through landmark amendments that addressed emerging socio-economic needs of the republic.",
     image: "/building 1/constitutional amendments.jpg",
-    building: 1
+    building: 1,
+    category: "Constitution Gallery"
   },
   {
     id: "parichay-room",
@@ -164,7 +182,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Parichay Room",
     description: "An introductory audio-visual installation that welcomes visitors to the galleries of Teen Murti House.",
     image: "/building 1/parichay.jpg",
-    building: 1
+    building: 1,
+    category: "Facilities"
   },
 
   // BUILDING 2
@@ -174,7 +193,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Reception",
     description: "The high-tech entrance of Building II, offering digital navigation, guides, and visitor interactive directories.",
     image: "/building 2/reception.jpg",
-    building: 2
+    building: 2,
+    category: "Facilities"
   },
   {
     id: "prastuti-conference-2",
@@ -182,7 +202,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Prastuti Conference Room",
     description: "A state-of-the-art orientation hall hosting multimedia briefings, press conferences, and educational seminars.",
     image: "/building 2/prastuti conference room.jpg",
-    building: 2
+    building: 2,
+    category: "Facilities"
   },
   {
     id: "lal-qila-prachir-2",
@@ -190,7 +211,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Lal Qile ki Prachir se",
     description: "Experience the historic speeches delivered by India's Prime Ministers from the ramparts of the Red Fort in a 3D projection room.",
     image: "/building 2/lal qile ki prachir se.jpg",
-    building: 2
+    building: 2,
+    category: "Anubhuti Zone"
   },
   {
     id: "freedom-unity-2",
@@ -198,7 +220,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Freedom and Unity",
     description: "Honors the integration of more than 560 princely states into the Indian Union, highlighting the monumental efforts of Sardar Vallabhbhai Patel.",
     image: "/building 2/freedom and unity.jpg",
-    building: 2
+    building: 2,
+    category: "Anubhuti Zone"
   },
   {
     id: "nuclear-dream-2",
@@ -206,15 +229,17 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Nuclear Dream to Reality",
     description: "Details India's scientific achievements, mapping the path from atomic energy research to the historic Pokhran nuclear tests.",
     image: "/building 2/nuclear dream to reality.jpg",
-    building: 2
+    building: 2,
+    category: "Anubhuti Zone"
   },
   {
     id: "bhavishya-jhalkiya-2",
     title: "Bhavishya ki Jhalkiya",
-    menuLabel: "Bhavishya ki Jhalkiya",
+    menuLabel: "Bhavishya ki Jhalkiyan",
     description: "Step inside the virtual reality capsule showcasing India's future infrastructure, digital tech, and green energy goals for 2047.",
     image: "/building 2/bhavishya ki jhalkiya.jpg",
-    building: 2
+    building: 2,
+    category: "Anubhuti Zone"
   },
   {
     id: "anubhuti-2",
@@ -222,15 +247,17 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Anubhuti",
     description: "Engage with futuristic technologies like interactive AI chat with PMs, holographic strolls, and personalized calligraphy letters.",
     image: "/building 2/anubhuti.jpg",
-    building: 2
+    building: 2,
+    category: "Anubhuti Zone"
   },
   {
     id: "pm-gallery-2",
     title: "Prime Ministers Gallery",
     menuLabel: "Prime Ministers Gallery",
-    description: "The central exhibition hall of Building II dedicated to the lives, leadership styles, and enduring contributions of India's former Prime Ministers.",
+    description: "The central exhibition hall of Building II dedicated to the lives, leadership styles, and enduring contributions of India's  Prime Ministers.",
     image: "/building 2/prime ministers gallery.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "lal-bahadur-shastri-2",
@@ -238,7 +265,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Lal Bahadur Shastri",
     description: "Highlights the second PM's integrity, rural reforms, and defense leadership during the 1965 crisis with his slogan 'Jai Jawan Jai Kisan'.",
     image: "/building 2/shri lal bahadur shastri.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "indira-gandhi-2",
@@ -246,7 +274,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Smt. Indira Gandhi",
     description: "Examines the decisive leadership of Indira Gandhi, focus on land reforms, national security, space exploration, and economic policies.",
     image: "/building 2/smt. indira gandhi.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "morarji-desai-2",
@@ -254,7 +283,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Morarji Desai",
     description: "Portrays the post-Emergency restoration of fundamental rights, economic stabilization, and initiatives for friendly relations with neighbors.",
     image: "/building 2/shri morarji desai.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "charan-singh-2",
@@ -262,7 +292,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Chaudhary Charan Singh",
     description: "Focuses on the champion of Indian peasants and farmers, highlighting land reforms and agricultural empowerment.",
     image: "/building 2/chaudhary charan singh.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "rajiv-gandhi-2",
@@ -270,7 +301,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Rajiv Gandhi",
     description: "Chronicles the modernization of India via the telecom revolution, youth empowerment, technology missions, and computerization.",
     image: "/building 2/shri rajiv gandhi.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "vp-singh-2",
@@ -278,7 +310,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri VP Singh",
     description: "Highlights the implementation of the Mandal Commission report, focus on social justice, and administrative reforms.",
     image: "/building 2/shri vp singh.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "chandra-shekhar-2",
@@ -286,7 +319,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Chandra Shekhar",
     description: "Highlights his long political march (Padayatra) and his leadership during a critical period of economic transition.",
     image: "/building 2/shri chandra shekhar.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "narasimha-rao-2",
@@ -294,7 +328,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri PV Narasimha Rao",
     description: "Chronicles the landmark economic reforms of 1991, integration with the global economy, and the 'Look East' foreign policy.",
     image: "/building 2/shri pv narasimha rao.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "atal-bihari-vajpayee-2",
@@ -302,7 +337,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Atal Bihari Vajpayee",
     description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
     image: "/building 2/shri atal bihari vajpayee.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "manmohan-singh-2",
@@ -310,7 +346,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Manmohan Singh",
     description: "Highlights a decade of high growth, landmark legislations like RTI, Right to Education, NREGA, and civil nuclear agreements.",
     image: "/building 2/shri manmohan singh.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "deve-gowda-2",
@@ -318,7 +355,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri HD Deve Gowda",
     description: "Commemorates the coalition government's efforts in federal governance, regional development, and agricultural welfare.",
     image: "/building 2/shri hd deve gowda.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "gujral-2",
@@ -326,7 +364,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Inder Kumar Gujral",
     description: "Showcases the 'Gujral Doctrine' which reshaped India's friendly relations with neighboring South Asian nations.",
     image: "/building 2/shri inder kumar gujral.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   },
   {
     id: "gulzarilal-nanda-2",
@@ -334,7 +373,8 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Shri Gulzarilal Nanda",
     description: "Highlights the selfless service of the two-time interim Prime Minister and his dedication to labor welfare and planning.",
     image: "/building 2/shri gulzarilal nanda.jpg",
-    building: 2
+    building: 2,
+    category: "Prime Ministers Galleries"
   }
 ];
 
@@ -342,6 +382,21 @@ export default function KeyGalleriesContent() {
   const [building, setBuilding] = useState<1 | 2>(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeId, setActiveId] = useState("nehru-gallery");
+
+  // Check url query param on mount to allow deep linking
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const galleryId = params.get("gallery");
+      if (galleryId) {
+        const found = GALLERIES.find((g) => g.id === galleryId);
+        if (found) {
+          setBuilding(found.building);
+          setActiveId(found.id);
+        }
+      }
+    }
+  }, []);
 
   // Drag-to-scroll and auto-scroll states
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -356,6 +411,11 @@ export default function KeyGalleriesContent() {
       g.building === building &&
       g.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  // Group filtered galleries by category
+  const categories = building === 1
+    ? ["Constitution Gallery", "Gallery 1 - Nehru", "Facilities"]
+    : ["Prime Ministers Galleries", "Anubhuti Zone", "Facilities"];
 
   // Sync activeId when building changes or search filters change
   useEffect(() => {
@@ -467,7 +527,7 @@ export default function KeyGalleriesContent() {
           <div className="flex flex-col items-start text-left">
             <div className="w-12 h-1 bg-[#f37021] mb-4" />
             <h1 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-              Key Galleries
+              Galleries
             </h1>
           </div>
 
@@ -502,7 +562,7 @@ export default function KeyGalleriesContent() {
                   : "text-[#052356] hover:text-[#f37021]"
               }`}
             >
-              BUILDING I
+              BLOCK I
             </button>
             <button
               onClick={() => {
@@ -515,7 +575,7 @@ export default function KeyGalleriesContent() {
                   : "text-[#052356] hover:text-[#f37021]"
               }`}
             >
-              BUILDING II
+              BLOCK II
             </button>
           </div>
 
@@ -531,41 +591,58 @@ export default function KeyGalleriesContent() {
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseUp}
                   onMouseMove={handleMouseMove}
-                  className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-hidden overflow-y-hidden lg:overflow-y-auto gap-3 lg:gap-1 pb-3 lg:pb-0 scroll-smooth cursor-grab active:cursor-grabbing custom-scrollbar h-auto lg:h-[485px] max-h-[485px] pr-2"
+                  className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-hidden overflow-y-hidden lg:overflow-y-auto gap-4 lg:gap-3 pb-3 lg:pb-0 scroll-smooth cursor-grab active:cursor-grabbing custom-scrollbar h-auto lg:h-[485px] max-h-[485px] pr-2"
                 >
-                  {filteredGalleries.map((item) => {
-                    const isActive = item.id === activeId;
+                  {categories.map((category) => {
+                    const items = filteredGalleries.filter((g) => g.category === category);
+                    if (items.length === 0) return null;
+
                     return (
-                      <button
-                        key={item.id}
-                        data-active={isActive ? "true" : "false"}
-                        onClick={(e) => {
-                          if (dragged) {
-                            e.preventDefault();
-                            return;
-                          }
-                          setActiveId(item.id);
-                        }}
-                        className={`relative flex items-center text-left w-full py-4 pl-3 lg:pl-10 pr-3 transition-all duration-300 cursor-pointer ${
-                          isActive
-                            ? "bg-[#f4f4f4] text-[#f37021] border-b-[3px] border-[#052356] rounded-lg animate-fade-in"
-                            : "bg-transparent text-[#5c6f84] hover:text-[#f37021] border-b border-slate-100"
-                        }`}
-                      >
-                        {isActive && (
-                          <div className="flex lg:absolute lg:left-3 lg:top-1/2 lg:-translate-y-1/2 items-center justify-center w-5 h-5 mr-2 lg:mr-0 flex-shrink-0">
-                            <svg 
-                              className="w-5 h-5 text-[#052356] fill-[#052356] flex-shrink-0" 
-                              viewBox="0 0 24 24"
-                            >
-                              <path d="M12 3l1.9 2.5 3.1-.7.2 3.1 2.8 1.4-1.6 2.7 1.6 2.7-2.8 1.4-.2 3.1-3.1-.7L12 21l-1.9-2.5-3.1.7-.2-3.1-2.8-1.4 1.6-2.7-1.6-2.7 2.8-1.4.2-3.1 3.1.7z" />
-                            </svg>
-                          </div>
-                        )}
-                        <span className="text-xs sm:text-[13px] uppercase tracking-wider font-bold truncate">
-                          {item.menuLabel}
-                        </span>
-                      </button>
+                      <div key={category} className="flex flex-row lg:flex-col items-center lg:items-stretch gap-2 lg:gap-1 flex-shrink-0 lg:flex-shrink w-auto lg:w-full">
+                        {/* Category Header */}
+                        <div className="text-[10px] lg:text-xs font-bold uppercase tracking-wider text-[#052356] bg-[#052356]/10 px-2.5 py-2 lg:py-2.5 lg:px-4 rounded-lg lg:mb-1.5 lg:mt-3 whitespace-nowrap select-none">
+                          {category}
+                        </div>
+
+                        {/* Sub-items */}
+                        <div className="flex flex-row lg:flex-col gap-1.5 lg:gap-1 w-full">
+                          {items.map((item) => {
+                            const isActive = item.id === activeId;
+                            return (
+                              <button
+                                key={item.id}
+                                data-active={isActive ? "true" : "false"}
+                                onClick={(e) => {
+                                  if (dragged) {
+                                    e.preventDefault();
+                                    return;
+                                  }
+                                  setActiveId(item.id);
+                                }}
+                                className={`relative flex items-center text-left py-2 px-3 lg:py-4 lg:pl-10 lg:pr-3 transition-all duration-300 cursor-pointer whitespace-nowrap lg:whitespace-normal w-auto lg:w-full ${
+                                  isActive
+                                    ? "bg-[#f4f4f4] text-[#f37021] border-b-[3px] border-[#052356] lg:border-b-0 lg:border-l-[4px] lg:border-[#f37021] rounded-lg animate-fade-in"
+                                    : "bg-transparent text-[#5c6f84] hover:text-[#f37021] border-b border-slate-100/50"
+                                }`}
+                              >
+                                {isActive && (
+                                  <div className="flex lg:absolute lg:left-3 lg:top-1/2 lg:-translate-y-1/2 items-center justify-center w-5 h-5 mr-2 lg:mr-0 flex-shrink-0">
+                                    <svg 
+                                      className="w-5 h-5 text-[#052356] fill-[#052356] flex-shrink-0" 
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path d="M12 3l1.9 2.5 3.1-.7.2 3.1 2.8 1.4-1.6 2.7 1.6 2.7-2.8 1.4-.2 3.1-3.1-.7L12 21l-1.9-2.5-3.1.7-.2-3.1-2.8-1.4 1.6-2.7-1.6-2.7 2.8-1.4.2-3.1 3.1.7z" />
+                                    </svg>
+                                  </div>
+                                )}
+                                <span className="text-xs sm:text-[13px] uppercase tracking-wider font-bold truncate">
+                                  {item.menuLabel}
+                                </span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
                     );
                   })}
                 </div>
@@ -592,14 +669,16 @@ export default function KeyGalleriesContent() {
 
                     {/* Gallery Image Display */}
                     <div className="relative flex-1 aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50">
-                      <Image
-                        src={activeGallery.image}
-                        alt={activeGallery.title}
-                        fill
-                        priority
-                        sizes="(max-width: 1024px) 100vw, 800px"
-                        className="object-cover"
-                      />
+                      <div className="absolute inset-x-0 top-0 w-full overflow-hidden" style={{ height: "135%" }}>
+                        <Image
+                          src={activeGallery.image}
+                          alt={activeGallery.title}
+                          fill
+                          priority
+                          sizes="(max-width: 1024px) 100vw, 800px"
+                          className="object-cover object-top"
+                        />
+                      </div>
                     </div>
 
                     {/* Right Arrow Button */}

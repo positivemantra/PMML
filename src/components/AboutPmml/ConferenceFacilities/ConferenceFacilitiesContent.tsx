@@ -105,7 +105,7 @@ export default function ConferenceFacilitiesContent() {
             Conference Facilities
           </h2>
           <p className="text-gray-500 text-sm sm:text-[15px] lg:text-[16px] leading-relaxed text-justify">
-            The core competence of the Prime Ministers Museum and Library (PMML) has been in the academic sphere, with seminars, workshops and lectures as the mainstay of its activities. The PMML Library Building has an Auditorium on the ground floor, a Seminar Room on the first floor, and the Prastuti room. The Auditorium has a capacity of 296, the Seminar Room 80, and the Prastuti room 50. Seminar Room/Auditorium/Prastuti facilities are generally provided to educational institutions, reputed NGOs, Trusts, Government departments & institutions, Foreign Missions, Cultural and Youth organizations, etc. The final decision regarding the booking rests with the Director, PMML. Organizers should fill in the requisite form and submit it to the Administration of the PMML. Outstation applicants can send their applications through email or courier.
+            The core competence of the Prime Ministers Museum and Library (PMML) has been in the academic sphere, with seminars, workshops and lectures as the mainstay of its activities. The PMML Library Building has an Auditorium on the ground floor, a Seminar Room on the first floor, and the Prastuti room. The Auditorium has a capacity of 296, the Seminar Room 80, and the Prastuti room 50. Seminar Room/Auditorium/Prastuti facilities are generally provided to educational institutions, reputed NGOs, Trusts, Government departments & institutions, Foreign Missions, Cultural and Youth organizations, etc. The final decision regarding the booking rests with the Director, PMML. Organizers should fill in the requisite form and submit it to the Administration of the PMML. Outstation applicants can send their applications through email or courier.We also have a Prastuti Room in PMS2 building available only for special presentation.
           </p>
         </div>
 
@@ -174,6 +174,7 @@ export default function ConferenceFacilitiesContent() {
               </div>
             </div>
             <p className="text-[12px] text-gray-500 italic mt-2">* All the above rates are excluding 18% GST.</p>
+            <p className="text-[12px] text-gray-500 italic mt-0">* The PMML reserves its right to deny auditorium bookings.</p>
           </div>
 
           {/* ── SEMINAR & PRASTUTI HEADER STRIP ── */}
@@ -254,7 +255,7 @@ export default function ConferenceFacilitiesContent() {
         {/* ── ACCORDION SECTIONS ── */}
         <div className="flex flex-col gap-3">
           <div className="mb-2 border-b border-slate-100 pb-3">
-            <h3 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356]`}>Policies & Guidelines</h3>
+            <h3 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356]`}>Policies & Guidelines for PMML Auditorium</h3>
           </div>
 
           <Accordion title="Booking Procedure" icon={<FileText className="w-4 h-4" />}>
@@ -441,7 +442,7 @@ export default function ConferenceFacilitiesContent() {
               className="inline-flex items-center gap-2 bg-[#f37021] text-white text-[13px] font-bold px-6 py-3 rounded-xl hover:bg-[#d95e0f] transition-colors"
             >
               <FileText className="w-4 h-4" />
-              Reservation of the PMML Auditorium Booking Form
+              PMML Auditorium Booking Form
             </a>
           </div>
         </div>

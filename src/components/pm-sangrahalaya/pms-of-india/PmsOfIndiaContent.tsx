@@ -23,6 +23,7 @@ interface PM {
   icons: { emoji: string; label: string; image?: string }[];
   badge?: string;
   badgeColor?: string;
+  galleryId?: string;
 }
 
 const PM_LIST: PM[] = [
@@ -32,7 +33,7 @@ const PM_LIST: PM[] = [
     role: "14th Prime Minister",
     dates: "26 May 2014 – Present",
     image: "/leaders/modi.png",
-    bio: "Shri Narendra Modi is the current and the fourth longest-serving Prime Minister of India. He served as the Chief Minister of Gujarat for 14 years and was applauded for the economic growth and setting up advanced infrastructure in the state, among other key developments. As the Prime Minister of India, he is known for campaigns like Swachh Bharat, Make in India, Digital India, among many more. Amongst his several accolades, he is also famous for being the first Indian to win the Seoul Peace Prize award in 2018.",
+    bio: "Shri Narendra Modi is the current and the fourth longest-serving Prime Minister of India. He served as the Chief Minister of Gujarat for over 13 years,the fourth longest-serving instead of this write Longest serving elected Prime Minister and was applauded for the economic growth and setting up advanced infrastructure in the state, among other key developments. As the Prime Minister of India, he is known for campaigns like Swachh Bharat, Make in India, Digital India, among many more. Amongst his several accolades, he is also famous for being the first Indian to win the Seoul Peace Prize award in 2018.",
     icons: [
       { emoji: "🧹", label: "Swachh Bharat", image: "/caricatures/modi-/modi-swachh-bharat.png" },
       { emoji: "🏭", label: "Make in India", image: "/caricatures/modi-/modi-make-in-india.png" },
@@ -43,6 +44,7 @@ const PM_LIST: PM[] = [
       { emoji: "📱", label: "Jan Dhan", image: "/caricatures/modi-/modi-jan-dhan.png" },
       { emoji: "🛤️", label: "Infrastructure", image: "/caricatures/modi-/modi-infrastructure.png" },
     ],
+    galleryId: "pm-gallery-2",
   },
   {
     id: 2,
@@ -60,6 +62,7 @@ const PM_LIST: PM[] = [
       { emoji: "🏗️", label: "Bharat Nirman", image: "/caricatures/manmohan-/manmohan-bharat-nirman.png" },
       { emoji: "📊", label: "GDP Growth", image: "/caricatures/manmohan-/manmohan-gdp-growth.png" },
     ],
+    galleryId: "manmohan-singh-2",
   },
   {
     id: 3,
@@ -76,6 +79,7 @@ const PM_LIST: PM[] = [
       { emoji: "🛤️", label: "PMGSY", image: "/caricatures/vajpayee-/vajpayee-pmgsy.png" },
       { emoji: "🤝", label: "Diplomacy", image: "/caricatures/vajpayee-/vajpayee-diplomacy.png" },
     ],
+    galleryId: "atal-bihari-vajpayee-2",
   },
   {
     id: 4,
@@ -91,6 +95,7 @@ const PM_LIST: PM[] = [
       { emoji: "🗺️", label: "Regional Policy", image: "/caricatures/gujral-/gujral-regional-policy.png" },
       { emoji: "🏛️", label: "Governance", image: "/caricatures/gujral-/gujral-governance.png" },
     ],
+    galleryId: "gujral-2",
   },
   {
     id: 5,
@@ -106,6 +111,7 @@ const PM_LIST: PM[] = [
       { emoji: "🚜", label: "Farming", image: "/caricatures/gowda-/gowda-farming.png" },
       { emoji: "🏗️", label: "Infrastructure", image: "/caricatures/gowda-/gowda-infrastructure.png" },
     ],
+    galleryId: "deve-gowda-2",
   },
   {
     id: 6,
@@ -122,6 +128,7 @@ const PM_LIST: PM[] = [
       { emoji: "💹", label: "Market Reform", image: "/caricatures/pvrao-/pvrao-market-reform.png" },
       { emoji: "🏛️", label: "Economic Policy", image: "/caricatures/pvrao-/pvrao-economic-policy.png" },
     ],
+    galleryId: "narasimha-rao-2",
   },
   {
     id: 7,
@@ -137,6 +144,7 @@ const PM_LIST: PM[] = [
       { emoji: "🤝", label: "IMF Agreement", image: "/caricatures/chandrashekhar-/chandrashekhar-imf-agreement.png" },
       { emoji: "🪙", label: "Gold Pledge", image: "/caricatures/chandrashekhar-/chandrashekhar-gold-pledge.png" },
     ],
+    galleryId: "chandra-shekhar-2",
   },
   {
     id: 8,
@@ -152,6 +160,7 @@ const PM_LIST: PM[] = [
       { emoji: "✊", label: "Social Justice", image: "/caricatures/vpsingh-/vpsingh-social-justice.png" },
       { emoji: "📜", label: "Policy Reform", image: "/caricatures/vpsingh-/vpsingh-policy-reform.png" },
     ],
+    galleryId: "vp-singh-2",
   },
   {
     id: 9,
@@ -168,6 +177,7 @@ const PM_LIST: PM[] = [
       { emoji: "🏫", label: "Navodaya Schools", image: "/caricatures/rajiv-/rajiv-navodaya-schools.png" },
       { emoji: "🗳️", label: "Voter Age 18", image: "/caricatures/rajiv-/rajiv-voter-age-18.png" },
     ],
+    galleryId: "rajiv-gandhi-2",
   },
   {
     id: 10,
@@ -183,6 +193,7 @@ const PM_LIST: PM[] = [
       { emoji: "🪴", label: "Agriculture", image: "/caricatures/charansingh-/charansingh-agriculture.png" },
       { emoji: "🤲", label: "Rural Welfare", image: "/caricatures/charansingh-/charansingh-rural-welfare.png" },
     ],
+    galleryId: "charan-singh-2",
   },
   {
     id: 11,
@@ -198,6 +209,7 @@ const PM_LIST: PM[] = [
       { emoji: "🏛️", label: "Janata Party", image: "/caricatures/desai-/desai-janata-party.png" },
       { emoji: "✊", label: "Anti-Emergency", image: "/caricatures/desai-/desai-anti-emergency.png" },
     ],
+    galleryId: "morarji-desai-2",
   },
   {
     id: 12,
@@ -216,6 +228,7 @@ const PM_LIST: PM[] = [
     ],
     badge: "First Woman PM",
     badgeColor: "bg-purple-600",
+    galleryId: "indira-gandhi-2",
   },
   {
     id: 13,
@@ -231,6 +244,7 @@ const PM_LIST: PM[] = [
       { emoji: "🐄", label: "Operation Flood", image: "/caricatures/shastri-/shastri-operation-flood.png" },
       { emoji: "🛡️", label: "Jai Jawan", image: "/caricatures/shastri-/shastri-jai-jawan.png" },
     ],
+    galleryId: "lal-bahadur-shastri-2",
   },
   {
     id: 14,
@@ -248,6 +262,7 @@ const PM_LIST: PM[] = [
     ],
     badge: "Bharat Ratna",
     badgeColor: "bg-amber-600",
+    galleryId: "gulzarilal-nanda-2",
   },
   {
     id: 15,
@@ -267,6 +282,7 @@ const PM_LIST: PM[] = [
     ],
     badge: "Founder of Modern India",
     badgeColor: "bg-[#052356]",
+    galleryId: "nehru-gallery",
   },
 ];
 
@@ -292,15 +308,6 @@ export default function PmsOfIndiaContent() {
         </div>
       </section>
 
-      {/* ── SECTION HEADING ── */}
-      <div className="w-full bg-[#f4f4f4]/40 border-t border-b border-slate-100 py-8">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start">
-          <div className="w-12 h-1 bg-[#f37021] mb-4" />
-          <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-            All Prime Ministers
-          </h2>
-        </div>
-      </div>
 
       {/* ── PM HORIZONTAL SECTIONS ── */}
       {PM_LIST.map((pm, index) => {
@@ -363,10 +370,10 @@ export default function PmsOfIndiaContent() {
                     {/* Explore Gallery button */}
                     <div className="mt-5">
                       <Link
-                        href="/pm-sangrahalaya/key-galleries"
+                        href={`/pm-sangrahalaya/key-galleries${pm.galleryId ? `?gallery=${pm.galleryId}` : ''}`}
                         className="group inline-flex items-center justify-center bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-xl shadow-[0_4px_14px_rgba(243,112,33,0.2)] hover:shadow-[0_6px_20px_rgba(243,112,33,0.35)] transition-all duration-300 hover:-translate-y-0.5 active:scale-95 select-none cursor-pointer"
                       >
-                        <span>Explore Gallery</span>
+                        <span>Explore Gallery {PM_LIST.length - index}</span>
                         <svg
                           className="w-4 h-4 ml-2 stroke-current transition-transform duration-300 group-hover:translate-x-1"
                           fill="none" viewBox="0 0 24 24" strokeWidth={2.5}

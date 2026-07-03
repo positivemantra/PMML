@@ -271,7 +271,7 @@ export default function PmmlSocietyMembers() {
             {/* Top accent line */}
             <div className="w-12 h-1 bg-[#f37021] mb-2.5" />
             <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-              List of Members of the <span className="text-[#052356]">PMML Society</span>
+              Members of the <span className="text-[#052356]">PMML Society</span>
             </h2>
           </div>
 
