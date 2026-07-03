@@ -117,7 +117,7 @@ export default function ArchivesAboutContent() {
             {/* Left Image column */}
             <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
               <Image
-                src="/DSC_4568.jpg"
+                src="/hero section/ccs-building.jpg"
                 alt="Research Reading and Archival Reference Room"
                 fill
                 sizes="(max-w-1024px) 100vw, 550px"

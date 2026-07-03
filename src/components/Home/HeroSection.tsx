@@ -30,14 +30,14 @@ const SLIDES = [
     cta: { label: "Visit Library", href: "/library" },
   },
   {
-    src: "/hero section/DSC_0038.JPG",
+    src: "/hero section/nehru-planetarium.JPG",
     title: "Nehru Planetarium",
     subtitle: "Discover the wonders of astronomy and the celestial science dome",
     cta: { label: "Book a Show", href: "/about-pmml/nehru-planetarium" },
   },
 
   {
-    src: "/hero section/DSC_4568.jpg",
+    src: "/hero section/ccs-building.jpg",
     title: "Exhibition Galleries & Collections",
     subtitle: "Immersive multimedia exhibits depicting the journey of Indian democracy",
     cta: { label: "View Archives", href: "/archives" },

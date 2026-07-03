@@ -47,7 +47,7 @@ const OFFERINGS: Offering[] = [
 const EXTENDED_OFFERINGS = [...OFFERINGS, ...OFFERINGS.slice(0, 3)];
 
 const GALLERY_IMAGES = [
-  { src: "/DSC_0038.JPG", alt: "Nehru Planetarium Exhibition Area" },
+  { src: "/hero section/nehru-planetarium.JPG", alt: "Nehru Planetarium Exhibition Area" },
   { src: "/planetarium-home.jpg", alt: "Full Dome Sky Theatre" },
   { src: "/01.JPG", alt: "Planetarium Building Exterior" },
   { src: "/08.jpg", alt: "Light and Sound Show" },
