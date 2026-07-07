@@ -75,7 +75,7 @@ const SPECIAL_SHOWS = [
   {
     title: 'Suraksha',
     description: 'An interactive exhibit dedicated to India\'s security and defence achievements, showcasing the strategic decisions and sacrifices that have safeguarded the nation.',
-    image: '/nuclear test.jpg',
+    image: '/special shows/Suraksha.jpg',
     exploreUrl: '/pm-sangrahalaya/special-shows',
   },
   {

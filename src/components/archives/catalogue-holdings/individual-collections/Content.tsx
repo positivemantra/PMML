@@ -3,6 +3,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import ArchivesHeroSlider from "@/components/archives/ArchivesHeroSlider";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -1024,17 +1025,7 @@ export default function IndividualCollectionsContent() {
   return (
     <div className="w-full flex flex-col bg-white">
       {/* ── Subpage Hero Banner ── */}
-      <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
-        {/* Background Image */}
-        <Image
-          src="/NMM_2386.jpg"
-          alt="PMML Archives and Records Section"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </section>
+      <ArchivesHeroSlider />
 
       {/* ── Main List Section ── */}
       <section className="w-full py-12 bg-white text-left">

@@ -31,7 +31,7 @@ const MILESTONES = [
     year: '1964',
     heading: '1964 | A National Memorial',
     body: "On Jawaharlal Nehru's 75th birth anniversary on November 14, 1964 Dr. Sarvepalli Radhakrishnan, Hon'ble President of India, formally dedicated the Teen Murti House to the nation and inaugurated the Nehru Memorial Museum.",
-    image: '/hero section/Block 11600x687 (a)260410103645445255000000.jpg',
+    image: '/hero section/h1.jpg',
     icon: '🕊️',
     accentColor: '#2d6a4f',
   },
@@ -71,7 +71,7 @@ const MILESTONES = [
     year: '2022',
     heading: '2022 | PM Museum Inaugurated',
     body: "On April 14, 2022, Prime Minister Shri Narendra Modi inaugurated the vastly expanded Prime Ministers Museum & Library. The new PMS 2 block houses galleries for all Prime Ministers from Shri Lal Bahadur Shastri onwards, featuring state-of-the-art technology including AI-enabled conversations with stalwarts of the past.",
-    image: '/pms.png',
+    image: '/Inauguration of Museum/EY2B4177.JPG',
     icon: '✨',
     accentColor: '#f37021',
   }

@@ -315,7 +315,7 @@ export default function ConferenceFacilitiesContent() {
         {/* ── ACCORDION SECTIONS ── */}
         <div className="flex flex-col gap-3">
           <div className="mb-2 border-b border-slate-100 pb-3">
-            <h3 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356]`}>Policies & Guidelines for PMML Auditorium</h3>
+            <h3 className={`${spectral.className} text-xl sm:text-2xl font-bold text-[#052356]`}>Policies & Guidelines for PMML Auditorium Booking</h3>
           </div>
 
           <Accordion title="Booking Procedure" icon={<FileText className="w-4 h-4" />}>

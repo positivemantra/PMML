@@ -57,7 +57,7 @@ export default function SitemapContent() {
       links: [
         { label: "CCS Home", href: "/ccs/about" },
         { label: "Fellowship", href: "/ccs/fellowship" },
-        { label: "Seminars/Publications", href: "/ccs/about#ccs-seminars-publications" },
+        { label: "Seminars/Publications", href: "/ccs/seminars" },
         { label: "Occasional Papers", href: "/ccs/occasional-papers" },
         { label: "Research Home", href: "/research" },
         { label: "Publications", href: "/research/publications" },

@@ -46,7 +46,7 @@ export default function CcsSection() {
   const nextIdx = (activeIdx + 1) % IMAGES.length;
 
   return (
-    <section id="ccs" className="w-full pt-10 pb-12 bg-white relative flex flex-col items-center border-t border-gray-100 overflow-hidden">
+    <section id="ccs" className="w-full py-10 lg:py-12 bg-white relative flex flex-col items-center border-t border-gray-100 overflow-hidden">
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         
         {/* Two-column layout: Text/Stats Left | Image Slider Right */}
@@ -60,7 +60,7 @@ export default function CcsSection() {
                 Center for Contemporary Studies
               </h2>
               <p className="text-sm md:text-[15px] text-gray-600 font-light leading-relaxed mt-4 max-w-[480px] text-justify">
-                The Centre for Contemporary Studies functions as a constituent unit of the Division and focuses on research relating to contemporary India. It administers fellowship programmes including Junior Fellow, Fellow, Senior Fellow, Resident Fellowship, Atal Bihari Vajpayee Fellowship, and the NMML Fellowship in collaboration with the Ministry of Culture. The Centre also organizes seminars, lectures, and workshops to promote academic discourse.
+                The Centre for Contemporary Studies (CCS) was set up as an advanced studies unit of NMML in 1990. It was established for the promotion of research on modern Indian and contemporary history. It offers three levels of research fellowships -Junior Fellow, Fellow and Senior Fellow to scholars engaged in advanced research. The three research areas in which fellowships are granted are 'India: Recent Historical Trends and Developments', 'India in Transition: Issues and Challenges’ and 'India and the Wider World'. The CCS also offers fellowships like Atal Bihari Vajpayee Fellowship, Academic Research Translation and Book Writing Fellowship and NMML Visiting Fellowship.
               </p>
             </div>
 
@@ -82,7 +82,7 @@ export default function CcsSection() {
 
           {/* Right Side: Layered Card Slider */}
           <div className="w-full md:w-[50%] flex-shrink-0 flex items-center justify-center py-6 px-10 sm:px-12 md:px-16">
-            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[460px] lg:h-[260px]">
+            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[480px] lg:h-[290px]">
               
               {/* Back Card (Layered effect) */}
               <div 

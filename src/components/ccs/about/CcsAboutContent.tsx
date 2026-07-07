@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import CcsHeroSlider from "@/components/ccs/CcsHeroSlider";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -14,16 +15,7 @@ export default function CcsAboutContent() {
   return (
     <div className="w-full flex flex-col bg-white">
       {/* ── Hero Banner ── */}
-      <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
-        <Image
-          src="/hero section/ccs-building.jpg"
-          alt="PMML Center for Contemporary Studies"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </section>
+      <CcsHeroSlider />
 
       {/* ── About Section ── */}
       <section id="about" className="w-full py-12 lg:py-16 bg-white text-left">
@@ -53,10 +45,10 @@ export default function CcsAboutContent() {
 
               <div className="space-y-4 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
                 <p>
-                  The Centre for Contemporary Studies (CCS) was established in 1990 as a constituent unit of the Prime Ministers&apos; Museum and Library (PMML) to provide an active forum for fellowship research and contemporary historical studies. Since its inception, the Centre has emerged as one of the premier hubs for academic excellence and research relating to contemporary India.
+                 The Centre for Contemporary Studies (CCS) was set up as an advanced studies unit of NMML in 1990. It was established for the promotion of research on modern Indian and contemporary history. It offers three levels of research fellowships -Junior Fellow, Fellow and Senior Fellow to scholars engaged in advanced research. The three research areas in which fellowships are granted are 'India: Recent Historical Trends and Developments', 'India in Transition: Issues and Challenges’ and 'India and the Wider World'.  The CCS also offers fellowships like Atal Bihari Vajpayee Fellowship, Academic Research Translation and Book Writing Fellowship and NMML Visiting Fellowship. 
                 </p>
                 <p>
-                  CCS administers several prestigious fellowship programmes that cater to researchers at different levels of their academic careers. The research produced by the Centre&apos;s fellows covers a wide array of topics, including national security, international relations, economic history, sociology, and political development. The Centre is also responsible for organizing lectures, seminars, workshops, and publishing academic research volumes.
+                  The Centre regularly conducts academic activities such as lectures, conferences, book discussions, panel discussions, workshops, etc. The Centre also provides research affiliation to scholars who have been awarded fellowships by other organizations like the University Grants Commission (UGC), Indian Council of Social Science Research (ICSSR), Indian Council of Historical Research (ICHR) and other similar organizations. The Centre has collaboration with the American Institute of Indian Studies (AIIS) whereby it provides research affiliation to scholars from various universities of the United States of America.
                 </p>
               </div>
 

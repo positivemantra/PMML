@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import CcsHeroSlider from "@/components/ccs/CcsHeroSlider";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -116,16 +117,7 @@ export default function CcsFellowshipContent() {
   return (
     <div className="w-full flex flex-col bg-white">
       {/* ── Hero Banner ── */}
-        <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
-        <Image
-          src="/hero section/ccs-building.jpg"
-          alt="PMML Center for Contemporary Studies"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </section>
+      <CcsHeroSlider />
 
       {/* ── Main content Section ── */}
       <section className="w-full py-12 bg-white text-left">
@@ -137,6 +129,13 @@ export default function CcsFellowshipContent() {
             <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
               Fellowship
             </h2>
+          </div>
+
+          {/* Description Paragraph */}
+          <div className="mb-8 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
+            <p>
+              Centre for Contemporary Studies (CCS), of the Prime Ministers Museum and Library (PMML), administers a prestigious Fellowship Programme to promote original research on Modern and Contemporary India. The programme encourages scholarly work on themes such as India&apos;s historical, political, economic, social, and geopolitical developments, post-Independence challenges, democracy, governance, and India&apos;s role in the global context. It offers four categories of fellowships: Junior Fellow for promising early-career researchers, Fellow for experienced scholars with a Ph.D. and a strong publication record, Senior Fellow for eminent academics with significant scholarly contributions, and the Atal Bihari Vajpayee Fellowship, a Senior Fellowship dedicated to research on the Prime Ministers of India, the Prime Minister&apos;s Office, and democratic institutions. CCS also administers the Scholar-in-Residence Programme, which enables scholars from India and abroad (with a valid Research Visa) to undertake short-term residential research at the PMML campus for four to six weeks, fostering academic collaboration and intellectual exchange.
+            </p>
           </div>
 
           {/* Filter and Search controls */}

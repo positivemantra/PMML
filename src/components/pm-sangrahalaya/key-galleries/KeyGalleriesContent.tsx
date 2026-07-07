@@ -26,7 +26,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "nehru-gallery",
     title: "Nehru Gallery",
-    menuLabel: "Nehru Gallery",
+    menuLabel: "Gallery 1 - Nehru Gallery",
     description: "The Nehru Gallery presents a holistic view of a newly-independent India and the political developments that followed. It talks about the reorganisations of states, the Kashmir War 1947-48, the projects that Pandit Nehru called 'temples' of modern India, the first general elections, among others.",
     image: "/building 1/nehru gallery.jpg",
     building: 1,
@@ -212,7 +212,34 @@ const GALLERIES: Gallery[] = [
     description: "Experience the historic speeches delivered by India's Prime Ministers from the ramparts of the Red Fort in a 3D projection room.",
     image: "/building 2/lal qile ki prachir se.jpg",
     building: 2,
-    category: "Anubhuti Zone"
+    category: "Special Shows"
+  },
+  {
+    id: "light-sound-show-2",
+    title: "Light and Sound Show",
+    menuLabel: "Light and Sound Show",
+    description: "Watch an Immersive tale of Valliant Women Warriors, \"Veeranganaon ki Mahagatha\" who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of the last 75 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
+    image: "/special shows/light and sound show.jpg",
+    building: 2,
+    category: "Special Shows"
+  },
+  {
+    id: "suraksha-show-2",
+    title: "Suraksha",
+    menuLabel: "Suraksha",
+    description: "An immersive 360-degree cinematic experience that takes you on a journey through India's advancements in science and technology.",
+    image: "/special shows/Suraksha.jpg",
+    building: 2,
+    category: "Special Shows"
+  },
+  {
+    id: "pokhran-show-2",
+    title: "Pokhran II",
+    menuLabel: "Pokhran II",
+    description: "Relive India's historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee: an immersive control room simulation with dramatic audiovisuals.",
+    image: "/special shows/pokhran.jpg",
+    building: 2,
+    category: "Special Shows"
   },
   {
     id: "freedom-unity-2",
@@ -251,18 +278,18 @@ const GALLERIES: Gallery[] = [
     category: "Anubhuti Zone"
   },
   {
-    id: "pm-gallery-2",
-    title: "Prime Ministers Gallery",
-    menuLabel: "Prime Ministers Gallery",
-    description: "The central exhibition hall of Building II dedicated to the lives, leadership styles, and enduring contributions of India's  Prime Ministers.",
-    image: "/building 2/prime ministers gallery.jpg",
+    id: "gulzarilal-nanda-2",
+    title: "Shri Gulzarilal Nanda",
+    menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
+    description: "Highlights the selfless service of the two-time interim Prime Minister and his dedication to labor welfare and planning.",
+    image: "/building 2/shri gulzarilal nanda.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
   {
     id: "lal-bahadur-shastri-2",
     title: "Shri Lal Bahadur Shastri",
-    menuLabel: "Shri Lal Bahadur Shastri",
+    menuLabel: "Gallery 3 - Shri Lal Bahadur Shastri",
     description: "Highlights the second PM's integrity, rural reforms, and defense leadership during the 1965 crisis with his slogan 'Jai Jawan Jai Kisan'.",
     image: "/building 2/shri lal bahadur shastri.jpg",
     building: 2,
@@ -271,7 +298,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "indira-gandhi-2",
     title: "Smt. Indira Gandhi",
-    menuLabel: "Smt. Indira Gandhi",
+    menuLabel: "Gallery 4 - Smt. Indira Gandhi",
     description: "Examines the decisive leadership of Indira Gandhi, focus on land reforms, national security, space exploration, and economic policies.",
     image: "/building 2/smt. indira gandhi.jpg",
     building: 2,
@@ -280,7 +307,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "morarji-desai-2",
     title: "Shri Morarji Desai",
-    menuLabel: "Shri Morarji Desai",
+    menuLabel: "Gallery 5 - Shri Morarji Desai",
     description: "Portrays the post-Emergency restoration of fundamental rights, economic stabilization, and initiatives for friendly relations with neighbors.",
     image: "/building 2/shri morarji desai.jpg",
     building: 2,
@@ -289,7 +316,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "charan-singh-2",
     title: "Chaudhary Charan Singh",
-    menuLabel: "Chaudhary Charan Singh",
+    menuLabel: "Gallery 6 - Chaudhary Charan Singh",
     description: "Focuses on the champion of Indian peasants and farmers, highlighting land reforms and agricultural empowerment.",
     image: "/building 2/chaudhary charan singh.jpg",
     building: 2,
@@ -298,7 +325,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "rajiv-gandhi-2",
     title: "Shri Rajiv Gandhi",
-    menuLabel: "Shri Rajiv Gandhi",
+    menuLabel: "Gallery 7 - Shri Rajiv Gandhi",
     description: "Chronicles the modernization of India via the telecom revolution, youth empowerment, technology missions, and computerization.",
     image: "/building 2/shri rajiv gandhi.jpg",
     building: 2,
@@ -307,7 +334,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "vp-singh-2",
     title: "Shri VP Singh",
-    menuLabel: "Shri VP Singh",
+    menuLabel: "Gallery 8 - Shri VP Singh",
     description: "Highlights the implementation of the Mandal Commission report, focus on social justice, and administrative reforms.",
     image: "/building 2/shri vp singh.jpg",
     building: 2,
@@ -316,7 +343,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "chandra-shekhar-2",
     title: "Shri Chandra Shekhar",
-    menuLabel: "Shri Chandra Shekhar",
+    menuLabel: "Gallery 9 - Shri Chandra Shekhar",
     description: "Highlights his long political march (Padayatra) and his leadership during a critical period of economic transition.",
     image: "/building 2/shri chandra shekhar.jpg",
     building: 2,
@@ -325,34 +352,16 @@ const GALLERIES: Gallery[] = [
   {
     id: "narasimha-rao-2",
     title: "Shri PV Narasimha Rao",
-    menuLabel: "Shri PV Narasimha Rao",
+    menuLabel: "Gallery 10 - Shri PV Narasimha Rao",
     description: "Chronicles the landmark economic reforms of 1991, integration with the global economy, and the 'Look East' foreign policy.",
     image: "/building 2/shri pv narasimha rao.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
   {
-    id: "atal-bihari-vajpayee-2",
-    title: "Shri Atal Bihari Vajpayee",
-    menuLabel: "Shri Atal Bihari Vajpayee",
-    description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
-    image: "/building 2/shri atal bihari vajpayee.jpg",
-    building: 2,
-    category: "Prime Ministers Galleries"
-  },
-  {
-    id: "manmohan-singh-2",
-    title: "Shri Manmohan Singh",
-    menuLabel: "Shri Manmohan Singh",
-    description: "Highlights a decade of high growth, landmark legislations like RTI, Right to Education, NREGA, and civil nuclear agreements.",
-    image: "/building 2/shri manmohan singh.jpg",
-    building: 2,
-    category: "Prime Ministers Galleries"
-  },
-  {
     id: "deve-gowda-2",
     title: "Shri HD Deve Gowda",
-    menuLabel: "Shri HD Deve Gowda",
+    menuLabel: "Gallery 11 - Shri HD Deve Gowda",
     description: "Commemorates the coalition government's efforts in federal governance, regional development, and agricultural welfare.",
     image: "/building 2/shri hd deve gowda.jpg",
     building: 2,
@@ -361,18 +370,36 @@ const GALLERIES: Gallery[] = [
   {
     id: "gujral-2",
     title: "Shri Inder Kumar Gujral",
-    menuLabel: "Shri Inder Kumar Gujral",
+    menuLabel: "Gallery 12 - Shri Inder Kumar Gujral",
     description: "Showcases the 'Gujral Doctrine' which reshaped India's friendly relations with neighboring South Asian nations.",
     image: "/building 2/shri inder kumar gujral.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
   {
-    id: "gulzarilal-nanda-2",
-    title: "Shri Gulzarilal Nanda",
-    menuLabel: "Shri Gulzarilal Nanda",
-    description: "Highlights the selfless service of the two-time interim Prime Minister and his dedication to labor welfare and planning.",
-    image: "/building 2/shri gulzarilal nanda.jpg",
+    id: "atal-bihari-vajpayee-2",
+    title: "Shri Atal Bihari Vajpayee",
+    menuLabel: "Gallery 13 - Shri Atal Bihari Vajpayee",
+    description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
+    image: "/building 2/shri atal bihari vajpayee.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "manmohan-singh-2",
+    title: "Shri Manmohan Singh",
+    menuLabel: "Gallery 14 - Shri Manmohan Singh",
+    description: "Highlights a decade of high growth, landmark legislations like RTI, Right to Education, NREGA, and civil nuclear agreements.",
+    image: "/building 2/shri manmohan singh.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "pm-gallery-2",
+    title: "Prime Ministers Gallery",
+    menuLabel: "Gallery 15 - Prime Ministers Gallery",
+    description: "The central exhibition hall of Building II dedicated to the lives, leadership styles, and enduring contributions of India's  Prime Ministers.",
+    image: "/building 2/prime ministers gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   }
@@ -382,6 +409,7 @@ export default function KeyGalleriesContent() {
   const [building, setBuilding] = useState<1 | 2>(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeId, setActiveId] = useState("nehru-gallery");
+  const [isPaused, setIsPaused] = useState(false);
 
   // Check url query param on mount to allow deep linking
   useEffect(() => {
@@ -415,7 +443,7 @@ export default function KeyGalleriesContent() {
   // Group filtered galleries by category
   const categories = building === 1
     ? ["Constitution Gallery", "Gallery 1 - Nehru", "Facilities"]
-    : ["Prime Ministers Galleries", "Anubhuti Zone", "Facilities"];
+    : ["Prime Ministers Galleries", "Anubhuti Zone", "Special Shows", "Facilities"];
 
   // Sync activeId when building changes or search filters change
   useEffect(() => {
@@ -449,13 +477,13 @@ export default function KeyGalleriesContent() {
 
   // Auto-change active gallery every 3 seconds
   useEffect(() => {
-    if (filteredGalleries.length <= 1) return;
+    if (filteredGalleries.length <= 1 || isPaused) return;
     const timer = setTimeout(() => {
       const nextIndex = (activeIndex + 1) % filteredGalleries.length;
       setActiveId(filteredGalleries[nextIndex].id);
     }, 3000);
     return () => clearTimeout(timer);
-  }, [activeId, filteredGalleries, activeIndex]);
+  }, [activeId, filteredGalleries, activeIndex, isPaused]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!scrollContainerRef.current) return;
@@ -579,7 +607,7 @@ export default function KeyGalleriesContent() {
               onClick={() => {
                 setBuilding(2);
                 setSearchQuery("");
-                setActiveId("pm-gallery-2");
+                setActiveId("gulzarilal-nanda-2");
               }}
               className={`px-5 py-2 rounded-lg text-sm font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                 building === 2
@@ -669,7 +697,11 @@ export default function KeyGalleriesContent() {
             <div className="col-span-1 lg:col-span-8 flex flex-col items-start w-full">
               {activeGallery ? (
                 <>
-                  <div className="relative w-full aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
+                  <div 
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                    className="relative w-full aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group"
+                  >
                     {/* Gallery Image Display */}
                     <div className="absolute inset-x-0 top-0 w-full overflow-hidden" style={{ height: "135%" }}>
                       <Image

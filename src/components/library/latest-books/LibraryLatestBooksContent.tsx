@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import LibraryHeroSlider from "@/components/library/LibraryHeroSlider";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -90,16 +91,7 @@ export default function LibraryLatestBooksContent() {
   return (
     <div className="w-full flex flex-col bg-white">
       {/* ── Subpage Hero Banner ── */}
-       <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
-        <Image
-          src="/library.jpg"
-          alt="PMML Library New Arrivals"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </section>
+      <LibraryHeroSlider />
 
       {/* ── Main Content Section (Same as Annual Reports List Page) ── */}
       <section className="w-full py-12 bg-white text-left">

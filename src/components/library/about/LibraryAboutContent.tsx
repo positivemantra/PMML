@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
+import LibraryHeroSlider from "@/components/library/LibraryHeroSlider";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -143,17 +144,7 @@ export default function LibraryAboutContent() {
   return (
     <div className="w-full flex flex-col bg-white">
       {/* ── Subpage Hero Banner ── */}
-      <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
-        {/* Background Image */}
-        <Image
-          src="/library.jpg"
-          alt="PMML Library Building and Reading Hall"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </section>
+      <LibraryHeroSlider />
 
       {/* ── About Section ── */}
       <section className="w-full py-12 lg:py-16 bg-white text-left">

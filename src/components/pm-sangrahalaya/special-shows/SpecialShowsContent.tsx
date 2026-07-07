@@ -33,7 +33,7 @@ const SHOWS: Show[] = [
     title: "Suraksha",
     menuLabel: "Suraksha",
     description: "An immersive 360-degree cinematic experience that takes you on a journey through India&apos;s advancements in science and technology.",
-    image: "/special shows/suraksha.jpg"
+    image: "/special shows/Suraksha.jpg"
   },
   {
     id: "bhavishya-jhalkiyan",

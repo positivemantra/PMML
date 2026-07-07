@@ -523,7 +523,7 @@ export default function ReprographyDivisionContent() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-4 lg:p-5">
                     <span className="text-white font-bold text-xs sm:text-[13.5px] lg:text-sm tracking-wide">
-                      Photostate
+                      Photostate(PH)
                     </span>
                   </div>
                 </div>
@@ -539,7 +539,7 @@ export default function ReprographyDivisionContent() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-4 lg:p-5">
                     <span className="text-white font-bold text-xs sm:text-[13.5px] lg:text-sm tracking-wide">
-                      Microfilm Scanning
+                      Microfilm Scanning(PH)
                     </span>
                   </div>
                 </div>
@@ -555,7 +555,7 @@ export default function ReprographyDivisionContent() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-4 lg:p-5">
                     <span className="text-white font-bold text-xs sm:text-[13.5px] lg:text-sm tracking-wide">
-                      Positive Microfilm Supplying
+                      Positive Microfilm Supplying(PH)
                     </span>
                   </div>
                 </div>
@@ -571,7 +571,7 @@ export default function ReprographyDivisionContent() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-4 lg:p-5">
                     <span className="text-white font-bold text-xs sm:text-[13.5px] lg:text-sm tracking-wide">
-                      Photography of Official Events
+                      Photography of Official Events(PH)
                     </span>
                   </div>
                 </div>

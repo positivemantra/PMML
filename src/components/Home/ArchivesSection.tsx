@@ -65,7 +65,7 @@ export default function ArchivesSection() {
   const nextIdx = (activeIdx + 1) % IMAGES.length;
 
   return (
-    <section className="w-full pt-10 pb-12 bg-[#f4f4f4] relative flex flex-col items-center border-t border-gray-100 overflow-hidden">
+    <section className="w-full py-10 lg:py-12 bg-[#f4f4f4] relative flex flex-col items-center border-t border-gray-100 overflow-hidden">
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
 
         {/* Two-column layout: Image Slider Left | Text/Stats Right */}
@@ -80,7 +80,7 @@ export default function ArchivesSection() {
                 The Archives
               </h2>
               <p className="text-sm md:text-[15px] text-gray-600 font-light leading-relaxed mt-4 max-w-[480px] text-justify">
-                Rare documents, archival records, photographs and archives that capture India&apos;s democratic legacy.
+                The Prime Ministers Museum and Library (PMML) came into existence on 1 April 1966. One of the principal objectives of PMML was the promotion of original research in modern and contemporary Indian history. To achieve this objective, PMML established the Archives, which was created to acquire, preserve, classify, and maintain primary and non-official source material for research. The Archives was initially formed with the acquisition of two collections viz. Jawaharlal Nehru papers and the All-India Congress Committee papers.
               </p>
             </div>
 
@@ -89,7 +89,7 @@ export default function ArchivesSection() {
               {STATS.map((stat, index) => (
                 <div
                   key={index}
-                  className="flex flex-col justify-center items-start gap-2 p-4 bg-white border border-black/5 rounded-none shadow-sm hover:shadow-md transition-shadow min-h-[100px]"
+                  className="flex flex-col justify-center items-start gap-2 py-3 px-4 bg-white border border-black/5 rounded-none shadow-sm hover:shadow-md transition-shadow min-h-[85px]"
                 >
                   <span className="text-2xl md:text-[28px] font-bold text-[#0a1835] tracking-tight leading-none select-none text-left">
                     {stat.value}
@@ -119,7 +119,7 @@ export default function ArchivesSection() {
 
           {/* Left Side: Layered Card Slider */}
           <div className="w-full md:w-[50%] flex-shrink-0 flex items-center justify-center py-6 px-10 sm:px-12 md:px-16">
-            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[460px] lg:h-[260px]">
+            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[480px] lg:h-[290px]">
               
               {/* Back Card (Layered effect) */}
               <div 

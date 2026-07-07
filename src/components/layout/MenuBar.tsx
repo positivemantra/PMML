@@ -64,7 +64,7 @@ export const NAV_ITEMS: MenuItem[] = [
     label: "Archives",
     href: "/archives",
     dropdown: [
-      { label: "PMML Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
+      { label: "Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
       { label: "Catalogue of Holdings", href: "/archives/catalogue-holdings" },
       { label: "SOP for Remote Access", href: "/archives#sop-remote-access" },
     ],
@@ -74,7 +74,7 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/ccs/about",
     dropdown: [
       { label: "Fellowship", href: "/ccs/fellowship" },
-      { label: "Seminars/Lectures", href: "/ccs/about#ccs-seminars-publications" },
+      { label: "Seminars/Lectures", href: "/ccs/seminars" },
       { label: "Occasional Papers", href: "/ccs/occasional-papers" },
     ],
   },
@@ -83,8 +83,6 @@ export const NAV_ITEMS: MenuItem[] = [
     href: "/research",
     dropdown: [
       { label: "Publications", href: "/research/publications" },
-      { label: "Reprography Division", href: "/research/reprography-division" },
-      { label: "Oral History Division", href: "/research/oral-history-division" },
       { label: "Projects", href: "/research/projects" },
     ],
   },

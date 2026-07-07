@@ -11,6 +11,10 @@ const spectral = Spectral({
 
 const IMAGES = [
   {
+    src: '/hero section/Library_Panorama1.jpg',
+    alt: 'PMML Library Main Hall',
+  },
+  {
     src: '/library.jpg',
     alt: 'PMML Library Main Hall',
   },
@@ -46,7 +50,7 @@ export default function LibrarySection() {
   const nextIdx = (activeIdx + 1) % IMAGES.length;
 
   return (
-    <section className="w-full pt-10 pb-12 bg-white relative flex flex-col items-center overflow-hidden">
+    <section className="w-full py-10 lg:py-12 bg-white relative flex flex-col items-center overflow-hidden">
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         
         {/* Two-column layout */}
@@ -60,7 +64,7 @@ export default function LibrarySection() {
                 Library
               </h2>
               <p className="text-sm md:text-[15px] text-gray-600 font-light leading-relaxed mt-4 max-w-[480px] text-justify">
-                The Library of the Prime Ministers Museum and Library is one of the foremost research libraries in the country for the study of modern and contemporary Indian history. Established in 1966, the Library supports advanced research into India&apos;s political, social, economic, and cultural development.
+                The Library of the Prime Ministers Museum and Library is one of the foremost research libraries in the country for the study of modern and contemporary Indian history. Established as a core component of the institution in 1966, the Library supports advanced research and scholarly inquiry across disciplines related to India's political, social, economic, and cultural development. The Library holds an extensive and diverse collection of printed and reference material, including books, journals, newspapers, government publications, reports, pamphlets, and new publications. Its holdings cover a wide range of subjects such as the Indian national movement, constitutional and political history, public administration, international relations, economic 
               </p>
             </div>
 
@@ -94,7 +98,7 @@ export default function LibrarySection() {
 
           {/* Right Side: Layered Card Slider */}
           <div className="w-full md:w-[50%] flex-shrink-0 flex items-center justify-center py-6 px-10 sm:px-12 md:px-16">
-            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[460px] lg:h-[260px]">
+            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[480px] lg:h-[290px]">
               
               {/* Back Card (Layered effect) */}
               <div 
