@@ -44,12 +44,11 @@ export default function Footer() {
               Explore
             </h4>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", fontSize: "10px", color: "#d1d5db", rowGap: "6px" }}>
-              {[
-            
-                { name: "Nehru Portal", href: "http://nehruportal.nic.in", target: "_blank", rel: "noopener noreferrer" },
+              {([
+                { name: "Nehru Portal", href: "/nehru-portal" } as { name: string; href: string; target?: string; rel?: string; },
                 { name: "Tenders", href: "/tenders" },
                 { name: "Vacancies", href: "/vacancies" }
-              ].map((link, idx) => (
+              ]).map((link, idx) => (
                 <React.Fragment key={link.name}>
                   {idx > 0 && <span style={{ margin: "0 6px", color: "#6b7280" }}>|</span>}
                   <a

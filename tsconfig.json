@@ -19,6 +19,17 @@
       }
     ],
     "paths": {
+      "@/components/layout/NehruFooter": ["./src/components/nehru-portalll/layout/NehruFooter"],
+      "@/components/layout/NehruHeader": ["./src/components/nehru-portalll/layout/NehruHeader"],
+      "@/components/layout/NehruTopBar": ["./src/components/nehru-portalll/layout/NehruTopBar"],
+      "@/components/layout/NehruMenuBar": ["./src/components/nehru-portalll/layout/NehruMenuBar"],
+      "@/components/home/ChronologyTimeline": ["./src/components/nehru-portalll/home/ChronologyTimeline"],
+      "@/components/home/HeroSection": ["./src/components/nehru-portalll/home/HeroSection"],
+      "@/components/home/RecentUpdatesAndMedia": ["./src/components/nehru-portalll/home/RecentUpdatesAndMedia"],
+      "@/components/family/FamilyTreeViewer": ["./src/components/nehru-portalll/family/FamilyTreeViewer"],
+      "@/components/writings/BookReader": ["./src/components/nehru-portalll/writings/BookReader"],
+      "@/context/*": ["./src/app/nehru-portal/context/*"],
+      "@/data/*": ["./src/app/nehru-portal/data/*"],
       "@/*": ["./src/*"]
     }
   },

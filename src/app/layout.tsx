@@ -30,8 +30,9 @@ export default function RootLayout({
     >
       <head />
       <body className="min-h-full flex flex-col">
-        <script
+        <Script
           id="accessibility-patches"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function() {

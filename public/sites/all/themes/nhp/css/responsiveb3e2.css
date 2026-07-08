@@ -1,0 +1,88 @@
+@media only screen and (max-width:1380px) {
+.innerContent, .sliderSection{padding:0 20px;}
+.footer{padding:25px 20px;}
+.topHeader{padding:5px 20px 6px 20px;}
+.navigationSection{padding:0 20px;}
+.timeLineSection{padding:30px 20px 24px;}
+.eventChronology{padding:23px 20px 15px;}
+.recentUpdateArea{padding:35px 20px;}
+#nav li a{padding:5px 8px;}
+.carouselBlock{width:94%;}
+.eventChronologyGallery{width:88%;}
+.eventChronology h2{width:12%;}
+.eventChronologyGallery .slideBox p{min-height:1px;}
+.testimonialSection ul li img{height:100%;}
+.sliderDetailLeft{margin-top:0%;padding-bottom:82px;}
+.testimonialSection ul li.testimonial2 p{/*padding: 20px 42px 0;*/}
+.recentUpdateArea .mediaGallery{padding-left: 30px;}
+.recentUpdateArea .mediaGallery ul li:first-child{margin:0 1.5% 0 0;}
+.recentUpdateArea .mediaGallery ul li{margin:0 1.5%;width:17%; padding:7px;}
+}
+@media only screen and (max-width:1366px) {
+.tabContainer .tabPanel{max-width:1246px;}
+}
+@media only screen and (max-width:1280px) {
+.testimonialSection ul li.testimonial2, .testimonialSection ul li.testimonial3{background-position: 22px 15px;}
+.testimonialSection ul li.testimonial2 p, .testimonialSection ul li.testimonial3 p{padding: 10px 42px 0; font-size: 1em;}
+.galleria-thumbnails .galleria-image{width: 93px !important;}
+.tabContainer .tabPanel{max-width:1160px;}
+}
+@media only screen and (max-width:1279px) {
+.form-item{width:220px;}
+.form-item input.form-text{width:85%;}
+#nav li a{padding:5px 11px;}
+.eventChronologyGallery{width:85%;}
+.eventChronologyGallery .slideBox .viewArea ul li{margin:0;}
+.eventChronologyGallery .slideBox .date{font-size:13px;}
+.eventChronologyGallery .slideBox p{min-height:120px;}
+.recentUpdateArea .recentUpdates{padding-right:20px;}
+.recentUpdateArea .mediaGallery{padding-left:20px;}
+.recentUpdateArea .mediaGallery ul li:first-child{margin:0 1% 0 0;}
+.recentUpdateArea .mediaGallery ul li{margin:0 1%;width:17.5%; padding:7px;}
+.recentUpdateArea .mediaGallery ul li .name{font-size:12px;}
+.sliderDetailLeft{width:62%;margin-top:0%;padding-bottom:0px;min-height: 285px;}
+.sliderImage{float:right;}
+.testimonialSection{width:100%!important; height:auto!important; min-height:inherit; position:relative!important; top:-1px;}
+.testimonialSection ul{margin:0!important;}
+.testimonialSection ul li{width:25%!important;}
+.testimonialSection ul li.testimonial3{float:right;}
+.timeLineSection { margin-top:-10px;}
+.webform-client-form .form-item.form-item-captcha-response{float:left;width:100%;}  
+.webform-client-form .form-item.form-item-captcha-response input{margin:0; clear:both;} 
+.webform-client-form .form-item.form-item-captcha-response .description{margin-left:0;} 
+}
+
+@media only screen and (max-width:1250px) {
+.form-item{width:160px;}
+.form-item input.form-text{width:80%;}
+#nav li a{padding:5px 8px; font-size:14px;}
+#nav li ul li a{font-size:14px;}
+}
+@media only screen and (max-width:1200px){
+.form-item{width:160px;}
+.form-item input.form-text{width:80%;}
+#nav li a{padding:5px 6px; font-size:14px;}
+#nav li ul li a{font-size:14px;}
+.eventChronologyGallery{width:85%;}
+.eventChronologyGallery .slideBox .viewArea ul li{margin:0;}
+.eventChronologyGallery .slideBox .date{font-size:13px;}
+.eventChronologyGallery .slideBox p{min-height:120px;}
+.recentUpdateArea .recentUpdates{padding-right:20px;}
+.recentUpdateArea .mediaGallery{padding-left:20px;}
+.recentUpdateArea .mediaGallery ul li:first-child{margin:0 1% 0 0;}
+.recentUpdateArea .mediaGallery ul li{margin:0 1%;width:17.5%; padding:7px;}
+.recentUpdateArea .mediaGallery ul li .name{font-size:12px;}
+.sliderDetailLeft{margin-top:1%;}
+}
+@media only screen and (max-width:1024px) {
+#nav li a{padding:5px 6px;}
+.tabContainer .tabPanel{max-width:900px;}
+#ribbon{left:495px;}
+}
+@media only screen and (max-width:599px) {
+.webform-client-form{width:100%;}
+.webform-client-form .form-item{width:100%;} 
+.webform-client-form .form-item .form-text, .webform-client-form .form-textarea{width:100%;} 
+.webform-container-inline.webform-component-textarea .form-textarea-wrapper{display:block;}
+.webform-client-form .captcha img{width:100px;}
+}

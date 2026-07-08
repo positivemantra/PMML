@@ -1,0 +1,527 @@
+[
+  {
+    "id": "ALSahgal",
+    "name": "A.L. Sahgal",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Husband of Man Mohini Zutshi."
+  },
+  {
+    "id": "Ajit",
+    "name": "Ajit Hutheesing",
+    "img": "sites/all/themes/nhp/images/Ajit.jpg",
+    "dates": "1936",
+    "description": "Younger son of Krishna and G. P. Hutheesing."
+  },
+  {
+    "id": "AnandKumar",
+    "name": "Anand Kumar Nehru",
+    "img": "sites/all/themes/nhp/images/Anand-Kumar.jpg",
+    "dates": "1908 | Died: 1947",
+    "description": "Son of Uma and Shamlal Nehru."
+  },
+  {
+    "id": "AshokMehta",
+    "name": "Ashok Mehta",
+    "img": "sites/all/themes/nhp/images/Ashok-Mehta.jpg",
+    "dates": "1921 | Died: 1991",
+    "description": "Son of Nanalal Mehta, married Chandralekha Pandit in 1949. A Member of Indian Foreign Service. He was Ambassador to Mexico, 1974-79."
+  },
+  {
+    "id": "AvtarKrishnaDar",
+    "name": "Avtar Krishna Dar",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1918",
+    "description": "Husband of Rita Pandit. Joined Indian Foreign Service, 1947. He was Joint Secretary in Ministry of External Affairs in 1965."
+  },
+  {
+    "id": "BalwantKumar",
+    "name": "Balwant Kumar Nehru",
+    "img": "sites/all/themes/nhp/images/Balwant-Kumar.jpg",
+    "dates": "1916 | Died: 1996",
+    "description": "Son of Rameshwari and Brijlal Nehru. He was an engineer and business executive and served as Director-General of All India Management Association, 1972-74. He was Secretary of Jawaharlal Nehru Memorial Fund and Vice-Chairman of the Executive Council of Nehru Memorial Museum and Library Society, 1982-1995."
+  },
+  {
+    "id": "BansiDharNehru",
+    "name": "Bansi Dhar Nehru",
+    "img": "sites/all/themes/nhp/images/Bansi-Dhar-Nehru.jpg",
+    "dates": "1843 | Died: 1913",
+    "description": "Eldest brother of Motilal Nehru. Joined government service and rose to the position of subordinate Judge."
+  },
+  {
+    "id": "Biharilal",
+    "name": "Biharilal Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Son of Nandrani and Nandlal Nehru."
+  },
+  {
+    "id": "BishenRani",
+    "name": "Bishen Rani Takru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Wife of Maharaj Bahadur Takru."
+  },
+  {
+    "id": "BrajKumar",
+    "name": "Braj Kumar Nehru",
+    "img": "sites/all/themes/nhp/images/Braj-Kumar.jpg",
+    "dates": "1909 | Died: 2001",
+    "description": "Son of Rameshwari and Brijlal Nehru. Entered I.C.S. in 1934. He was Ambassador to U.S.A., 1961-68. He was the Governor of Assam and Nagaland, 1968-73 and Governor of Jammu and Kashmir, 1981-84."
+  },
+  {
+    "id": "Brijlal",
+    "name": "Brijlal Nehru",
+    "img": "sites/all/themes/nhp/images/Brijlal.jpg",
+    "dates": "1884 | Died: 1965",
+    "description": "Son of Nandrani and Nandlal Nehru. He served in the Indian Finance Department."
+  },
+  {
+    "id": "ChandraKumari",
+    "name": "Chandra Kumari Handoo",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1903 | Died: 1968",
+    "description": "Daughter of Lado Rani and Ladli Prasad Zutshi."
+  },
+  {
+    "id": "Chandralekha",
+    "name": "Chandralekha Mehta",
+    "img": "sites/all/themes/nhp/images/Chandralekha.jpg",
+    "dates": "1924",
+    "description": "Eldest daughter of Vijaya Lakshmi and Ranjit Sitaram Pandit. She was imprisoned during the Quit India movement, 1942. She worked for the National Herald for sometime."
+  },
+  {
+    "id": "DrJalilAshgar",
+    "name": "Dr. Jalil Ashgar",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Husband of Janak Kumari."
+  },
+  {
+    "id": "DwarkaNathTakru",
+    "name": "Dwarka Nath Takru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Husband of Maharani Nehru."
+  },
+  {
+    "id": "FerozeGandhi",
+    "name": "Feroze Gandhi",
+    "img": "sites/all/themes/nhp/images/Feroze-Gandhi.jpg",
+    "dates": "1912 | Died: 1960",
+    "description": "Married Indira Nehru, 1942. Managing Director of Associated Journals Ltd. and publisher, National Herald. He was Member of Provisional Parliament, 1950-52, and Member of Lok Sabha, 1952-60."
+  },
+  {
+    "id": "VarunGandhi",
+    "name": "Feroze Varun Gandhi",
+    "img": "sites/all/themes/nhp/images/Varun-Gandhi.jpg",
+    "dates": "1980",
+    "description": "Son of Maneka and Sanjay Gandhi. Member of Lok Sabha since 2009."
+  },
+  {
+    "id": "GPHutheesing",
+    "name": "G.P. Hutheesing",
+    "img": "sites/all/themes/nhp/images/G.P.-Hutheesing(Raja).jpg",
+    "dates": "1906 | Died: 1991",
+    "description": "Known in the family as Raja, married Krishna Nehru, 1933. He was Member of the Socialist Party and Planning Advisor to the Ministry of Rehabilitation, 1947."
+  },
+  {
+    "id": "GangaDharNehru",
+    "name": "Ganga Dhar Nehru",
+    "img": "sites/all/themes/nhp/images/Ganga-Dhar-Nehru.jpg",
+    "dates": "1827 | Died: 1861",
+    "description": "Father of Motilal Nehru. He was police officer in Delhi, from where he fled to Agra along with his family in 1857."
+  },
+  {
+    "id": "GautamSehgal",
+    "name": "Gautam Sahgal",
+    "img": "sites/all/themes/nhp/images/Gautam-Sahgal.jpg",
+    "dates": "1923 | Died: 2005",
+    "description": "Husband of Nayantara."
+  },
+  {
+    "id": "Harsha",
+    "name": "Harsha Hutheesing",
+    "img": "sites/all/themes/nhp/images/Harsha.jpg",
+    "dates": "1935 | Died: 1992",
+    "description": "Elder son of Krishna and G. P. Hutheesing."
+  },
+  {
+    "id": "IndiraNehru",
+    "name": "Indira Gandhi",
+    "img": "sites/all/themes/nhp/images/Indira-Nehru.jpg",
+    "dates": "1917 | Died: 1984",
+    "description": "Daughter of Kamala and Jawaharlal Nehru. Married Feroze Gandhi in 1942. She was the Prime Minister of India, 1966-77 and 1980-84."
+  },
+  {
+    "id": "IndraniAliasJeorani",
+    "name": "Indrani alias Jeorani",
+    "img": "sites/all/themes/nhp/images/Indrani-alias-Jeorani.jpg",
+    "dates": "Died: 1886",
+    "description": "Mother of Motilal Nehru."
+  },
+  {
+    "id": "JanakKumari",
+    "name": "Janak Kumari Ashgar",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1905 | Died: 1997",
+    "description": "Daughter of Lado Rani and Ladli Prasad Zutshi. She was an educationist, nationalist and a social worker."
+  },
+  {
+    "id": "JawaharlalNehru",
+    "name": "Jawaharlal Nehru",
+    "img": "sites/all/themes/nhp/images/jawaharlal-nehru.jpg",
+    "dates": "1889 | Died: 1964",
+    "description": "Son of Swarup Rani and Motilal Nehru. He was the President of Indian National Congress, 1929, 1936, 1946 and 1951-54. He was the First Prime Minister of independent India, 1947-64."
+  },
+  {
+    "id": "Kalavati",
+    "name": "Kalavati Madan",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Daughter of Tej Wanti and Biharilal Nehru, married to Pt. Triloki Nath Madan."
+  },
+  {
+    "id": "KamalaKaul",
+    "name": "Kamala Kaul",
+    "img": "sites/all/themes/nhp/images/Kamala-Kaul.jpg",
+    "dates": "1899 | Died: 1936",
+    "description": "Daughter of Rajpati and Jawaharmul Kaul. Married Jawaharlal Nehru, 1916. She participated in the civil disobedience movement and was imprisoned, January 1931."
+  },
+  {
+    "id": "Kamala",
+    "name": "Kamala Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Wife of Mohanlal Nehru."
+  },
+  {
+    "id": "Kishenlal",
+    "name": "Kishenlal Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1881 | Died: 1951",
+    "description": "Son of Nandrani and Nandlal Nehru. He was Member of Indian Legislative Assembly, 1923-26. He served as Medical Superintendent, King George’s Medical College, Lucknow, 1936-40."
+  },
+  {
+    "id": "KrishnaHandoo",
+    "name": "Krishna Handoo",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1901 | Died: 1971",
+    "description": "Married Chandra Kumari, 1927."
+  },
+  {
+    "id": "Krishna",
+    "name": "Krishna Hutheesing",
+    "img": "sites/all/themes/nhp/images/Krishna.jpg",
+    "dates": "1907 | Died: 1967",
+    "description": "Youngest daughter of Swarup Rani and Motilal Nehru. Married G.P. Hutheesing. She was a writer."
+  },
+  {
+    "id": "KunwarBahadur",
+    "name": "Kunwar Bahadur Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Son of Bansi Dhar Nehru."
+  },
+  {
+    "id": "LadliPrasadZutshi",
+    "name": "Ladli Prasad Zutshi",
+    "img": "sites/all/themes/nhp/images/Ladli-Prasad-Zutshi.jpg",
+    "dates": "",
+    "description": "Son of Patrani and Lalji Prasad Zutshi. Married Lado Rani in 1897. He was a lawyer and Resident Trustee of Kamala Nehru Hospital, Allahabad."
+  },
+  {
+    "id": "LadoRani",
+    "name": "Lado Rani Zutshi",
+    "img": "sites/all/themes/nhp/images/Lado-Rani.jpg",
+    "dates": "1882 | Died: 1968",
+    "description": "Wife of Ladli Prasad Zutshi. Founded Women’s Conference in Allahabad. She was associated with Congress in Punjab and participated in the non-cooperation movement and civil disobedience movement."
+  },
+  {
+    "id": "LaljiPrasadZutshi",
+    "name": "Lalji Prasad Zutshi",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1875 | Died: 1954",
+    "description": "Husband of Patrani, sister of Motilal Nehru."
+  },
+  {
+    "id": "Lilavati",
+    "name": "Lilavati Gurtu",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Daughter of Tej Wanti and Biharilal Nehru."
+  },
+  {
+    "id": "MaharajBahadurTakru",
+    "name": "Maharaj Bahadur Takru",
+    "img": "sites/all/themes/nhp/images/Maharaj-Bahadur-Takru.jpg",
+    "dates": "",
+    "description": "Son of Maharani and Dwarka Nath Takru."
+  },
+  {
+    "id": "Maharani",
+    "name": "Maharani Takru",
+    "img": "sites/all/themes/nhp/images/Maharani.jpg",
+    "dates": "",
+    "description": "Sister of Motilal Nehru."
+  },
+  {
+    "id": "ManMohini",
+    "name": "Man Mohini Sahgal",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1909 | Died: 1994",
+    "description": "Daughter of Lado Rani and Ladli Prasad Zutshi. She was political and social worker."
+  },
+  {
+    "id": "ManekaAnand",
+    "name": "Maneka Gandhi",
+    "img": "sites/all/themes/nhp/images/Maneka-Anand.jpg",
+    "dates": "1956",
+    "description": "Daughter of Amardeep Kaur and Tarlochan Singh Anand. She married Sanjay Gandhi, 1974. Elected Member of Lok Sabha, 1989-1991 and since 1996 till date. She is Union Cabinet Minister, Women and Child Development since May 2014."
+  },
+  {
+    "id": "Manoharlal",
+    "name": "Manoharlal Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Son of Tej Wanti and Biharilal Nehru."
+  },
+  {
+    "id": "Mohanlal",
+    "name": "Mohanlal Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1877 | Died: 1959",
+    "description": "Son of Nandrani and Nandlal Nehru. He was Manager of Independent."
+  },
+  {
+    "id": "MotilalNehru",
+    "name": "Motilal Nehru",
+    "img": "sites/all/themes/nhp/images/motilal-nehru.jpg",
+    "dates": "1861 | Died: 1931",
+    "description": "Son of Indrani and Ganga Dhar Nehru. An eminent lawyer and Congress leader and Member of U.P. Legislative Council, 1909-19. He founded Swaraj Party along with C.R. Das in 1922 and was Member of Indian Legislative Assembly, 1923-30. He was Chairman of All Parties Conference Committee, 1928."
+  },
+  {
+    "id": "NandlalNehru",
+    "name": "Nandlal Nehru",
+    "img": "sites/all/themes/nhp/images/Nandlal-Nehru.jpg",
+    "dates": "1845 | Died: 1887",
+    "description": "Brother of Motilal Nehru. He was lawyer of Allahabad High Court and Diwan of Khetri State in Rajputana."
+  },
+  {
+    "id": "Nandrani",
+    "name": "Nandrani Nehru",
+    "img": "sites/all/themes/nhp/images/Nandrani.jpg",
+    "dates": "",
+    "description": "Wife of Nandlal Nehru."
+  },
+  {
+    "id": "Nayantara",
+    "name": "Nayantara Sahgal",
+    "img": "sites/all/themes/nhp/images/Nayantara.jpg",
+    "dates": "1927",
+    "description": "Younger daughter of Vijaya Lakshmi and Ranjit Sitaram Pandit. She is a distinguished author, novelist and political journalist. She served on the Jury of the Commonwealth Writers Prize in 1990 and 1991 and elected fellow of the American Academy of Arts and Sciences, 1990."
+  },
+  {
+    "id": "Padma",
+    "name": "Padma Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Daughter of Shivrajvati and Kishenlal Nehru."
+  },
+  {
+    "id": "Patrani",
+    "name": "Patrani Zutshi",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Sister of Motilal Nehru."
+  },
+  {
+    "id": "PriyankaGandhi",
+    "name": "Priyanka Gandhi",
+    "img": "sites/all/themes/nhp/images/Priyanka-Gandhi.jpg",
+    "dates": "1972",
+    "description": "Daughter of Sonia and Rajiv Gandhi, married Robert Vadra, 1997."
+  },
+  {
+    "id": "RahulGandhi",
+    "name": "Rahul Gandhi",
+    "img": "sites/all/themes/nhp/images/Rahul-Gandhi.jpg",
+    "dates": "1970",
+    "description": "Son of Sonia and Rajiv Gandhi. Member of Lok Sabha since 2004 and Vice-President of Indian National Congress since 2013."
+  },
+  {
+    "id": "RajBahadur",
+    "name": "Raj Bahadur Nehru",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Son of Bansi Dhar Nehru."
+  },
+  {
+    "id": "RajDulari",
+    "name": "Raj Dulari Nehru",
+    "img": "sites/all/themes/nhp/images/Raj-Dulari.jpg",
+    "dates": "1874 | Died: 1991",
+    "description": "Daughter of Kailash Prasad Kitchlew of Agra. Wife of Shri Shridhara Nehru."
+  },
+  {
+    "id": "Rajan",
+    "name": "Rajan Nehru",
+    "img": "sites/all/themes/nhp/images/Rajan.jpg",
+    "dates": "1909 | Died: 1994",
+    "description": "Wife of Ratan Kumar Nehru. Political and social worker and member of Indian National Congress for 30 years. She was founder-member, Indian Council of Child Welfare, and Bharat Sewak Samaj. Led Indian delegation to U.N. Human Rights Commission, 1973-74."
+  },
+  {
+    "id": "RajivGandhi",
+    "name": "Rajiv Gandhi",
+    "img": "sites/all/themes/nhp/images/rajiv-gandhi.jpg",
+    "dates": "1944 | Died: 1991",
+    "description": "Elder son of Indira and Feroze Gandhi. He was member of Lok Sabha, 1981–1991. President of Indian National Congress, 1985–1991 and the Prime Minister of India, 1984-1989."
+  },
+  {
+    "id": "Rameshwaari",
+    "name": "Rameshwari Nehru",
+    "img": "sites/all/themes/nhp/images/Rameshwaari.jpg",
+    "dates": "1886 | Died: 1966",
+    "description": "Wife of Brijlal Nehru. A prominent social worker. She was the President of Women’s Committee of the Indian League, 1931-33 and one of the founders of All-India Women’s Conference."
+  },
+  {
+    "id": "RanjitSitaramPandit",
+    "name": "Ranjit Sitaram Pandit",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "1893 | Died: 1944",
+    "description": "Married Vijaya Lakshmi in 1921. He was a barrister, gave up practice to participate in the national movement and suffered imprisonment."
+  },
+  {
+    "id": "RatanKumar",
+    "name": "Ratan Kumar Nehru",
+    "img": "sites/all/themes/nhp/images/Ratan-Kumar.jpg",
+    "dates": "1902 | Died: 1981",
+    "description": "Son of Kamala and Mohanlal Nehru. Joined I.C.S. in 1925. He was Ambassador to Sweden, Denmark and Finland, 1949-52. He served as Foreign Secretary, Government of India, 1952-55, and Secretary-General, Ministry of External Affairs, 1960-63."
+  },
+  {
+    "id": "Rita",
+    "name": "Rita Dar",
+    "img": "sites/all/themes/nhp/images/Rita.jpg",
+    "dates": "1929 | Died: 1992",
+    "description": "Youngest daughter of Vijaya Lakshmi and Ranjit Sitaram Pandit. She worked with Red Cross."
+  },
+  {
+    "id": "Roop",
+    "name": "Roop Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Daughter of Kamala and Mohanlal Nehru, married to Hariharnath Wanchu."
+  },
+  {
+    "id": "SPChopra",
+    "name": "S.P. Chopra",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Husband of Shyama Mohini Zutshi."
+  },
+  {
+    "id": "SanjayGandhi",
+    "name": "Sanjay Gandhi",
+    "img": "sites/all/themes/nhp/images/Sanjay-Gandhi.jpg",
+    "dates": "1946 | Died: 1980",
+    "description": "Younger son of Indira and Feroze Gandhi. He was Member of Lok Sabha, 1980."
+  },
+  {
+    "id": "SarupKumari",
+    "name": "Sarup Kumari/ Vijaya Lakshmi Pandit",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1900 | Died: 1990",
+    "description": "Elder daughter of Swarup Rani and Motilal Nehru. Diplomat and politician, she served as Ambassador to Soviet Union, 1947-49, and U.S.A., 1949-52. She was Member of Lok Sabha, 1952-54, 1964-68, and the first woman President of U.N. General Assembly, 1953-54."
+  },
+  {
+    "id": "Sarup",
+    "name": "Sarup Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Wife of Balwant Kumar Nehru."
+  },
+  {
+    "id": "Shamlal",
+    "name": "Shamlal Nehru",
+    "img": "sites/all/themes/nhp/images/Shamlal.jpg",
+    "dates": "1872 | Died: 1934",
+    "description": "Son of Nandrani and Nandlal Nehru. He took part in the non-cooperation movement and was jailed. He started The Democrat, a weekly newspaper from Allahabad in 1921."
+  },
+  {
+    "id": "Shivrajvati",
+    "name": "Shivrajvati Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1897 | Died: 1981",
+    "description": "Wife of Kishenlal Nehru. A member of U.P.P.C.C., suffered imprisonment during the national movement. She was Member of Lok Sabha, 1955-56, and U.P. Legislative Council, 1957-78."
+  },
+  {
+    "id": "Shobha",
+    "name": "Shobha Nehru",
+    "img": "sites/all/themes/nhp/images/Shobha.jpg",
+    "dates": "1908",
+    "description": "Wife of Braj Kumar Nehru. Also known as Fory in the family."
+  },
+  {
+    "id": "ShriShridhara",
+    "name": "Shri Shridhara Nehru",
+    "img": "sites/all/themes/nhp/images/Shri-Shridhara.jpg",
+    "dates": "1888 | Died: 1965",
+    "description": "Son of Bansi Dhar Nehru. Entered I.C.S., 1912 and was Member of Imperial Council of Agricultural Research in 1933 and Honorary President, International Union of Lawyers, Paris and Brussels."
+  },
+  {
+    "id": "ShyamKumariKhan",
+    "name": "Shyam Kumari Khan",
+    "img": "sites/all/themes/nhp/images/Shyam-Kumari-Khan.jpg",
+    "dates": "1904 | Died: 1980",
+    "description": "Daughter of Uma and Shamlal Nehru, married to Abdul Jamil Khan. She became first woman Secretary, Vice-President and President, Allahabad University Union, 1924-28. She was member of Rajya Sabha, 1963-68."
+  },
+  {
+    "id": "ShyamaMohini",
+    "name": "Shyama Mohini Zutshi",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1910 | Died: 1953",
+    "description": "Younger daughter of Lado Rani and Ladli Prasad Zutshi."
+  },
+  {
+    "id": "SoniaMaino",
+    "name": "Sonia Maino",
+    "img": "sites/all/themes/nhp/images/Sonia-Gandhi.jpg",
+    "dates": "1946",
+    "description": "Daughter of Paola Predebon and Stefano Maino, married Rajiv Gandhi in 1968. She is the President of Indian National Congress, since March 1998 and Member of Lok Sabha since 1999. She is also Chairperson of Jawaharlal Nehru Memorial Fund, United Progressive Alliance since 2004, Rajiv Gandhi Foundation and National Advisory Council, 2004-2006."
+  },
+  {
+    "id": "SwarupRani",
+    "name": "Swarup Rani Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1868 | Died: 1938",
+    "description": "Wife of Motilal Nehru. She also participated in the civil disobedience movement, 1930-32."
+  },
+  {
+    "id": "TejWanti",
+    "name": "Tejwanti Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "",
+    "description": "Wife of Biharilal Nehru."
+  },
+  {
+    "id": "Uma",
+    "name": "Uma Nehru",
+    "img": "sites/all/themes/nhp/images/Uma.jpg",
+    "dates": "1884 | Died: 1963",
+    "description": "Wife of Shamlal Nehru. She was Member of Lok Sabha, 1952-62."
+  },
+  {
+    "id": "Vidya",
+    "name": "Vidya Nehru",
+    "img": "sites/all/themes/nhp/images/women.jpg",
+    "dates": "1913",
+    "description": "Daughter of Shivrajvati and Kishenlal Nehru. Vishnu Dutt: Husband of Vidya Nehru."
+  },
+  {
+    "id": "VishnuDutt",
+    "name": "Vishnu Dutt",
+    "img": "sites/all/themes/nhp/images/men.jpg",
+    "dates": "",
+    "description": "Husband of Vidya Nehru."
+  }
+]

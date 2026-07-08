@@ -65,7 +65,7 @@ const NEHRU_PLANETARIUM_ITEMS = [
   {
     title: 'Aryabhata Gallery',
     description: 'Explore India\'s rich astronomical heritage and achievements in modern space science at the Aryabhata Gallery. Interactive exhibits and digital installations trace India\'s journey from ancient astronomical traditions to contemporary space missions, celebrating the legacy of great Indian astronomers.',
-    image: '/DSC_0038.jpg',
+    image: '/Timeline/np.jpg',
     alt: 'Aryabhata Gallery'
   },
   {

@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #2d200e;
+  --primary: #392b15;
+  --primary-hover: #291e0e;
+  --secondary: #d9b863;
+  --secondary-hover: #c4a14c;
+  --accent: #a81b1b;
+  --card-bg: #fcfbf8;
+  --border: #eedfad;
+  --footer-bg: #201509;
+  
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Accessibility Contrast Styles */
+.theme-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --primary: #ffff00; /* Yellow text for high contrast */
+  --primary-hover: #dddd00;
+  --secondary: #00ffff; /* Cyan for secondary elements */
+  --secondary-hover: #00cccc;
+  --accent: #ff00ff;
+  --card-bg: #111111;
+  --border: #333333;
+  --footer-bg: #111111;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-accent: var(--accent);
+  --color-card-bg: var(--card-bg);
+  --color-border-custom: var(--border);
+  --color-footer-bg: var(--footer-bg);
+  
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Sizing Adjustments for Font Scaling */
+.font-large {
+  font-size: 110%;
+}
+.font-largest {
+  font-size: 120%;
+}
+
+/* Utility classes */
+.container-custom {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.25);
+}
+
+/* General Layout adjustments */
+a {
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+/* Fix Hero Section Testimonials Alignment */
+.testimonialSection ul li {
+  height: 220px;
+}
+
+
+.testimonialSection ul li img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1380px) and (min-width: 1280px) {
+  .testimonialSection {
+    width: calc(100% - 800px) !important;
+  }
+  .testimonialSection ul li {
+    width: 50% !important;
+  }
+}
+
+/* Style timeline navigation arrows as circular buttons */
+.carouselBlock .owl-prev,
+.carouselBlock .owl-next {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  background: #d5d5d5 !important; /* Grey circle background */
+  border: none !important;        /* No border */
+  color: #ffffff !important;      /* White arrow color */
+  font-size: 20px !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  text-indent: 0 !important; /* Override legacy text-indent */
+  overflow: visible !important; /* Override legacy overflow: hidden */
+  padding: 0 !important;
+  padding-bottom: 2px !important; /* Visual vertical alignment correction for the chevron character */
+  transition: all 0.2s ease !important;
+}
+
+.carouselBlock .owl-prev:hover,
+.carouselBlock .owl-next:hover {
+  background: #c0c0c0 !important; /* Darker grey on hover */
+  color: #ffffff !important;
+}
+
+.carouselBlock .owl-prev:disabled,
+.carouselBlock .owl-next:disabled {
+  opacity: 0.3 !important;
+  cursor: not-allowed !important;
+}
+
+/* Expand the active year highlight red pill size */
+.carouselBlock .item a {
+  padding: 4px 18px !important;
+  display: inline-block !important;
+}
+
+/* Prevent slider image from shrinking below its natural size, preserving container height */
+.sliderImage img {
+  max-width: none !important;
+}
+
+/* Ensure the slider section is tall enough to fit the testimonials grid and prevent overflow */
+.sliderSection {
+  min-height: 440px !important;
+}
+
+.testimonialSection {
+  overflow: hidden !important;
+}
+
+
+
+
+
+
+
+

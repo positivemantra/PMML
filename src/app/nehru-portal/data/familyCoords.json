@@ -1,0 +1,458 @@
+[
+  {
+    "shape": "rect",
+    "coords": "602,8,734,33",
+    "id": "GangaDharNehru",
+    "name": "Ganga Dhar Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "1221,131,1312,155",
+    "id": "MotilalNehru",
+    "name": "Motilal Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "588,275,704,296",
+    "id": "JawaharlalNehru",
+    "name": "Jawaharlal Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "602,372,692,394",
+    "id": "IndiraNehru",
+    "name": "Indira Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "471,484,556,505",
+    "id": "RajivGandhi",
+    "name": "Rajiv Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "768,485,863,506",
+    "id": "SanjayGandhi",
+    "name": "Sanjay Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "431,618,523,643",
+    "id": "RahulGandhi",
+    "name": "Rahul Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "585,618,689,640",
+    "id": "PriyankaGandhi",
+    "name": "Priyanka Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "769,618,864,640",
+    "id": "VarunGandhi",
+    "name": "Varun Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "597,66,740,88",
+    "id": "IndraniAliasJeorani",
+    "name": "Indrani Alias Jeorani"
+  },
+  {
+    "shape": "rect",
+    "coords": "49,140,101,156",
+    "id": "Patrani",
+    "name": "Patrani"
+  },
+  {
+    "shape": "rect",
+    "coords": "17,175,132,192",
+    "id": "LaljiPrasadZutshi",
+    "name": "Lalji Prasad Zutshi"
+  },
+  {
+    "shape": "rect",
+    "coords": "225,140,287,157",
+    "id": "Maharani",
+    "name": "Maharani"
+  },
+  {
+    "shape": "rect",
+    "coords": "196,175,315,194",
+    "id": "DwarkaNathTakru",
+    "name": "Dwarka Nath Takru"
+  },
+  {
+    "shape": "rect",
+    "coords": "382,154,490,173",
+    "id": "BansiDharNehru",
+    "name": "Bansi Dhar Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "569,140,660,158",
+    "id": "NandlalNehru",
+    "name": "Nandlal Nehru"
+  },
+  {
+    "shape": "rect",
+    "coords": "585,176,646,194",
+    "id": "Nandrani",
+    "name": "Nandrani"
+  },
+  {
+    "shape": "rect",
+    "coords": "15,221,134,242",
+    "id": "LadliPrasadZutshi",
+    "name": "Ladli Prasad Zutshi"
+  },
+  {
+    "shape": "rect",
+    "coords": "41,258,110,277",
+    "id": "LadoRani",
+    "name": "Lado Rani"
+  },
+  {
+    "shape": "rect",
+    "coords": "184,222,327,242",
+    "id": "MaharajBahadurTakru",
+    "name": "Maharaj Bahadur Takru"
+  },
+  {
+    "shape": "rect",
+    "coords": "218,259,294,276",
+    "id": "BishenRani",
+    "name": "Bishen Rani"
+  },
+  {
+    "shape": "rect",
+    "coords": "23,360,128,382",
+    "id": "ChandraKumari",
+    "name": "Chandra Kumari"
+  },
+  {
+    "shape": "rect",
+    "coords": "23,399,126,417",
+    "id": "KrishnaHandoo",
+    "name": "Krishna Handoo"
+  },
+  {
+    "shape": "rect",
+    "coords": "31,446,120,464",
+    "id": "JanakKumari",
+    "name": "Janak Kumari"
+  },
+  {
+    "shape": "rect",
+    "coords": "27,482,122,501",
+    "id": "DrJalilAshgar",
+    "name": "Dr. Jalil Ashgar"
+  },
+  {
+    "shape": "rect",
+    "coords": "35,530,113,546",
+    "id": "ManMohini",
+    "name": "Man Mohini"
+  },
+  {
+    "shape": "rect",
+    "coords": "39,566,111,583",
+    "id": "ALSahgal",
+    "name": "A. L. Sahgal"
+  },
+  {
+    "shape": "rect",
+    "coords": "27,610,123,629",
+    "id": "ShyamaMohini",
+    "name": "Shyama Mohini"
+  },
+  {
+    "shape": "rect",
+    "coords": "39,648,110,665",
+    "id": "SPChopra",
+    "name": "S. P. Chopra"
+  },
+  {
+    "shape": "rect",
+    "coords": "240,380,319,400",
+    "id": "RajBahadur",
+    "name": "Raj Bahadur"
+  },
+  {
+    "shape": "rect",
+    "coords": "227,462,333,481",
+    "id": "KunwarBahadur",
+    "name": "Kunwar Bahadur"
+  },
+  {
+    "shape": "rect",
+    "coords": "233,529,325,549",
+    "id": "ShriShridhara",
+    "name": "Shri Shridhara"
+  },
+  {
+    "shape": "rect",
+    "coords": "247,567,311,584",
+    "id": "RajDulari",
+    "name": "Raj Dulari"
+  },
+  {
+    "shape": "rect",
+    "coords": "605,313,687,331",
+    "id": "KamalaKaul",
+    "name": "Kamala Kaul"
+  },
+  {
+    "shape": "rect",
+    "coords": "599,410,693,429",
+    "id": "FerozeGandhi",
+    "name": "Feroze Gandhi"
+  },
+  {
+    "shape": "rect",
+    "coords": "474,522,554,540",
+    "id": "SoniaMaino",
+    "name": "Sonia Maino"
+  },
+  {
+    "shape": "rect",
+    "coords": "770,522,863,540",
+    "id": "ManekaAnand",
+    "name": "Maneka Anand"
+  },
+  {
+    "shape": "rect",
+    "coords": "986,253,1073,266",
+    "id": "SarupKumari",
+    "name": "Sarup Kumari"
+  },
+  {
+    "shape": "poly",
+    "coords": "1076,254,1116,254,1116,268,1079,268,1079,278,1023,278,1023,267,1076,267",
+    "id": "VijayaLakshmi",
+    "name": "Vijaya Lakshmi"
+  },
+  {
+    "shape": "rect",
+    "coords": "986,295,1118,312",
+    "id": "RanjitSitaramPandit",
+    "name": "Ranjit Sitaram Pandit"
+  },
+  {
+    "shape": "rect",
+    "coords": "826,354,918,373",
+    "id": "Chandralekha",
+    "name": "Chandralekha"
+  },
+  {
+    "shape": "rect",
+    "coords": "829,391,915,409",
+    "id": "AshokMehta",
+    "name": "Ashok Mehta"
+  },
+  {
+    "shape": "rect",
+    "coords": "1018,355,1087,373",
+    "id": "Nayantara",
+    "name": "Nayantara"
+  },
+  {
+    "shape": "rect",
+    "coords": "1216,355,1249,371",
+    "id": "Rita",
+    "name": "Rita"
+  },
+  {
+    "shape": "rect",
+    "coords": "1003,391,1099,410",
+    "id": "GautamSehgal",
+    "name": "Gautam Sehgal"
+  },
+  {
+    "shape": "rect",
+    "coords": "1177,390,1287,409",
+    "id": "AvtarKrishnaDar",
+    "name": "Avtar Krishna Dar"
+  },
+  {
+    "shape": "rect",
+    "coords": "1116,485,1168,502",
+    "id": "Krishna",
+    "name": "Krishna"
+  },
+  {
+    "shape": "rect",
+    "coords": "1027,621,1076,638",
+    "id": "Harsha",
+    "name": "Harsha"
+  },
+  {
+    "shape": "rect",
+    "coords": "1216,620,1252,639",
+    "id": "Ajit",
+    "name": "Ajit"
+  },
+  {
+    "shape": "rect",
+    "coords": "1076,521,1208,540",
+    "id": "GPHutheesing",
+    "name": "G. P. Hutheesing(Raja)"
+  },
+  {
+    "shape": "rect",
+    "coords": "139,731,195,749",
+    "id": "Biharilal",
+    "name": "Biharilal"
+  },
+  {
+    "shape": "rect",
+    "coords": "138,768,198,787",
+    "id": "TejWanti",
+    "name": "Tej Wanti"
+  },
+  {
+    "shape": "rect",
+    "coords": "316,731,380,751",
+    "id": "Mohanlal",
+    "name": "Mohanlal"
+  },
+  {
+    "shape": "rect",
+    "coords": "321,769,373,787",
+    "id": "Kamala",
+    "name": "Kamala"
+  },
+  {
+    "shape": "rect",
+    "coords": "498,730,557,748",
+    "id": "Shamlal",
+    "name": "Shamlal"
+  },
+  {
+    "shape": "rect",
+    "coords": "508,768,545,784",
+    "id": "Uma",
+    "name": "Uma"
+  },
+  {
+    "shape": "rect",
+    "coords": "687,730,728,749",
+    "id": "Brijlal",
+    "name": "Brijlal"
+  },
+  {
+    "shape": "rect",
+    "coords": "663,768,751,784",
+    "id": "Rameshwaari",
+    "name": "Rameshwaari"
+  },
+  {
+    "shape": "rect",
+    "coords": "858,731,917,749",
+    "id": "Kishenlal",
+    "name": "Kishenlal"
+  },
+  {
+    "shape": "rect",
+    "coords": "854,767,921,786",
+    "id": "Shivrajvati",
+    "name": "Shivrajvati"
+  },
+  {
+    "shape": "rect",
+    "coords": "29,829,120,849",
+    "id": "Manoharlal",
+    "name": "Manoharlal"
+  },
+  {
+    "shape": "rect",
+    "coords": "48,912,102,931",
+    "id": "Lilavati",
+    "name": "Lilavati"
+  },
+  {
+    "shape": "rect",
+    "coords": "48,994,103,1013",
+    "id": "Kalavati",
+    "name": "Kalavati"
+  },
+  {
+    "shape": "rect",
+    "coords": "215,814,298,831",
+    "id": "RatanKumar",
+    "name": "Ratan Kumar"
+  },
+  {
+    "shape": "rect",
+    "coords": "233,851,276,868",
+    "id": "Rajan",
+    "name": "Rajan"
+  },
+  {
+    "shape": "rect",
+    "coords": "236,913,275,931",
+    "id": "Roop",
+    "name": "Roop"
+  },
+  {
+    "shape": "rect",
+    "coords": "391,821,484,859",
+    "id": "ShyamKumariKhan",
+    "name": "Shyam Kumari Khan"
+  },
+  {
+    "shape": "rect",
+    "coords": "414,904,463,941",
+    "id": "AnandKumar",
+    "name": "Anand Kumar"
+  },
+  {
+    "shape": "rect",
+    "coords": "581,813,654,833",
+    "id": "BrajKumar",
+    "name": "Braj Kumar"
+  },
+  {
+    "shape": "rect",
+    "coords": "594,850,643,867",
+    "id": "Shobha",
+    "name": "Shobha"
+  },
+  {
+    "shape": "rect",
+    "coords": "570,896,667,913",
+    "id": "BalwantKumar",
+    "name": "Balwant Kumar"
+  },
+  {
+    "shape": "rect",
+    "coords": "596,932,640,950",
+    "id": "Sarup",
+    "name": "Sarup"
+  },
+  {
+    "shape": "rect",
+    "coords": "775,813,815,829",
+    "id": "Vidya",
+    "name": "Vidya"
+  },
+  {
+    "shape": "rect",
+    "coords": "758,848,832,866",
+    "id": "VishnuDutt",
+    "name": "Vishnu Dutt"
+  },
+  {
+    "shape": "rect",
+    "coords": "772,915,819,935",
+    "id": "Padma",
+    "name": "Padma"
+  },
+  {
+    "shape": "rect",
+    "coords": "1223,171,1305,191",
+    "id": "SwarupRani",
+    "name": "Swarup Rani"
+  }
+]

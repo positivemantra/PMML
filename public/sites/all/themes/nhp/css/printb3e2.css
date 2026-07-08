@@ -1,0 +1,123 @@
+*{transform:none!important; overflow:visible!important;}
+#backtotop, .ticker .playPauseBtn,.viewAll,.breadCrumbArea,#backToFamilyTree,.topListing,.impDates a.button,.portfolio-filter,.gallerySearchArea,.galleria-image-nav,.element-invisible{display:none!important;}
+.govLogo{ width:236px;}
+#nav li{ border:0 none !important; position:relative;}
+
+ 
+
+ 
+ 
+ 
+#nav li::after {color: #565656;content: "|";padding: 0 2px 0 5px;}
+#nav li:last-child:after {display:none!important;}
+#nav li a{padding:0px 5px; background:none !important; color:#381701 !important; border:0px solid #381701 !important; margin:2px; line-height:32px;}
+#nav, #nav ul{float:none; width:100%;}
+.mainNavigation, .navigationSection{background:none !important; padding-top:15px;}
+.recentUpdateArea .mediaGallery{width:100%; float:none; padding-left:0 !important; text-align:left; margin-bottom:30px;}
+.recentUpdateArea .mediaGallery ul li.hoverOutline::before{display:none !important;}
+body{font-size:75%!important;}
+body,.topHeader{background: none #fff;}
+.sliderSection{background:none #fff;}
+.sliderBanner .item{width:100%;}
+.sliderDetailLeft{width:70%;}
+.sliderImage{width:30%;}
+
+.testimonialSection{width:100%!important; height:auto!important; position:relative; left:auto; right:auto; top:0px; bottom:auto;}
+.testimonialSection ul{width:100%!important; height:auto!important; margin:0!important;}
+.testimonialSection ul li{width:50%!important; height:auto!important; min-height:295px; background-color:transparent!important;}
+
+.timeLineSection{margin:0; background:none #fff;}
+
+.owl-carousel .owl-stage{width:100%!important;}
+.owl-theme .owl-controls{display:none!important;}
+
+
+.eventChronology{background:none transparent; padding:0 0 0 0;}
+.eventChronology h2{float:left; width:100%;}
+.eventChronology h2 br{display:none;}
+.eventChronologyGallery{width:100%; max-width:none; padding:0;}
+.eventYearGallery{padding:0;}
+.eventYearGallery .owl-item,.eventYearGallery .item{width:100%!important;}
+.eventChronologyGallery .slideBox p{min-height:inherit; border-bottom:1px solid #ddd !important;}
+.eventChronologyGallery .slideBox{padding:0 0 10px 0;}
+.eventChronologyGallery .slideBox .bottomCol{padding:0;}
+.carouselBlock .item a{}
+
+.recentUpdateArea{background:none transparent;padding:0;}
+.recentUpdateArea .recentUpdates{width:100%; padding:0;}
+.recentUpdateArea .recentUpdates .latestNews{min-height:inherit;}
+#newsTikker0{height:auto!important;}
+#newsTikker0 .activityTicker{position:relative!important; top:0!important;}
+#newsTikker0 .activityTicker li{opacity:1!important;}
+.ticker{border:0 none;}
+
+
+.footer{background:none transparent; border-top:1px solid #ddd; color:#666!important; padding:10px 0; text-align:center;}
+.footer .leftCol,
+.footer p{ text-align:center; width:100%;}
+.footer .region-footer-menu,.footer .region-site-analytics,.footer .rightCol{display:block;}
+.footer .leftCol ul{display:inline-block; text-align:center; margin:0 auto;}
+.footer .rightCol, .footer .rightCol .indiaGov{text-align:center; float:none;}
+
+.familyTreeBox{padding:20px 0;}
+.familyTreeBox{background:none transparent!important; border-top:1px solid #ddd;}
+.familyTreeBox:first-child{border-top:0 none;}
+
+.innerContent .spaceArea{padding:0 0 20px 0;}
+.spaceArea h3{ margin-left:-15px!important; padding-left:0!important;}
+.tabContainer{width:100%!important;}
+.tabbing{padding:0;}
+.tabbing .tabPanel{padding:0 0 20px 0; display:block!important;}
+.tableData th,.view-oral-history .views-table th{background:#999; border-color:#aaa; color:#fff;}
+.tableData th a,.view-oral-history .views-table th a{color:#fff;}
+.tableData tr td,.view-oral-history .views-table tr td{background:#fff; border-color:#aaa;}
+.tableData tr.evenRow td,.view-oral-history .views-table tr.even td{background:#CCC; border-color:#aaa;}
+.innerContent .container{min-height:300px;}
+.History{background:none transparent; padding:0;}
+
+.impDates .earlyLife{background:none transparent; width:100%; padding:0 0 0 0; height:auto;}
+.impDates .marriage .lifeContent,.impDates .freedomStruggle .lifeContent{width:75%; padding:0 0 0 0;}
+.impDates .marriage .lifePics{width:23%; margin:0 0 0 2%;}
+.impDates .marriage,.impDates .freedomStruggle,#inPrison{background:none transparent; border-bottom:1px solid #ddd; padding:0 0 10px 0; margin-bottom:10px;}
+.impDates .freedomStruggle .lifePics{width:23%; margin:0 2% 0 0;}
+
+.inPrison, .portfolio-filter{width:100%;}
+#portfoliolist li{margin:0 0 10px 0; width:100%;}
+.galleria-theme-classic{width:100%!important;}
+.galleria-theme-classic,.view-audio-gallery .view-content, .view-video-gallery .view-content,.jcarousel-skin-default .jcarousel-container-horizontal{background:none transparent;}
+.galleria-theme-classic .galleria-thumbnails-container{background:none transparent;}
+.galleria-theme-classic .galleria-thumb-nav-left, .galleria-theme-classic .galleria-thumb-nav-right,.jcarousel-prev-horizontal,.jcarousel-next-horizontal,.item-list .pager,ul.nehruPapers{display:none!important;}
+.galleria-thumbnails-list{width:100%; overflow:hidden!important;}
+.jcarousel,.galleria-thumbnails{width:100%!important; height:auto!important;}
+.jcarousel-skin-default .jcarousel-item{overflow:hidden!important; margin-bottom:10px;}
+.galleria-theme-classic .galleria-thumbnails .galleria-image{margin-bottom:10px;}
+.view-writings ul,.view-publications ul,.view-books ul,.view-tributes ul{margin:0; padding:0;}
+.view-writings ul li,.view-publications ul li,.view-books ul li,.view-tributes ul li{width:100%; margin:0 0 10px 0; background:none transparent!important;}
+
+.view-tributes .view-content{ background:none transparent;}
+.contactUs ul li{min-height:250px;}
+
+
+
+/* 29-11-2016 */
+body{font-size:80%!important;}
+.search_btn  , .region-site-analytics, .block-visitors-count, .region-footer-menu .block-menu, .footer .rightCol {display: none;}
+.lifePics {width: auto; padding:0; border:none;}
+.testimonialSection ul li.testimonial1 {width: 170px !important; height:auto !important;}
+.testimonialSection ul li.testimonial2 {width: 70% !important; height:auto !important;}
+.testimonialSection ul li.testimonial4 {width: 170px !important; height:auto !important;}
+.testimonialSection ul li.testimonial3 {width: 70% !important; height:auto !important;}
+.testimonialSection ul li.testimonial3 p {padding-left:0!important;}
+.testimonialSection ul li.testimonial2 p {padding-right:0!important;}
+.testimonialSection ul li {height:auto !important;}
+.testimonialSection {width: 100% !important;}
+.timeLineSection {display: none;} 
+.region-copyright {text-align: left;}
+
+.sliderDetailLeft .slider-link {display: none;}
+
+.testimonialSection ul li {min-height:150px !important;}
+.sliderDetailLeft {min-height:250px !important;}
+.testimonialSection {page-break-after: always;}
+.sliderSection {margin-bottom: 30px;}
+.recentUpdateArea h2{ font-size:1.857em; color:#312502;}

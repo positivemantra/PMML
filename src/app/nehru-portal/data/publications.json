@@ -1,0 +1,47 @@
+[
+  {
+    "title": "A Biblography",
+    "link": "biblography",
+    "cover": "https://nehruportal.nic.in/sites/default/files/styles/publications/public/publications/1.jpg?itok=-iAFWBgm",
+    "author": "Compiled & Published by NMML",
+    "bookDisplayPath": "https://nehruportal.nic.in/sites/default/files/publications/innerimages/A%20Biblography",
+    "totalImages": 1096,
+    "highResCover": "https://nehruportal.nic.in/sites/default/files/publications/1.jpg"
+  },
+  {
+    "title": "Jahawarlal Nehru on Science",
+    "link": "jahawarlal-nehru-science",
+    "cover": "https://nehruportal.nic.in/sites/default/files/styles/publications/public/publications/2.jpg?itok=UBaKbDpO",
+    "author": "Edited by Baldev Singh & Published by NMML",
+    "bookDisplayPath": "https://nehruportal.nic.in/sites/default/files/publications/innerimages/Jahawarlal%20Nehru%20on%20Science",
+    "totalImages": 130,
+    "highResCover": "https://nehruportal.nic.in/sites/default/files/publications/2.jpg"
+  },
+  {
+    "title": "Jahawarlal Nehru on Science and Society",
+    "link": "jahawarlal-nehru-science-and-society",
+    "cover": "https://nehruportal.nic.in/sites/default/files/styles/publications/public/publications/3.jpg?itok=Btn3pXuV",
+    "author": "Edited by Baldev Singh & Published by NMML",
+    "bookDisplayPath": "https://nehruportal.nic.in/sites/default/files/publications/innerimages/Jahawarlal%20Nehru%20on%20Science%20and%20Society",
+    "totalImages": 359,
+    "highResCover": "https://nehruportal.nic.in/sites/default/files/publications/3.jpg"
+  },
+  {
+    "title": "Jawaharlal Nehru Correspondence 1903-47 A Catalouge",
+    "link": "jawaharlal-nehru-correspondence-1903-47-catalouge",
+    "cover": "https://nehruportal.nic.in/sites/default/files/styles/publications/public/publications/4.jpg?itok=oZDEvAO-",
+    "author": "Compiled & Published by NMML",
+    "bookDisplayPath": "https://nehruportal.nic.in/sites/default/files/publications/innerimages/Jawaharlal%20Nehru%20Correspondence%201903-47%20A%20Catalouge",
+    "totalImages": 784,
+    "highResCover": "https://nehruportal.nic.in/sites/default/files/publications/4.jpg"
+  },
+  {
+    "title": "Jawaharlal Nehru Centenary Volume",
+    "link": "jawaharlal-nehru-centenary-volume",
+    "cover": "https://nehruportal.nic.in/sites/default/files/styles/publications/public/publications/5.jpg?itok=Shn0AhWp",
+    "author": "Edited by Sheila Dikshit, K Natwar Singh, G Parthasarathi, Ravinder Kumar & Published by NMML",
+    "bookDisplayPath": "https://nehruportal.nic.in/sites/default/files/publications/innerimages/Jawaharlal%20Nehru%20Centenary%20Volume",
+    "totalImages": 113,
+    "highResCover": "https://nehruportal.nic.in/sites/default/files/publications/5.jpg"
+  }
+]
