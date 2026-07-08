@@ -101,6 +101,21 @@ const AUDITORIUM_IMAGES = [
     src: '/audi-2.JPG',
     label: 'Auditorium Seating',
     alt: 'Auditorium View 2'
+  },
+  {
+    src: '/audi-3.JPG',
+    label: 'Auditorium Full View',
+    alt: 'Auditorium View 3'
+  },
+  {
+    src: '/audi-4.JPG',
+    label: 'Auditorium Seating',
+    alt: 'Auditorium View 4'
+  },
+  {
+    src: '/audi-5.JPG',
+    label: 'Auditorium Seating',
+    alt: 'Auditorium View 5'
   }
 ];
 

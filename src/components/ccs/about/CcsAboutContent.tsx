@@ -19,9 +19,10 @@ export default function CcsAboutContent() {
 
       {/* ── About Section ── */}
       <section id="about" className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 lg:gap-16">
 
+          {/* Row 1: First Pic (Left) & Para 1 (Right) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Image Card */}
             <div className="lg:col-span-5 w-full">
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
@@ -43,10 +44,19 @@ export default function CcsAboutContent() {
                 Center for Contemporary Studies
               </h2>
 
-              <div className="space-y-4 text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
+              <div className="text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
                 <p>
-                 The Centre for Contemporary Studies (CCS) was set up as an advanced studies unit of NMML in 1990. It was established for the promotion of research on modern Indian and contemporary history. It offers three levels of research fellowships -Junior Fellow, Fellow and Senior Fellow to scholars engaged in advanced research. The three research areas in which fellowships are granted are 'India: Recent Historical Trends and Developments', 'India in Transition: Issues and Challenges’ and 'India and the Wider World'.  The CCS also offers fellowships like Atal Bihari Vajpayee Fellowship, Academic Research Translation and Book Writing Fellowship and NMML Visiting Fellowship. 
+                  The Centre for Contemporary Studies (CCS) was set up as an advanced studies unit of NMML in 1990. It was established for the promotion of research on modern Indian and contemporary history. It offers three levels of research fellowships -Junior Fellow, Fellow and Senior Fellow to scholars engaged in advanced research. The three research areas in which fellowships are granted are 'India: Recent Historical Trends and Developments', 'India in Transition: Issues and Challenges’ and 'India and the Wider World'.  The CCS also offers fellowships like Atal Bihari Vajpayee Fellowship, Academic Research Translation and Book Writing Fellowship and NMML Visiting Fellowship. 
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 2: Para 2 + 3 Boxes (Left) & Second Pic ccs-talk.JPG (Right) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column: Para 2 + 3 Boxes */}
+            <div className="lg:col-span-7 flex flex-col justify-start">
+              <div className="text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
                 <p>
                   The Centre regularly conducts academic activities such as lectures, conferences, book discussions, panel discussions, workshops, etc. The Centre also provides research affiliation to scholars who have been awarded fellowships by other organizations like the University Grants Commission (UGC), Indian Council of Social Science Research (ICSSR), Indian Council of Historical Research (ICHR) and other similar organizations. The Centre has collaboration with the American Institute of Indian Studies (AIIS) whereby it provides research affiliation to scholars from various universities of the United States of America.
                 </p>
@@ -54,7 +64,6 @@ export default function CcsAboutContent() {
 
               {/* Stats Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-8 w-full">
-
                 {/* Stat Box 1 */}
                 <div className="flex flex-col items-center justify-center bg-white rounded-[11px] border-b-[4px] sm:border-b-[6px] border-[#E88B1D] shadow-[0_4px_20px_rgba(0,0,0,0.05)] w-full h-[80px] sm:h-[90px] lg:h-[95px] px-2 text-center transition-all duration-200 hover:shadow-md">
                   <span className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#052356] leading-none mb-1 sm:mb-1.5">30+</span>
@@ -72,11 +81,23 @@ export default function CcsAboutContent() {
                   <span className="text-lg sm:text-xl lg:text-[24px] font-bold text-[#052356] leading-none mb-1 sm:mb-1.5">150+</span>
                   <span className="text-[8px] sm:text-[9px] lg:text-[10px] text-[#444651] font-bold tracking-wider uppercase">Papers Published</span>
                 </div>
-
               </div>
             </div>
 
+            {/* Right Column: Image Card */}
+            <div className="lg:col-span-5 w-full">
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
+                <Image
+                  src="/ccs-talk.JPG"
+                  alt="Academic Presentation / Talk at Center for Contemporary Studies"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 550px"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
     </div>

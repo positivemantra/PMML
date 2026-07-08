@@ -136,10 +136,6 @@ export default function PmSangrahalayaAboutContent() {
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
                 The Pradhanmantri Sangrahalaya is a tribute to every Prime Minister of India since Independence, and a narrative record of how each one has contributed to the development of our nation over the last 75 years. It is a history of collective effort, and powerful evidence of the success of India's democracy. Our Prime Ministers came from every class and tier of society, for the gates of democracy were equally open to all. Each left an important footprint on the journey of development, social harmony and economic empowerment that has enabled India to give true meaning to freedom. We inherited an impoverished land from the debris of British colonialism, and together gave it a new life . This has lifted our country from famished deprivation to food-surplus status, and creating infrastructure over barren territory for the benefit of the people.
               </p>
-
-              <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed text-justify">
-                The Teen Murti Estate, home to India's first Prime Minister Shri Jawaharlal Nehru for 16 years, was the natural environment for Pradhanmantri Sangrahalaya, because this is a story of continuity.
-              </p>
             </div>
 
           </div>
@@ -149,12 +145,12 @@ export default function PmSangrahalayaAboutContent() {
       {/* ── THE SANGRAHALAYA BLEND SECTION ── */}
       <section className="w-full pt-5 pb-5 lg:pt-6 lg:pb-6 bg-white text-left border-t border-slate-100/60">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             
             {/* Left Column: Title and Content */}
-            <div className="lg:col-span-7 flex flex-col text-left justify-center">
+            <div className="lg:col-span-6 flex flex-col text-left justify-center">
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
-                The Sangrahalaya is a seamless blend which begins at the renovated and refurbished Nehru Museum building, now completely updated and technologically advanced displays on the life and contribution of Shri Jawaharlal Nehru. The new panorama includes a section which exhibits a large number of rare gifts received by him from all across the world but never put on display.
+                 The Teen Murti Estate, home to India's first Prime Minister Shri Jawaharlal Nehru for 16 years, was the natural environment for Pradhanmantri Sangrahalaya, because this is a story of continuity.The Sangrahalaya is a seamless blend which begins at the renovated and refurbished Nehru Museum building, now completely updated and technologically advanced displays on the life and contribution of Shri Jawaharlal Nehru. The new panorama includes a section which exhibits a large number of rare gifts received by him from all across the world but never put on display.
               </p>
 
               <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed text-justify">
@@ -163,12 +159,12 @@ export default function PmSangrahalayaAboutContent() {
             </div>
 
             {/* Right Column: Image */}
-            <div className="lg:col-span-5 relative aspect-[4/3] lg:aspect-auto lg:h-[300px] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[300px] sm:min-h-[400px] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
               <Image
                 src="/pms img-2.png"
                 alt="Pradhanmantri Sangrahalaya Ceiling Display"
                 fill
-                sizes="(max-w-1024px) 100vw, 500px"
+                sizes="(max-w-1024px) 100vw, 550px"
                 className="object-cover hover:scale-105 transition-transform duration-500"
                 priority
               />
