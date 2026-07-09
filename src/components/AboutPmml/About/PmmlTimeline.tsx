@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Spectral } from 'next/font/google';
+import styles from './PmmlTimeline.module.css';
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -133,8 +134,7 @@ export default function PmmlTimeline() {
 
         {/* ── DESKTOP LAYOUT (2-Column split system) ── */}
         <div
-          className="hidden lg:grid gap-8 items-stretch"
-          style={{ gridTemplateColumns: '15fr 85fr' }}
+          className={`hidden lg:grid gap-8 items-stretch ${styles.desktopTimelineGrid}`}
         >
           {/* Column 1: Fixed Timeline Nav vertical sidebar tracker (Vertically centered) */}
           <div className="flex flex-col justify-center gap-4 h-full select-none">
@@ -211,8 +211,7 @@ export default function PmmlTimeline() {
         <div className="flex flex-col lg:hidden gap-6">
           {/* Horizontal Year Selector */}
           <div
-            className="w-full py-3 flex overflow-x-auto px-4"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            className={`w-full py-3 flex overflow-x-auto px-4 ${styles.mobileYearSelector}`}
           >
             <div className="flex gap-2 mx-auto">
               {MILESTONES.map((m, idx) => {

@@ -1,0 +1,50 @@
+.pageHeader {
+  color: #a52216;
+  margin-bottom: 25px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.leftColumn {
+  flex: 1 1 70%;
+  min-width: 300px;
+}
+
+.updatesList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.updateItem {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.updateLink {
+  color: #b68a35;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 1.05em;
+}
+
+.rightColumn {
+  flex: 0 0 auto;
+  min-width: 200px;
+  text-align: right;
+}
+
+.archiveLink {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.8em;
+  color: #392b15;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Spectral } from 'next/font/google';
+import styles from './PlanetariumSection.module.css';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -23,12 +24,7 @@ export default function PlanetariumSection() {
 
   return (
     <section 
-      className="w-full bg-[#033a8c] md:bg-[#030812] relative overflow-hidden flex flex-col md:flex-row md:h-[380px] lg:h-[440px] select-none"
-      style={isMobile ? {
-        backgroundImage: "linear-gradient(135deg, rgba(3, 15, 60, 0.8) 0%, rgba(3, 58, 140, 0.5) 100%), url('/planet-bg.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      } : {}}
+      className={`w-full bg-[#033a8c] md:bg-[#030812] relative overflow-hidden flex flex-col md:flex-row md:h-[380px] lg:h-[440px] select-none ${isMobile ? styles.sectionMobileBackground : ''}`}
     >
       
       {/* Desktop Planetarium Image on the Right */}
@@ -42,14 +38,7 @@ export default function PlanetariumSection() {
 
       {/* Desktop Slanted Blue Block Overlay */}
       <div 
-        className="hidden md:block absolute top-0 left-0 h-full w-[50%] lg:w-[46%] z-10"
-        style={{
-          backgroundImage: "linear-gradient(135deg, rgba(3, 15, 60, 0.8) 0%, rgba(3, 58, 140, 0.5) 100%), url('/planet-bg.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'left center',
-          clipPath: 'polygon(0 0, 85% 0, 100% 100%, 0 100%)',
-          WebkitClipPath: 'polygon(0 0, 85% 0, 100% 100%, 0 100%)'
-        }}
+        className={`hidden md:block absolute top-0 left-0 h-full w-[50%] lg:w-[46%] z-10 ${styles.slantedBlueBlock}`}
       />
 
       {/* Content Container (Constrained Width matching page grids) */}

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Spectral } from 'next/font/google';
+import styles from './ExperienceSection.module.css';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -190,23 +191,12 @@ export default function ExperienceSection() {
 
   return (
     <section 
-      className="w-full pt-16 pb-12 text-[#0a1835] overflow-hidden relative select-none"
-      style={{
-        backgroundColor: '#ffffff', // White base color
-      }}
+      className={`w-full pt-16 pb-12 text-[#0a1835] overflow-hidden relative select-none ${styles.sectionContainer}`}
       onMouseEnter={() => setIsPaused(false)}
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Background Grid Pattern with White Stroke */}
-      <div 
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          backgroundImage: "url('/image%2022.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
+      <div className={`absolute inset-0 z-0 pointer-events-none ${styles.backgroundGrid}`} />
 
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center relative z-10">
 
@@ -279,30 +269,15 @@ export default function ExperienceSection() {
                     {/* Side card labels — always rendered, covers both left and right */}
                     {!isActive && (isLeft || isRight) && (
                       <div
+                        className={styles.sideCardLabelContainer}
                         style={{
-                          position: 'absolute',
-                          bottom: 0,
-                          left: 0,
-                          right: 0,
-                          padding: '16px',
-                          paddingTop: '40px',
-                          background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)',
-                          display: 'flex',
-                          alignItems: 'flex-end',
                           justifyContent: isLeft ? 'flex-end' : 'flex-start',
-                          zIndex: 99,
                         }}
                       >
                         <h3
-                          className={spectral.className}
+                          className={`${spectral.className} ${styles.sideCardLabel}`}
                           style={{
-                            color: '#ffffff',
-                            fontWeight: 600,
-                            fontSize: '14px',
-                            lineHeight: '1.3',
-                            margin: 0,
                             textAlign: isLeft ? 'right' : 'left',
-                            textShadow: '0 2px 8px rgba(0,0,0,1)',
                           }}
                         >
                           {exhibit.title}
@@ -314,15 +289,9 @@ export default function ExperienceSection() {
                   {/* Glassmorphic Footer Overlay — active card only */}
                   {isActive ? (
                     <div
-                      className="absolute bottom-0 left-0 right-0 p-5 flex flex-col justify-between border-t border-white/10"
+                      className={`absolute bottom-0 left-0 right-0 p-5 flex flex-col justify-between border-t border-white/10 ${styles.activeCardOverlay}`}
                       onMouseEnter={() => setIsPaused(true)}
                       onMouseLeave={() => setIsPaused(false)}
-                      style={{
-                        background: 'rgba(13, 42, 92, 0.75)',
-                        backdropFilter: 'blur(14px)',
-                        height: '135px',
-                        animation: 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards'
-                      }}
                     >
                       <div className="flex-1 flex flex-col justify-center text-left">
                         <h3 className={`${spectral.className} text-white font-semibold text-[16px] sm:text-[18px] tracking-wide leading-tight mb-1`}>
@@ -361,19 +330,7 @@ export default function ExperienceSection() {
 
       </div>
 
-      {/* Global CSS Keyframe for Slide Animation */}
-      <style dangerouslySetInnerHTML={{ __html: `
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(12px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}} />
+
     </section>
   );
 }

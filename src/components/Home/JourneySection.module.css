@@ -1,0 +1,9 @@
+.wheelAnchor {
+  bottom: 15px;
+}
+
+.leaderImage {
+  transform: scale(0.82) translateY(5px);
+  transform-origin: center;
+  object-position: center 8%;
+}

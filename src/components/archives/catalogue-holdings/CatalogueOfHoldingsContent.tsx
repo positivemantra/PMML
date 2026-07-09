@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Spectral } from "next/font/google";
 import ArchivesHeroSlider from "@/components/archives/ArchivesHeroSlider";
+import styles from "./CatalogueOfHoldingsContent.module.css";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -101,8 +102,7 @@ export default function CatalogueOfHoldingsContent() {
                       >
                         {/* Bookmark Ribbon */}
                         <div 
-                          className="absolute top-0 right-5 w-4 h-8 bg-[#ffd5a6] z-10 transition-transform duration-300 group-hover/card:translate-y-0.5 drop-shadow-[0_2px_3px_rgba(0,0,0,0.08)]"
-                          style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)' }}
+                          className={`absolute top-0 right-5 w-4 h-8 bg-[#ffd5a6] z-10 transition-transform duration-300 group-hover/card:translate-y-0.5 drop-shadow-[0_2px_3px_rgba(0,0,0,0.08)] ${styles.bookmarkRibbon}`}
                         />
                         
                         {/* Title */}
@@ -156,8 +156,7 @@ export default function CatalogueOfHoldingsContent() {
                       >
                         {/* Bookmark Ribbon */}
                         <div 
-                          className="absolute top-0 right-5 w-4 h-8 bg-[#ffd5a6] z-10 transition-transform duration-300 group-hover/card:translate-y-0.5 drop-shadow-[0_2px_3px_rgba(0,0,0,0.08)]"
-                          style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%)' }}
+                          className={`absolute top-0 right-5 w-4 h-8 bg-[#ffd5a6] z-10 transition-transform duration-300 group-hover/card:translate-y-0.5 drop-shadow-[0_2px_3px_rgba(0,0,0,0.08)] ${styles.bookmarkRibbon}`}
                         />
                         
                         {/* Title */}

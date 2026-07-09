@@ -1,0 +1,50 @@
+.sectionContainer {
+  background-color: #ffffff;
+}
+
+.backgroundGrid {
+  background-image: url('/image%2022.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sideCardLabelContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  padding-top: 40px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  z-index: 99;
+}
+
+.sideCardLabel {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,1);
+}
+
+.activeCardOverlay {
+  background: rgba(13, 42, 92, 0.75);
+  backdrop-filter: blur(14px);
+  height: 135px;
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

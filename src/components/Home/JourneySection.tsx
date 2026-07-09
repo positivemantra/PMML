@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Spectral } from 'next/font/google';
+import styles from './JourneySection.module.css';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -250,7 +251,7 @@ export default function JourneySection() {
             className="w-full max-w-[680px] h-full relative flex justify-center"
           >
             {/* Anchor at bottom:15px inside container */}
-            <div className="absolute left-1/2 w-0 h-0 z-10" style={{ bottom: '15px' }}>
+            <div className={`absolute left-1/2 w-0 h-0 z-10 ${styles.wheelAnchor}`}>
             
             {/* Outer dotted arc track — thicker gold dashed border */}
             <div 
@@ -366,12 +367,7 @@ export default function JourneySection() {
                         alt={pm.name}
                         className={`w-full h-full object-cover transition-all duration-700 ${
                           isActive ? 'grayscale-0' : 'grayscale hover:grayscale-0'
-                        }`}
-                        style={{
-                          transform: 'scale(0.82) translateY(5px)',
-                          transformOrigin: 'center',
-                          objectPosition: 'center 8%',
-                        }}
+                        } ${styles.leaderImage}`}
                       />
                     </div>
                   </div>

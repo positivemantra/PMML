@@ -4,6 +4,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
 import ArchivesHeroSlider from "@/components/archives/ArchivesHeroSlider";
+import styles from "./Content.module.css";
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -466,12 +467,8 @@ export default function MiscellaneousCollectionsContent() {
                   Previous
                 </button>
 
-                {/* Horizontally scrollable page numbers */}
                 <div 
-                  className="flex items-center gap-1 overflow-x-auto max-w-[130px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] py-1 px-1 border border-gray-100 rounded-lg bg-gray-50/50"
-                  style={{
-                    scrollbarWidth: 'thin',
-                  }}
+                  className={`flex items-center gap-1 overflow-x-auto max-w-[130px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] py-1 px-1 border border-gray-100 rounded-lg bg-gray-50/50 ${styles.pagesContainer}`}
                 >
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
                     <button

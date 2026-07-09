@@ -3,6 +3,7 @@ import Link from "next/link";
 import TopBar from "@/components/layout/NehruTopBar";
 import Header from "@/components/layout/NehruHeader";
 import Footer from "@/components/layout/NehruFooter";
+import styles from "./page.module.css";
 
 export default function Page() {
   return (
@@ -20,7 +21,7 @@ export default function Page() {
           </div>
           
           <div className="spaceArea">
-            <h2 style={{ color: "#a52216" }}>About</h2>
+            <h2 className={styles.aboutHeader}>About</h2>
             <div className="text-slate-600 text-xs sm:text-xs md:text-sm leading-relaxed text-justify max-w-none">
               
       <p>

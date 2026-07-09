@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './PmmlSocietyHero.module.css';
 
 export default function PmmlSocietyHero() {
   return (
@@ -21,14 +22,7 @@ export default function PmmlSocietyHero() {
       <div className="absolute inset-0 bg-black/10" />
 
       {/* Decorative diagonal stripe */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage:
-            'repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)',
-          backgroundSize: '24px 24px',
-        }}
-      />
+      <div className={`absolute inset-0 opacity-5 ${styles.diagonalStripe}`} />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-end pb-14 px-6 sm:px-12 lg:px-20">
