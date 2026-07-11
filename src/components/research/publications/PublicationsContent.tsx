@@ -113,7 +113,7 @@ export default function PublicationsContent() {
       {/* ── Hero Banner ── */}
       <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
         <Image
-          src="/hero section/ccs-building.jpg"
+          src="/hero section/Library_Panorama1.jpg"
           alt="PMML Research Publications"
           fill
           priority
@@ -133,7 +133,7 @@ export default function PublicationsContent() {
               {/* Left Column: Image */}
               <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
                 <Image
-                  src="/research-publication.png"
+                  src="/Research Pics.jpg"
                   alt="Publications Division Archival Storage"
                   fill
                   sizes="(max-width: 1024px) 100vw, 550px"

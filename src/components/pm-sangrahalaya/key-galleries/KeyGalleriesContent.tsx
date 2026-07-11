@@ -127,7 +127,7 @@ const GALLERIES: Gallery[] = [
     title: "Jawaharlal Nehru's Bedroom",
     menuLabel: "Bedroom",
     description: "The preserved bedroom of the first Prime Minister of India, capturing the simple and elegant setting of his personal life.",
-    image: "/building 1/bedroom.jpg",
+    image: "/building 1/Bedroom1.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -136,7 +136,7 @@ const GALLERIES: Gallery[] = [
     title: "Jawaharlal Nehru's Sitting Room",
     menuLabel: "Sitting Room",
     description: "The historical room where Prime Minister Nehru engaged in discussions with international leaders, diplomats, and close associates.",
-    image: "/building 1/sitting room.jpg",
+    image: "/building 1/Living room.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -145,7 +145,7 @@ const GALLERIES: Gallery[] = [
     title: "Jawaharlal Nehru's Study",
     menuLabel: "Study",
     description: "The private study room lined with books and writing tables where the Prime Minister drafted critical policies and letters.",
-    image: "/building 1/study.jpg",
+    image: "/building 1/Study Room.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },

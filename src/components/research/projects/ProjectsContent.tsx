@@ -80,7 +80,7 @@ export default function ProjectsContent() {
       {/* ── Hero Banner ── */}
         <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
         <Image
-          src="/hero section/ccs-building.jpg"
+          src="/hero section/Library_Panorama1.jpg"
           alt="PMML Research Projects"
           fill
           priority
