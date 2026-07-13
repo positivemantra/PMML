@@ -81,7 +81,7 @@ const GALLERIES: Gallery[] = [
     id: "welcome-area",
     title: "Welcome Area",
     menuLabel: "Welcome Area",
-    description: "The initial exhibition area introducing visitors to the rich history and democratic heritage of India.",
+    description: "The first exhibition area introducing visitors to the rich history and democratic heritage of India.",
     image: "/building 1/welcome area.jpg",
     building: 1,
     category: "Facilities"
@@ -126,7 +126,7 @@ const GALLERIES: Gallery[] = [
     id: "nehru-bedroom",
     title: "Jawaharlal Nehru's Bedroom",
     menuLabel: "Bedroom",
-    description: "The preserved bedroom of the first Prime Minister of India, capturing the simple and elegant setting of his personal life.",
+    description: "The preserved bedroom of the first Prime Minister of India, capturing the but simple and elegant setting of his personal life.",
     image: "/building 1/Bedroom1.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
@@ -281,7 +281,7 @@ const GALLERIES: Gallery[] = [
     id: "gulzarilal-nanda-2",
     title: "Shri Gulzarilal Nanda",
     menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
-    description: "Highlights the selfless service of the two-time interim Prime Minister and his dedication to labor welfare and planning.",
+    description: "Highlights the selfless service of the two-time interim Prime Minister and his contribution to labor welfare and the Planning Commission as its first Deputy Chairman.",
     image: "/building 2/shri gulzarilal nanda.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
@@ -290,7 +290,7 @@ const GALLERIES: Gallery[] = [
     id: "lal-bahadur-shastri-2",
     title: "Shri Lal Bahadur Shastri",
     menuLabel: "Gallery 3 - Shri Lal Bahadur Shastri",
-    description: "Highlights the second PM's integrity, rural reforms, and defense leadership during the 1965 crisis with his slogan 'Jai Jawan Jai Kisan'.",
+    description: "Highlights the second PM's integrity, rural reforms, and military leadership during the 1965 war with his slogan 'Jai Jawan Jai Kisan'.",
     image: "/building 2/shri lal bahadur shastri.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
@@ -362,7 +362,7 @@ const GALLERIES: Gallery[] = [
     id: "deve-gowda-2",
     title: "Shri HD Deve Gowda",
     menuLabel: "Gallery 11 - Shri HD Deve Gowda",
-    description: "Commemorates the coalition government's efforts in federal governance, regional development, and agricultural welfare.",
+    description: "Commemorates the coalition government's efforts towards federal governance, regional development, and agricultural welfare.",
     image: "/building 2/shri hd deve gowda.jpg",
     building: 2,
     category: "Prime Ministers Galleries"

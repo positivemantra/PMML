@@ -58,7 +58,7 @@ export default function ResearchAboutContent() {
                 typescripts. So far we have completed the projects of Selected Works of Motilal Nehru,
                 Selected Works of Acharya Narendra Deva and Selected Works of Jayaprakash Narayan.
                 At present, work on the Selected Works of C. Rajagopalachari and Atal Bihari Vajpayee
-                Chayan Sangrah are being carried out by the section. For these projects the Section
+                is being carried out by the Section. For these projects, the Section
                 primarily utilises the private paper collections preserved at the PMML.
               </p>
             </div>
@@ -126,7 +126,7 @@ export default function ResearchAboutContent() {
                 </div>
 
                 <p className="text-sm sm:text-[15px] text-gray-600 font-medium leading-relaxed text-justify">
-                  Chakravarti Rajagopalachari (1878–1972), popularly known as Rajaji, was one of the most remarkable leaders of the Indian national movement. Mahatma Gandhi called him his &apos;conscience keeper&apos; which explains his importance in modern Indian history. Rajaji continued to be influential in independent India as well and was the first and last Indian Governor-General of independent India. A prolific writer and orator, his private papers and publications run into several pages. The Selected Works of C. Rajagopalachari is a multi-volume series being published by the Prime Ministers Museum and Library in association with the Orient BlackSwan covering the selected writings and speeches of Rajaji of the period between 1907 and 1972.
+                  Chakravarti Rajagopalachari (1878–1972), popularly known as Rajaji, was one of the most remarkable leaders of the Indian national movement. Mahatma Gandhi called him his &apos;conscience keeper&apos; which explains his importance in modern Indian history. Rajaji continued to be influential in independent India as well and was the first and last Indian Governor-General of independent India. A prolific writer and orator, his private papers and publications run into several pages. The Selected Works of C. Rajagopalachari is a multi-volume series being published by the Prime Ministers Museum and Library in association with the Orient BlackSwan covering the selected writings and speeches of Rajaji of the period between 1907 and 1972. So far, 10 volumes have been published.
                 </p>
               </div>
 

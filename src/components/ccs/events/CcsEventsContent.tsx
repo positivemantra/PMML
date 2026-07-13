@@ -39,18 +39,7 @@ const EVENTS_DATA: CcsEvent[] = [
     description: 'A keynote lecture by eminent constitutional historians tracing the debates, visionaries, and enduring democratic values of the Indian Constitution.',
     image: '/seminar.JPG',
   },
-  {
-    id: 'c2',
-    title: 'Contemporary India: Economic Reforms & Growth',
-    category: 'seminar',
-    date: '2026-08-12',
-    day: '12',
-    monthYear: 'Aug, 2026',
-    time: '11:00 am - 1:00 pm',
-    venue: 'Seminar Room 1, CCS Wing',
-    description: 'A national panel discussion exploring the policy milestones, infrastructure developments, and economic reforms that have shaped modern India.',
-    image: '/interview-1.jpg',
-  },
+
   {
     id: 'c3',
     title: "India's Foreign Policy in the 21st Century",

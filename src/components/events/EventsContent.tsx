@@ -79,19 +79,7 @@ const EVENTS_DATA: PortalEvent[] = [
     description: 'A special hands-on workshop designed for students to explore leadership principles through holographic simulations and interactive history games.',
     image: '/selfie.png',
   },
-  {
-    id: 'e5',
-    title: 'Contemporary India: Economic Reforms & Growth',
-    division: 'ccs',
-    category: 'lecture',
-    date: '2026-08-12',
-    day: '12',
-    monthYear: 'Aug, 2026',
-    time: '11:00 am - 1:00 pm',
-    venue: 'Seminar Room 1, CCS Wing',
-    description: 'A national panel discussion exploring the policy milestones, infrastructure developments, and economic reforms that have shaped modern India.',
-    image: '/interview-1.jpg',
-  },
+
   {
     id: 'e6',
     title: 'Astronomy Day: Solar Observations & Interactive Talks',

@@ -25,7 +25,7 @@ const SHOWS: Show[] = [
     id: "light-sound-show",
     title: "Light and Sound Show",
     menuLabel: "Light and Sound Show",
-    description: "Watch an Immersive tale of Valliant Women Warriors, &quot;Veeranganaon ki Mahagatha&quot; who strived to uphold the nation&apos;s pride, in Hindi at 6:30 pm. Also, watch the story of India&apos;s space programme and other important achievements of the last 75 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
+    description: "Watch an Immersive tale of Valliant Women Warriors, Veeranganaon ki Mahagatha; who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of nearly 80 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
     image: "/special shows/light and sound show.jpg"
   },
    {

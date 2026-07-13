@@ -9,7 +9,7 @@ export default function Footer() {
 
       {/* MAIN FOOTER */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 items-stretch w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-stretch w-full">
 
           {/* COL 1 — Important Links */}
           <div>
@@ -27,7 +27,6 @@ export default function Footer() {
                 { name: "Copyright Policy", href: "/copyright-policy" },
                 { name: "Hyperlink Policy", href: "/hyperlink-policy" },
                 { name: "Refund & Cancellation Policy", href: "/refund-cancellation-policy" },
-              
               ].map((link, idx, arr) => (
                 <React.Fragment key={link.name}>
                   {idx > 0 && <span className={styles.linkSeparator}>|</span>}
@@ -113,6 +112,29 @@ export default function Footer() {
 
           </div>
 
+          {/* COL 4 — Ministry of Culture */}
+          <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
+            <div className="mt-1.5">
+              <a
+                href="https://www.indiaculture.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 select-none hover:opacity-90 transition-opacity"
+              >
+                <img
+                  src="/hey.png"
+                  alt="National Emblem of India"
+                  className="h-10 w-auto object-contain flex-shrink-0 invert mix-blend-screen"
+                />
+                <div className="flex flex-col justify-center items-start text-left leading-tight">
+                  <span className="text-[10px] font-bold text-white font-sans">संस्कृति मंत्रालय</span>
+                  <span className="text-[10.5px] font-bold text-white font-sans tracking-wide">Ministry of Culture</span>
+                  <span className="text-[7.5px] font-semibold text-gray-300 font-sans tracking-wider">GOVERNMENT OF INDIA</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -129,5 +151,5 @@ export default function Footer() {
       </div>
 
     </footer>
-  ); 
+  );
 }

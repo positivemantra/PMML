@@ -217,7 +217,7 @@ export default function NehruPlanetariumDetails() {
             </h2>
             
             <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
-              The Nehru Planetarium, New Delhi, is a premier centre for astronomy education and public engagement, dedicated to nurturing scientific temper and curiosity about the universe. Inaugurated on 6 February 1984, the Planetarium has played a significant role in popularising astronomy through immersive and engaging learning experiences for visitors of all ages. At the core of the Planetarium is its full-dome sky theatre, equipped with a 15-metre 4K digital dome capable of presenting high-quality 2D and 3D shows.
+              The Nehru Planetarium, New Delhi, is a premier centre for astronomy education and public engagement, dedicated to nurturing scientific temper and curiosity about the universe. Inaugurated on 6 February 1984 by the then Prime Minister Smt. Indira Gandhi, the Planetarium has played a significant role in popularising astronomy through immersive and engaging learning experiences for visitors of all ages. At the core of the Planetarium is its full-dome sky theatre, equipped with a 15-metre 4K digital dome capable of presenting high-quality 2D and 3D shows.
             </p>
 
             {/* Stats Cards */}

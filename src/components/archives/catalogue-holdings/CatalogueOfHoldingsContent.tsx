@@ -71,7 +71,7 @@ export default function CatalogueOfHoldingsContent() {
           <div className="mb-10 text-left">
             <div className="w-12 h-1 bg-[#f37021] mb-2.5" />
             <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-              Catalogue of private papers
+              Catalogue of Private Papers
             </h2>
           </div>
 

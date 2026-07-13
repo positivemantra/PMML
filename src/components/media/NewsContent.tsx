@@ -12,15 +12,7 @@ const spectral = Spectral({
 });
 
 const NEWS_DATA = [
-  {
-    id: 1,
-    title: 'PMML Announces International Symposium on Modern Indian History',
-    date: '20/05/2026',
-    day: '20',
-    monthYear: 'May, 2026',
-    description: 'Scholars from across the globe will gather at the Center for Contemporary Studies to discuss new perspectives on democratic institutions and public policy.',
-    image: '/hero.png',
-  },
+
   {
     id: 2,
     title: 'New Exhibition Gallery Opened at Pradhanmantri Sangrahalaya',

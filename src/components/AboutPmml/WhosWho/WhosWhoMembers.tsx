@@ -24,10 +24,10 @@ const WHOS_WHO_DATA: WhosWhoMember[] = [
   { sNo: 3, department: "—", name: "Dr. Ravi K. Mishra", designation: "Joint Director", email: "deputydirector@nmml.gov.in", contact: "23017599" },
   { sNo: 4, department: "Finance Wing", name: "Shri Garud Rahul Deelip", designation: "Financial Controller", email: "garud.rahul@gov.in", contact: "23014273" },
   { sNo: 5, department: "Museum", name: "Dr. Priyanka Mishra", designation: "Chief Executive Officer", email: "ceo.pm.museum@gmail.com", contact: "23017220" },
-  { sNo: 6, department: "Research and Publications Division", name: "Dr. Narendra Shukla", designation: "Head Research and Publications Division", email: "hrpd@nmml.gov.in", contact: "21412012" },
-  { sNo: 7, department: "Library", name: "Shri Vikas Kumar", designation: "Library and Information Officer", email: "lio@nmml.gov.in", contact: "21411895" },
-  { sNo: 8, department: "Publications", name: "Dr. Nisar Kizhakkayil", designation: "Research Officer", email: "aroresearch@nmml.gov.in", contact: "" },
-  { sNo: 9, department: "Administration", name: "Smt. Nidhi Srivastava", designation: "Administrative Officer", email: "ao@nmml.gov.in", contact: "23014486" },
+  { sNo: 6, department: "Administration", name: "Smt. Nidhi Srivastava", designation: "Administrative Officer", email: "ao@nmml.gov.in", contact: "23014486" },
+  { sNo: 7, department: "Research and Publications Division", name: "Dr. Narendra Shukla", designation: "Head Research and Publications Division", email: "hrpd@nmml.gov.in", contact: "21412012" },
+  { sNo: 8, department: "Library", name: "Shri Vikas Kumar", designation: "Library and Information Officer", email: "lio@nmml.gov.in", contact: "21411895" },
+  { sNo: 9, department: "Research and Publications Division", name: "Dr. Nisar Kizhakkayil", designation: "Research Officer", email: "aroresearch@nmml.gov.in", contact: "" },
   { sNo: 10, department: "Reprography", name: "Shri Vipul Vasisht", designation: "Senior Reprography Officer", email: "sro@nmml.gov.in", contact: "23012752" },
   { sNo: 11, department: "Oral History Division", name: "Dr. L. Haokip", designation: "Research Officer", email: "ohdnmml@gmail.com", contact: "23016140" },
   { sNo: 12, department: "Research", name: "Shri Mukesh Kumar", designation: "Research Officer", email: "mukeshsharma@nmml.gov.in", contact: "" },
@@ -35,15 +35,14 @@ const WHOS_WHO_DATA: WhosWhoMember[] = [
   { sNo: 14, department: "Finance Wing", name: "Shri Sunil Rathi", designation: "Finance and Audit Officer", email: "fao-nmml@gov.in", contact: "" },
   { sNo: 15, department: "Planetarium", name: "Dr. Y Ravi Kiron", designation: "Director, Nehru Planetarium", email: "nehruplanetarium@gmail.com", contact: "23014504" },
   { sNo: 16, department: "Hindi Section", name: "Shri S.K. Shukla", designation: "Senior Consultant (Hindi)", email: "nmmlhindiunit@gmail.com", contact: "23010700" },
-  { sNo: 17, department: "Center for Contemporary studies", name: "Shri Iqbal Ahmad", designation: "Assistant Research Officer", email: "iqbalahmad@nmml.gov.in", contact: "23010666" },
-  { sNo: 18, department: "Library", name: "Smt. Sangeeta Sharma", designation: "Asst. Lib. and Info. officer", email: "sharmasangeeta0212@gmail.com", contact: "23013203" },
-  { sNo: 19, department: "Library", name: "Dr. Pankaj Chaurasia", designation: "Asst. Lib. and Info. officer", email: "alio@nmml.gov.in", contact: "23017220" },
-  { sNo: 20, department: "Research", name: "Smt. Sonika Gupta", designation: "Assistant Research Officer", email: "soni.gupta18@gmail.com", contact: "" },
-  { sNo: 21, department: "Library", name: "Smt. Geeta Yadav", designation: "Asst. Lib. and Info. officer", email: "geetayadav29@gmail.com", contact: "" },
-  { sNo: 22, department: "Oral History Division", name: "Shri Pankaj Meena", designation: "Assistant Research Officer", email: "aropankajpmml@gmail.com", contact: "" },
-  { sNo: 23, department: "The Archives", name: "Shri Neeraj Kumar", designation: "Assistant Research Officer", email: "neerajkumar11june@gmail.com", contact: "" },
-  { sNo: 24, department: "Museum", name: "Shri Anurag Arora", designation: "Manager (Administration)", email: "aao@nmml.gov.in", contact: "23014504" },
-  { sNo: 25, department: "Conference Facilities / Programmes/CCS", name: "Shri Rajnish Ranjan", designation: "Assistant Research Officer", email: "rajnish@nmml.gov.in", contact: "23010666" }
+  { sNo: 17, department: "Library", name: "Smt. Sangeeta Sharma", designation: "Asst. Lib. and Info. officer", email: "sharmasangeeta0212@gmail.com", contact: "23013203" },
+  { sNo: 18, department: "Library", name: "Dr. Pankaj Chaurasia", designation: "Asst. Lib. and Info. officer", email: "alio@nmml.gov.in", contact: "23017220" },
+  { sNo: 19, department: "Research", name: "Smt. Sonika Gupta", designation: "Assistant Research Officer", email: "soni.gupta18@gmail.com", contact: "" },
+  { sNo: 20, department: "Library", name: "Smt. Geeta Yadav", designation: "Asst. Lib. and Info. officer", email: "geetayadav29@gmail.com", contact: "" },
+  { sNo: 21, department: "Oral History Division", name: "Shri Pankaj Meena", designation: "Assistant Research Officer", email: "aropankajpmml@gmail.com", contact: "" },
+  { sNo: 22, department: "The Archives", name: "Shri Neeraj Kumar", designation: "Assistant Research Officer", email: "neerajkumar11june@gmail.com", contact: "" },
+  { sNo: 23, department: "Museum", name: "Shri Anurag Arora", designation: "Manager (Administration)", email: "aao@nmml.gov.in", contact: "23014504" },
+  { sNo: 24, department: "Conference Facilities / Programmes/CCS", name: "Shri Rajnish Ranjan", designation: "Assistant Research Officer", email: "rajnish@nmml.gov.in", contact: "23010666" }
 ];
 
 export default function WhosWhoMembers() {

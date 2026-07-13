@@ -48,7 +48,7 @@ export default function HindiDivisionContent() {
               Objectives
             </h3>
             <p className="text-justify">
-              The objectives of Rajbhasha Prabhag (Hindi Division) is to ensure compliance with the official language policy of Government of India, i.e. the provisions made in the Constitution of India (Part–XVII, Articles 343 to 351) regarding Official Language; The Official Languages (OL) Act, 1963; (as amended in 1967), the Government resolutions regarding Official Language, 1968; Official Languages (OL) rules, 1976 and also to motivate staff members to achieve the targets fixed in the annual programme issued by the Department of Official Language, Ministry of Home Affairs, Government of India for the progressive use of Hindi language.
+              The objectives of Rajbhasha Prabhag (Hindi Division) is to ensure compliance with the official language policy of Government of India, i.e. the provisions made in the Constitution of India (Part–XVII, Articles 343 to 351) regarding Official Language; The Official Languages (OL) Act, 1963; (as amended in 1967), the Government resolutions regarding Official Language, 1968; Official Languages (OL) rules, 1976 and also to motivate staff to achieve the targets fixed in the annual programme issued by the Department of Official Language, Ministry of Home Affairs, Government of India for the progressive use of Hindi language.
             </p>
           </div>
 
@@ -58,8 +58,8 @@ export default function HindiDivisionContent() {
               1. Capacity Building
             </h3>
             <ul className="list-disc pl-5 space-y-2 text-justify">
-              <li>Regular Hindi workshops are organized for staff members of PMML to do their office work in Hindi.</li>
-              <li>Training is imparted to staff members for using Hindi language on computers.</li>
+              <li>Regular Hindi workshops are organized for staff of PMML to do their work in Hindi.</li>
+              <li>Training is imparted to staff for using Hindi language on computers.</li>
             </ul>
           </div>
 
@@ -70,10 +70,10 @@ export default function HindiDivisionContent() {
             </h3>
             <ul className="list-disc pl-5 space-y-2 text-justify">
               <li>
-                <strong>Hindi Competitions:</strong> Various types of Hindi competitions are organized to create interest among staff members towards Hindi as also to enrich their knowledge of Hindi. Competitions are also organized at inter-departmental as well as at intra-departmental level.
+                <strong>Hindi Competitions:</strong> Various types of Hindi competitions are organized to create interest among staff as also to enrich their knowledge of Hindi. Competitions are organized at inter-departmental as well as at intra-departmental level.
               </li>
               <li>
-                <strong>Hindi Day function:</strong> A function is organized every year on the occasion of Hindi Day which falls on 14 September and prizes are distributed to the winners of various competitions.
+                <strong>Hindi Day function:</strong> A function is organized every year on the occasion of Hindi Day, which falls on 14 September, and prizes are distributed to the winners of various competitions.
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ export default function HindiDivisionContent() {
               4. Preparation of Reference Material
             </h3>
             <p className="text-justify">
-              Rajbhasha Prabhag prepares and updates, from time to time, administrative glossary, standard drafts, collection of English and Hindi expressions and various support material in Hindi which are made available to the staff members to facilitate them for use of Hindi in their office work.
+              Rajbhasha Prabhag prepares and updates, administrative glossary, standard drafts, collection of English and Hindi expressions and various support material in Hindi which are made available to the staff to facilitate use of Hindi in their office work.
             </p>
           </div>
 
