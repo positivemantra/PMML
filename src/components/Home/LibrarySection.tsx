@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Spectral } from 'next/font/google';
+import Image from 'next/image';
+import { ChevronRight } from 'lucide-react';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -12,18 +14,22 @@ const spectral = Spectral({
 const IMAGES = [
   {
     src: '/hero section/Library_Panorama1.jpg',
+    label: 'Library Panorama',
     alt: 'PMML Library Main Hall',
   },
   {
     src: '/library.jpg',
+    label: 'Library Main Hall',
     alt: 'PMML Library Main Hall',
   },
   {
     src: '/DSC_3203 copy.jpg',
+    label: 'Library Seating & Shelves',
     alt: 'PMML Library',
   },
   {
     src: '/DSC_3206 copy.jpg',
+    label: 'Library Book Stacks',
     alt: 'PMML Library',
   }
 ];
@@ -36,18 +42,11 @@ export default function LibrarySection() {
       setActiveIdx((prev) => (prev + 1) % IMAGES.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, [activeIdx]);
+  }, []);
 
   const handleNext = () => {
     setActiveIdx((prev) => (prev + 1) % IMAGES.length);
   };
-
-  const handlePrev = () => {
-    setActiveIdx((prev) => (prev - 1 + IMAGES.length) % IMAGES.length);
-  };
-
-  // Get index of the next image for the background layered card
-  const nextIdx = (activeIdx + 1) % IMAGES.length;
 
   return (
     <section className="w-full py-10 lg:py-12 bg-white relative flex flex-col items-center overflow-hidden">
@@ -96,54 +95,52 @@ export default function LibrarySection() {
             </div>
           </div>
 
-          {/* Right Side: Layered Card Slider */}
-          <div className="w-full md:w-[50%] flex-shrink-0 flex items-center justify-center py-6 px-10 sm:px-12 md:px-16">
-            <div className="relative w-[280px] h-[180px] sm:w-[380px] sm:h-[220px] md:w-[440px] md:h-[250px] lg:w-[480px] lg:h-[290px]">
-              
-              {/* Back Card (Layered effect) */}
-              <div 
-                className="absolute inset-0 bg-gray-200 rounded-2xl overflow-hidden border border-gray-100 shadow-lg transition-all duration-500 ease-in-out transform translate-x-6 translate-y-0 scale-[0.94] opacity-40 z-0"
-              >
-                <img
-                  src={IMAGES[nextIdx].src}
-                  alt={IMAGES[nextIdx].alt}
-                  className="w-full h-full object-cover filter blur-[0.5px]"
-                />
-              </div>
+          {/* Right Side: Image Slider */}
+          <div className="w-full md:w-[50%] flex-shrink-0 flex items-center justify-center md:justify-end py-6">
+            <div className="relative w-full max-w-[540px] h-[200px] sm:h-[280px] md:h-[300px] lg:h-[340px] rounded-2xl overflow-hidden border border-slate-200/80 shadow-md group">
+              {IMAGES.map((img, idx) => (
+                <div
+                  key={img.src}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                    idx === activeIdx ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                  }`}
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    sizes="(max-w-7xl) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#052356]/50 via-transparent to-transparent pointer-events-none" />
+                  <p className="absolute bottom-3 left-4 text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider z-20">
+                    {img.label}
+                  </p>
+                </div>
+              ))}
 
-              {/* Front Card (Active Image) */}
-              <div 
-                className="absolute inset-0 bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-2xl transition-all duration-500 ease-in-out z-10 group/card"
-              >
-                <img
-                  src={IMAGES[activeIdx].src}
-                  alt={IMAGES[activeIdx].alt}
-                  className="w-full h-full object-cover group-hover/card:scale-105 transition-transform duration-700 ease-out"
-                />
-              </div>
-
-              {/* Slider Navigation Buttons */}
-              {/* Left Arrow */}
-              <button
-                onClick={handlePrev}
-                aria-label="Previous image"
-                className="absolute left-[-28px] sm:left-[-40px] md:left-[-64px] top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-[#f37021] text-[#f37021] hover:text-white flex items-center justify-center shadow-md border border-[#f37021]/30 transition-all duration-200 active:scale-90 hover:scale-105"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </button>
-
-              {/* Right Arrow */}
+              {/* Arrow at Right Side */}
               <button
                 onClick={handleNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 active:bg-white/60 text-white p-2.5 rounded-full backdrop-blur-md transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 shadow-md flex items-center justify-center cursor-pointer"
                 aria-label="Next image"
-                className="absolute right-[-28px] sm:right-[-40px] md:right-[-64px] top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/95 hover:bg-[#f37021] text-[#f37021] hover:text-white flex items-center justify-center shadow-md border border-[#f37021]/30 transition-all duration-200 active:scale-90 hover:scale-105"
               >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
+                <ChevronRight className="w-5 h-5 stroke-[2.5]" />
               </button>
+
+              {/* Indicators */}
+              <div className="absolute bottom-3.5 right-4 z-30 flex gap-1.5">
+                {IMAGES.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveIdx(idx)}
+                    className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                      idx === activeIdx ? 'bg-white w-4' : 'bg-white/50'
+                    }`}
+                    aria-label={`Go to slide ${idx + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 

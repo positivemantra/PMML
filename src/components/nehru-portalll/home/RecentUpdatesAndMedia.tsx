@@ -19,12 +19,12 @@ export default function RecentUpdatesAndMedia() {
     {
       title: "The Strategy Trap India and Pakistan under the Nuclear Shadow by Lt Gen Prakash Menon",
       date: "June 16, 2018",
-      href: "/strategy-trap-india-and-pakistan-under-nuclear-shadow-lt-gen-prakash-menon",
+      href: "/nehru-portal/strategy-trap-india-and-pakistan-under-nuclear-shadow-lt-gen-prakash-menon",
     },
     {
       title: "Forging the Nation: The Congress Demand for Representative Bodies and the Muslim Opposition (1885-1892), 14th June'18",
       date: "June 14, 2018",
-      href: "/forging-nation-congress-demand-representative-bodies-and-muslim-opposition-1885-1892-14th-june18",
+      href: "/nehru-portal/forging-nation-congress-demand-representative-bodies-and-muslim-opposition-1885-1892-14th-june18",
     },
   ];
 

@@ -17,26 +17,8 @@ export default function NehruHeader() {
       <div className="topHeader">
         <div className="container">
           <div className="topSection cf">
-            {/* Top Bar Left Links */}
-            <div className="toplink">
-              <div className="region region-left-header">
-                <div id="block-menu-menu-top-menu" className="block block-menu links alignLeft">
-                  <div className="content">
-                    <ul className="menu">
-                      <li className="first leaf">
-                        <Link href="/nehru-portal/feedback" title="Feedback">{t("feedback")}</Link>
-                      </li>
-                      <li className="leaf">
-                        <Link href="/nehru-portal/sitemap" title="Sitemap">{t("sitemap")}</Link>
-                      </li>
-                      <li className="last leaf">
-                        <Link href="/nehru-portal/contact-us" title="Contact Us">{t("contactUs")}</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Top Bar Left Links (Removed Feedback, Sitemap, Contact Us) */}
+            <div className="toplink"></div>
 
             {/* Top Bar Right — all tools in one flex row */}
             <div className="rightpart">

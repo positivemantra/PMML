@@ -886,13 +886,16 @@ export default function DynamicUtilityPage({ params }: { params: Promise<{ slug:
           {/* Breadcrumb */}
           <div className="breadCrumbArea cf">
             <div className="breadcrumb">
-              <Link href="/">Home</Link>
+              <Link href="/nehru-portal">Home</Link>
               {page.parents ? (
-                page.parents.map((p) => (
-                  <Link key={p.href} href={p.href}>{p.label}</Link>
-                ))
+                page.parents.map((p) => {
+                  const href = p.href.startsWith("/nehru-portal") ? p.href : `/nehru-portal${p.href}`;
+                  return <Link key={p.href} href={href}>{p.label}</Link>;
+                })
               ) : page.parent ? (
-                <Link href={page.parent.href}>{page.parent.label}</Link>
+                <Link href={page.parent.href.startsWith("/nehru-portal") ? page.parent.href : `/nehru-portal${page.parent.href}`}>
+                  {page.parent.label}
+                </Link>
               ) : null}
               {page.title}
             </div>
