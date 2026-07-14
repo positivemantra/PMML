@@ -50,6 +50,16 @@
 .webform-client-form .form-item.form-item-captcha-response{float:left;width:100%;}  
 .webform-client-form .form-item.form-item-captcha-response input{margin:0; clear:both;} 
 .webform-client-form .form-item.form-item-captcha-response .description{margin-left:0;} 
+.indexBanner {
+  clear: both !important;
+  overflow: hidden !important;
+}
+.region-home-testimonial {
+  clear: both !important;
+}
+.testimonialSection {
+  clear: both !important;
+}
 }
 
 @media only screen and (max-width:1250px) {
@@ -85,4 +95,345 @@
 .webform-client-form .form-item .form-text, .webform-client-form .form-textarea{width:100%;} 
 .webform-container-inline.webform-component-textarea .form-textarea-wrapper{display:block;}
 .webform-client-form .captcha img{width:100px;}
+}
+
+@media only screen and (max-width: 768px) {
+  /* Global container spacing */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 16px !important;
+  }
+
+  /* Header & Logo */
+  .topSection {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+  .rightpart {
+    float: none !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .logo, .govLogo {
+    float: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 12px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .logo h1, .logo h1 a, .logo img, .govLogo img {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  .topHeader {
+    min-height: auto !important;
+    padding: 10px 0 !important;
+  }
+
+  /* Hero Section Banner */
+  .sliderSection {
+    padding: 15px 0 !important;
+    background-size: cover !important;
+  }
+  .sliderDetailLeft {
+    width: 100% !important;
+    float: none !important;
+    text-align: center !important;
+    min-height: auto !important;
+    padding-bottom: 20px !important;
+  }
+  .sliderImage {
+    width: 100% !important;
+    float: none !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .sliderImage img {
+    max-width: 80% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  .testimonialSection {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px !important;
+  }
+  .testimonialSection ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .testimonialSection ul li {
+    width: 50% !important;
+    float: none !important;
+  }
+  .testimonialSection ul li.testimonial2 p,
+  .testimonialSection ul li.testimonial3 p {
+    padding: 20px 30px !important;
+    font-size: 13px !important;
+  }
+
+  /* Event Chronology */
+  .eventChronology h2 {
+    float: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px 0 !important;
+    line-height: 1.4 !important;
+  }
+  .eventChronologyGallery {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .eventChronologyGallery .slideBox {
+    padding: 15px !important;
+  }
+  .eventChronologyGallery .slideBox p {
+    min-height: auto !important;
+    font-size: 13px !important;
+  }
+
+  /* Recent Updates & Media */
+  .recentUpdateArea .recentUpdates {
+    width: 100% !important;
+    float: none !important;
+    padding-right: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 24px !important;
+    margin-bottom: 24px !important;
+  }
+  .recentUpdateArea .mediaGallery {
+    width: 100% !important;
+    float: none !important;
+    padding-left: 0 !important;
+  }
+  .recentUpdateArea .mediaGallery ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    justify-content: center !important;
+  }
+  .recentUpdateArea .mediaGallery ul li {
+    width: calc(50% - 6px) !important;
+    margin: 0 !important;
+  }
+  .recentUpdateArea .mediaGallery ul li:first-child,
+  .recentUpdateArea .mediaGallery ul li:last-child {
+    margin: 0 !important;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 0 !important;
+  }
+  .footer .leftCol {
+    text-align: center !important;
+  }
+
+  /* Tributes listing */
+  .view-tributes ul li,
+  .tribute-card {
+    width: 100% !important;
+    margin: 0 0 15px 0 !important;
+  }
+
+  /* Family Tree biography details */
+  .familyTreeBox {
+    flex-direction: column !important;
+    padding: 20px !important;
+    align-items: center !important;
+  }
+  .familyImgBlock {
+    width: 100% !important;
+    max-width: 240px !important;
+    margin-bottom: 20px !important;
+  }
+  .familyTextBox {
+    width: 100% !important;
+  }
+
+  /* Important Dates section stacking */
+  .impDates .marriage, 
+  .impDates .freedomStruggle {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px 0 !important;
+  }
+  .marriage .lifeContent, 
+  .freedomStruggle .lifeContent {
+    width: 100% !important;
+    padding: 15px 0 !important;
+    float: none !important;
+    order: 1 !important;
+  }
+  .marriage .lifePics, 
+  .freedomStruggle .lifePics {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 15px auto !important;
+    float: none !important;
+    display: block !important;
+    order: 2 !important;
+    box-sizing: border-box !important;
+  }
+  .lifeCycleList {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin: 0 auto !important;
+    padding: 9px 0 !important;
+  }
+  .lifeCycleList li {
+    float: none !important;
+    padding: 5px 10px !important;
+    background: none !important;
+    margin: 0 !important;
+  }
+  .lifeCycleList li:after {
+    display: none !important;
+  }
+
+  /* Galleries page responsive collage layout */
+  .galleryArea {
+    flex-direction: column !important;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: auto !important;
+    padding: 30px 15px !important;
+    margin: 20px 0 0 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .galleryArea .rightContent {
+    width: 100% !important;
+  }
+  .galleryArea .rightContent ul li {
+    margin: 15px 10px 0 10px !important;
+    width: calc(50% - 20px) !important;
+  }
+
+  /* Gallery search filter row */
+  .gallerySearchArea {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    padding: 12px 16px !important;
+    height: auto !important;
+  }
+  .gallerySearchArea label {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+  .gallerySearchArea .searchSelect {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  /* Places tab navigation responsive */
+  .placesResidence ul.tabNav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+  .placesResidence ul.tabNav li {
+    flex: 1 1 auto !important;
+    text-align: center !important;
+  }
+
+  /* Early Life padding override */
+  .earlyLife {
+    height: auto !important;
+    padding: 24px 20px !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  /* Prison page responsive details list */
+  .inPrison, .portfolio-filter {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  #filters {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+  #filters li {
+    display: block !important;
+    float: none !important;
+  }
+  #filters li span.filter {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 10px 16px !important;
+    border: 1px solid #312502 !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+  #filters li span span {
+    display: block !important;
+    font-size: 11px !important;
+    margin-top: 4px !important;
+  }
+  #filters li.first span.filter {
+    border-left: 1px solid #312502 !important;
+  }
+  #portfoliolist {
+    margin: 20px 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  #portfoliolist li {
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+    padding-left: 100px !important;
+    box-sizing: border-box !important;
+    float: none !important;
+  }
+  #portfoliolist li h4 {
+    left: 10px !important;
+  }
+  #portfoliolist li .portfolioDetail {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 20px 15px 20px 15px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .testimonialSection ul li {
+    width: 100% !important;
+  }
+  .recentUpdateArea .mediaGallery ul li {
+    width: 100% !important;
+  }
+  .galleryArea .rightContent ul li {
+    width: 100% !important;
+    margin: 15px 0 0 0 !important;
+  }
 }

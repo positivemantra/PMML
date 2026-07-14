@@ -120,7 +120,7 @@ export default function WritingsPage() {
                 <div
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(auto-fill, minmax(480px, 1fr))",
+                    gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 480px), 1fr))",
                     gap: "20px",
                     marginBottom: "30px",
                   }}

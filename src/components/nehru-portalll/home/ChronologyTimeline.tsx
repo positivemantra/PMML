@@ -1,33 +1,57 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import timelineData from "@/data/timeline.json";
 
 type TimelineData = Record<string, Array<{ text: string; date: string }>>;
-
-const YEARS_PER_PAGE = 9;
 
 export default function ChronologyTimeline() {
   const data = timelineData as TimelineData;
   const years = Object.keys(data).sort((a, b) => parseInt(a) - parseInt(b));
   const [activeYear, setActiveYear] = useState(years[0] || "1912");
   const [yearOffset, setYearOffset] = useState(0);
+  const [yearsPerPage, setYearsPerPage] = useState(9);
+  const [evtPerPage, setEvtPerPage] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setYearsPerPage(4);
+        setEvtPerPage(1);
+      } else if (window.innerWidth < 1024) {
+        setYearsPerPage(6);
+        setEvtPerPage(2);
+      } else {
+        setYearsPerPage(9);
+        setEvtPerPage(3);
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   /* Events for active year */
   const activeEvents = data[activeYear] || [];
 
-  /* Visible year window */
-  const visibleYears = years.slice(yearOffset, yearOffset + YEARS_PER_PAGE);
+  // Safeguard offset boundaries on window resize
+  const maxYearOffset = Math.max(0, years.length - yearsPerPage);
+  const safeYearOffset = Math.min(yearOffset, maxYearOffset);
 
-  const canPrevYears = yearOffset > 0;
-  const canNextYears = yearOffset + YEARS_PER_PAGE < years.length;
+  /* Visible year window */
+  const visibleYears = years.slice(safeYearOffset, safeYearOffset + yearsPerPage);
+
+  const canPrevYears = safeYearOffset > 0;
+  const canNextYears = safeYearOffset + yearsPerPage < years.length;
 
   /* Event carousel state */
   const [evtOffset, setEvtOffset] = useState(0);
-  const EVT_PER_PAGE = 3;
-  const canPrevEvt = evtOffset > 0;
-  const canNextEvt = evtOffset + EVT_PER_PAGE < activeEvents.length;
-  const visibleEvents = activeEvents.slice(evtOffset, evtOffset + EVT_PER_PAGE);
+  const maxEvtOffset = Math.max(0, activeEvents.length - evtPerPage);
+  const safeEvtOffset = Math.min(evtOffset, maxEvtOffset);
+
+  const canPrevEvt = safeEvtOffset > 0;
+  const canNextEvt = safeEvtOffset + evtPerPage < activeEvents.length;
+  const visibleEvents = activeEvents.slice(safeEvtOffset, safeEvtOffset + evtPerPage);
 
   const handleYearClick = (year: string) => {
     setActiveYear(year);
@@ -74,7 +98,7 @@ export default function ChronologyTimeline() {
 
             {/* Next arrow */}
             <button
-              onClick={() => setYearOffset(o => Math.min(years.length - YEARS_PER_PAGE, o + 1))}
+              onClick={() => setYearOffset(o => Math.min(years.length - yearsPerPage, o + 1))}
               disabled={!canNextYears}
               className="owl-next"
               style={{
@@ -122,7 +146,7 @@ export default function ChronologyTimeline() {
               {/* Event cards wrapper */}
               <div style={{ display: "flex", flex: 1, gap: "40px", margin: "0 40px" }}>
                 {visibleEvents.map((event, idx) => (
-                  <div key={`${activeYear}-${evtOffset + idx}`} className="item" style={{ flex: 1, minWidth: 0 }}>
+                  <div key={`${activeYear}-${safeEvtOffset + idx}`} className="item" style={{ flex: 1, minWidth: 0 }}>
                     <div className="slideBox">
                       <p>{event.text}</p>
                       <div className="bottomCol cf">
@@ -143,7 +167,7 @@ export default function ChronologyTimeline() {
 
               {/* Next event arrow */}
               <button
-                onClick={() => setEvtOffset(o => Math.min(activeEvents.length - EVT_PER_PAGE, o + 1))}
+                onClick={() => setEvtOffset(o => Math.min(activeEvents.length - evtPerPage, o + 1))}
                 disabled={!canNextEvt}
                 style={{
                   position: "absolute",

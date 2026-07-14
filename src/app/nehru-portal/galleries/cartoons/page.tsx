@@ -37,14 +37,18 @@ export default function CartoonsPage() {
 
   // Helper to get image src (local vs remote)
   const getCartoonImageSrc = (href: string, category: string) => {
+    let url = href;
     if (category === "92") {
       // Abu Abraham I is local
       const filename = href.substring(href.lastIndexOf("/") + 1);
       const decodedFilename = decodeURIComponent(filename).replace(/\.JPG$/i, ".jpg");
-      return `/sites/default/files/Cartoons/${decodedFilename}`;
+      url = `/sites/default/files/Cartoons/${decodedFilename}`;
     }
-    // Remote URLs for others
-    return href;
+    
+    if (url && (url.startsWith("http://nehruportal.nic.in") || url.startsWith("https://nehruportal.nic.in"))) {
+      return `/api/proxy-image?url=${encodeURIComponent(url)}`;
+    }
+    return url;
   };
 
   const prev = () => setActiveIndex((i) => (i > 0 ? i - 1 : cartoons.length - 1));

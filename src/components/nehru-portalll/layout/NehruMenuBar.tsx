@@ -57,8 +57,8 @@ export default function MenuBar() {
       label: t("home"), href: "/nehru-portal", id: "home",
       dropdown: [
         { label: t("aboutUs"),       href: "/nehru-portal/about" },
-        { label: t("visionMission"), href: "/nehru-portal/about#vision-mission" },
-        { label: t("objectives"),    href: "/nehru-portal/about#objectives" },
+        { label: t("visionMission"), href: "/nehru-portal/vision-mission" },
+        { label: t("objectives"),    href: "/nehru-portal/objectives" },
       ],
     },
     { label: t("familyTree"), href: "/nehru-portal/family-tree", id: "family-tree" },

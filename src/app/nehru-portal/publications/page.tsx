@@ -24,7 +24,11 @@ export default function PublicationsPage() {
   // Clean cover url logic
   const getCoverUrl = (imgPath: string) => {
     if (!imgPath) return null;
-    return imgPath.startsWith("/") || imgPath.startsWith("http") ? imgPath : `/${imgPath}`;
+    let url = imgPath.startsWith("/") || imgPath.startsWith("http") ? imgPath : `/${imgPath}`;
+    if (url.startsWith("http://nehruportal.nic.in") || url.startsWith("https://nehruportal.nic.in")) {
+      return `/api/proxy-image?url=${encodeURIComponent(url)}`;
+    }
+    return url;
   };
 
   return (
@@ -48,7 +52,7 @@ export default function PublicationsPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(480px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 480px), 1fr))",
                 gap: "20px",
                 marginBottom: "30px",
               }}

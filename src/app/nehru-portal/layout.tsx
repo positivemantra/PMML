@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   description: "Nehru Portal, Nehru Memorial Museum & Library | Ministry of Culture, Government of India",
 };
 
+export const viewport = {
+  width: 1200,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

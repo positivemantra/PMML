@@ -192,11 +192,19 @@ export default function BookReader({
 
   // Build absolute page image URLs from live site
   const getPageImgUrl = (pageNum: number) => {
+    let url = "";
     if (pageNum === 1 && cover) {
-      return cover.startsWith("/") || cover.startsWith("http") ? cover : `/${cover}`;
+      url = cover.startsWith("/") || cover.startsWith("http") ? cover : `/${cover}`;
+    } else if (pageNum >= 1 && pageNum <= totalPages && bookDisplayPath) {
+      url = `${bookDisplayPath}/${pageNum}.jpg`;
+    } else {
+      return null;
     }
-    if (pageNum < 1 || pageNum > totalPages || !bookDisplayPath) return null;
-    return `${bookDisplayPath}/${pageNum}.jpg`;
+
+    if (url.startsWith("http://nehruportal.nic.in") || url.startsWith("https://nehruportal.nic.in")) {
+      return `/api/proxy-image?url=${encodeURIComponent(url)}`;
+    }
+    return url;
   };
 
   return (
