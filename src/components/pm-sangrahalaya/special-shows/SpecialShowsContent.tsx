@@ -26,7 +26,7 @@ const SHOWS: Show[] = [
     title: "Light and Sound Show",
     menuLabel: "Light and Sound Show",
     description: "Watch an Immersive tale of Valliant Women Warriors, Veeranganaon ki Mahagatha; who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of nearly 80 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
-    image: "/special shows/light and sound show.jpg"
+    image: "/special shows/light.JPG"
   },
    {
     id: "suraksha-show",
@@ -40,14 +40,14 @@ const SHOWS: Show[] = [
     title: "Bhavishya ki Jhalkiyan",
     menuLabel: "Bhavishya ki Jhalkiyan",
     description: "Take a seat in the helicopter pod and prepare yourselves for a splendid, 360-degree virtual reality projection of the nation&apos;s exciting futuristic developments.",
-    image: "/special shows/bhavishya.jpg"
+    image: "/anubhuti/bhavishya ki jhaliyan.JPG"
   },
   {
     id: "time-machine-show",
     title: "Time Machine",
-    menuLabel: "Nuclear Journey Dream to Reality",
+    menuLabel: "Nuclear Journey: Dream to Reality",
     description: "Ride back in time and relive the past through our time machine. Watch India change and transform before your eyes.",
-    image: "/special shows/timemachine.jpg"
+    image: "/anubhuti/time-machine.JPG"
   },
  
   {
@@ -55,21 +55,21 @@ const SHOWS: Show[] = [
     title: "Lal Qile ki Prachir Se",
     menuLabel: "Lal Qile ki Prachir Se",
     description: "Witness the memorable speeches given by the Prime Ministers at the Red Fort.",
-    image: "/anubhuti/hologram.jpeg"
+    image: "/anubhuti/hologram.JPG"
   },
   {
     id: "parichay-show",
     title: "Parichay",
     menuLabel: "Parichay",
     description: "A state of the art 360-degree immersive room ushers you into the world of Indian Prime Ministers, showcasing their key contributions that shaped the nation.",
-    image: "/special shows/parichay.jpg"
+    image: "/special shows/parichay2.JPG"
   },
   {
     id: "freedom-unity",
     title: "Freedom & Unity",
     menuLabel: "Freedom & Unity",
     description: "This room tells the story of the freedom struggle led by Mahatma Gandhi, the story of Netaji Subhas Chandra Bose and Indian National Army, and the integration of the states achieved by Sardar Vallabhbhai Patel.",
-    image: "/special shows/freedom and unity.jpg"
+    image: "/special shows/free.jpg"
   }
 ];
 

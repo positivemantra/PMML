@@ -18,6 +18,7 @@ interface Exhibit {
   menuLabel: string;
   description: string;
   image: string;
+  video?: string;
 }
 
 const EXHIBITS: Exhibit[] = [
@@ -26,21 +27,21 @@ const EXHIBITS: Exhibit[] = [
     title: "Selfie with Prime Minister",
     menuLabel: "Selfie with Prime Minister",
     description: "Take a selfie with your favourite Prime Minister using Augmented Reality.",
-    image: "/anubhuti/selfiewithpm.jpg"
+    image: "/anubhuti/selfie.jpg"
   },
   {
     id: "handwriting-robot",
     title: "Letter from Prime Minister",
     menuLabel: "Letter from Prime Minister",
     description: "Receive a personalized letter handwritten in the signature style of India&apos;s great Prime Ministers.",
-    image: "/anubhuti/roboticalligraphy.jpg"
+    image: "/anubhuti/roboticalligraphy.JPG"
   },
   {
     id: "unity-wall",
     title: "Unity Wall",
     menuLabel: "Unity Wall",
     description: "Collaborate with fellow visitors by holding hands to complete the electrical circuit and light up the Unity Chain.",
-    image: "/anubhuti/unitychain.jpg"
+    image: "/anubhuti/unitychain.JPG"
   },
   {
     id: "shatabdi-sankalp",
@@ -50,26 +51,19 @@ const EXHIBITS: Exhibit[] = [
     image: "/anubhuti/satabdi.jpg"
   },
   {
-    id: "stroll-pm",
-    title: "Lal Qile ki Prachir se",
-    menuLabel: "Lal Qile ki Prachir se",
-    description: "Take a journey through India&apos;s most iconic moments from the ramparts of the Red Fort, experiencing the Prime Ministers who have addressed the nation from this historic site.",
-    image: "/anubhuti/hologram.jpeg"
-  },
-  
-  {
     id: "sketch-mission",
     title: "Sketch and Bring a Mission to Life",
     menuLabel: "Sketch and Bring a Mission to Life",
     description: "Draw and color on digital tablets and watch your sketches animate on a giant shared projection screen.",
-    image: "/anubhuti/drawing.jpg"
+    image: "/anubhuti/drawing1.jpg"
   },
   {
     id: "stroll-pm-new",
     title: "Stroll with the PM",
     menuLabel: "Stroll with the PM",
     description: "Walk alongside holographic projections of India&apos;s Prime Ministers in an immersive interactive corridor.",
-    image: "/anubhuti/walk with pm.jpg"
+    image: "/anubhuti/walk with pm1.jpg",
+    video: "/anubhuti/walk.mp4"
   },
   {
     id: "ai-holobox-new",
@@ -192,16 +186,28 @@ export default function AnubhutiZoneContent() {
             <div className="col-span-1 lg:col-span-8 flex flex-col items-start justify-center relative w-full">
               {filteredExhibits.length > 0 ? (
                 <div className="w-full flex flex-col items-start gap-4">
-                  {/* Exhibit Image Display */}
+                  {/* Exhibit Image/Video Display */}
                   <div className="relative w-full aspect-[16/10] sm:aspect-[2/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
-                    <Image
-                      src={activeExhibit.image}
-                      alt={activeExhibit.title}
-                      fill
-                      priority
-                      sizes="(max-width: 1024px) 100vw, 800px"
-                      className="object-cover"
-                    />
+                    {activeExhibit.video ? (
+                      <video
+                        src={activeExhibit.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={activeExhibit.image}
+                        alt={activeExhibit.title}
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 800px"
+                        className="object-cover"
+                      />
+                    )}
 
                     {/* Left Arrow Button */}
                     <button

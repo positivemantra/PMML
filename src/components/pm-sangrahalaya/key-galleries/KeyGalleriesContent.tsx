@@ -23,78 +23,7 @@ interface Gallery {
 
 const GALLERIES: Gallery[] = [
   // BUILDING 1
-  {
-    id: "nehru-gallery",
-    title: "Nehru Gallery",
-    menuLabel: "Gallery 1 - Nehru Gallery",
-    description: "The Nehru Gallery presents a holistic view of a newly-independent India and the political developments that followed. It talks about the reorganisations of states, the Kashmir War 1947-48, the projects that Pandit Nehru called 'temples' of modern India, the first general elections, among others.",
-    image: "/building 1/nehru gallery.jpg",
-    building: 1,
-    category: "Gallery 1 - Nehru"
-  },
-  {
-    id: "tryst-destiny",
-    title: "Tryst with Destiny",
-    menuLabel: "Tryst with Destiny",
-    description: "Experience the iconic, historical speech 'Tryst with Destiny' delivered by Jawaharlal Nehru on the eve of India's independence, welcoming the birth of a free nation.",
-    image: "/building 1/tryst of destiny.jpg",
-    building: 1,
-    category: "Gallery 1 - Nehru"
-  },
-  {
-    id: "india-china-war",
-    title: "India China War",
-    menuLabel: "India China War",
-    description: "A comprehensive archival exhibit documenting the events, maps, military strategies, and national response during the 1962 conflict.",
-    image: "/building 1/india-china war.jpg",
-    building: 1,
-    category: "Gallery 1 - Nehru"
-  },
-  {
-    id: "toshakhana-zone",
-    title: "Toshakhana Zone",
-    menuLabel: "Toshakhana Zone",
-    description: "Explore the collection of precious gifts, artistic crafts, and ceremonial treasures presented to India's Prime Ministers during their official visits abroad.",
-    image: "/building 1/toshakhana.jpg",
-    building: 1,
-    category: "Gallery 1 - Nehru"
-  },
-  {
-    id: "reception-1",
-    title: "Reception",
-    menuLabel: "Reception",
-    description: "The welcoming foyer of Building I, providing visitor navigation, interactive digital directories, and ticket scanning facilities.",
-    image: "/building 1/reception.jpg",
-    building: 1,
-    category: "Facilities"
-  },
-  {
-    id: "audio-guide-1",
-    title: "Audio Guide Room",
-    menuLabel: "Audio Guide Room",
-    description: "Collect your interactive audio guides equipped with multi-lingual narrations to enrich your walkthrough of the historical museum.",
-    image: "/building 1/audio guide room.jpg",
-    building: 1,
-    category: "Facilities"
-  },
-  {
-    id: "welcome-area",
-    title: "Welcome Area",
-    menuLabel: "Welcome Area",
-    description: "The first exhibition area introducing visitors to the rich history and democratic heritage of India.",
-    image: "/building 1/welcome area.jpg",
-    building: 1,
-    category: "Facilities"
-  },
-  {
-    id: "early-life-journey",
-    title: "Early Life & Political Journey till 1946",
-    menuLabel: "Early Life & Political Journey",
-    description: "Traces the early childhood, academic years, and rise of Jawaharlal Nehru within the Indian National Congress leading up to independence.",
-    image: "/building 1/early life and political journey till 1946.jpg",
-    building: 1,
-    category: "Gallery 1 - Nehru"
-  },
+  // Category 1: Constitution Gallery
   {
     id: "making-constitution",
     title: "Making of Indian Constitution",
@@ -118,9 +47,83 @@ const GALLERIES: Gallery[] = [
     title: "Partition",
     menuLabel: "Partition",
     description: "A solemn display exploring the massive migration, human stories, and institutional challenges during the partition of 1947.",
-    image: "/building 1/partition.jpg",
+    image: "/building 1/partitionn.jpg",
     building: 1,
     category: "Constitution Gallery"
+  },
+  {
+    id: "india-republic",
+    title: "India Becomes Republic",
+    menuLabel: "India Becomes Republic",
+    description: "Commemorating 26th January 1950, when the Constitution of India came into effect and India transitioned to a sovereign democratic republic.",
+    image: "/building 1/republic.jpg",
+    building: 1,
+    category: "Constitution Gallery"
+  },
+  {
+    id: "democratic-india-exhibit",
+    title: "Democratic India",
+    menuLabel: "Democratic India",
+    description: "Celebrates the democratic traditions, general elections, and the strength of the voting system that empowers every Indian citizen.",
+    image: "/building 1/democratic.jpg",
+    building: 1,
+    category: "Constitution Gallery"
+  },
+  {
+    id: "constitutional-amendments-exhibit",
+    title: "Constitutional Amendments",
+    menuLabel: "Constitutional Amendments",
+    description: "Displays the evolution of the Constitution through landmark amendments that addressed emerging socio-economic needs of the republic.",
+    image: "/building 1/amendments.jpg",
+    building: 1,
+    category: "Constitution Gallery"
+  },
+
+  // Category 2: Gallery 1 - Nehru
+  {
+    id: "nehru-gallery",
+    title: "Nehru Gallery",
+    menuLabel: "Gallery 1 - Nehru Gallery",
+    description: "The Nehru Gallery presents a holistic view of a newly-independent India and the political developments that followed. It talks about the reorganisations of states, the Kashmir War 1947-48, the projects that Pandit Nehru called 'temples' of modern India, the first general elections, among others.",
+    image: "/building 1/nehru gallery1.jpg",
+    building: 1,
+    category: "Gallery 1 - Nehru"
+  },
+  {
+    id: "tryst-destiny",
+    title: "Tryst with Destiny",
+    menuLabel: "Tryst with Destiny",
+    description: "Experience the iconic, historical speech 'Tryst with Destiny' delivered by Jawaharlal Nehru on the eve of India's independence, welcoming the birth of a free nation.",
+    image: "/building 1/ttt.png",
+    building: 1,
+    category: "Gallery 1 - Nehru"
+  },
+  {
+    id: "india-china-war",
+    title: "India China War",
+    menuLabel: "India China War",
+    description: "A comprehensive archival exhibit documenting the events, maps, military strategies, and national response during the 1962 conflict.",
+    image: "/building 1/india-china war.jpg",
+    building: 1,
+    category: "Gallery 1 - Nehru"
+  },
+  {
+    id: "toshakhana-zone",
+    title: "Toshakhana Zone",
+    menuLabel: "Toshakhana Zone",
+    description: "Explore the collection of precious gifts, artistic crafts, and ceremonial treasures presented to India's Prime Ministers during their official visits abroad.",
+    image: "/building 1/giftt.jpg",
+    building: 1,
+    category: "Gallery 1 - Nehru"
+  },
+  {
+    id: "early-life-journey",
+    title: "Early Life & Political Journey till 1946",
+    menuLabel: "Early Life & Political Journey",
+    description: "Traces the early childhood, academic years, and rise of Jawaharlal Nehru within the Indian National Congress leading up to independence.",
+    image: "/building 1/early life and political journey till 1946.jpg",
+    building: 1,
+    category: "Gallery 1 - Nehru"
   },
   {
     id: "nehru-bedroom",
@@ -149,77 +152,219 @@ const GALLERIES: Gallery[] = [
     building: 1,
     category: "Gallery 1 - Nehru"
   },
+
+  // Category 3: Facilities
   {
-    id: "india-republic",
-    title: "India Becomes Republic",
-    menuLabel: "India Becomes Republic",
-    description: "Commemorating 26th January 1950, when the Constitution of India came into effect and India transitioned to a sovereign democratic republic.",
-    image: "/building 1/india becomes republic.jpg",
+    id: "reception-1",
+    title: "Reception",
+    menuLabel: "Reception",
+    description: "The welcoming foyer of Building I, providing visitor navigation, interactive digital directories, and ticket scanning facilities.",
+    image: "/building 1/recep.jpg",
     building: 1,
-    category: "Constitution Gallery"
+    category: "Facilities"
   },
   {
-    id: "democratic-india-exhibit",
-    title: "Democratic India",
-    menuLabel: "Democratic India",
-    description: "Celebrates the democratic traditions, general elections, and the strength of the voting system that empowers every Indian citizen.",
-    image: "/building 1/democratic india.jpg",
+    id: "audio-guide-1",
+    title: "Audio Guide Room",
+    menuLabel: "Audio Guide Room",
+    description: "Collect your interactive audio guides equipped with multi-lingual narrations to enrich your walkthrough of the historical museum.",
+    image: "/building 1/audioo.JPG",
     building: 1,
-    category: "Constitution Gallery"
+    category: "Facilities"
   },
   {
-    id: "constitutional-amendments-exhibit",
-    title: "Constitutional Amendments",
-    menuLabel: "Constitutional Amendments",
-    description: "Displays the evolution of the Constitution through landmark amendments that addressed emerging socio-economic needs of the republic.",
-    image: "/building 1/constitutional amendments.jpg",
+    id: "welcome-area",
+    title: "Welcome Area",
+    menuLabel: "Welcome Area",
+    description: "The first exhibition area introducing visitors to the rich history and democratic heritage of India.",
+    image: "/building 1/welcome area.jpg",
     building: 1,
-    category: "Constitution Gallery"
+    category: "Facilities"
   },
   {
     id: "parichay-room",
     title: "Parichay Room",
     menuLabel: "Parichay Room",
     description: "An introductory audio-visual installation that welcomes visitors to the galleries of Teen Murti House.",
-    image: "/building 1/parichay.jpg",
+    image: "/special shows/parichay2.JPG",
     building: 1,
     category: "Facilities"
   },
 
   // BUILDING 2
+  // Category 1: Prime Ministers Galleries
   {
-    id: "reception-2",
-    title: "Reception",
-    menuLabel: "Reception",
-    description: "The high-tech entrance of Building II, offering digital navigation, guides, and visitor interactive directories.",
-    image: "/building 2/reception.jpg",
+    id: "pm-corridor-2",
+    title: "Prime Ministers Corridor",
+    menuLabel: "PM Corridor",
+    description: "A walk through the beautifully designed PM Corridor showcasing the journey of India's Prime Ministers through chronological photo exhibits and memorabilia.",
+    image: "/building 2/PM Corridor.jpg",
     building: 2,
-    category: "Facilities"
+    category: "Prime Ministers Galleries"
   },
   {
-    id: "prastuti-conference-2",
-    title: "Prastuti Conference Room",
-    menuLabel: "Prastuti Conference Room",
-    description: "A state-of-the-art orientation hall hosting multimedia briefings, press conferences, and educational seminars.",
-    image: "/building 2/prastuti conference room.jpg",
+    id: "gulzarilal-nanda-2",
+    title: "Shri Gulzarilal Nanda",
+    menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
+    description: "Highlights the selfless service of the two-time interim Prime Minister and his contribution to labor welfare and the Planning Commission as its first Deputy Chairman.",
+    image: "/building 2/pms/nanda.jpg",
     building: 2,
-    category: "Facilities"
+    category: "Prime Ministers Galleries"
   },
   {
-    id: "lal-qila-prachir-2",
-    title: "Lal Qile ki Prachir se",
-    menuLabel: "Lal Qile ki Prachir se",
-    description: "Experience the historic speeches delivered by India's Prime Ministers from the ramparts of the Red Fort in a 3D projection room.",
-    image: "/building 2/lal qile ki prachir se.jpg",
+    id: "lal-bahadur-shastri-2",
+    title: "Shri Lal Bahadur Shastri",
+    menuLabel: "Gallery 3 - Shri Lal Bahadur Shastri",
+    description: "Highlights the second PM's integrity, rural reforms, and military leadership during the 1965 war with his slogan 'Jai Jawan Jai Kisan'.",
+    image: "/building 2/pms/shastri.jpg",
     building: 2,
-    category: "Special Shows"
+    category: "Prime Ministers Galleries"
   },
+  {
+    id: "indira-gandhi-2",
+    title: "Smt. Indira Gandhi",
+    menuLabel: "Gallery 4 - Smt. Indira Gandhi",
+    description: "Examines the decisive leadership of Indira Gandhi, focus on land reforms, national security, space exploration, and economic policies.",
+    image: "/building 2/pms/indira.JPG",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "morarji-desai-2",
+    title: "Shri Morarji Desai",
+    menuLabel: "Gallery 5 - Shri Morarji Desai",
+    description: "Portrays the post-Emergency restoration of fundamental rights, economic stabilization, and initiatives for friendly relations with neighbors.",
+    image: "/building 2/pms/desai.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "charan-singh-2",
+    title: "Chaudhary Charan Singh",
+    menuLabel: "Gallery 6 - Chaudhary Charan Singh",
+    description: "Focuses on the champion of Indian peasants and farmers, highlighting land reforms and agricultural empowerment.",
+    image: "/building 2/pms/charan-singh.JPG",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "rajiv-gandhi-2",
+    title: "Shri Rajiv Gandhi",
+    menuLabel: "Gallery 7 - Shri Rajiv Gandhi",
+    description: "Chronicles the modernization of India via the telecom revolution, youth empowerment, technology missions, and computerization.",
+    image: "/building 2/pms/rajiv.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "vp-singh-2",
+    title: "Shri VP Singh",
+    menuLabel: "Gallery 8 - Shri VP Singh",
+    description: "Highlights the implementation of the Mandal Commission report, focus on social justice, and administrative reforms.",
+    image: "/building 2/pms/vp.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "chandra-shekhar-2",
+    title: "Shri Chandra Shekhar",
+    menuLabel: "Gallery 9 - Shri Chandra Shekhar",
+    description: "Highlights his long political march (Padayatra) and his leadership during a critical period of economic transition.",
+    image: "/building 2/pms/chandra-shekhar.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "narasimha-rao-2",
+    title: "Shri PV Narasimha Rao",
+    menuLabel: "Gallery 10 - Shri PV Narasimha Rao",
+    description: "Chronicles the landmark economic reforms of 1991, integration with the global economy, and the 'Look East' foreign policy.",
+    image: "/building 2/pms/pv.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "deve-gowda-2",
+    title: "Shri HD Deve Gowda",
+    menuLabel: "Gallery 11 - Shri HD Deve Gowda",
+    description: "Commemorates the coalition government's efforts towards federal governance, regional development, and agricultural welfare.",
+    image: "/building 2/pms/hd.jpg",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "gujral-2",
+    title: "Shri Inder Kumar Gujral",
+    menuLabel: "Gallery 12 - Shri Inder Kumar Gujral",
+    description: "Showcases the 'Gujral Doctrine' which reshaped India's friendly relations with neighboring South Asian nations.",
+    image: "/building 2/pms/gujral.JPG",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "atal-bihari-vajpayee-2",
+    title: "Shri Atal Bihari Vajpayee",
+    menuLabel: "Gallery 13 - Shri Atal Bihari Vajpayee",
+    description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
+    image: "/building 2/pms/atal.JPG",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "manmohan-singh-2",
+    title: "Shri Manmohan Singh",
+    menuLabel: "Gallery 14 - Shri Manmohan Singh",
+    description: "Highlights a decade of high growth, landmark legislations like RTI, Right to Education, NREGA, and civil nuclear agreements.",
+    image: "/building 2/pms/manmohan-singh.JPG",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+  {
+    id: "pm-gallery-2",
+    title: "Prime Ministers Gallery",
+    menuLabel: "Gallery 15 - Prime Ministers Gallery",
+    description: "Explore the gallery of the 14th Prime Minister Shri Narendra Modi, highlighting key initiatives such as Swachh Bharat, Make in India, Digital India, and the nation's rapid infrastructural growth.",
+    image: "/building 2/pms/modi.png",
+    building: 2,
+    category: "Prime Ministers Galleries"
+  },
+
+  // Category 2: Anubhuti Zone
+  {
+    id: "selfie-pm-2",
+    title: "Selfie with Prime Minister",
+    menuLabel: "Selfie with Prime Minister",
+    description: "Take a selfie with your favourite Prime Minister using Augmented Reality.",
+    image: "/anubhuti/selfie.jpg",
+    building: 2,
+    category: "Anubhuti Zone"
+  },
+  {
+    id: "handwriting-robot-2",
+    title: "Letter from Prime Minister",
+    menuLabel: "Letter from Prime Minister",
+    description: "Receive a personalized letter handwritten in the signature style of India's great Prime Ministers.",
+    image: "/anubhuti/roboticalligraphy.JPG",
+    building: 2,
+    category: "Anubhuti Zone"
+  },
+  {
+    id: "unity-wall-2",
+    title: "Unity Wall",
+    menuLabel: "Unity Wall",
+    description: "Collaborate with fellow visitors by holding hands to complete the electrical circuit and light up the Unity Chain.",
+    image: "/anubhuti/unitychain.JPG",
+    building: 2,
+    category: "Anubhuti Zone"
+  },
+
+  // Category 3: Special Shows
   {
     id: "light-sound-show-2",
     title: "Light and Sound Show",
     menuLabel: "Light and Sound Show",
-    description: "Watch an Immersive tale of Valliant Women Warriors, \"Veeranganaon ki Mahagatha\" who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of the last 75 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
-    image: "/special shows/light and sound show.jpg",
+    description: "Watch an Immersive tale of Valliant Women Warriors, Veeranganaon ki Mahagatha; who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of nearly 80 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
+    image: "/special shows/light.JPG",
     building: 2,
     category: "Special Shows"
   },
@@ -233,182 +378,157 @@ const GALLERIES: Gallery[] = [
     category: "Special Shows"
   },
   {
-    id: "pokhran-show-2",
-    title: "Pokhran II",
-    menuLabel: "Pokhran II",
-    description: "Relive India's historic Pokhran nuclear tests under the leadership of Prime Minister Shri Atal Bihari Vajpayee: an immersive control room simulation with dramatic audiovisuals.",
-    image: "/special shows/pokhran.jpg",
+    id: "bhavishya-jhalkiyan-2",
+    title: "Bhavishya ki Jhalkiyan",
+    menuLabel: "Bhavishya ki Jhalkiyan",
+    description: "Take a seat in the helicopter pod and prepare yourselves for a splendid, 360-degree virtual reality projection of the nation's exciting futuristic developments.",
+    image: "/anubhuti/bhavishya ki jhaliyan.JPG",
     building: 2,
     category: "Special Shows"
   },
+
+  // Category 4: Facilities
   {
-    id: "freedom-unity-2",
-    title: "Freedom and Unity",
-    menuLabel: "Freedom and Unity",
-    description: "Honors the integration of more than 560 princely states into the Indian Union, highlighting the monumental efforts of Sardar Vallabhbhai Patel.",
-    image: "/building 2/freedom and unity.jpg",
+    id: "prastuti-conference-2",
+    title: "Prastuti Conference Room",
+    menuLabel: "Prastuti Conference Room",
+    description: "A state-of-the-art orientation hall hosting multimedia briefings, press conferences, and educational seminars.",
+    image: "/building 2/prastuti conference room.jpg",
     building: 2,
-    category: "Anubhuti Zone"
+    category: "Facilities"
   },
   {
-    id: "nuclear-dream-2",
-    title: "Nuclear Dream to Reality",
-    menuLabel: "Nuclear Dream to Reality",
-    description: "Details India's scientific achievements, mapping the path from atomic energy research to the historic Pokhran nuclear tests.",
-    image: "/building 2/nuclear dream to reality.jpg",
+    id: "pms2-reception",
+    title: "PMS 2 Reception Area",
+    menuLabel: "Reception Area",
+    description: "The main reception area inside Building II, helping visitors with information desks and digital walkthroughs.",
+    image: "/building 2/facilities/area.jpg",
     building: 2,
-    category: "Anubhuti Zone"
+    category: "Facilities"
   },
   {
-    id: "bhavishya-jhalkiya-2",
-    title: "Bhavishya ki Jhalkiya",
-    menuLabel: "Bhavishya ki Jhalkiyan",
-    description: "Step inside the virtual reality capsule showcasing India's future infrastructure, digital tech, and green energy goals for 2047.",
-    image: "/building 2/bhavishya ki jhalkiya.jpg",
+    id: "levitating-emblem",
+    title: "Levitating Emblem",
+    menuLabel: "Levitating Emblem",
+    description: "A spectacular levitating national emblem exhibit representing the integration of modern innovation and Indian heritage.",
+    image: "/building 2/facilities/levitatingg.JPG",
     building: 2,
-    category: "Anubhuti Zone"
+    category: "Facilities"
   },
   {
-    id: "anubhuti-2",
-    title: "Anubhuti",
-    menuLabel: "Anubhuti",
-    description: "Engage with futuristic technologies like interactive AI chat with PMs, holographic strolls, and personalized calligraphy letters.",
-    image: "/building 2/anubhuti.jpg",
+    id: "canteen-stories",
+    title: "Canteen Stories",
+    menuLabel: "Canteen Stories",
+    description: "The spacious visitor cafeteria offering dining options, refreshments, and a comfortable seating layout.",
+    image: "/building 2/facilities/Canteen Stories.jpg",
     building: 2,
-    category: "Anubhuti Zone"
+    category: "Facilities"
   },
   {
-    id: "gulzarilal-nanda-2",
-    title: "Shri Gulzarilal Nanda",
-    menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
-    description: "Highlights the selfless service of the two-time interim Prime Minister and his contribution to labor welfare and the Planning Commission as its first Deputy Chairman.",
-    image: "/building 2/shri gulzarilal nanda.jpg",
+    id: "entry-gate",
+    title: "Entry Gate",
+    menuLabel: "Entry Gate",
+    description: "The security-monitored entrance gate welcoming visitors to the lawns of Block II.",
+    image: "/building 2/facilities/hi.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "lal-bahadur-shastri-2",
-    title: "Shri Lal Bahadur Shastri",
-    menuLabel: "Gallery 3 - Shri Lal Bahadur Shastri",
-    description: "Highlights the second PM's integrity, rural reforms, and military leadership during the 1965 war with his slogan 'Jai Jawan Jai Kisan'.",
-    image: "/building 2/shri lal bahadur shastri.jpg",
+    id: "forest-table",
+    title: "Forest Table",
+    menuLabel: "Forest Table",
+    description: "A beautiful wooden installation offering visitors a resting spot amid natural architectural accents.",
+    image: "/building 2/facilities/Forest table DSC_3625.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "indira-gandhi-2",
-    title: "Smt. Indira Gandhi",
-    menuLabel: "Gallery 4 - Smt. Indira Gandhi",
-    description: "Examines the decisive leadership of Indira Gandhi, focus on land reforms, national security, space exploration, and economic policies.",
-    image: "/building 2/smt. indira gandhi.jpg",
+    id: "interactive-kiosk",
+    title: "Interactive Kiosk",
+    menuLabel: "Interactive Kiosk",
+    description: "Self-service touch kiosks enabling interactive exploration of the museum map and show timings.",
+    image: "/building 2/facilities/Kiosk DSC_2755-2.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "morarji-desai-2",
-    title: "Shri Morarji Desai",
-    menuLabel: "Gallery 5 - Shri Morarji Desai",
-    description: "Portrays the post-Emergency restoration of fundamental rights, economic stabilization, and initiatives for friendly relations with neighbors.",
-    image: "/building 2/shri morarji desai.jpg",
+    id: "namastey-cafe",
+    title: "Namastey Cafe",
+    menuLabel: "Namastey Cafe",
+    description: "The cafeteria kiosk offering quick bites, hot beverages, and snacks for visitors taking breaks between tours.",
+    image: "/building 2/facilities/Namastey Cafe.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "charan-singh-2",
-    title: "Chaudhary Charan Singh",
-    menuLabel: "Gallery 6 - Chaudhary Charan Singh",
-    description: "Focuses on the champion of Indian peasants and farmers, highlighting land reforms and agricultural empowerment.",
-    image: "/building 2/chaudhary charan singh.jpg",
+    id: "parking-facility",
+    title: "Parking Area",
+    menuLabel: "Parking Area",
+    description: "Spacious vehicle parking zones laid out efficiently for buses, private cars, and two-wheelers.",
+    image: "/building 2/facilities/Parking DSC_3248.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "rajiv-gandhi-2",
-    title: "Shri Rajiv Gandhi",
-    menuLabel: "Gallery 7 - Shri Rajiv Gandhi",
-    description: "Chronicles the modernization of India via the telecom revolution, youth empowerment, technology missions, and computerization.",
-    image: "/building 2/shri rajiv gandhi.jpg",
+    id: "security-check",
+    title: "Security Checkpoint",
+    menuLabel: "Security Checkpoint",
+    description: "Standard security checks and scanners at the entrance gates to guarantee a safe experience.",
+    image: "/building 2/facilities/Security DSC_3283.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "vp-singh-2",
-    title: "Shri VP Singh",
-    menuLabel: "Gallery 8 - Shri VP Singh",
-    description: "Highlights the implementation of the Mandal Commission report, focus on social justice, and administrative reforms.",
-    image: "/building 2/shri vp singh.jpg",
+    id: "signage-info",
+    title: "Wayfinding Signage",
+    menuLabel: "Wayfinding Signage",
+    description: "Directional sign boards placed across paths to guide visitors to show locations and amenities.",
+    image: "/building 2/facilities/Signage DSC_5254.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "chandra-shekhar-2",
-    title: "Shri Chandra Shekhar",
-    menuLabel: "Gallery 9 - Shri Chandra Shekhar",
-    description: "Highlights his long political march (Padayatra) and his leadership during a critical period of economic transition.",
-    image: "/building 2/shri chandra shekhar.jpg",
+    id: "signage-info-2",
+    title: "Information Signage",
+    menuLabel: "Information Signage",
+    description: "General guidelines and schedule display signage boards helping visitors plan their museum walkthrough.",
+    image: "/building 2/facilities/Signage DSC_5262.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "narasimha-rao-2",
-    title: "Shri PV Narasimha Rao",
-    menuLabel: "Gallery 10 - Shri PV Narasimha Rao",
-    description: "Chronicles the landmark economic reforms of 1991, integration with the global economy, and the 'Look East' foreign policy.",
-    image: "/building 2/shri pv narasimha rao.jpg",
+    id: "tatsat-gift-shop",
+    title: "Tatsat Gift Shop",
+    menuLabel: "Tatsat Gift Shop",
+    description: "The museum gift shop where visitors can purchase souvenirs, customized books, and handicraft items.",
+    image: "/building 2/facilities/Tatsat,.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "deve-gowda-2",
-    title: "Shri HD Deve Gowda",
-    menuLabel: "Gallery 11 - Shri HD Deve Gowda",
-    description: "Commemorates the coalition government's efforts towards federal governance, regional development, and agricultural welfare.",
-    image: "/building 2/shri hd deve gowda.jpg",
+    id: "heritage-art",
+    title: "Heritage Art Exhibit",
+    menuLabel: "Heritage Art Exhibit",
+    description: "A showcase of traditional artwork and national emblems celebrating Indian legacy inside the facility.",
+    image: "/building 2/facilities/The Heritage art,.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   },
   {
-    id: "gujral-2",
-    title: "Shri Inder Kumar Gujral",
-    menuLabel: "Gallery 12 - Shri Inder Kumar Gujral",
-    description: "Showcases the 'Gujral Doctrine' which reshaped India's friendly relations with neighboring South Asian nations.",
-    image: "/building 2/shri inder kumar gujral.jpg",
+    id: "ticket-counter",
+    title: "Ticket Counter",
+    menuLabel: "Ticket Counter",
+    description: "Multi-window digital ticket counter for purchasing show passes and museum entries.",
+    image: "/building 2/facilities/ticket counter DSC_3242.jpg",
     building: 2,
-    category: "Prime Ministers Galleries"
-  },
-  {
-    id: "atal-bihari-vajpayee-2",
-    title: "Shri Atal Bihari Vajpayee",
-    menuLabel: "Gallery 13 - Shri Atal Bihari Vajpayee",
-    description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
-    image: "/building 2/shri atal bihari vajpayee.jpg",
-    building: 2,
-    category: "Prime Ministers Galleries"
-  },
-  {
-    id: "manmohan-singh-2",
-    title: "Shri Manmohan Singh",
-    menuLabel: "Gallery 14 - Shri Manmohan Singh",
-    description: "Highlights a decade of high growth, landmark legislations like RTI, Right to Education, NREGA, and civil nuclear agreements.",
-    image: "/building 2/shri manmohan singh.jpg",
-    building: 2,
-    category: "Prime Ministers Galleries"
-  },
-  {
-    id: "pm-gallery-2",
-    title: "Prime Ministers Gallery",
-    menuLabel: "Gallery 15 - Prime Ministers Gallery",
-    description: "The central exhibition hall of Building II dedicated to the lives, leadership styles, and enduring contributions of India's  Prime Ministers.",
-    image: "/building 2/prime ministers gallery.jpg",
-    building: 2,
-    category: "Prime Ministers Galleries"
+    category: "Facilities"
   }
 ];
 
 export default function KeyGalleriesContent() {
   const [building, setBuilding] = useState<1 | 2>(1);
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeId, setActiveId] = useState("nehru-gallery");
+  const [activeId, setActiveId] = useState("making-constitution");
   const [isPaused, setIsPaused] = useState(false);
 
   // Check url query param on mount to allow deep linking
@@ -593,7 +713,7 @@ export default function KeyGalleriesContent() {
               onClick={() => {
                 setBuilding(1);
                 setSearchQuery("");
-                setActiveId("nehru-gallery");
+                setActiveId("making-constitution");
               }}
               className={`px-5 py-2 rounded-lg text-sm font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                 building === 1

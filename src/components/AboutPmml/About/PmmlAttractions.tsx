@@ -17,19 +17,19 @@ const BLOCK_1_ITEMS = [
   {
     title: 'Constitution Gallery',
     description: 'Witness the making of the constitution, democratic foundations, key amendments, and the translation of the constitution in different languages. Step into the historical debates and the democratic journey of modern India. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/building 1/constitutional amendments.jpg',
+    image: '/building 1/amendments.jpg',
     alt: 'Constitution Gallery'
   },
   {
     title: 'Nehru Gallery-1',
     description: 'Step into Jawaharlal Nehru\'s early life, political journey, his bedroom, personal belongings, and a special exhibition on his Prime Ministership. Relive the early days of independent India through this dedicated collection. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/building 1/nehru gallery.jpg',
+    image: '/building 1/nehru gallery1.jpg',
     alt: 'Nehru Gallery'
   },
   {
     title: 'Toshakhana',
     description: 'Exquisite artifacts, historical gifts, and treasures received by the Prime Ministers of India during international and domestic visits. Browse through these valuable tokens of diplomatic friendship and heritage. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/toshakhana.png',
+    image: '/gift.jpg',
     alt: 'Toshakhana'
   }
 ];
@@ -93,13 +93,13 @@ const RESEARCH_TABS = [
   {
     title: 'Publications',
     description: 'PMML supports a robust publication programme, printing academic papers, journals, monograph series, and research volumes detailing modern and contemporary history. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: '/research-publication.png',
+    image: '/Research Pics.jpg',
     alt: 'Publications'
   },
   {
     title: 'CCS',
     description: 'The Centre for Contemporary Studies (CCS) was set up as a new unit of PMML in 1990 to provide an active forum for fellowship research and contemporary historical studies. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-    image: '/hero section/ccs-building.jpg',
+    image: '/ccss.jpg',
     alt: 'Centre for Contemporary Studies'
   }
 ];

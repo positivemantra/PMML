@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Spectral } from "next/font/google";
 import { ZoomIn } from "lucide-react";
@@ -12,9 +12,87 @@ const spectral = Spectral({
   style: ["normal", "italic"],
 });
 
+const GALLERY_IMAGES = [
+  { src: "/Inauguration of Museum/EY2B4034 copy.jpg", caption: "Prime Minister Narendra Modi purchasing the first ticket at the counter." },
+  { src: "/EY2B4002.JPG", caption: "Hon’ble PM Narendra Modi dedicating the museum to the nation." },
+  { src: "/Inauguration of Museum/EY2B4177.JPG", caption: "Hon’ble PM inspecting the newly designed corridors of Block II." },
+  { src: "/EY2B4074.JPG", caption: "Hon’ble PM Narendra Modi viewing historical documents at the exhibit." },
+  { src: "/Inauguration of Museum/EY2B4281.JPG", caption: "PM Narendra Modi addressing the delegates at the ceremony." },
+  { src: "/EY2B4130.JPG", caption: "PM Narendra Modi interacting with guests at the Teen Murti Bhawan complex." },
+  { src: "/EY2B4162.JPG", caption: "Hon’ble PM Narendra Modi lighting the lamp at the inauguration ceremony." }
+];
+
+const EXTENDED_GALLERY_IMAGES = [...GALLERY_IMAGES, ...GALLERY_IMAGES.slice(0, 3)];
+
 export default function InaugurationCeremonyContent() {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [isSpeechModalOpen, setIsSpeechModalOpen] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState(0);
+  const [galleryVisible, setGalleryVisible] = useState(3);
+  const [isPausedGallery, setIsPausedGallery] = useState(false);
+  const [galleryTransitionEnabled, setGalleryTransitionEnabled] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) setGalleryVisible(1);
+      else if (window.innerWidth < 1024) setGalleryVisible(2);
+      else setGalleryVisible(3);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Infinite Gallery Carousel auto-moving logic
+  useEffect(() => {
+    if (isPausedGallery) return;
+    const interval = setInterval(() => {
+      setGalleryTransitionEnabled(true);
+      setGalleryIndex((prev) => prev + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isPausedGallery]);
+
+  useEffect(() => {
+    if (galleryIndex === GALLERY_IMAGES.length) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(false);
+        setGalleryIndex(0);
+      }, 300); // Wait for transition duration (300ms)
+      return () => clearTimeout(timer);
+    }
+  }, [galleryIndex]);
+
+  useEffect(() => {
+    if (!galleryTransitionEnabled) {
+      const timer = setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [galleryTransitionEnabled]);
+
+  const handlePrevGallery = () => {
+    if (galleryIndex === 0) {
+      setGalleryTransitionEnabled(false);
+      setGalleryIndex(GALLERY_IMAGES.length);
+      setTimeout(() => {
+        setGalleryTransitionEnabled(true);
+        setGalleryIndex(GALLERY_IMAGES.length - 1);
+      }, 50);
+    } else {
+      setGalleryTransitionEnabled(true);
+      setGalleryIndex((prev) => prev - 1);
+    }
+  };
+
+  const handleNextGallery = () => {
+    setGalleryTransitionEnabled(true);
+    setGalleryIndex((prev) => prev + 1);
+  };
+
+  const galleryGap = 20;
+  const galleryTransformX = `calc(-${galleryIndex} * ( (100% - ${(galleryVisible - 1) * galleryGap}px) / ${galleryVisible} + ${galleryGap}px ))`;
 
   return (
     <div className="w-full flex flex-col bg-white">
@@ -125,7 +203,7 @@ export default function InaugurationCeremonyContent() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 lg:order-1 hover:scale-[1.02] transition-transform duration-500">
               <Image
-                src="/building 2/reception.jpg"
+                src="/building 2/2.JPG"
                 alt="Ashoka Chakra Lobby"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -313,45 +391,91 @@ export default function InaugurationCeremonyContent() {
       </section>
 
       {/* ── Section 6: Inaugural Photo Gallery ── */}
-      <section className="w-full py-10 sm:py-12 bg-white text-left">
+      <section className="w-full py-12 lg:py-16 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-left mb-10">
-            <div className="w-12 h-1 bg-[#f37021] mb-4" />
-            <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] leading-tight`}>
+          <div className="mb-8 text-left">
+            <div className="w-12 h-1 bg-[#f37021] mb-2.5" />
+            <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
               Glimpses of the Historic Day
-            </h2>
+            </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { src: "/Inauguration of Museum/EY2B4034 copy.jpg", caption: "Prime Minister purchasing the first ticket at the counter." },
-              { src: "/Inauguration of Museum/EY2B4177.JPG", caption: "Hon’ble PM inspecting the newly designed corridors of Block II." },
-              { src: "/Inauguration of Museum/EY2B4281.JPG", caption: "PM Narendra Modi addressing the delegates at the ceremony." }
-            ].map((photo, idx) => (
-              <div 
-                key={idx} 
-                onClick={() => setLightboxImage(photo.src)}
-                className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-100 group cursor-pointer"
+          {/* Photos Carousel/Row */}
+          <div 
+            onMouseEnter={() => setIsPausedGallery(true)}
+            onMouseLeave={() => setIsPausedGallery(false)}
+            className="relative -mx-4 sm:-mx-10 lg:-mx-14 px-4 sm:px-10 lg:px-14"
+          >
+            {/* Left Chevron */}
+            <button
+              type="button"
+              onClick={handlePrevGallery}
+              className="absolute left-1 sm:left-2 lg:left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Previous image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>
+            </button>
+
+            {/* Right Chevron */}
+            <button
+              type="button"
+              onClick={handleNextGallery}
+              className="absolute right-1 sm:right-2 lg:right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] border border-gray-100 flex items-center justify-center text-[#f37021] hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              aria-label="Next image"
+            >
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </button>
+
+            {/* Inner Images Row */}
+            <div className="w-full overflow-hidden">
+              <div
+                className={`flex w-full ${galleryTransitionEnabled ? 'transition-transform duration-300 ease-in-out' : ''}`}
+                style={{
+                  transform: `translateX(${galleryTransformX})`,
+                  gap: `${galleryGap}px`,
+                }}
               >
-                <Image
-                  src={photo.src}
-                  alt={photo.caption}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                
-                {/* Overlay Text & Zoom Icon on Hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/35 flex flex-col justify-end p-5 transition-colors duration-300">
-                  <div className="flex items-center justify-center w-10 h-10 bg-white/90 rounded-full shadow-md mb-auto ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <ZoomIn className="w-5 h-5 text-[#052356]" />
+                {EXTENDED_GALLERY_IMAGES.map((img, idx) => (
+                  <div
+                    key={`${img.src}-${idx}`}
+                    style={{
+                      width: `calc((100% - ${(galleryVisible - 1) * galleryGap}px) / ${galleryVisible})`,
+                    }}
+                    onClick={() => setLightboxImage(img.src)}
+                    className="flex-shrink-0 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md bg-gray-100 hover:shadow-lg transition-shadow duration-300 group cursor-pointer"
+                  >
+                    <Image
+                      src={img.src}
+                      alt={img.caption}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    
+                    {/* Overlay Text & Zoom Icon on Hover */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/35 flex flex-col justify-end p-5 transition-colors duration-300">
+                      <div className="flex items-center justify-center w-10 h-10 bg-white/90 rounded-full shadow-md mb-auto ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ZoomIn className="w-5 h-5 text-[#052356]" />
+                      </div>
+                      <p className="text-white text-xs font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
+                        {img.caption}
+                      </p>
+                    </div>
+
+                    {/* Always visible Caption directly on image in white color when not hovered */}
+                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10 group-hover:opacity-0 transition-opacity duration-300">
+                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] line-clamp-2">
+                        {img.caption}
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-white text-xs font-semibold leading-normal opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
-                    {photo.caption}
-                  </p>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>

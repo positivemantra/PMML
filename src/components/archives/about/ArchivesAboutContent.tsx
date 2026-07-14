@@ -15,7 +15,7 @@ const GALLERY_IMAGES = [
   { src: "/NMM_2386.jpg", alt: "Archival Collections & Storage" },
   { src: "/DSC_0278.JPG", alt: "Historical Documents & Letters" },
   { src: "/DSC_0561.JPG", alt: "Rare Preserved Manuscripts" },
-  { src: "/DSC_4568.jpg", alt: "Archival Research Section" },
+  { src: "/ccss.jpg", alt: "Archival Research Section" },
 ];
 
 const EXTENDED_GALLERY_IMAGES = [...GALLERY_IMAGES, ...GALLERY_IMAGES.slice(0, 3)];
@@ -148,7 +148,7 @@ export default function ArchivesAboutContent() {
             {/* Left Image column */}
             <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
               <Image
-                src="/hero section/ccs-building.jpg"
+                src="/ccss.jpg"
                 alt="Research Reading and Archival Reference Room"
                 fill
                 sizes="(max-w-1024px) 100vw, 550px"

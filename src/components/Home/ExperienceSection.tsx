@@ -15,7 +15,7 @@ const EXHIBITS = [
     id: 'unity-chain',
     title: 'Unity Chain',
     description: 'Explore the historic integration of Indian states led by Sardar Vallabhbhai Patel.',
-    image: '/anubhuti/unitychain.jpg',
+    image: '/anubhuti/unitychain.JPG',
     link: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
@@ -36,14 +36,14 @@ const EXHIBITS = [
     id: 'lal-qile-ki-prachir-se',
     title: 'Lal Qile Ki Prachir Se',
     description: 'Interact with life-like 3D holographic representations of India\'s leaders.',
-    image: '/hologram.jpeg',
+    image: '/anubhuti/hologram.JPG',
     link: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
     id: 'handwriting-robot',
     title: 'Letter from Prime Minister',
     description: 'Watch the incredible robotic system write and sign personalized souvenirs in real-time.',
-    image: '/anubhuti/roboticalligraphy.jpg',
+    image: '/anubhuti/roboticalligraphy.JPG',
     link: '/pm-sangrahalaya/anubhuti-zone',
   },
   {
@@ -57,21 +57,21 @@ const EXHIBITS = [
     id: 'bhavishya',
     title: 'Bhavishya ki Jhalkiyan',
     description: 'Witness the future visions of India through digital immersion and interactive spaces.',
-    image: '/special shows/bhavishya.jpg',
+    image: '/anubhuti/bhavishya ki jhaliyan.JPG',
     link: '/pm-sangrahalaya/special-shows',
   },
   {
     id: 'nuclear-journey',
     title: 'Nuclear Journey to Dream Reality',
     description: 'Experience the historical journey through virtual reality time travel and cosmic visual storytelling.',
-    image: '/special shows/timemachine.jpg',
+    image: '/special shows/Time Machine.JPG',
     link: '/pm-sangrahalaya/special-shows',
   },
   {
     id: 'light-sound',
     title: 'Light & Sound Show',
     description: 'A spectacular audio-visual journey narration of India\'s legacy and democratic heritage.',
-    image: '/light-sound.png',
+    image: '/special shows/light.JPG',
     link: '/pm-sangrahalaya/special-shows',
   }
 ];

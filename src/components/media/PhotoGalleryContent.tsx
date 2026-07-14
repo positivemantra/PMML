@@ -18,7 +18,7 @@ const ALBUMS_DATA = [
     title: 'Teen Murti House Facade and Gardens',
     category: 'Museum',
     date: '20/08/2026',
-    image: '/hero.png',
+    image: '/hee.jpg',
   },
   {
     id: 2,
@@ -64,7 +64,7 @@ const IMAGES_DATA = [
     title: 'Nehru Bust Portrait',
     category: 'Museum',
     date: '24/08/2026',
-    image: '/hero.png',
+    image: '/hee.jpg',
   },
   {
     id: 102,
@@ -85,7 +85,7 @@ const IMAGES_DATA = [
     title: 'Teen Murti Rose Garden Walkway',
     category: 'Museum',
     date: '11/08/2026',
-    image: '/hero.png',
+    image: '/hee.jpg',
   },
   {
     id: 105,
@@ -163,7 +163,7 @@ const VIDEOS_DATA = [
     title: 'Laxmi Memorial Lecture Recording',
     category: 'Museum',
     date: '15/07/2026',
-    image: '/hero.png',
+    image: '/hee.jpg',
     duration: '28:15',
   },
   {
@@ -232,7 +232,7 @@ export default function PhotoGalleryContent() {
       {/* ── Page Hero Section ── */}
        <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
         <Image
-          src="/hero.png"
+          src="/hee.jpg"
           alt="Photo Gallery"
           fill
           priority
