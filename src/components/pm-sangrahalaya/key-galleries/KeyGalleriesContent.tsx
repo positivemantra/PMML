@@ -483,7 +483,7 @@ const GALLERIES: Gallery[] = [
     title: "Wayfinding Signage",
     menuLabel: "Wayfinding Signage",
     description: "Directional sign boards placed across paths to guide visitors to show locations and amenities.",
-    image: "/building 2/facilities/Signage DSC_5254.jpg",
+    image: "/building 2/facilities/Signage DSC_5262.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -492,7 +492,7 @@ const GALLERIES: Gallery[] = [
     title: "Information Signage",
     menuLabel: "Information Signage",
     description: "General guidelines and schedule display signage boards helping visitors plan their museum walkthrough.",
-    image: "/building 2/facilities/Signage DSC_5262.jpg",
+    image: "/building 2/facilities/Signage DSC_5254.jpg",
     building: 2,
     category: "Facilities"
   },
