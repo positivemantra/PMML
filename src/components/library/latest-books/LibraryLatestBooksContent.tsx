@@ -25,33 +25,33 @@ const LATEST_BOOKS_DOCS: BookListDoc[] = [
     id: "lb-1",
     title: "Latest Books for Display Board (1-6, January-March 2025) List-I",
     year: 2025,
-    size: "1.20 MB",
+    size: "455 KB",
     type: "PDF",
-    url: "#"
+    url: "https://positive-mantra.com/PDF/List%20of%20Latest%20Books/Volume_8__Issue_1_6_January_March_2025.pdf"
   },
   {
     id: "lb-2",
     title: "Latest Books for Display Board (7-12, April-June 2025) List-II",
     year: 2025,
-    size: "1.50 MB",
+    size: "450 KB",
     type: "PDF",
-    url: "#"
+    url: "https://positive-mantra.com/PDF/List%20of%20Latest%20Books/Volume_8__Issue_7_12_April_June_2025.pdf"
   },
   {
     id: "lb-3",
     title: "Latest Books for Display Board (13-18, July-September 2025) List-I",
     year: 2025,
-    size: "1.10 MB",
+    size: "470 KB",
     type: "PDF",
-    url: "#"
+    url: "https://positive-mantra.com/PDF/List%20of%20Latest%20Books/Volume_8__Issue_13_18_July_September_2025.pdf"
   },
   {
     id: "lb-4",
-    title: "Latest Books for Display Board 19-24, October-December 2025) List-II",
+    title: "Latest Books for Display Board (19-24, October-December 2025) List-II",
     year: 2025,
-    size: "1.40 MB",
+    size: "441 KB",
     type: "PDF",
-    url: "#"
+    url: "https://positive-mantra.com/PDF/List%20of%20Latest%20Books/Volume_8__Issue_19_24_October_December_2025__1_.pdf"
   }
 ];
 
@@ -180,8 +180,10 @@ export default function LibraryLatestBooksContent() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                           </svg>
                           <a 
-                            href={doc.url} 
-                            className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors leading-snug cursor-pointer"
+                            href={doc.url === '#' ? undefined : doc.url} 
+                            target={doc.url === '#' ? undefined : "_blank"}
+                            rel={doc.url === '#' ? undefined : "noopener noreferrer"}
+                            className={`text-sm font-semibold text-gray-700 transition-colors leading-snug ${doc.url === '#' ? 'cursor-default' : 'hover:text-blue-600 cursor-pointer'}`}
                           >
                             {doc.title}
                           </a>
@@ -201,8 +203,10 @@ export default function LibraryLatestBooksContent() {
                         {/* View Action */}
                         <td className="py-4 px-6 text-center">
                           <a
-                            href={doc.url}
-                            className="inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold tracking-wide transition-all select-none cursor-pointer"
+                            href={doc.url === '#' ? undefined : doc.url}
+                            target={doc.url === '#' ? undefined : "_blank"}
+                            rel={doc.url === '#' ? undefined : "noopener noreferrer"}
+                            className={`inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 text-xs font-bold tracking-wide transition-all select-none ${doc.url === '#' ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600 hover:text-white cursor-pointer'}`}
                           >
                             <svg className="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />

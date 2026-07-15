@@ -19,19 +19,19 @@ interface Report {
 }
 
 const REPORTS_DATA: Report[] = [
-  { id: 'r58', title: '58th Annual Report 2023-2024', year: 2024, size: '1.85 MB', type: 'PDF', url: '#' },
-  { id: 'r57', title: '57th Annual Report 2022-2023', year: 2023, size: '2.10 MB', type: 'PDF', url: '#' },
-  { id: 'r56', title: '56th Annual Report 2021-2022', year: 2022, size: '1.50 MB', type: 'PDF', url: '#' },
-  { id: 'r55', title: '55th Annual Report 2020-2021', year: 2021, size: '1.72 MB', type: 'PDF', url: '#' },
-  { id: 'r54', title: '54th Annual Report 2019-2020', year: 2020, size: '2.45 MB', type: 'PDF', url: '#' },
-  { id: 'r53', title: '53rd Annual Report 2018-2019', year: 2019, size: '1.90 MB', type: 'PDF', url: '#' },
-  { id: 'r52', title: '52nd Annual Report 2017-2018', year: 2018, size: '2.05 MB', type: 'PDF', url: '#' },
+  { id: 'r58', title: '58th Annual Report 2023-2024', year: 2024, size: '1.85 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1770877217697_English_Annual_Report_2023-24-compressed.pdf' },
+  { id: 'r57', title: '57th Annual Report 2022-2023', year: 2023, size: '2.10 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1724327622050Annual_Report_of_PMML_2022-23_compressed.pdf' },
+  { id: 'r56', title: '56th Annual Report 2021-2022', year: 2022, size: '1.50 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1686830862895Annual_Report_2021-22_English.pdf' },
+  { id: 'r55', title: '55th Annual Report 2020-2021', year: 2021, size: '1.72 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1664184795129Annual__Report__2020-2021_English.pdf' },
+  { id: 'r54', title: '54th Annual Report 2019-2020', year: 2020, size: '2.45 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1664184766888Annual_Report_2019-20_English.pdf' },
+  { id: 'r53', title: '53rd Annual Report 2018-2019', year: 2019, size: '1.90 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1733737198654Annual_Report_2018-19.pdf' },
+  { id: 'r52', title: '52nd Annual Report 2017-2018', year: 2018, size: '2.05 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1664181935068Annual_Report_2017-18_English.pdf' },
   { id: 'r51', title: '51st Annual Report 2016-2017', year: 2017, size: '1.65 MB', type: 'PDF', url: '#' },
-  { id: 'r50', title: '50th Annual Report 2015-2016', year: 2016, size: '2.30 MB', type: 'PDF', url: '#' },
-  { id: 'r49', title: '49th Annual Report 2014-2015', year: 2015, size: '1.80 MB', type: 'PDF', url: '#' },
-  { id: 'r48', title: '48th Annual Report 2013-2014', year: 2014, size: '1.95 MB', type: 'PDF', url: '#' },
-  { id: 'r47', title: '47th Annual Report 2012-2013', year: 2013, size: '2.20 MB', type: 'PDF', url: '#' },
-  { id: 'r46', title: '46th Annual Report 2011-2012', year: 2012, size: '1.75 MB', type: 'PDF', url: '#' }
+  { id: 'r50', title: '50th Annual Report 2015-2016', year: 2016, size: '2.30 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1664181792941annual_report_english_2015-16.pdf' },
+  { id: 'r49', title: '49th Annual Report 2014-2015', year: 2015, size: '1.80 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/1664181759926annual_report_english_2014-15.pdf' },
+  { id: 'r48', title: '48th Annual Report 2013-2014', year: 2014, size: '1.95 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/166418166917348th_Annual_Report_2013-2014.pdf' },
+  { id: 'r47', title: '47th Annual Report 2012-2013', year: 2013, size: '2.20 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/166418159657647th_ANNUAL_REPORT_2012-2013.pdf' },
+  { id: 'r46', title: '46th Annual Report 2011-2012', year: 2012, size: '1.75 MB', type: 'PDF', url: 'https://positive-mantra.com/PDF/Annual%20Reports/166418148887246th_ANNUAL_REPORT_2011_2012.pdf' }
 ];
 
 export default function AnnualReportsList() {
@@ -156,8 +156,10 @@ export default function AnnualReportsList() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                         </svg>
                         <a 
-                          href={report.url} 
-                          className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors leading-snug cursor-pointer"
+                          href={report.url === '#' ? undefined : report.url} 
+                          target={report.url === '#' ? undefined : "_blank"}
+                          rel={report.url === '#' ? undefined : "noopener noreferrer"}
+                          className={`text-sm font-semibold text-gray-700 transition-colors leading-snug ${report.url === '#' ? 'cursor-default' : 'hover:text-blue-600 cursor-pointer'}`}
                         >
                           {report.title}
                         </a>
@@ -180,8 +182,10 @@ export default function AnnualReportsList() {
                       {/* View Action */}
                       <td className="py-4 px-6 text-center">
                         <a
-                          href={report.url}
-                          className="inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold tracking-wide transition-all select-none cursor-pointer"
+                          href={report.url === '#' ? undefined : report.url}
+                          target={report.url === '#' ? undefined : "_blank"}
+                          rel={report.url === '#' ? undefined : "noopener noreferrer"}
+                          className={`inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 text-xs font-bold tracking-wide transition-all select-none ${report.url === '#' ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600 hover:text-white cursor-pointer'}`}
                         >
                           <svg className="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />

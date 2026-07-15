@@ -15,12 +15,12 @@ const EXPLORE_ITEMS = [
   {
     label: "Microfilm",
     imageSrc: "/Frame 301.png",
-    href: "#microfilm",
+    href: "https://positive-mantra.com/PDF/List%20of%20Positive%20Microfilm/Microfilm%20List%202026_1775552768098.pdf",
   },
   {
     label: "Microfiche",
     imageSrc: "/Frame 300.png",
-    href: "#microfiche",
+    href: "https://positive-mantra.com/PDF/List%20of%20Microfiche/List%20of%20holdings%20on%20Microfiche_1774251062143.pdf",
   },
   {
     label: "List of Holding Periodicals",
@@ -40,7 +40,7 @@ const EXPLORE_ITEMS = [
   {
     label: "Rules & Regulations",
     imageSrc: "/Frame 306.png",
-    href: "#rules-regulations",
+    href: "https://positive-mantra.com/PDF/Rules%20%26%20regulations/rules%20bilingual_1778046931938.pdf",
   },
 ];
 
@@ -205,10 +205,13 @@ export default function LibraryAboutContent() {
           {/* Grid Container */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
             {EXPLORE_ITEMS.map((item) => {
+              const isPdf = item.href.endsWith(".pdf");
               return (
                 <a
                   key={item.label}
                   href={item.href}
+                  target={isPdf ? "_blank" : undefined}
+                  rel={isPdf ? "noopener noreferrer" : undefined}
                   className="group flex flex-col items-center select-none cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1 w-full text-center"
                 >
                   {/* Image Container */}

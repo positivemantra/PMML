@@ -131,7 +131,7 @@ export default function Footer() {
           <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
             <div className="mt-1.5">
               <a
-                href="https://www.indiaculture.gov.in/"
+                href="https://culture.gov.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 select-none hover:opacity-90 transition-opacity"
