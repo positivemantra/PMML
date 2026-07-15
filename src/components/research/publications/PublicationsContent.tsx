@@ -255,7 +255,7 @@ export default function PublicationsContent() {
                       {/* Footer info */}
                       <div className="flex flex-col justify-end z-10 pt-2 border-t border-[#dfd8bf]">
                         <span className="text-[8px] text-gray-500 font-semibold truncate leading-none mb-1">{pub.author}</span>
-                        <span className="text-[7.5px] text-gray-400 font-bold leading-none uppercase">{pub.year} &bull; {pub.size}</span>
+                        <span className="text-[7.5px] text-gray-400 font-bold leading-none uppercase">{pub.year}</span>
                       </div>
 
                       {/* Hover action overlay */}
@@ -289,7 +289,6 @@ export default function PublicationsContent() {
                         <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-40">Category</th>
                         <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-48">Author/Editor</th>
                         <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-28">Year</th>
-                        <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-28">Size</th>
                         <th className="py-3.5 px-6 text-xs font-bold uppercase tracking-wider text-center w-28">Action</th>
                       </tr>
                     </thead>
@@ -317,13 +316,6 @@ export default function PublicationsContent() {
                           {/* Year column */}
                           <td className="py-4 px-6 text-center text-xs text-gray-600 font-bold">
                             {pub.year}
-                          </td>
-
-                          {/* Size column */}
-                          <td className="py-4 px-6 text-center">
-                            <span className="inline-block bg-blue-50 text-blue-600 border border-blue-100 rounded px-2 py-0.5 text-xs font-bold uppercase">
-                              {pub.size}
-                            </span>
                           </td>
 
                           {/* Action column */}

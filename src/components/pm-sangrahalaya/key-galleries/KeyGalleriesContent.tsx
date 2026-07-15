@@ -823,14 +823,14 @@ export default function KeyGalleriesContent() {
                     className="relative w-full aspect-[16/10] sm:aspect-[1.8/1] rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group"
                   >
                     {/* Gallery Image Display */}
-                    <div className="absolute inset-x-0 top-0 w-full overflow-hidden" style={{ height: "135%" }}>
+                    <div className="absolute inset-0 w-full h-full overflow-hidden">
                       <Image
                         src={activeGallery.image}
                         alt={activeGallery.title}
                         fill
                         priority
                         sizes="(max-width: 1024px) 100vw, 800px"
-                        className="object-cover object-top"
+                        className="object-cover object-center"
                       />
                     </div>
 
