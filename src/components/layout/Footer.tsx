@@ -106,7 +106,7 @@ export default function Footer() {
               <div className={styles.visitorInfo}>
                 <span>Visitors: 107488</span>
                 <span className={styles.visitorSeparator}>|</span>
-                <span>Last Updated: 08-july-2026</span>
+                <span>Last Updated: 15-july-2026</span>
               </div>
             </div>
 
