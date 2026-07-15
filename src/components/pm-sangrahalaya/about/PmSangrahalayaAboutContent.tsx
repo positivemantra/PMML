@@ -15,46 +15,46 @@ const spectral = Spectral({
 
 const SPECIAL_FEATURES = [
   {
-    title: 'AI Holobox',
-    image: '/special shows/AI Holobox.JPG',
-    icon: Cpu,
-    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
-    description: 'Interact with a 3D hologram of the Prime Minister and ask questions using AI.',
-  },
-  {
-    title: 'Letter from Prime Minister',
-    image: '/anubhuti/roboticalligraphy.JPG',
-    icon: Mail,
-    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
-    description: 'Receive a personalized letter from the Prime Minister, printed by a robotic calligraphy system.',
-  },
-  {
-    title: 'Walk with Prime Minister',
-    image: '/anubhuti/walk with pm1.jpg',
-    icon: User2,
-    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
-    description: 'Walk alongside the Prime Minister in a beautiful virtual 3D environment.',
-  },
-  {
     title: 'Selfie with Prime Minister',
     image: '/anubhuti/selfie3.jpg',
     icon: Camera,
     exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
     description: 'Take a selfie with your favourite Prime Minister using Augmented Reality.',
   },
-  {
-    title: 'Bhavishya ki Jhalkiyan',
-    image: '/anubhuti/bhavishya ki jhaliyan.JPG',
-    icon: Globe,
-    exploreUrl: '/pm-sangrahalaya/special-shows',
-    description: 'Take a seat in the helicopter pod and prepare yourselves for a splendid, 360-degree virtual reality projection.',
+   {
+    title: 'Letter from Prime Minister',
+    image: '/anubhuti/roboticalligraphy.JPG',
+    icon: Mail,
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
+    description: 'Receive a personalized letter from the Prime Minister, printed by a robotic calligraphy system.',
+  },
+   {
+    title: 'Unity Chain',
+    image: '/unit.JPG',
+    icon: Mail,
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
+    description: 'Collaborate with fellow visitors by holding hands to complete the electrical circuit and light up the Unity Chain',
   },
   {
-    title: 'Nuclear Journey Dream to Reality',
-    image: '/anubhuti/time.JPG',
-    icon: Compass,
-    exploreUrl: '/pm-sangrahalaya/special-shows',
-    description: 'Relive India\'s historic Pokhran nuclear tests and nuclear milestones through interactive exhibits.',
+    title: "Shatabdi Sankalp",
+    image: '/anubhuti/satabdi.jpg',
+    icon: PenTool,
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
+    description: 'Shatabdi Sankalp is a virtual reality exhibit that allows visitors to experience the vision of Prime Minister Narendra Modi for a developed India by the year 2047, the centenary of Independence',
+  },
+  {
+    title: "Stroll with Prime Minister",
+    image: '/anubhuti/walk with pm1.jpg',
+    icon: User2,
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
+    description: 'Take a virtual stroll through 3D environments alongside your favourite Prime Minister, exploring key moments in their journey and leadership.',
+  },
+  {
+    title: 'Ask the Visionary/AI Holobox',
+    image: '/special shows/AI Holobox.JPG',
+    icon: Cpu,
+    exploreUrl: '/pm-sangrahalaya/anubhuti-zone',
+    description: 'Interact with a 3D hologram of the Prime Minister and ask questions using AI.',
   },
 ];
 
@@ -428,7 +428,7 @@ export default function PmSangrahalayaAboutContent() {
                   </p>
                 </div>
                 <a
-                  href="https://www.pmsangrahalaya.gov.in/book-now"
+                  href="https://positive-mantra.com/pmml/book-now"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-[#f37021] hover:bg-[#d85c15] text-white text-xs font-bold px-4 py-2.5 rounded-lg transition-colors duration-300 mt-auto"

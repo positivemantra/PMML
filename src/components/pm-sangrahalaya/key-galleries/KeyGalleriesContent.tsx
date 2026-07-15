@@ -727,7 +727,7 @@ export default function KeyGalleriesContent() {
               onClick={() => {
                 setBuilding(2);
                 setSearchQuery("");
-                setActiveId("gulzarilal-nanda-2");
+                setActiveId("pm-corridor-2");
               }}
               className={`px-5 py-2 rounded-lg text-sm font-bold tracking-wider transition-all duration-300 cursor-pointer ${
                 building === 2

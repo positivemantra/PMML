@@ -9,7 +9,7 @@ export default function Footer() {
 
       {/* MAIN FOOTER */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-stretch w-full">
+        <div className={`${styles.footerGrid} items-stretch w-full`}>
 
           {/* COL 1 — Important Links */}
           <div>
@@ -112,7 +112,25 @@ export default function Footer() {
 
           </div>
 
-          {/* COL 4 — Ministry of Culture */}
+          {/* COL 4 — Contact QR */}
+          <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
+            <h4 className={styles.columnTitle} style={{ marginBottom: "4px" }}>
+              Contact Us
+            </h4>
+            <span className="text-[7.5px] font-semibold text-gray-400 font-sans tracking-wider uppercase">
+              SCAN FOR DETAILS
+            </span>
+            <div className="mt-3">
+              <img
+                src="/PMML CONTACT US.png"
+                alt="PMML Contact Us QR"
+                className="object-contain flex-shrink-0 bg-white p-1 rounded-md"
+                style={{ width: "60px", height: "60px" }}
+              />
+            </div>
+          </div>
+
+          {/* COL 5 — Ministry of Culture */}
           <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
             <div className="mt-1.5">
               <a

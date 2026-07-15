@@ -105,3 +105,23 @@
   color: #9ca3af;
   margin: 0;
 }
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1.55fr 0.9fr 1fr 0.65fr 0.9fr;
+    gap: 24px;
+  }
+}

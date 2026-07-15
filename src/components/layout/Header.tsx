@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
               </a>
 
               <a
-                href="https://www.pmsangrahalaya.gov.in/book-now"
+                href="https://positive-mantra.com/pmml/book-now"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#f37021] hover:bg-[#d85c15] text-white font-semibold px-5 py-2 rounded text-center text-xs btn-premium-pop shadow-sm"
