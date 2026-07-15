@@ -17,7 +17,7 @@ export default function TermsConditionsContent() {
       {/* ── Page Hero Section ── */}
       <section className="relative w-full aspect-[16/7.5] sm:aspect-[2.6/1] lg:aspect-[3.8/1] min-h-[280px] lg:h-auto overflow-hidden">
         <Image
-          src="/hero.png"
+          src="/hee.jpg"
           alt="Privacy Policy"
           fill
           priority
