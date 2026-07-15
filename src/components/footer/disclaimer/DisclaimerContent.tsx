@@ -45,16 +45,13 @@ export default function DisclaimerContent() {
       <section className="w-full py-12 lg:py-16 bg-white text-left">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            The Prime Ministers Museum and Library disclaims liability for any loss or damage from using this site.
           </p>
           <p>
-            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus. Donec feugiat sapien vitae odio. Mauris ac tempor ligula. Aliquam ac sem ac est interdum dictum. Ut sodales purus non tempor sodales.
+            Prime Ministers Museum and Library is committed to the highest standard of quality information and every attempt has been made to present up to date and accurate information. However, the Prime Ministers Museum and Library gives no warranty as to the accuracy of the information on the web site and accepts no liability for any loss, damage or inconvenience caused as a result of reliance on such information.
           </p>
           <p>
-            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris convallis libero sed sodales pretium. Fusce a lectus id ante sodales interdum eget in massa. Vestibulum sit amet eros laoreet, laoreet lorem vel, lobortis lorem.
-          </p>
-          <p>
-            Aenean nec lectus id ante sodales interdum eget in massa. Vestibulum sit amet eros laoreet, laoreet lorem vel, lobortis lorem. Mauris convallis libero sed sodales pretium. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
+            The portal, its software and all content found on it are provided on an &quot;as is&quot; and &quot;as available&quot; basis and although the Prime Ministers Museum and Library takes all reasonable measures to ensure that the information provided to it from third parties is not defamatory or offensive, it cannot control the content or take responsibility for pages provided by external providers.
           </p>
         </div>
       </section>

@@ -321,9 +321,9 @@ const GALLERIES: Gallery[] = [
   },
   {
     id: "pm-gallery-2",
-    title: "Prime Ministers Gallery",
-    menuLabel: "Gallery 15 - Prime Ministers Gallery",
-    description: "Explore the gallery of the 14th Prime Minister Shri Narendra Modi, highlighting key initiatives such as Swachh Bharat, Make in India, Digital India, and the nation's rapid infrastructural growth.",
+    title: "Shri Narendra Modi",
+    menuLabel: "Gallery 15 - Shri Narendra Modi",
+    description: "Explore the gallery of the 15th Prime Minister Shri Narendra Modi, highlighting key initiatives such as Swachh Bharat, Make in India, Digital India, and the nation's rapid infrastructural growth.",
     image: "/building 2/pms/modi.png",
     building: 2,
     category: "Prime Ministers Galleries"
