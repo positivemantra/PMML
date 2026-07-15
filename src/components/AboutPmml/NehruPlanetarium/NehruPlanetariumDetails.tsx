@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Spectral } from "next/font/google";
+import { Calendar, Hourglass, Languages, MapPin, Navigation } from 'lucide-react';
 
 const spectral = Spectral({
   subsets: ["latin"],
@@ -339,15 +340,6 @@ export default function NehruPlanetariumDetails() {
                 <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
                   Upcoming Events
                 </h3>
-                <a 
-                  href="/events" 
-                  className="text-xs sm:text-sm font-bold text-[#052356] hover:text-[#f37021] flex items-center gap-1.5 transition-colors font-semibold"
-                >
-                  <span>View Calender</span>
-                  <svg className="w-4 h-4 text-[#f37021]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -359,7 +351,7 @@ export default function NehruPlanetariumDetails() {
                     Interactive Exhibition: The Freedom Struggle
                   </h4>
                   <div className="pt-2">
-                    <a href="#" className="inline-block text-xs font-bold text-[#052356] hover:underline">
+                    <a href="/about-pmml/nehru-planetarium/events" className="inline-block text-xs font-bold text-[#052356] hover:underline">
                       See more Details
                     </a>
                   </div>
@@ -378,40 +370,59 @@ export default function NehruPlanetariumDetails() {
             </h3>
 
             <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 flex flex-col justify-between gap-6 text-left shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex-grow">
-              {/* Open Status Bar */}
-              <div className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-[#052356] bg-[#FFF8F4] border border-[#FFE0CE] rounded-xl px-4 py-3">
-                <svg className="w-4 h-4 text-[#f37021] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>Open: Tuesday to Sunday (Closed on Mondays)</span>
+              {/* Event details list */}
+              <div className="space-y-4 w-full">
+                {/* Dates */}
+                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-700 font-semibold">
+                  <Calendar className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  <span>Wed 15 Jul 2026 - Fri 31 Jul 2026</span>
+                </div>
+                {/* Duration */}
+                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-700 font-semibold">
+                  <Hourglass className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  <span>40 Minutes</span>
+                </div>
+                {/* Languages */}
+                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-700 font-semibold">
+                  <Languages className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  <span>English, Hindi</span>
+                </div>
+                {/* Venue */}
+                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-700 font-semibold">
+                  <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  <div className="flex items-center gap-1.5">
+                    <span>Nehru Planetarium: New Delhi.</span>
+                    <a
+                      href="https://maps.google.com/?q=Nehru+Planetarium+New+Delhi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:text-blue-600 transition-colors inline-flex items-center"
+                    >
+                      <Navigation className="w-3.5 h-3.5 fill-blue-500 text-blue-500" />
+                    </a>
+                  </div>
+                </div>
               </div>
 
+              {/* Divider */}
+              <div className="border-t border-gray-200 w-full" />
 
+              {/* Price & Book Now Row */}
+              <div className="flex items-center justify-between w-full gap-4 mt-2">
+                <div className="flex flex-col">
+                  <span className="text-base sm:text-lg font-bold text-[#052356]">₹70 onwards</span>
+                  <span className="text-[11px] sm:text-xs font-bold text-[#052356]">Available</span>
+                </div>
 
-              {/* Timings & Price summary details inside a grey strap */}
-              <div className="bg-[#f4f4f4] rounded-[8px] p-4 space-y-2.5 w-full text-xs">
-                <div className="flex justify-between items-center w-full">
-                  <span className="font-bold text-gray-500 uppercase text-[10px] tracking-wider">Timings</span>
-                  <span className="font-bold text-[#052356]">11:30 AM | 01:30 PM | 03:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center w-full">
-                  <span className="font-bold text-gray-500 uppercase text-[10px] tracking-wider">Ticket Price</span>
-                  <span className="font-bold text-[#052356]">₹100 (Adults) / ₹60 (Children)</span>
-                </div>
+                <a 
+                  href="https://in.bookmyshow.com/activities/nehru-planetarium-delhi/ET00397188" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-2.5 bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm tracking-wider rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
+                >
+                  <span>Book Now</span>
+                </a>
               </div>
-
-              {/* Booking CTA Button */}
-              <a 
-                href="https://www.google.com/search?q=bookmyshow+nehru+planetarium" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-3 bg-[#E88B1D] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none"
-              >
-                <span>Book Now</span>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Spectral } from 'next/font/google';
-import { Calendar, Clock, ChevronDown } from 'lucide-react';
+import { Clock, ChevronDown } from 'lucide-react';
 
 const spectral = Spectral({
   subsets: ['latin'],
@@ -141,11 +141,6 @@ export default function PlanetariumEventsContent() {
                 Upcoming Events
               </h2>
             </div>
-            
-            <button className="flex items-center gap-1.5 px-3 py-2 border border-slate-200 rounded text-xs font-semibold text-gray-700 bg-white hover:bg-slate-50 transition-colors w-fit select-none cursor-pointer">
-              <span>View Calender</span>
-              <Calendar className="w-3.5 h-3.5 text-[#f37021]" />
-            </button>
           </div>
         </div>
       </section>
