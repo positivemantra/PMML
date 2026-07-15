@@ -425,7 +425,6 @@ export default function NehruPlanetariumDetails() {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* Gallery Section */}
@@ -507,3 +506,4 @@ export default function NehruPlanetariumDetails() {
     </section>
   );
 }
+
