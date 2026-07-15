@@ -114,13 +114,10 @@ export default function Footer() {
 
           {/* COL 4 — Contact QR */}
           <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
-            <h4 className={styles.columnTitle} style={{ marginBottom: "4px" }}>
-              Contact Us
+            <h4 className={styles.columnTitle}>
+              Share Feedback
             </h4>
-            <span className="text-[7.5px] font-semibold text-gray-400 font-sans tracking-wider uppercase">
-              SCAN FOR DETAILS
-            </span>
-            <div className="mt-3">
+            <div className="mt-0.5">
               <img
                 src="/PMML CONTACT US.png"
                 alt="PMML Contact Us QR"
