@@ -353,7 +353,7 @@ const GALLERIES: Gallery[] = [
     title: "Unity Wall",
     menuLabel: "Unity Wall",
     description: "Collaborate with fellow visitors by holding hands to complete the electrical circuit and light up the Unity Chain.",
-    image: "/anubhuti/unitychain.JPG",
+    image: "/unit.JPG",
     building: 2,
     category: "Anubhuti Zone"
   },

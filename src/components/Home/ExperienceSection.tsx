@@ -15,7 +15,7 @@ const EXHIBITS = [
     id: 'unity-chain',
     title: 'Unity Chain',
     description: 'Explore the historic integration of Indian states led by Sardar Vallabhbhai Patel.',
-    image: '/anubhuti/unitychain.JPG',
+    image: '/unit.JPG',
     link: '/pm-sangrahalaya/anubhuti-zone',
   },
   {

@@ -38,7 +38,7 @@ const BLOCK_2_ITEMS = [
   {
     title: 'Galleries',
     description: 'Explore the modern galleries of independent India since 1947. These spaces showcase the individual visions, major domestic policies, international relationships, and unique historical legacies of each of the country\'s Prime Ministers. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    image: '/building 2/prime ministers gallery.jpg',
+    image: '/building 2/PM Corridor.jpg',
     alt: 'Galleries'
   },
   {
@@ -65,7 +65,7 @@ const NEHRU_PLANETARIUM_ITEMS = [
   {
     title: 'Aryabhata Gallery',
     description: 'Explore India\'s rich astronomical heritage and achievements in modern space science at the Aryabhata Gallery. Interactive exhibits and digital installations trace India\'s journey from ancient astronomical traditions to contemporary space missions, celebrating the legacy of great Indian astronomers.',
-    image: '/Timeline/np.jpg',
+    image: '/aarya.jpg',
     alt: 'Aryabhata Gallery'
   },
   {

@@ -53,7 +53,7 @@ export default function OralHistoryDivisionContent() {
                 {/* Left Column: Image */}
                 <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full">
                   <Image
-                    src="/hero-slide-3.png"
+                    src="/oral history1.JPG"
                     alt="PMML Oral History Division Archival Image"
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
@@ -108,7 +108,7 @@ export default function OralHistoryDivisionContent() {
                 {/* Right Column: Image (order-1 on mobile, order-2 on desktop) */}
                 <div className="lg:col-span-6 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-slate-50 w-full order-1 lg:order-2">
                   <Image
-                    src="/hero-slide-3.png"
+                    src="/oral history2.JPG"
                     alt="PMML Oral History Division Archive"
                     fill
                     sizes="(max-width: 1024px) 100vw, 550px"
