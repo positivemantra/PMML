@@ -15,7 +15,7 @@ const spectral = Spectral({
 interface PlanetariumEvent {
   id: string;
   title: string;
-  category: 'show' | 'lecture' | 'gazing' | 'workshop';
+  category: 'sky shows' | 'sky gazing' | 'workshop' | 'educational event';
   date: string;
   day: string;
   monthYear: string;
@@ -29,7 +29,7 @@ const EVENTS_DATA: PlanetariumEvent[] = [
   {
     id: 'p1',
     title: 'Wonders of the Cosmos: Sky Gazing Workshop',
-    category: 'gazing',
+    category: 'sky gazing',
     date: '2026-08-05',
     day: '05',
     monthYear: 'Aug, 2026',
@@ -53,7 +53,7 @@ const EVENTS_DATA: PlanetariumEvent[] = [
   {
     id: 'p3',
     title: 'Nehru Planetarium: Journey to the Edge of the Universe',
-    category: 'show',
+    category: 'sky shows',
     date: '2026-07-30',
     day: '30',
     monthYear: 'Jul, 2026',
@@ -65,7 +65,7 @@ const EVENTS_DATA: PlanetariumEvent[] = [
   {
     id: 'p4',
     title: 'Asteroid Day: Defending Our Planet',
-    category: 'lecture',
+    category: 'educational event',
     date: '2026-06-30',
     day: '30',
     monthYear: 'Jun, 2026',
@@ -85,7 +85,7 @@ const TABS = [
 
 export default function PlanetariumEventsContent() {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedSort, setSelectedSort] = useState('latest');
+  const [selectedSort, setSelectedSort] = useState('upcoming');
   const [currentPage, setCurrentPage] = useState(1);
 
   // Filter and Sort events
@@ -97,12 +97,18 @@ export default function PlanetariumEventsContent() {
       result = result.filter(e => e.category === selectedCategory);
     }
 
-    // Sort events
-    result.sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
-      return selectedSort === 'latest' ? dateB - dateA : dateA - dateB;
-    });
+    // Filter by Upcoming vs Past
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const todayTime = today.getTime();
+
+    if (selectedSort === 'upcoming') {
+      result = result.filter(e => new Date(e.date).getTime() >= todayTime);
+      result.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    } else if (selectedSort === 'past') {
+      result = result.filter(e => new Date(e.date).getTime() < todayTime);
+      result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    }
 
     return result;
   }, [selectedCategory, selectedSort]);
@@ -138,7 +144,7 @@ export default function PlanetariumEventsContent() {
               {/* Top orange accent line */}
               <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-                Upcoming Events
+                Events
               </h2>
             </div>
           </div>
@@ -190,11 +196,11 @@ export default function PlanetariumEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="all">Category</option>
-                <option value="show">Sky Shows</option>
-                <option value="gazing">Sky Gazing</option>
-                <option value="workshop">Workshops</option>
-                <option value="lecture">Lectures</option>
+                <option value="all">All Categories</option>
+                <option value="sky shows">Sky Shows</option>
+                <option value="sky gazing">Sky Gazing</option>
+                <option value="workshop">Workshop</option>
+                <option value="educational event">Educational event</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />
@@ -211,8 +217,8 @@ export default function PlanetariumEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="latest">Latest</option>
-                <option value="oldest">Oldest</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="past">Past</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />

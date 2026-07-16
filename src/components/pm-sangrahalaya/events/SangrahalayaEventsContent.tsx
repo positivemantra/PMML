@@ -15,7 +15,7 @@ const spectral = Spectral({
 interface SangrahalayaEvent {
   id: string;
   title: string;
-  category: 'exhibition' | 'lecture' | 'workshop' | 'celebration';
+  category: 'exhibition' | 'commemoration' | 'workshops' | 'educational events';
   date: string;
   day: string;
   monthYear: string;
@@ -41,7 +41,7 @@ const EVENTS_DATA: SangrahalayaEvent[] = [
   {
     id: 'e2',
     title: 'Interactive History: Youth & Leadership Workshop',
-    category: 'workshop',
+    category: 'workshops',
     date: '2026-07-28',
     day: '28',
     monthYear: 'Jul, 2026',
@@ -53,7 +53,7 @@ const EVENTS_DATA: SangrahalayaEvent[] = [
   {
     id: 'e3',
     title: 'Kargil Vijay Diwas: Special Light & Sound Show Tribute',
-    category: 'celebration',
+    category: 'commemoration',
     date: '2026-07-26',
     day: '26',
     monthYear: 'Jul, 2026',
@@ -77,7 +77,7 @@ const EVENTS_DATA: SangrahalayaEvent[] = [
   {
     id: 'e5',
     title: 'Sovereignty & Security: The Pokhran Milestone',
-    category: 'lecture',
+    category: 'educational events',
     date: '2026-06-18',
     day: '18',
     monthYear: 'Jun, 2026',
@@ -85,6 +85,54 @@ const EVENTS_DATA: SangrahalayaEvent[] = [
     venue: 'Seminar Room 1, Nehru Memorial Library',
     description: 'A panel discussion exploring the scientific, diplomatic, and political processes behind India\'s landmark nuclear tests under PM Atal Bihari Vajpayee.',
     image: '/nuclear test.jpg',
+  },
+  {
+    id: 'e10',
+    title: 'Visions of Unity: The Making of Modern India',
+    category: 'exhibition',
+    date: '2026-08-10',
+    day: '10',
+    monthYear: 'Aug, 2026',
+    time: '10:00 am - 6:00 pm',
+    venue: 'Exhibition Gallery 1, Building 1, Pradhanmantri Sangrahalaya',
+    description: 'A unique digital exhibition tracing the political, social, and economic integration of princely states into the Indian Union after independence.',
+    image: '/pms img-1.png',
+  },
+  {
+    id: 'e11',
+    title: 'Independence Day Celebration: Tributes to the Constitution Builders',
+    category: 'commemoration',
+    date: '2026-08-15',
+    day: '15',
+    monthYear: 'Aug, 2026',
+    time: '9:00 am - 12:00 pm',
+    venue: 'Central Lawn, Teen Murti Estate',
+    description: 'A solemn commemorative ceremony followed by a special audio-visual presentation honoring the drafting committee members of the Constitution of India.',
+    image: '/pms img-2.png',
+  },
+  {
+    id: 'e12',
+    title: "Youth Parliament: Debating India's Future Laws",
+    category: 'workshops',
+    date: '2026-08-22',
+    day: '22',
+    monthYear: 'Aug, 2026',
+    time: '10:30 am - 4:30 pm',
+    venue: 'Seminar Hall 2, Pradhanmantri Sangrahalaya',
+    description: "A hands-on workshop simulating parliamentary proceedings for college students, focused on legislative drafting and public policy debates.",
+    image: '/interview-1.jpg',
+  },
+  {
+    id: 'e13',
+    title: 'Economic Reforms of 1991: An Educational Seminar',
+    category: 'educational events',
+    date: '2026-08-30',
+    day: '30',
+    monthYear: 'Aug, 2026',
+    time: '2:00 pm - 5:00 pm',
+    venue: 'Auditorium 1, Building 2, Teen Murti Estate',
+    description: 'An interactive seminar featuring lectures and discussions on the history, impact, and legacy of the landmark 1991 economic liberalization policies in India.',
+    image: '/interview-2.jpg',
   },
 ];
 
@@ -97,7 +145,7 @@ const TABS = [
 
 export default function SangrahalayaEventsContent() {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedSort, setSelectedSort] = useState('latest');
+  const [selectedSort, setSelectedSort] = useState('upcoming');
   const [currentPage, setCurrentPage] = useState(1);
 
   // Filter and Sort events
@@ -109,12 +157,18 @@ export default function SangrahalayaEventsContent() {
       result = result.filter(e => e.category === selectedCategory);
     }
 
-    // Sort events
-    result.sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
-      return selectedSort === 'latest' ? dateB - dateA : dateA - dateB;
-    });
+    // Filter by Upcoming vs Past
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const todayTime = today.getTime();
+
+    if (selectedSort === 'upcoming') {
+      result = result.filter(e => new Date(e.date).getTime() >= todayTime);
+      result.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    } else if (selectedSort === 'past') {
+      result = result.filter(e => new Date(e.date).getTime() < todayTime);
+      result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    }
 
     return result;
   }, [selectedCategory, selectedSort]);
@@ -150,7 +204,7 @@ export default function SangrahalayaEventsContent() {
               {/* Top orange accent line */}
               <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-                Upcoming Events
+                Events
               </h2>
             </div>
           </div>
@@ -202,11 +256,11 @@ export default function SangrahalayaEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="all">Category</option>
-                <option value="exhibition">Exhibitions</option>
-                <option value="lecture">Lectures</option>
-                <option value="workshop">Workshops</option>
-                <option value="celebration">Celebrations</option>
+                <option value="all">All Categories</option>
+                <option value="exhibition">Exhibition</option>
+                <option value="commemoration">Commemoration</option>
+                <option value="workshops">Workshops</option>
+                <option value="educational events">Educational events</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />
@@ -223,8 +277,8 @@ export default function SangrahalayaEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="latest">Latest</option>
-                <option value="oldest">Oldest</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="past">Past</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />

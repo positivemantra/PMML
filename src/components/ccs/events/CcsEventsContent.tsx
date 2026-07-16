@@ -16,7 +16,7 @@ const spectral = Spectral({
 interface CcsEvent {
   id: string;
   title: string;
-  category: 'lecture' | 'seminar' | 'roundtable' | 'discussion';
+  category: 'lectures' | 'seminars' | 'discussions';
   date: string;
   day: string;
   monthYear: string;
@@ -30,7 +30,7 @@ const EVENTS_DATA: CcsEvent[] = [
   {
     id: 'c1',
     title: 'The Constitution of India: Visionaries & Values',
-    category: 'lecture',
+    category: 'lectures',
     date: '2026-07-22',
     day: '22',
     monthYear: 'Jul, 2026',
@@ -43,7 +43,7 @@ const EVENTS_DATA: CcsEvent[] = [
   {
     id: 'c3',
     title: "India's Foreign Policy in the 21st Century",
-    category: 'roundtable',
+    category: 'discussions',
     date: '2026-08-26',
     day: '26',
     monthYear: 'Aug, 2026',
@@ -55,7 +55,7 @@ const EVENTS_DATA: CcsEvent[] = [
   {
     id: 'c4',
     title: 'Remembering Nehru: Archives & Ideas',
-    category: 'lecture',
+    category: 'lectures',
     date: '2026-06-20',
     day: '20',
     monthYear: 'Jun, 2026',
@@ -63,6 +63,42 @@ const EVENTS_DATA: CcsEvent[] = [
     venue: 'Seminar Room 2, CCS Wing',
     description: 'A scholarly lecture reviewing the private letters and official documents of Jawaharlal Nehru to understand his vision of democratic institutions.',
     image: '/pms img-3.png',
+  },
+  {
+    id: 'c5',
+    title: 'Democracy & Institutions: The Indian Journey',
+    category: 'lectures',
+    date: '2026-08-12',
+    day: '12',
+    monthYear: 'Aug, 2026',
+    time: '3:00 pm - 4:30 pm',
+    venue: 'Seminar Room 1, CCS Wing, Teen Murti Estate',
+    description: 'A public lecture by prominent political scientists analyzing the evolution, resilience, and strength of democratic institutions in post-independence India.',
+    image: '/ccs-talk.JPG',
+  },
+  {
+    id: 'c6',
+    title: 'Archives as History: Narratives of Nation Building',
+    category: 'seminars',
+    date: '2026-08-20',
+    day: '20',
+    monthYear: 'Aug, 2026',
+    time: '10:00 am - 1:00 pm',
+    venue: 'Library Auditorium, Teen Murti Estate',
+    description: 'An academic seminar discussing the significance of private papers and archives in writing the socio-political history of modern India.',
+    image: '/room.JPG',
+  },
+  {
+    id: 'c7',
+    title: 'Federalism in India: Challenges & Opportunities',
+    category: 'discussions',
+    date: '2026-08-28',
+    day: '28',
+    monthYear: 'Aug, 2026',
+    time: '2:30 pm - 4:30 pm',
+    venue: 'Executive Council Room, Teen Murti House',
+    description: 'A panel discussion featuring constitutional experts, economists, and administrators examining fiscal relations and cooperative federalism in India.',
+    image: '/interview-1.jpg',
   },
 ];
 
@@ -75,7 +111,7 @@ const TABS = [
 
 export default function CcsEventsContent() {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedSort, setSelectedSort] = useState('latest');
+  const [selectedSort, setSelectedSort] = useState('upcoming');
   const [currentPage, setCurrentPage] = useState(1);
 
   // Filter and Sort events
@@ -87,12 +123,18 @@ export default function CcsEventsContent() {
       result = result.filter(e => e.category === selectedCategory);
     }
 
-    // Sort events
-    result.sort((a, b) => {
-      const dateA = new Date(a.date).getTime();
-      const dateB = new Date(b.date).getTime();
-      return selectedSort === 'latest' ? dateB - dateA : dateA - dateB;
-    });
+    // Filter by Upcoming vs Past
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const todayTime = today.getTime();
+
+    if (selectedSort === 'upcoming') {
+      result = result.filter(e => new Date(e.date).getTime() >= todayTime);
+      result.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    } else if (selectedSort === 'past') {
+      result = result.filter(e => new Date(e.date).getTime() < todayTime);
+      result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    }
 
     return result;
   }, [selectedCategory, selectedSort]);
@@ -119,7 +161,7 @@ export default function CcsEventsContent() {
               {/* Top orange accent line */}
               <div className="w-12 h-1 bg-[#f37021] mb-4" />
               <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-                Upcoming Events
+                Events
               </h2>
             </div>
           </div>
@@ -171,11 +213,10 @@ export default function CcsEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="all">Category</option>
-                <option value="lecture">Lectures</option>
-                <option value="seminar">Seminars</option>
-                <option value="roundtable">Roundtables</option>
-                <option value="discussion">Discussions</option>
+                <option value="all">All Categories</option>
+                <option value="lectures">Lectures</option>
+                <option value="seminars">Seminars</option>
+                <option value="discussions">Discussions</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />
@@ -192,8 +233,8 @@ export default function CcsEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="latest">Latest</option>
-                <option value="oldest">Oldest</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="past">Past</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />

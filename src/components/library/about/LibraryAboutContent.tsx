@@ -359,12 +359,6 @@ export default function LibraryAboutContent() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    {/* Caption directly on image in white color */}
-                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10">
-                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                        {img.alt}
-                      </p>
-                    </div>
                   </div>
                 ))}
               </div>

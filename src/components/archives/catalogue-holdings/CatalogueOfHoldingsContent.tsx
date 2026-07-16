@@ -23,14 +23,9 @@ const LEFT_ITEMS: CatalogueItem[] = [
     title: "Institutional Collections",
     href: "/archives/catalogue-holdings/institutional-collections",
   },
-   {
+  {
     title: "Individual Collections",
     href: "/archives/catalogue-holdings/individual-collections",
-  },
-  
-  {
-    title: "PMML Manuscripts",
-    href: "#",
   },
   {
     title: "Digital Archives",
@@ -39,7 +34,7 @@ const LEFT_ITEMS: CatalogueItem[] = [
 ];
 
 const RIGHT_ITEMS: CatalogueItem[] = [
- {
+  {
     title: "Miscellaneous Collections",
     href: "/archives/catalogue-holdings/miscellaneous-collections",
   },
@@ -50,10 +45,6 @@ const RIGHT_ITEMS: CatalogueItem[] = [
   {
     title: "Oral History Transcripts",
     href: "/archives/catalogue-holdings/oral-history-transcripts",
-  },
-  {
-    title: "Reading Room",
-    href: "/archives/catalogue-holdings/reading-room",
   },
 ];
 

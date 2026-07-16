@@ -400,7 +400,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "pms2-reception",
     title: "PMS 2 Reception Area",
-    menuLabel: "Reception Area",
+    menuLabel: "Reception ",
     description: "The main reception area inside Building II, helping visitors with information desks and digital walkthroughs.",
     image: "/building 2/facilities/area.jpg",
     building: 2,
@@ -418,7 +418,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "canteen-stories",
     title: "Canteen Stories",
-    menuLabel: "Canteen Stories",
+    menuLabel: "Canteen ",
     description: "The spacious visitor cafeteria offering dining options, refreshments, and a comfortable seating layout.",
     image: "/building 2/facilities/Canteen Stories.jpg",
     building: 2,
@@ -443,15 +443,6 @@ const GALLERIES: Gallery[] = [
     category: "Facilities"
   },
   {
-    id: "interactive-kiosk",
-    title: "Interactive Kiosk",
-    menuLabel: "Interactive Kiosk",
-    description: "Self-service touch kiosks enabling interactive exploration of the museum map and show timings.",
-    image: "/building 2/facilities/Kiosk DSC_2755-2.jpg",
-    building: 2,
-    category: "Facilities"
-  },
-  {
     id: "namastey-cafe",
     title: "Namastey Cafe",
     menuLabel: "Namastey Cafe",
@@ -471,7 +462,7 @@ const GALLERIES: Gallery[] = [
   },
   {
     id: "security-check",
-    title: "Security Checkpoint",
+    title: "Security",
     menuLabel: "Security Checkpoint",
     description: "Standard security checks and scanners at the entrance gates to guarantee a safe experience.",
     image: "/building 2/facilities/Security DSC_3283.jpg",
@@ -481,7 +472,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "signage-info",
     title: "Wayfinding Signage",
-    menuLabel: "Wayfinding Signage",
+    menuLabel: "Direction Signage",
     description: "Directional sign boards placed across paths to guide visitors to show locations and amenities.",
     image: "/building 2/facilities/Signage DSC_5262.jpg",
     building: 2,
@@ -499,7 +490,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "tatsat-gift-shop",
     title: "Tatsat Gift Shop",
-    menuLabel: "Tatsat Gift Shop",
+    menuLabel: "Tatsat Souvenir Shop",
     description: "The museum gift shop where visitors can purchase souvenirs, customized books, and handicraft items.",
     image: "/building 2/facilities/Tatsat,.jpg",
     building: 2,
@@ -508,7 +499,7 @@ const GALLERIES: Gallery[] = [
   {
     id: "heritage-art",
     title: "Heritage Art Exhibit",
-    menuLabel: "Heritage Art Exhibit",
+    menuLabel: "Heritage Art Souvenir Shop",
     description: "A showcase of traditional artwork and national emblems celebrating Indian legacy inside the facility.",
     image: "/building 2/facilities/The Heritage art,.jpg",
     building: 2,
@@ -520,6 +511,24 @@ const GALLERIES: Gallery[] = [
     menuLabel: "Ticket Counter",
     description: "Multi-window digital ticket counter for purchasing show passes and museum entries.",
     image: "/building 2/facilities/ticket counter DSC_3242.jpg",
+    building: 2,
+    category: "Facilities"
+  },
+  {
+    id: "lost-and-found",
+    title: "Lost & Found",
+    menuLabel: "Lost & Found",
+    description: "A dedicated facility to report, submit, or retrieve lost belongings and items found within the museum premises.",
+    image: "/building 2/facilities/lost-and-found.jpg",
+    building: 2,
+    category: "Facilities"
+  },
+  {
+    id: "baby-care-point",
+    title: "Baby Care Point",
+    menuLabel: "Baby Care",
+    description: "A clean and comfortable space equipped for diaper changing, nursing, and baby feeding needs.",
+    image: "/building 2/facilities/baby-care-point.jpg",
     building: 2,
     category: "Facilities"
   }

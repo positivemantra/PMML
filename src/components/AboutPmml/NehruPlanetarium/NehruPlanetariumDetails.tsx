@@ -57,6 +57,63 @@ const GALLERY_IMAGES = [
 
 const EXTENDED_GALLERY_IMAGES = [...GALLERY_IMAGES, ...GALLERY_IMAGES.slice(0, 3)];
 
+interface ShowTiming {
+  time: string;
+  title?: string;
+  language: string;
+  type?: string;
+  shows?: { title: string; days: string; type: string }[];
+}
+
+const SHOW_TIMINGS: ShowTiming[] = [
+  {
+    time: "11:00 AM",
+    title: "Cosmic Life",
+    language: "English",
+    type: "2D"
+  },
+  {
+    time: "12:00 PM",
+    title: "From Earth to the Universe",
+    language: "Hindi",
+    type: "2D"
+  },
+  {
+    time: "02:00 PM",
+    shows: [
+      { title: "Robot Explorers", days: "Tuesday - Thursday", type: "3D" },
+      { title: "Dawn of the Space Age", days: "Friday - Sunday", type: "3D" }
+    ],
+    language: "English"
+  },
+  {
+    time: "03:00 PM",
+    title: "Cosmic Life",
+    language: "Hindi",
+    type: "2D"
+  },
+  {
+    time: "04:00 PM",
+    shows: [
+      { title: "Robot Explorers", days: "Tuesday - Thursday", type: "3D" },
+      { title: "Dawn of the Space Age", days: "Friday - Sunday", type: "3D" }
+    ],
+    language: "Hindi"
+  },
+  {
+    time: "05:00 PM",
+    title: "From Earth to the Universe",
+    language: "English",
+    type: "2D"
+  },
+  {
+    time: "06:00 PM",
+    title: "From Earth to the Universe",
+    language: "Hindi",
+    type: "2D"
+  }
+];
+
 export default function NehruPlanetariumDetails() {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
@@ -329,7 +386,7 @@ export default function NehruPlanetariumDetails() {
         </div>
 
         {/* Upcoming Events & Visit Information Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-10 lg:mt-12 w-full items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mt-10 lg:mt-12 mb-12 lg:mb-16 w-full items-stretch">
           
           {/* Left Column: Upcoming Events */}
           <div className="lg:col-span-7 flex flex-col text-left justify-between h-full">
@@ -418,6 +475,73 @@ export default function NehruPlanetariumDetails() {
           </div>
         </div>
 
+        {/* Shows Information Section */}
+        <div className="w-full">
+          <div className="mb-10 text-left">
+            <div className="w-16 h-[5px] bg-[#f37021] mb-4.5" />
+            
+            <div className="flex justify-between items-end mb-6 w-full">
+              <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
+                Shows Information
+              </h3>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch w-full">
+            {/* Left Column: Shows Text */}
+            <div className="lg:col-span-6 flex flex-col text-left justify-start">
+              <p className="text-gray-500 font-bold text-sm sm:text-base mb-4">
+                Show details are as follows:
+              </p>
+
+              <ul className="space-y-3.5">
+                {SHOW_TIMINGS.map((slot, index) => (
+                  <li key={index} className="flex items-start gap-2.5 text-gray-500 text-sm sm:text-[15px] font-medium leading-relaxed">
+                    <span className="text-gray-500 font-bold text-sm sm:text-base mt-0.5">•</span>
+                    <div>
+                      <span className="font-bold text-gray-500">{slot.time}</span>
+                      <span className="text-gray-500">—</span>
+                      {slot.shows ? (
+                        <span>
+                          {slot.shows.map((show, idx) => (
+                            <span key={idx}>
+                              {idx > 0 && <span>, </span>}
+                              <span>{show.title}</span>{" "}
+                              <span className="text-gray-500">
+                                ({slot.language}) - {show.type} ({show.days})
+                              </span>
+                            </span>
+                          ))}
+                        </span>
+                      ) : (
+                        <span>
+                          <span>
+                            {slot.title}
+                          </span>{" "}
+                          <span className="text-gray-500">
+                            ({slot.language}) - {slot.type}
+                          </span>
+                        </span>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Right Column: Image */}
+            <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full min-h-[300px]">
+              <Image
+                src="/shows.jpeg"
+                alt="Shows Details"
+                fill
+                sizes="(max-width: 1024px) 100vw, 550px"
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Gallery Section */}
         <div className="mt-10 lg:mt-12 w-full">
           {/* Header */}
@@ -480,12 +604,6 @@ export default function NehruPlanetariumDetails() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    {/* Caption directly on image in white color */}
-                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10">
-                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                        {img.alt}
-                      </p>
-                    </div>
                   </div>
                 ))}
               </div>

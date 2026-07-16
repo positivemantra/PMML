@@ -177,7 +177,7 @@ const VIDEOS_DATA = [
 ];
 
 export default function PhotoGalleryContent() {
-  const [activeTab, setActiveTab] = useState<'albums' | 'images' | 'videos'>('albums');
+  const [activeTab, setActiveTab] = useState<'images' | 'videos'>('images');
   const [sortBy, setSortBy] = useState<'featured' | 'recent' | 'oldest'>('featured');
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -195,13 +195,11 @@ export default function PhotoGalleryContent() {
   // Get active dataset
   const activeDataset = useMemo(() => {
     switch (activeTab) {
-      case 'images':
-        return [...IMAGES_DATA];
       case 'videos':
         return [...VIDEOS_DATA];
-      case 'albums':
+      case 'images':
       default:
-        return [...ALBUMS_DATA];
+        return [...IMAGES_DATA];
     }
   }, [activeTab]);
 
@@ -263,26 +261,7 @@ export default function PhotoGalleryContent() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 border-b border-solid border-slate-200 pb-0 w-full">
             <div className="flex flex-row flex-wrap items-center justify-start gap-2.5 sm:gap-4 md:gap-6">
               
-              {/* ALBUMS TAB */}
-              <button
-                onClick={() => setActiveTab('albums')}
-                className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded text-[10px] sm:text-[11px] md:text-xs font-bold tracking-wider select-none cursor-pointer flex items-center whitespace-nowrap w-fit transition-all ${
-                  activeTab === 'albums'
-                    ? 'bg-[#052356] text-[#f37021] shadow-sm'
-                    : 'text-gray-400 bg-transparent hover:text-[#052356]'
-                }`}
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className={`w-3.5 h-3.5 mr-1.5 flex-shrink-0 ${activeTab === 'albums' ? 'text-white' : 'text-gray-400'}`}
-                >
-                  <path d="M12 2l1.91 2.3 2.91-1.01.99 2.83 2.82.97-1 2.82 2.3 1.91-2.3 1.91 1 2.82-2.82.97-.99 2.83-2.91-1.01L12 22l-1.91-2.3-2.91 1.01-.99-2.83-2.82-.97 1-2.82-2.3-1.91 2.3-1.91-1-2.82 2.82-.97.99-2.83 2.91 1.01L12 2z" />
-                </svg>
-                ALBUMS
-              </button>
-
-              {/* ALL IMAGES TAB */}
+              {/* IMAGES TAB */}
               <button
                 onClick={() => setActiveTab('images')}
                 className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded text-[10px] sm:text-[11px] md:text-xs font-bold tracking-wider select-none cursor-pointer flex items-center whitespace-nowrap w-fit transition-all ${
@@ -300,10 +279,10 @@ export default function PhotoGalleryContent() {
                     <path d="M12 2l1.91 2.3 2.91-1.01.99 2.83 2.82.97-1 2.82 2.3 1.91-2.3 1.91 1 2.82-2.82.97-.99 2.83-2.91-1.01L12 22l-1.91-2.3-2.91 1.01-.99-2.83-2.82-.97 1-2.82-2.3-1.91 2.3-1.91-1-2.82 2.82-.97.99-2.83 2.91 1.01L12 2z" />
                   </svg>
                 )}
-                ALL IMAGES
+                Images
               </button>
 
-              {/* ALL VIDEOS TAB */}
+              {/* VIDEOS TAB */}
               <button
                 onClick={() => setActiveTab('videos')}
                 className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded text-[10px] sm:text-[11px] md:text-xs font-bold tracking-wider select-none cursor-pointer flex items-center whitespace-nowrap w-fit transition-all ${
@@ -321,7 +300,7 @@ export default function PhotoGalleryContent() {
                     <path d="M12 2l1.91 2.3 2.91-1.01.99 2.83 2.82.97-1 2.82 2.3 1.91-2.3 1.91 1 2.82-2.82.97-.99 2.83-2.91-1.01L12 22l-1.91-2.3-2.91 1.01-.99-2.83-2.82-.97 1-2.82-2.3-1.91 2.3-1.91-1-2.82 2.82-.97.99-2.83 2.91 1.01L12 2z" />
                   </svg>
                 )}
-                ALL VIDEOS
+                Videos
               </button>
             </div>
 

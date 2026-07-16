@@ -64,8 +64,8 @@ export const NAV_ITEMS: MenuItem[] = [
     label: "Archives",
     href: "/archives",
     dropdown: [
-      { label: "Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
       { label: "Catalogue of Holdings", href: "/archives/catalogue-holdings" },
+      { label: "Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
       { label: "SOP for Remote Access", href: "/archives#sop-remote-access" },
     ],
   },
@@ -102,6 +102,7 @@ export const NAV_ITEMS: MenuItem[] = [
     dropdown: [
       { label: "Photo Gallery", href: "/media/photo-gallery" },
       { label: "News", href: "/media/news" },
+      { label: "Press Release", href: "/media/press-release" },
     ],
   },
  

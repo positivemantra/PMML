@@ -21,27 +21,27 @@ interface Project {
 const PROJECTS_DATA: Project[] = [
   {
     id: "proj1",
-    title: "Selected Works of Acharya Narendra Deva",
-    image: "/pro-1.jpg",
-    description: "Acharya Narendra Deva, known as the father of the Indian socialist movement, occupied a significant place in the history of 20th century India. NMML published four-volumes of writings and speeches of Acharya Narendra Deva both in English and as well as in Hindi. These volumes cover his invaluable contribution to the freedom movement, peasant movement and his contribution as an educationist, scholar and socialist thinker.",
+    title: "Selected Works of Atal Bihari Vajpayee",
+    image: "/research-2.png",
+    description: "Atal Bihari Vajpayee (1924–2018), one of India's most respected statesmen and former Prime Minister, was an outstanding orator, scholar, and poet. The Selected Works of Atal Bihari Vajpayee project compiles his major speeches, writings, and parliamentary statements. These volumes trace his leadership in nation-building, economic policies, foreign relations, and his vision of a strong, prosperous India.",
   },
   {
     id: "proj2",
-    title: "Acharya Narendra Deva",
-    image: "/pro-2.jpg",
-    description: "Acharya Narendra Deva, known as the father of the Indian socialist movement, occupied a significant place in the history of 20th century India. NMML published four-volumes of writings and speeches of Acharya Narendra Deva both in English and as well as in Hindi. These volumes cover his invaluable contribution to the freedom movement, peasant movement and his contribution as an educationist, scholar and socialist thinker.",
+    title: "Selected Works of C. Rajagopalachari",
+    image: "/gopal.png",
+    description: "Chakravarti Rajagopalachari (1878–1972), also known as Rajaji, was the last Governor-General of India, a prominent nationalist leader, and an intellectual of great distinction. The Selected Works of C. Rajagopalachari project compiles his letters, articles, and speeches. These works offer a profound perspective on the freedom movement, administrative governance, Swatantra Party formation, and his thoughts on democratic ideals.",
   },
   {
     id: "proj3",
-    title: "Jayaprakash Narayan",
+    title: "Selected Works of Jayaprakash Narayan",
     image: "/pro-3.jpg",
     description: "Jayaprakash Narayan (1902-79), an eminent political leader and thinker of India, played a major role not only in the freedom movement but also left a mark in the Socialist and Sarvodaya movements. He played a formidable role in the movement for strengthening the Indian democracy popularly known as the J.P. movement. Jayaprakash Narayan: Selected Works, Volumes (1-10), edited by Prof. Bimal Prasad and published under the auspices of the Nehru Memorial Museum and Library is an endeavor to appraise the saga of Jayaprakash Narayan to the world. The series of the ten volumes, covers the period from 1929-79 and presents a comprehensive picture of the evolution of J.P.'s political life and thought through his writings, speeches and letters.",
   },
   {
     id: "proj4",
-    title: "Motilal Nehru",
-    image: "/pro-4.jpg",
-    description: "Motilal Nehru (1861-1931), lawyer and a doyen of the Congress Party, played a crucial role in the Indian freedom struggle. Motilal was one of the outstanding lawyers and was a member of the U.P. Legislative Council (1909-19) and the Central Legislative Assembly (1923-30). He played a prominent role in the activities of the Congress Party as a moderate leader and served as its President in 1919 at Amritsar Congress and also at the Calcutta session of the Congress in 1928. He and C.R. Das founded the Swaraj Party in 1922. The Selected Works of Motilal Nehru (Vols 1-7), issued under the auspices of the Nehru Memorial Museum and Library, is an attempt to evince the readers the significant contributions of Motilal Nehru in the Indian national movement. The core of these volumes mainly consists of letters and speeches by Motilal Nehru which provide a vivid insight into Motilal Nehru's multifaceted personality as well as his role in the national movement.",
+    title: "Selected Works of Acharya Narendra Deva",
+    image: "/pro-1.jpg",
+    description: "Acharya Narendra Deva, known as the father of the Indian socialist movement, occupied a significant place in the history of 20th century India. NMML published four-volumes of writings and speeches of Acharya Narendra Deva both in English and as well as in Hindi. These volumes cover his invaluable contribution to the freedom movement, peasant movement and his contribution as an educationist, scholar and socialist thinker.",
   },
 ];
 

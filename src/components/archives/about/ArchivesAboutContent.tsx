@@ -26,7 +26,7 @@ const DOWNLOADS = [
     href: "#",
   },
   {
-    label: "PMML Archives An Introduction",
+    label: "PMML Archives: An Introduction",
     href: "#",
   },
   {
@@ -197,7 +197,7 @@ export default function ArchivesAboutContent() {
               <div className="mb-4">
                 <div className="w-12 h-1 bg-[#f37021] mb-2" />
                 <h3 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight`}>
-                  About Archives
+                  About The Archives
                 </h3>
               </div>
 
@@ -350,12 +350,6 @@ export default function ArchivesAboutContent() {
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    {/* Caption directly on image in white color */}
-                    <div className="absolute bottom-4 left-0 right-0 text-left px-6 pointer-events-none z-10">
-                      <p className="text-white text-xs sm:text-sm font-bold tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                        {img.alt}
-                      </p>
-                    </div>
                   </div>
                 ))}
               </div>
