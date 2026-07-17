@@ -189,6 +189,42 @@ export default function PmSangrahalayaAboutContent() {
               Information collected through resources / repositories with institutions such as Prasar Bharti, Doordarshan, Film Division, Sansad TV, Ministry of Defence, Media Houses (Indian and foreign), Foreign News Agencies, etc. was used to develop content. Appropriate use of archives (private paper collections, collected works and other literary works, important correspondences), some personal effects, gifts &amp; memorabilia (felicitations, honours, medals, commemorative stamps, coins, etc.) and speeches of Prime Ministers have been used to depict the different aspects of their lives in a thematic format.
             </p>
 
+            {/* Guided Tour Section */}
+            <div className="flex flex-col gap-6 w-full pt-8 border-t border-slate-100/60 mt-4">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                {/* Left Column: Text Content */}
+                <div className="lg:col-span-5 flex flex-col text-left justify-center">
+                  <div className="w-12 h-1 bg-[#f37021] mb-4" />
+                  <h2 className={`${spectral.className} text-2xl sm:text-3xl md:text-4xl font-bold text-[#052356] tracking-tight mb-4`}>
+                    Guided Tour
+                  </h2>
+                  <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
+                    Pradhanmantri Sangrahalaya offers a complimentary 90-minute guided tour designed to provide visitors with an enriching, structured exploration of the museum's galleries. Led by expert guides, this tour highlights the remarkable journeys, defining decisions, and lasting legacies of India's Prime Ministers.
+                  </p>
+                  <p className="text-sm sm:text-[15px] lg:text-[16px] text-gray-500 font-medium leading-relaxed mb-4 text-justify">
+                    Visitors may comfortably wait inside the designated <strong>Audio Guide Room</strong> before their scheduled tour begins. Please ensure you are seated at the designated times, as tours start promptly according to their slot schedules.
+                  </p>
+                  <div className="mt-2 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p className="text-xs sm:text-sm text-gray-500 font-semibold mb-1">For queries and bookings, please contact:</p>
+                    <p className="text-sm sm:text-base text-[#052356] font-bold">9891814397 | 8882727192</p>
+                  </div>
+                </div>
+
+                {/* Right Column: Image */}
+                <div className="lg:col-span-7 relative w-full aspect-[16/10] sm:aspect-[16/9]">
+                  <Image
+                    src="/guided.png"
+                    alt="Guided Tour Timings and Details"
+                    fill
+                    sizes="(max-w-1024px) 100vw, 700px"
+                    className="object-contain hover:scale-[1.01] transition-transform duration-500"
+                  />
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -367,7 +403,7 @@ export default function PmSangrahalayaAboutContent() {
       </section>
 
       {/* ── TAKE A VIRTUAL TOUR SECTION ── */}
-      <section className="w-full py-5 lg:py-6 bg-white">
+      <section className="w-full pt-5 lg:pt-6 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
@@ -444,6 +480,8 @@ export default function PmSangrahalayaAboutContent() {
           </div>
 
         </div>
+        {/* Spacer before footer */}
+        <div style={{ height: '2.5rem' }} />
       </section>
     </div>
   );

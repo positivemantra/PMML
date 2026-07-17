@@ -19,9 +19,9 @@ interface WhosWhoMember {
 }
 
 const WHOS_WHO_DATA: WhosWhoMember[] = [
-  { sNo: 1, department: "—", name: "Shri Nripendra Misra", designation: "Chairman, Executive Council", email: "", contact: "" },
-  { sNo: 2, department: "—", name: "Shri Ashwani Lohani", designation: "Director", email: "director@nmml.gov.in", contact: "23015333" },
-  { sNo: 3, department: "—", name: "Dr. Ravi K. Mishra", designation: "Joint Director", email: "deputydirector@nmml.gov.in", contact: "23017599" },
+  { sNo: 1, department: "PMML", name: "Shri Nripendra Misra", designation: "Chairman, Executive Council", email: "", contact: "" },
+  { sNo: 2, department: "PMML", name: "Shri Ashwani Lohani", designation: "Director", email: "director@nmml.gov.in", contact: "23015333" },
+  { sNo: 3, department: "PMML", name: "Dr. Ravi K. Mishra", designation: "Joint Director", email: "deputydirector@nmml.gov.in", contact: "23017599" },
   { sNo: 4, department: "Finance Wing", name: "Shri Garud Rahul Deelip", designation: "Financial Controller", email: "garud.rahul@gov.in", contact: "23014273" },
   { sNo: 5, department: "Museum", name: "Dr. Priyanka Mishra", designation: "Chief Executive Officer", email: "ceo.pm.museum@gmail.com", contact: "23017220" },
   { sNo: 6, department: "Administration", name: "Smt. Nidhi Srivastava", designation: "Administrative Officer", email: "ao@nmml.gov.in", contact: "23014486" },

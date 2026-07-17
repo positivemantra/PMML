@@ -313,7 +313,7 @@ export default function ConferenceFacilitiesContent() {
                 {/* Image */}
                 <div className="w-[180px] h-[150px] sm:w-[260px] sm:h-[200px] md:w-[280px] md:h-[210px] relative rounded-[20px] overflow-hidden border border-slate-200/80 shadow-md flex-shrink-0">
                   <Image 
-                    src="/building 2/prastuti conference room.jpg" 
+                    src="/building 2/Prastuti.jpg" 
                     alt="Prastuti Room" 
                     fill 
                     sizes="(max-width: 640px) 180px, 280px"

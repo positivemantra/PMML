@@ -10,7 +10,7 @@ const SLIDES = [
     alt: "PMML Centre for Contemporary Studies Building",
   },
   {
-    src: "/NMM_2386.jpg",
+    src: "/hero section/Library_Panorama1.jpg",
     alt: "PMML Archives and Records Section",
   },
   {

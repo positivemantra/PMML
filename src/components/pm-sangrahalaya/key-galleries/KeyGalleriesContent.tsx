@@ -47,7 +47,7 @@ const GALLERIES: Gallery[] = [
     title: "Partition",
     menuLabel: "Partition",
     description: "A solemn display exploring the massive migration, human stories, and institutional challenges during the partition of 1947.",
-    image: "/building 1/partitionn.jpg",
+    image: "/building 1/partitionnn.jpg",
     building: 1,
     category: "Constitution Gallery"
   },
@@ -56,7 +56,7 @@ const GALLERIES: Gallery[] = [
     title: "India Becomes Republic",
     menuLabel: "India Becomes Republic",
     description: "Commemorating 26th January 1950, when the Constitution of India came into effect and India transitioned to a sovereign democratic republic.",
-    image: "/building 1/republic.jpg",
+    image: "/building 1/republic1.jpg",
     building: 1,
     category: "Constitution Gallery"
   },
@@ -65,7 +65,7 @@ const GALLERIES: Gallery[] = [
     title: "Democratic India",
     menuLabel: "Democratic India",
     description: "Celebrates the democratic traditions, general elections, and the strength of the voting system that empowers every Indian citizen.",
-    image: "/building 1/democratic.jpg",
+    image: "/building 1/di.jpg",
     building: 1,
     category: "Constitution Gallery"
   },
@@ -74,7 +74,7 @@ const GALLERIES: Gallery[] = [
     title: "Constitutional Amendments",
     menuLabel: "Constitutional Amendments",
     description: "Displays the evolution of the Constitution through landmark amendments that addressed emerging socio-economic needs of the republic.",
-    image: "/building 1/amendments.jpg",
+    image: "/building 1/constitutional.jpg",
     building: 1,
     category: "Constitution Gallery"
   },
@@ -85,7 +85,7 @@ const GALLERIES: Gallery[] = [
     title: "Nehru Gallery",
     menuLabel: "Gallery 1 - Nehru Gallery",
     description: "The Nehru Gallery presents a holistic view of a newly-independent India and the political developments that followed. It talks about the reorganisations of states, the Kashmir War 1947-48, the projects that Pandit Nehru called 'temples' of modern India, the first general elections, among others.",
-    image: "/building 1/nehru gallery1.jpg",
+    image: "/building 1/ng.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -94,7 +94,7 @@ const GALLERIES: Gallery[] = [
     title: "Tryst with Destiny",
     menuLabel: "Tryst with Destiny",
     description: "Experience the iconic, historical speech 'Tryst with Destiny' delivered by Jawaharlal Nehru on the eve of India's independence, welcoming the birth of a free nation.",
-    image: "/building 1/ttt.png",
+    image: "/building 1/tryst of.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -103,7 +103,7 @@ const GALLERIES: Gallery[] = [
     title: "India China War",
     menuLabel: "India China War",
     description: "A comprehensive archival exhibit documenting the events, maps, military strategies, and national response during the 1962 conflict.",
-    image: "/building 1/india-china war.jpg",
+    image: "/building 1/war.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -139,7 +139,7 @@ const GALLERIES: Gallery[] = [
     title: "Jawaharlal Nehru's Sitting Room",
     menuLabel: "Sitting Room",
     description: "The historical room where Prime Minister Nehru engaged in discussions with international leaders, diplomats, and close associates.",
-    image: "/building 1/Living room.jpg",
+    image: "/building 1/Living.jpg",
     building: 1,
     category: "Gallery 1 - Nehru"
   },
@@ -159,7 +159,7 @@ const GALLERIES: Gallery[] = [
     title: "Reception",
     menuLabel: "Reception",
     description: "The welcoming foyer of Building I, providing visitor navigation, interactive digital directories, and ticket scanning facilities.",
-    image: "/building 1/recep.jpg",
+    image: "/building 1/help.jpg",
     building: 1,
     category: "Facilities"
   },
@@ -207,7 +207,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Gulzarilal Nanda",
     menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
     description: "Highlights the selfless service of the two-time interim Prime Minister and his contribution to labor welfare and the Planning Commission as its first Deputy Chairman.",
-    image: "/building 2/pms/nanda.jpg",
+    image: "/building 2/pms/gujju.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -279,7 +279,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri PV Narasimha Rao",
     menuLabel: "Gallery 10 - Shri PV Narasimha Rao",
     description: "Chronicles the landmark economic reforms of 1991, integration with the global economy, and the 'Look East' foreign policy.",
-    image: "/building 2/pms/pv.jpg",
+    image: "/building 2/pms/rao gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -288,7 +288,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri HD Deve Gowda",
     menuLabel: "Gallery 11 - Shri HD Deve Gowda",
     description: "Commemorates the coalition government's efforts towards federal governance, regional development, and agricultural welfare.",
-    image: "/building 2/pms/hd.jpg",
+    image: "/building 2/pms/hd gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -297,7 +297,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Inder Kumar Gujral",
     menuLabel: "Gallery 12 - Shri Inder Kumar Gujral",
     description: "Showcases the 'Gujral Doctrine' which reshaped India's friendly relations with neighboring South Asian nations.",
-    image: "/building 2/pms/gujral.JPG",
+    image: "/building 2/pms/gujral gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -306,7 +306,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Atal Bihari Vajpayee",
     menuLabel: "Gallery 13 - Shri Atal Bihari Vajpayee",
     description: "Exhibits the Golden Quadrilateral highway network, key economic reforms, the Pokhran-II tests, and efforts towards global peace.",
-    image: "/building 2/pms/atal.JPG",
+    image: "/building 2/pms/atal gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -324,7 +324,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Narendra Modi",
     menuLabel: "Gallery 15 - Shri Narendra Modi",
     description: "Explore the gallery of the 15th Prime Minister Shri Narendra Modi, highlighting key initiatives such as Swachh Bharat, Make in India, Digital India, and the nation's rapid infrastructural growth.",
-    image: "/building 2/pms/modi.png",
+    image: "/building 2/pms/modi gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -364,7 +364,7 @@ const GALLERIES: Gallery[] = [
     title: "Light and Sound Show",
     menuLabel: "Light and Sound Show",
     description: "Watch an Immersive tale of Valliant Women Warriors, Veeranganaon ki Mahagatha; who strived to uphold the nation's pride, in Hindi at 6:30 pm. Also, watch the story of India's space programme and other important achievements of nearly 80 years with the help of laser lights, sound and visuals in English at 7:15 pm.",
-    image: "/special shows/light.JPG",
+    image: "/building 2/las space.jpg",
     building: 2,
     category: "Special Shows"
   },
@@ -382,7 +382,7 @@ const GALLERIES: Gallery[] = [
     title: "Bhavishya ki Jhalkiyan",
     menuLabel: "Bhavishya ki Jhalkiyan",
     description: "Take a seat in the helicopter pod and prepare yourselves for a splendid, 360-degree virtual reality projection of the nation's exciting futuristic developments.",
-    image: "/anubhuti/bhavishya ki jhaliyan.JPG",
+    image: "/building 2/ride.jpg",
     building: 2,
     category: "Special Shows"
   },
@@ -393,7 +393,7 @@ const GALLERIES: Gallery[] = [
     title: "Prastuti Conference Room",
     menuLabel: "Prastuti Conference Room",
     description: "A state-of-the-art orientation hall hosting multimedia briefings, press conferences, and educational seminars.",
-    image: "/building 2/prastuti conference room.jpg",
+    image: "/building 2/Prastuti.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -402,7 +402,7 @@ const GALLERIES: Gallery[] = [
     title: "PMS 2 Reception Area",
     menuLabel: "Reception ",
     description: "The main reception area inside Building II, helping visitors with information desks and digital walkthroughs.",
-    image: "/building 2/facilities/area.jpg",
+    image: "/building 2/facilities/reception.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -463,9 +463,9 @@ const GALLERIES: Gallery[] = [
   {
     id: "security-check",
     title: "Security",
-    menuLabel: "Security Checkpoint",
+    menuLabel: "Security",
     description: "Standard security checks and scanners at the entrance gates to guarantee a safe experience.",
-    image: "/building 2/facilities/Security DSC_3283.jpg",
+    image: "/building 2/facilities/cisf.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -474,7 +474,7 @@ const GALLERIES: Gallery[] = [
     title: "Wayfinding Signage",
     menuLabel: "Direction Signage",
     description: "Directional sign boards placed across paths to guide visitors to show locations and amenities.",
-    image: "/building 2/facilities/Signage DSC_5262.jpg",
+    image: "/building 2/facilities/direction.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -525,10 +525,10 @@ const GALLERIES: Gallery[] = [
   },
   {
     id: "baby-care-point",
-    title: "Baby Care Point",
+    title: "Baby Care Cubicle",
     menuLabel: "Baby Care",
     description: "A clean and comfortable space equipped for diaper changing, nursing, and baby feeding needs.",
-    image: "/building 2/facilities/baby-care-point.jpg",
+    image: "/building 2/facilities/baby.jpg",
     building: 2,
     category: "Facilities"
   }

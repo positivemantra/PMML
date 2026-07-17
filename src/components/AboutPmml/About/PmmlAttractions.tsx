@@ -23,7 +23,7 @@ const BLOCK_1_ITEMS = [
   {
     title: 'Nehru Gallery-1',
     description: 'Step into Jawaharlal Nehru\'s early life, political journey, his bedroom, personal belongings, and a special exhibition on his Prime Ministership. Relive the early days of independent India through this dedicated collection. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/building 1/nehru gallery1.jpg',
+    image: '/building 1/ng.jpg',
     alt: 'Nehru Gallery'
   },
   {

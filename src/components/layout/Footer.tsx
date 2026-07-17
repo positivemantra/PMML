@@ -103,11 +103,6 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
-              <div className={styles.visitorInfo}>
-                <span>Visitors: 107488</span>
-                <span className={styles.visitorSeparator}>|</span>
-                <span>Last Updated: 15-July-2026</span>
-              </div>
             </div>
 
           </div>
@@ -147,6 +142,11 @@ export default function Footer() {
                   <span className="text-[7.5px] font-semibold text-gray-300 font-sans tracking-wider">GOVERNMENT OF INDIA</span>
                 </div>
               </a>
+            </div>
+            <div className={`${styles.visitorInfo} mt-3.5`}>
+              <span>Visitors: 107488</span>
+              <span className={styles.visitorSeparator}>|</span>
+              <span>Last Updated: 15-July-2026</span>
             </div>
           </div>
 

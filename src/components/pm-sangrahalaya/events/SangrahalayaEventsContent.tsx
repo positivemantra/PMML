@@ -277,8 +277,8 @@ export default function SangrahalayaEventsContent() {
                 }}
                 className="pl-4 pr-12 py-2.5 text-xs font-bold text-gray-500 bg-[#f4f4f4] border border-gray-200 rounded-lg outline-none appearance-none cursor-pointer min-w-[220px]"
               >
-                <option value="upcoming">Upcoming</option>
-                <option value="past">Past</option>
+                <option value="upcoming">Upcoming Events</option>
+                <option value="past">Past Events</option>
               </select>
               <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center justify-center w-5.5 h-5.5 border border-[#f37021] rounded-full bg-transparent pointer-events-none">
                 <ChevronDown className="w-3 h-3 text-[#f37021]" />
