@@ -256,7 +256,7 @@ export default function NehruPlanetariumDetails() {
           {/* Left Column: Image */}
           <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full">
             <Image
-              src="/space.jpg"
+              src="/space1.jpg"
               alt="Nehru Planetarium Exhibition Area"
               fill
               sizes="(max-width: 1024px) 100vw, 550px"
@@ -532,7 +532,7 @@ export default function NehruPlanetariumDetails() {
             {/* Right Column: Image */}
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full min-h-[300px]">
               <Image
-                src="/shows.jpeg"
+                src="/space.jpg"
                 alt="Shows Details"
                 fill
                 sizes="(max-width: 1024px) 100vw, 550px"
