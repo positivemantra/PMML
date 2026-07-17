@@ -460,17 +460,19 @@ export default function NehruPlanetariumDetails() {
               </div>
 
               {/* Booking CTA Button */}
-              <a 
-                href="https://in.bookmyshow.com/activities/nehru-planetarium-delhi/ET00397188" 
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => {
+                  if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                    window.open('https://in.bookmyshow.com/activities/nehru-planetarium-delhi/ET00397188', '_blank', 'noopener,noreferrer');
+                  }
+                }}
                 className="w-full py-3.5 bg-[#f37021] hover:bg-[#d85c15] text-white font-bold text-xs sm:text-sm tracking-wider uppercase rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 active:scale-98 cursor-pointer select-none text-center"
               >
                 <span>Book Now</span>
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -500,7 +502,7 @@ export default function NehruPlanetariumDetails() {
                     <span className="text-gray-500 font-bold text-sm sm:text-base mt-0.5">•</span>
                     <div>
                       <span className="font-bold text-gray-500">{slot.time}</span>
-                      <span className="text-gray-500">—</span>
+                      <span className="text-gray-500"> - </span>
                       {slot.shows ? (
                         <span>
                           {slot.shows.map((show, idx) => (
@@ -532,7 +534,7 @@ export default function NehruPlanetariumDetails() {
             {/* Right Column: Image */}
             <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full min-h-[300px]">
               <Image
-                src="/space.jpg"
+                src="/np banner.jpg"
                 alt="Shows Details"
                 fill
                 sizes="(max-width: 1024px) 100vw, 550px"

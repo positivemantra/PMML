@@ -1,10 +1,10 @@
-import HeroSection from '@/components/Home/HeroSection';
+import PlanetariumHeroSlider from './PlanetariumHeroSlider';
 import NehruPlanetariumDetails from './NehruPlanetariumDetails';
 
 export default function NehruPlanetariumContent() {
   return (
     <div className="w-full">
-      <HeroSection />
+      <PlanetariumHeroSlider />
       <NehruPlanetariumDetails />
     </div>
   );

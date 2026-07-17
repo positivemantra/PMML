@@ -40,7 +40,7 @@ export default function CopyrightPolicyContent() {
 
       {/* ── Main Content Block (bg-white) ── */}
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed text-justify">
           <p>
             The contents of this website may not be reproduced partially or fully, without due permission from the <strong>Prime Ministers Museum and Library</strong>. If referred to as a part of another publication, the source must be appropriately acknowledged. The contents of this website cannot be used in any misleading or objectionable context.
           </p>

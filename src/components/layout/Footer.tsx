@@ -74,34 +74,66 @@ export default function Footer() {
             <div className={styles.socialWrapper}>
               <div className={styles.socialRow}>
                 {/* Facebook */}
-                <a href="https://www.facebook.com/pmsangrahalaya?rdid=KTTddJ8iU4wLwF9W&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KEEYkm99T%2F#" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon} ${styles.socialIconFb}`} title="Facebook">
+                <button
+                  onClick={() => {
+                    if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                      window.open('https://www.facebook.com/pmsangrahalaya?rdid=KTTddJ8iU4wLwF9W&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KEEYkm99T%2F#', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  className={`${styles.socialIcon} ${styles.socialIconFb} border-none`}
+                  title="Facebook"
+                >
                   <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" className={styles.svgIcon}>
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                   </svg>
-                </a>
-                
+                </button>
+
                 {/* X (Twitter) */}
-                <a href="https://x.com/PMSangrahalaya" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon} ${styles.socialIconX}`} title="X">
+                <button
+                  onClick={() => {
+                    if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                      window.open('https://x.com/PMSangrahalaya', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  className={`${styles.socialIcon} ${styles.socialIconX} border-none`}
+                  title="X"
+                >
                   <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" className={styles.svgIcon}>
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                   </svg>
-                </a>
+                </button>
 
                 {/* Instagram */}
-                <a href="https://www.instagram.com/pmsangrahalaya" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon} ${styles.socialIconIg}`} title="Instagram">
+                <button
+                  onClick={() => {
+                    if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                      window.open('https://www.instagram.com/pmsangrahalaya', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  className={`${styles.socialIcon} ${styles.socialIconIg} border-none`}
+                  title="Instagram"
+                >
                   <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className={styles.svgIcon}>
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
-                </a>
+                </button>
 
                 {/* YouTube */}
-                <a href="https://www.youtube.com/@nehrumemoriallibrary" target="_blank" rel="noopener noreferrer" className={`${styles.socialIcon} ${styles.socialIconYt}`} title="YouTube">
+                <button
+                  onClick={() => {
+                    if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                      window.open('https://www.youtube.com/@nehrumemoriallibrary', '_blank', 'noopener,noreferrer');
+                    }
+                  }}
+                  className={`${styles.socialIcon} ${styles.socialIconYt} border-none`}
+                  title="YouTube"
+                >
                   <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" className={styles.svgIcon}>
                     <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.122C19.528 3.545 12 3.545 12 3.545s-7.528 0-9.388.496a3.003 3.003 0 0 0-2.11 2.122A30.062 30.062 0 0 0 0 12c0 2.807.19 5.617.49 6.163a3.003 3.003 0 0 0 2.11 2.122c1.86.496 9.388.496 9.388.496s7.528 0 9.388-.496a3.002 3.002 0 0 0 2.11-2.122A30.058 30.058 0 0 0 24 12a30.058 30.058 0 0 0-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
 
@@ -125,11 +157,13 @@ export default function Footer() {
           {/* COL 5 — Ministry of Culture */}
           <div className="lg:border-l lg:border-[#1e3a6a] lg:pl-6 flex flex-col justify-start">
             <div className="mt-1.5">
-              <a
-                href="https://culture.gov.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 select-none hover:opacity-90 transition-opacity"
+              <button
+                onClick={() => {
+                  if (window.confirm('This would take you to an external website that opens in a new tab. Do you want to continue anyway?')) {
+                    window.open('https://culture.gov.in/', '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                className="flex items-center gap-2 select-none hover:opacity-90 transition-opacity bg-transparent border-none p-0 cursor-pointer"
               >
                 <img
                   src="/hey.png"
@@ -141,7 +175,7 @@ export default function Footer() {
                   <span className="text-[10.5px] font-bold text-white font-sans tracking-wide">Ministry of Culture</span>
                   <span className="text-[7.5px] font-semibold text-gray-300 font-sans tracking-wider">GOVERNMENT OF INDIA</span>
                 </div>
-              </a>
+              </button>
             </div>
             <div className={`${styles.visitorInfo} mt-3.5`}>
               <span>Visitors: 107488</span>

@@ -74,7 +74,7 @@ export default function HelpContent() {
 
       {/* ── Main Content Block (bg-white) ── */}
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-8 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-8 text-sm sm:text-base leading-relaxed text-justify">
           
           {/* Section 1: File Formats */}
           <div className="space-y-4">

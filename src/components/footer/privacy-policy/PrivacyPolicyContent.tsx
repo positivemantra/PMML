@@ -41,7 +41,7 @@ export default function PrivacyPolicyContent() {
       </section>
 
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-8 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-8 text-sm sm:text-base leading-relaxed text-justify">
           <p>
             As a general rule, this website does not collect Personal Information about you when you visit the site. You can generally visit the site without revealing Personal Information, unless you choose to provide such information.
           </p>

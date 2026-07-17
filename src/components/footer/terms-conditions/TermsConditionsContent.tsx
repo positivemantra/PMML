@@ -41,7 +41,7 @@ export default function TermsConditionsContent() {
 
       {/* ── Main Content Block (bg-white) ── */}
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed text-justify">
           <p>
             All of the content and information is provided by the <strong>Prime Ministers Museum and Library Society</strong>.
           </p>

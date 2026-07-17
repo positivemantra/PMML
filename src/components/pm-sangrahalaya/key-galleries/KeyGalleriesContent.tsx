@@ -234,7 +234,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Morarji Desai",
     menuLabel: "Gallery 5 - Shri Morarji Desai",
     description: "Portrays the post-Emergency restoration of fundamental rights, economic stabilization, and initiatives for friendly relations with neighbors.",
-    image: "/building 2/pms/desai.jpg",
+    image: "/building 2/pms/desai gallery.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
@@ -429,7 +429,7 @@ const GALLERIES: Gallery[] = [
     title: "Entry Gate",
     menuLabel: "Entry Gate",
     description: "The security-monitored entrance gate welcoming visitors to the lawns of Block II.",
-    image: "/building 2/facilities/hi.jpg",
+    image: "/building 2/facilities/entry.jpg",
     building: 2,
     category: "Facilities"
   },
@@ -519,7 +519,7 @@ const GALLERIES: Gallery[] = [
     title: "Lost & Found",
     menuLabel: "Lost & Found",
     description: "A dedicated facility to report, submit, or retrieve lost belongings and items found within the museum premises.",
-    image: "/building 2/facilities/lost-and-found.jpg",
+    image: "/building 2/facilities/lost.jpg",
     building: 2,
     category: "Facilities"
   },

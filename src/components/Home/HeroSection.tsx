@@ -31,7 +31,7 @@ const SLIDES = [
     cta: { label: "Visit Library", href: "/library" },
   },
   {
-    src: "/hero section/planet.jpg",
+    src: "/npp.jpg",
     title: "Nehru Planetarium",
     subtitle: "Discover the wonders of astronomy and the celestial science dome",
     cta: { label: "Book a Show", href: "/about-pmml/nehru-planetarium" },

@@ -49,14 +49,14 @@ const TEAM_DATA = [
     id: "librarian",
     role: "LIBRARIAN",
     name: "Shri Vikas Kumar",
-    contact: "21411895",
+    contact: "011-21411895",
     email: "lio@nmml.gov.in",
   },
   {
     id: "staff",
     role: "OFFICE STAFF",
     name: "Shri Vikas Kumar",
-    contact: "21411895",
+    contact: "011-21411895",
     email: "lio@nmml.gov.in",
   },
 ];

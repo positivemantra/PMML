@@ -76,7 +76,7 @@ export default function RtiContent() {
           
           {/* Left-Aligned Intro Paragraph */}
           <div className="mb-10 max-w-4xl">
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed text-justify">
               The Prime Ministers Museum and Library (PMML) is committed to transparency, integrity, and public accountability. In compliance with the Right to Information Act, 2005, the designated officials responsible for processing queries and addressing information requests are listed below.
             </p>
           </div>

@@ -145,7 +145,7 @@ export const Header: React.FC<HeaderProps> = ({
               </form>
               <div className="flex flex-col gap-2">
                 <a
-                  href="https://www.pmsangrahalaya.gov.in/book-now"
+                  href="https://positive-mantra.com/pmml/book-now"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}

@@ -44,7 +44,7 @@ const BLOCK_2_ITEMS = [
   {
     title: 'Prastuti',
     description: 'Witness the Nuclear Journey to Dream Reality, step inside a virtual reality time machine, and experience the cosmic visual storytelling of India\'s scientific breakthroughs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/building 2/prastuti conference room.jpg',
+    image: '/building 2/Prastuti.jpg',
     alt: 'Prastuti Room'
   },
   {
@@ -155,8 +155,8 @@ const attractions: AttractionItem[] = [
         </p>
         <div className="flex gap-6 pt-2">
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-[#052356]">2.5L+</span>
-            <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Archival Items</span>
+            <span className="text-xl font-bold text-[#052356]">2.5Cr+</span>
+            <span className="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Documents & Archival Records</span>
           </div>
           <div className="w-px bg-slate-200" />
           <div className="flex flex-col">

@@ -40,7 +40,7 @@ export default function RefundCancellationPolicyContent() {
 
       {/* ── Main Content Block (bg-white) ── */}
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed text-justify">
           <p>
             When you make a payment, you agree to use a valid payment method. You agree to pay the price for tickets that you purchase, and you authorize us to charge your debit or credit card or process other means of payment (such as PayPal, direct debit, or mobile wallet) for those fees. PM Sangrahalaya works with third-party payment processing partners to offer you convenient payment methods in your country and to keep your payment information secure.
           </p>

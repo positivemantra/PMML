@@ -43,7 +43,7 @@ export default function DisclaimerContent() {
       </section>
 
       <section className="w-full py-12 lg:py-16 bg-white text-left">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-6 text-sm sm:text-base leading-relaxed text-justify">
           <p>
             The Prime Ministers Museum and Library disclaims liability for any loss or damage from using this site.
           </p>
