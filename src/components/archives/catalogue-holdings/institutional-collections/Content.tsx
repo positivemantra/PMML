@@ -43,7 +43,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "2",
     "description": "All India Committee for Eradication of Illiteracy among Women",
     "accessionNumber": "43",
-    "url": "https://pmml.nic.in/downloadInstitutional/248",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Committeec%20for%20Eeradication%20of%20Llliteracy%20Among%20Women.pdf",
     "period": "1985-2002"
   },
   {
@@ -51,7 +51,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "3",
     "description": "All India Congress Committee",
     "accessionNumber": "1",
-    "url": "https://pmml.nic.in/downloadInstitutional/249",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/1.%20All%20India%20Congress%20Committee%20Files.pdf",
     "period": "1917-1976"
   },
   {
@@ -59,7 +59,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "3 ( a )",
     "description": "All India Congress Committee VIth Installment",
     "accessionNumber": "3a",
-    "url": "https://pmml.nic.in/downloadInstitutional/396",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Congress%20Committee%20%20(VI%20Inst.).pdf",
     "period": "1917-1976"
   },
   {
@@ -67,7 +67,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "3 ( b )",
     "description": "All India Congress Committee VIIth Installment",
     "accessionNumber": "3b",
-    "url": "https://pmml.nic.in/downloadInstitutional/397",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Congress%20Committee%20(VII%20Inst.).pdf",
     "period": "1917-1976"
   },
   {
@@ -83,7 +83,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "5",
     "description": "All India Congress Committee (Supplementary)",
     "accessionNumber": "1",
-    "url": "https://pmml.nic.in/downloadInstitutional/251",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Congress%20Committee%20(Supplementary).pdf",
     "period": "1917-1969"
   },
   {
@@ -91,7 +91,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "6",
     "description": "All India Congress Committee (Press Clippings)",
     "accessionNumber": "1-A",
-    "url": "https://pmml.nic.in/downloadInstitutional/252",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Congress%20Committee%20Press%20Clippings.pdf",
     "period": "1895-1977"
   },
   {
@@ -99,7 +99,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "7",
     "description": "All India Hindu Mahasabha",
     "accessionNumber": "8",
-    "url": "https://pmml.nic.in/downloadInstitutional/253",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Hindu%20Mahasabha.pdf",
     "period": "1931-1951"
   },
   {
@@ -163,7 +163,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "15",
     "description": "All India Trade Union Congress",
     "accessionNumber": "18",
-    "url": "https://pmml.nic.in/downloadInstitutional/266",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Trade%20Union%20Congress.pdf",
     "period": "1925-1966"
   },
   {
@@ -179,7 +179,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "17",
     "description": "All India Women’s Conference",
     "accessionNumber": "38",
-    "url": "https://pmml.nic.in/downloadInstitutional/268",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/All%20India%20Women%20Conference.pdf",
     "period": "1920-1987"
   },
   {
@@ -187,7 +187,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "18",
     "description": "Allahabad Municipal Board",
     "accessionNumber": "24",
-    "url": "https://pmml.nic.in/downloadInstitutional/269",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Allahabad%20Municipal%20Board.pdf",
     "period": "1921-1925"
   },
   {
@@ -235,7 +235,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "23",
     "description": "Assam Pradesh Congress Committee",
     "accessionNumber": "28",
-    "url": "https://pmml.nic.in/downloadInstitutional/275",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Assam%20Pradesh%20Congress%20Committee_compressed.pdf",
     "period": "1937-1978"
   },
   {
@@ -299,7 +299,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "30",
     "description": "British Indian Association, Awadh",
     "accessionNumber": "10",
-    "url": "https://pmml.nic.in/downloadInstitutional/283",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/British%20Indian%20Association-Awadh.pdf",
     "period": "1861-1952"
   },
   {
@@ -307,7 +307,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "31",
     "description": "British Indian Association, Calcutta Microfilm",
     "accessionNumber": "NA",
-    "url": "#",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/British%20Indian%20Association-Awadh.pdf",
     "period": "1852-1932"
   },
   {
@@ -331,7 +331,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "34",
     "description": "Cabinet Papers",
     "accessionNumber": "20",
-    "url": "https://pmml.nic.in/downloadInstitutional/287",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Cabinet%20Papers.pdf",
     "period": "1939-1945"
   },
   {
@@ -355,7 +355,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "37",
     "description": "Civil Liberties and Human Rights",
     "accessionNumber": "33",
-    "url": "https://pmml.nic.in/downloadInstitutional/290",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Civil%20Liberties%20and%20Human%20Rights.pdf",
     "period": "1874-2005"
   },
   {
@@ -363,7 +363,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "38",
     "description": "Coimbatore Mill Workers Union",
     "accessionNumber": "41",
-    "url": "https://pmml.nic.in/downloadInstitutional/291",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Coimbatore%20Mill%20Workers%20Union%20(1937-).pdf",
     "period": "1952-1963"
   },
   {
@@ -571,7 +571,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "58",
     "description": "Home Rule League",
     "accessionNumber": "5",
-    "url": "https://pmml.nic.in/downloadInstitutional/317",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Home%20Rule%20League.pdf",
     "period": "1916-1921"
   },
   {
@@ -635,7 +635,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "65",
     "description": "Indore Rajya Praja Mandal",
     "accessionNumber": "6",
-    "url": "https://pmml.nic.in/downloadInstitutional/325",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Indore%20Rajya%20Praja%20Mandal.pdf",
     "period": "1921-1947"
   },
   {
@@ -643,7 +643,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "66",
     "description": "Jaipur State Praja Mandal",
     "accessionNumber": "19",
-    "url": "https://pmml.nic.in/downloadInstitutional/326",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Jaipur%20State%20Praja%20Mandal.pdf",
     "period": "1940-1949"
   },
   {
@@ -715,7 +715,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "74",
     "description": "Lahore Conspiracy Case Proceedings",
     "accessionNumber": "29",
-    "url": "https://pmml.nic.in/downloadInstitutional/334",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Lahore%20Conspiracy%20Case%20(2).pdf",
     "period": "1930-"
   },
   {
@@ -731,7 +731,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "76",
     "description": "Madhya Bharat Hindi Sahitya Samiti",
     "accessionNumber": "42",
-    "url": "https://pmml.nic.in/downloadInstitutional/336",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Madhya%20Bharat%20Hindi%20Sahitya.pdf",
     "period": "1915-1955"
   },
   {
@@ -859,7 +859,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "89",
     "description": "Mehrauli Group of Action India and Sadbhavana Trust",
     "accessionNumber": "50",
-    "url": "https://pmml.nic.in/downloadInstitutional/351",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Mehrauli%20Group%20of%20Action%20India.pdf",
     "period": "1997-2010"
   },
   {
@@ -923,7 +923,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "95",
     "description": "National Council of Women in India",
     "accessionNumber": "14",
-    "url": "https://pmml.nic.in/downloadInstitutional/359",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/National%20Council%20of%20Women%20in%20India%20_%20List%20No.-14_compressed.pdf",
     "period": "1938-1969"
   },
   {
@@ -995,7 +995,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "102 ( a )",
     "description": "Public Interest Litigation in India See under Civil Liberties and Human Rights",
     "accessionNumber": "NA",
-    "url": "#",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Civil%20Liberties%20and%20Human%20Rights.pdf",
     "period": "-"
   },
   {
@@ -1059,7 +1059,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "109",
     "description": "Rewari Town Congress Committee",
     "accessionNumber": "22A",
-    "url": "https://pmml.nic.in/downloadInstitutional/375",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Rewari%20Town%20Congress%20Committee.pdf",
     "period": "1944-1956"
   },
   {
@@ -1075,7 +1075,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "111",
     "description": "Sampradaan Indian Centre for Philanthropy (SICP)",
     "accessionNumber": "51",
-    "url": "https://pmml.nic.in/downloadInstitutional/377",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Sampradaan%20Indian%20Centre%20for%20Philanthropy.pdf",
     "period": "1990-2010"
   },
   {
@@ -1091,7 +1091,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "112",
     "description": "Servants of India Society",
     "accessionNumber": "21",
-    "url": "https://pmml.nic.in/downloadInstitutional/379",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Servants%20of%20India%20Society.pdf",
     "period": "1879-1976"
   },
   {
@@ -1155,7 +1155,7 @@ const INSTITUTIONAL_COLLECTIONS_DATA: InstitutionalCollectionItem[] = [
     "srNo": "118",
     "description": "Tamralipta Swadhinata Sangram Itihas Committee",
     "accessionNumber": "36",
-    "url": "https://pmml.nic.in/downloadInstitutional/388",
+    "url": "https://positive-mantra.com/PDF/Catalogue%20of%20PMML%20Holdings/Institutional%20collections/Tamralipta%20Swadhinata%20Sangram%20Itihas%20Committee%20_%20List%20No.-36.pdf",
     "period": "1924-1983"
   },
   {

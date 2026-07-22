@@ -513,7 +513,9 @@ export default function ConferenceFacilitiesContent() {
           {/* CTA */}
           <div className="mt-6">
             <a
-              href="#booking-form"
+              href="https://positive-mantra.com/PDF/1766578664761_AuditoriumBookingForm.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#f37021] text-white text-[13px] font-bold px-6 py-3 rounded-xl hover:bg-[#d95e0f] transition-colors"
             >
               <FileText className="w-4 h-4" />

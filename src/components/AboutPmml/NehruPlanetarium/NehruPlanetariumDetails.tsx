@@ -254,9 +254,9 @@ export default function NehruPlanetariumDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch mb-10 lg:mb-12 w-full">
           
           {/* Left Column: Image */}
-          <div className="lg:col-span-6 relative aspect-[4/3] lg:aspect-auto lg:h-full rounded-3xl overflow-hidden shadow-md bg-gray-900 w-full">
+          <div className="lg:col-span-6 relative aspect-[16/10] rounded-3xl overflow-hidden shadow-md w-full">
             <Image
-              src="/space1.jpg"
+              src="/shukla.jpg"
               alt="Nehru Planetarium Exhibition Area"
               fill
               sizes="(max-width: 1024px) 100vw, 550px"

@@ -7,6 +7,7 @@ export interface SubItem {
   label: string;
   href: string;
   target?: string;
+  noConfirm?: boolean;
 }
 
 export interface MenuItem {
@@ -66,7 +67,7 @@ export const NAV_ITEMS: MenuItem[] = [
     dropdown: [
       { label: "Catalogue of Holdings", href: "/archives/catalogue-holdings" },
       { label: "Digital Archives", href: "https://pmmlarchives.in/login", target: "_blank" },
-      { label: "SOP for Remote Access", href: "/archives#sop-remote-access" },
+      { label: "SOP for Remote Access", href: "https://positive-mantra.com/PDF/SOP%20for%20Remote%20Access%20to%20Digital%20Archives/1761282895832RemoteUser_SOP_23102025.pdf", target: "_blank", noConfirm: true },
     ],
   },
   {
@@ -138,11 +139,15 @@ export default function MenuBar() {
     if (subItem.target === '_blank') {
       e.preventDefault();
       setOpenDropdown(null);
-      const confirmLeave = window.confirm(
-        'This would take you to an external website that opens in a new tab. Do you want to continue anyway?'
-      );
-      if (confirmLeave) {
+      if (subItem.noConfirm) {
         window.open(subItem.href, '_blank', 'noopener,noreferrer');
+      } else {
+        const confirmLeave = window.confirm(
+          'This would take you to an external website that opens in a new tab. Do you want to continue anyway?'
+        );
+        if (confirmLeave) {
+          window.open(subItem.href, '_blank', 'noopener,noreferrer');
+        }
       }
     } else {
       setOpenDropdown(null);

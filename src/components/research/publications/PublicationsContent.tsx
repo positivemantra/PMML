@@ -18,45 +18,48 @@ interface Publication {
   category: string;
   year: number;
   size: string;
+  pdfUrl?: string;
 }
 
+const BASE_PDF = "https://positive-mantra.com/PDF/Publications/";
+
 const PUBLICATIONS_DATA: Publication[] = [
-  { id: "p1", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume Six (1950-1954)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.2 MB" },
-  { id: "p2", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume Five (1948-1950)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "3.8 MB" },
-  { id: "p3", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Four (1946-1948)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.5 MB" },
-  { id: "p4", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Three (1939-1946)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "3.9 MB" },
-  { id: "p5", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Two (1936-1939)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.1 MB" },
-  { id: "p6", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume One (1929 - 1935)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2000, size: "3.6 MB" },
-  { id: "p7", title: "The Indian National Congress: A Reconstruction Volume Two: 1919-1923", author: "Dr. Iqbal Singh", category: "Studies", year: 1988, size: "2.8 MB" },
-  { id: "p8", title: "The Indian National Congress: A Reconstruction Volume One: 1885-1918", author: "Dr. Iqbal Singh", category: "Studies", year: 1987, size: "2.5 MB" },
-  { id: "p9", title: "INDIAN FOREIGN POLICY: The Indira Gandhi Years", author: "A. K. Damodaran, U. S. Bajpai", category: "Policy & Politics", year: 1990, size: "3.2 MB" },
-  { id: "p10", title: "The Agrarian Drama: The Leftists and the Rural Poor in India 1934-1951", author: "Amit Kumar Gupta", category: "Studies", year: 1996, size: "2.9 MB" },
-  { id: "p11", title: "NORTH-EAST INDIA: A BIBLIOGRAPHY", author: "PMML Research Team", category: "Bibliography", year: 1985, size: "1.8 MB" },
-  { id: "p12", title: "JAWAHARLAL NEHRU ON SCIENCE AND SOCIETY", author: "Edited by Baldev Singh", category: "Selected Works", year: 1988, size: "3.0 MB" },
-  { id: "p13", title: "WOMEN IN INDIA: A BIBLIOGRAPHY", author: "PMML Research Team", category: "Bibliography", year: 1982, size: "1.5 MB" },
-  { id: "p14", title: "JAWAHARLAL NEHRU: A Communicator and Democratic Leader", author: "A. K. Damodaran", category: "Studies", year: 1997, size: "2.3 MB" },
-  { id: "p15", title: "UNDERSTANDING THE POST-COLONIAL WORLD THEORY AND METHOD", author: "Edited by Neera Chandhoke", category: "Studies", year: 1994, size: "2.7 MB" },
-  { id: "p16", title: "SOCIALISATION EDUCATION AND WOMEN", author: "Edited by Karuna Chanana", category: "Studies", year: 1988, size: "2.4 MB" },
-  { id: "p17", title: "Socialism In India", author: "Edited by B. R. Nanda", category: "Studies", year: 1972, size: "3.1 MB" },
-  { id: "p18", title: "The Resurgence of Indian Women", author: "Aruna Asaf Ali", category: "Studies", year: 1991, size: "2.6 MB" },
-  { id: "p19", title: "SOCIAL TRANSFORMATION AND CREATIVE IMAGINATION", author: "Edited by Sudhir Chandra", category: "Studies", year: 1984, size: "2.9 MB" },
-  { id: "p20", title: "Peace and Conflict Resolution in the World Community", author: "Edited by Anima Bose", category: "Studies", year: 1992, size: "3.3 MB" },
-  { id: "p21", title: "Philosophical Theory and Social Reality", author: "Edited by Ravinder Kumar", category: "Studies", year: 1984, size: "2.8 MB" },
-  { id: "p22", title: "STUDIES IN MODERN INDIAN HISTORY", author: "Edited by B. R. Nanda, V. C. Joshi", category: "Studies", year: 1972, size: "3.5 MB" },
-  { id: "p23", title: "SRI AUROBINDO An Interpretation", author: "Edited by Ravinder Kumar", category: "Studies", year: 1973, size: "2.1 MB" },
-  { id: "p24", title: "Exploring Gender Equations: Colonial and Post-Colonial India", author: "Shakti Kak, Biswamoy Pati", category: "Studies", year: 2005, size: "3.4 MB" },
-  { id: "p25", title: "India in the Age of Globalization", author: "Edited by Priyankar Upadhyaya", category: "Policy & Politics", year: 2002, size: "2.7 MB" },
-  { id: "p26", title: "वैश्वीकरण के परिप्रेक्ष्य में हिन्दी", author: "नेहरू स्मारक संग्रहालय एवं पुस्तकालय", category: "Policy & Politics", year: 2003, size: "2.9 MB" },
-  { id: "p27", title: "KHAN ABDUL GHAFFAR KHAN", author: "PMML Research Team", category: "Studies", year: 1984, size: "1.9 MB" },
-  { id: "p28", title: "Rammohun Roy and the Process of Modernization in India", author: "Edited by V. C. Joshi", category: "Studies", year: 1975, size: "2.5 MB" },
-  { id: "p29", title: "SCIENCE AND TECHNOLOGY IN INDIA", author: "PMML Research Team", category: "Studies", year: 1978, size: "3.1 MB" },
-  { id: "p30", title: "भारतीय गणतंत्र में हिंदी", author: "नेहरू स्मारक संग्रहालय एवं पुस्तकालय", category: "Studies", year: 2000, size: "2.2 MB" },
-  { id: "p31", title: "GANDHI AND NEHRU", author: "B. R. Nanda, P. C. Joshi, Raj Krishna", category: "Studies", year: 1979, size: "2.7 MB" },
-  { id: "p32", title: "Kargil: The Crisis and its Implications", author: "PMML Research Team", category: "Policy & Politics", year: 1999, size: "2.4 MB" },
-  { id: "p33", title: "Democracy and Education in India", author: "Edited by Krishna Kumar", category: "Studies", year: 1993, size: "2.6 MB" },
-  { id: "p34", title: "THE AFGHANISTAN CRISIS", author: "PMML Research Team", category: "Policy & Politics", year: 1981, size: "3.0 MB" },
-  { id: "p35", title: "Jawaharlal Nehru on Science", author: "Nehru Memorial Museum & Library", category: "Selected Works", year: 1985, size: "2.8 MB" },
-  { id: "p36", title: "Bengal Famine of 1943: The American Response", author: "M. S. Venkataramani", category: "Studies", year: 1973, size: "3.5 MB" },
+  { id: "p1", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume Six (1950-1954)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.2 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol6%20-%20converted.pdf" },
+  { id: "p2", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume Five (1948-1950)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "3.8 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol.5%20-%20converted.pdf" },
+  { id: "p3", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Four (1946-1948)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.5 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol.4%20-%20converted.pdf" },
+  { id: "p4", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Three (1939-1946)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "3.9 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol.3%20-%20converted.pdf" },
+  { id: "p5", title: "JAYAPRAKASH NARAYAN SELECTED WORKS: Volume Two (1936-1939)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2003, size: "4.1 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol.2%20-%20converted.pdf" },
+  { id: "p6", title: "JAYAPRAKASH NARAYAN SELECTED WORKS Volume One (1929 - 1935)", author: "Edited by Bimal Prasad", category: "Selected Works", year: 2000, size: "3.6 MB", pdfUrl: BASE_PDF + "JAYAPRAKASH%20NARAYAN%20Vol.1.pdf" },
+  { id: "p7", title: "The Indian National Congress: A Reconstruction Volume Two: 1919-1923", author: "Dr. Iqbal Singh", category: "Studies", year: 1988, size: "2.8 MB", pdfUrl: BASE_PDF + "The%20Indian%20National%20Congress%20A%20Reconstruction-2%20-%20converted.pdf" },
+  { id: "p8", title: "The Indian National Congress: A Reconstruction Volume One: 1885-1918", author: "Dr. Iqbal Singh", category: "Studies", year: 1987, size: "2.5 MB", pdfUrl: BASE_PDF + "The%20Indian%20National%20Congress%20A%20Reconstruction-1.pdf" },
+  { id: "p9", title: "INDIAN FOREIGN POLICY: The Indira Gandhi Years", author: "A. K. Damodaran, U. S. Bajpai", category: "Policy & Politics", year: 1990, size: "3.2 MB", pdfUrl: BASE_PDF + "Indian%20Foreign%20Policy%20The%20Indira%20Gandhi%20Years.pdf" },
+  { id: "p10", title: "The Agrarian Drama: The Leftists and the Rural Poor in India 1934-1951", author: "Amit Kumar Gupta", category: "Studies", year: 1996, size: "2.9 MB", pdfUrl: BASE_PDF + "The%20Agrannian%20Drama%20-%20converted.pdf" },
+  { id: "p11", title: "NORTH-EAST INDIA: A BIBLIOGRAPHY", author: "PMML Research Team", category: "Bibliography", year: 1985, size: "1.8 MB", pdfUrl: BASE_PDF + "North%20East%20India%20A%20bibliography%20-%20converted.pdf" },
+  { id: "p12", title: "JAWAHARLAL NEHRU ON SCIENCE AND SOCIETY", author: "Edited by Baldev Singh", category: "Selected Works", year: 1988, size: "3.0 MB", pdfUrl: BASE_PDF + "Jawaharlal%20Nehru%20on%20Science%20and%20Society.pdf" },
+  { id: "p13", title: "WOMEN IN INDIA: A BIBLIOGRAPHY", author: "PMML Research Team", category: "Bibliography", year: 1982, size: "1.5 MB", pdfUrl: BASE_PDF + "Women%20in%20India%20-%20converted.pdf" },
+  { id: "p14", title: "JAWAHARLAL NEHRU: A Communicator and Democratic Leader", author: "A. K. Damodaran", category: "Studies", year: 1997, size: "2.3 MB", pdfUrl: BASE_PDF + "Jawaharlal%20Nehru%20A%20Communicator%20and%20Democratic%20Leader.pdf" },
+  { id: "p15", title: "UNDERSTANDING THE POST-COLONIAL WORLD THEORY AND METHOD", author: "Edited by Neera Chandhoke", category: "Studies", year: 1994, size: "2.7 MB", pdfUrl: BASE_PDF + "Undedrstanding%20the%20Post-Colonial%20World%20-%20converted.pdf" },
+  { id: "p16", title: "SOCIALISATION EDUCATION AND WOMEN", author: "Edited by Karuna Chanana", category: "Studies", year: 1988, size: "2.4 MB", pdfUrl: BASE_PDF + "Socialisation%20Education%20and%20Woman.pdf" },
+  { id: "p17", title: "Socialism In India", author: "Edited by B. R. Nanda", category: "Studies", year: 1972, size: "3.1 MB", pdfUrl: BASE_PDF + "Socialism%20in%20India%20-%20converted.pdf" },
+  { id: "p18", title: "The Resurgence of Indian Women", author: "Aruna Asaf Ali", category: "Studies", year: 1991, size: "2.6 MB", pdfUrl: BASE_PDF + "Resurgence%20of%20Indian%20Women%20-%20converted.pdf" },
+  { id: "p19", title: "SOCIAL TRANSFORMATION AND CREATIVE IMAGINATION", author: "Edited by Sudhir Chandra", category: "Studies", year: 1984, size: "2.9 MB", pdfUrl: BASE_PDF + "Social%20Transfomation%20and%20Creative%20Imagination%20-%20converted%20%281%29.pdf" },
+  { id: "p20", title: "Peace and Conflict Resolution in the World Community", author: "Edited by Anima Bose", category: "Studies", year: 1992, size: "3.3 MB", pdfUrl: BASE_PDF + "Peace%20and%20Conflict%20resolution%20in%20the%20Word.pdf" },
+  { id: "p21", title: "Philosophical Theory and Social Reality", author: "Edited by Ravinder Kumar", category: "Studies", year: 1984, size: "2.8 MB", pdfUrl: BASE_PDF + "Philosophical%20Theory%20and%20Social%20Reality%20-%20converted_compressed%20%281%29.pdf" },
+  { id: "p22", title: "STUDIES IN MODERN INDIAN HISTORY", author: "Edited by B. R. Nanda, V. C. Joshi", category: "Studies", year: 1972, size: "3.5 MB", pdfUrl: BASE_PDF + "Studies%20in%20Modern%20India%20History.pdf" },
+  { id: "p23", title: "SRI AUROBINDO An Interpretation", author: "Edited by Ravinder Kumar", category: "Studies", year: 1973, size: "2.1 MB", pdfUrl: BASE_PDF + "Shri%20Aurobindo%20An%20Interpretation.pdf" },
+  { id: "p24", title: "Exploring Gender Equations: Colonial and Post-Colonial India", author: "Shakti Kak, Biswamoy Pati", category: "Studies", year: 2005, size: "3.4 MB", pdfUrl: BASE_PDF + "Exploring%20Gender%20Equatioins%20-%20converted.pdf" },
+  { id: "p25", title: "India in the Age of Globalization", author: "Edited by Priyankar Upadhyaya", category: "Policy & Politics", year: 2002, size: "2.7 MB", pdfUrl: BASE_PDF + "India%20in%20the%20Age%20of%20Globalization.pdf" },
+  { id: "p26", title: "वैश्वीकरण के परिप्रेक्ष्य में हिन्दी", author: "नेहरू स्मारक संग्रहालय एवं पुस्तकालय", category: "Policy & Politics", year: 2003, size: "2.9 MB", pdfUrl: BASE_PDF + "Veshvikaran%20ke%20Paripekshya%20mein%20Hindi.pdf" },
+  { id: "p27", title: "KHAN ABDUL GHAFFAR KHAN", author: "PMML Research Team", category: "Studies", year: 1984, size: "1.9 MB", pdfUrl: BASE_PDF + "Khan%20Abdul%20ghaffar%20khan%20-%20converted.pdf" },
+  { id: "p28", title: "Rammohun Roy and the Process of Modernization in India", author: "Edited by V. C. Joshi", category: "Studies", year: 1975, size: "2.5 MB", pdfUrl: BASE_PDF + "Rammohun%20Roy%20and%20the%20process%20of%20Modernization%20in%20India%20-%20converted.pdf" },
+  { id: "p29", title: "SCIENCE AND TECHNOLOGY IN INDIA", author: "PMML Research Team", category: "Studies", year: 1978, size: "3.1 MB", pdfUrl: BASE_PDF + "Science%20and%20Technology%20in%20india_compressed.pdf" },
+  { id: "p30", title: "भारतीय गणतंत्र में हिंदी", author: "नेहरू स्मारक संग्रहालय एवं पुस्तकालय", category: "Studies", year: 2000, size: "2.2 MB", pdfUrl: BASE_PDF + "Bhartiya%20Gantantra%20Mein%20Hindi_compressed%20%281%29.pdf" },
+  { id: "p31", title: "GANDHI AND NEHRU", author: "B. R. Nanda, P. C. Joshi, Raj Krishna", category: "Studies", year: 1979, size: "2.7 MB", pdfUrl: BASE_PDF + "Gandhi%20and%20Nehru_compressed.pdf" },
+  { id: "p32", title: "Kargil: The Crisis and its Implications", author: "PMML Research Team", category: "Policy & Politics", year: 1999, size: "2.4 MB", pdfUrl: BASE_PDF + "Kargil%20The%20Crisis%20and%20its%20Implications.pdf" },
+  { id: "p33", title: "Democracy and Education in India", author: "Edited by Krishna Kumar", category: "Studies", year: 1993, size: "2.6 MB", pdfUrl: BASE_PDF + "Democracy%20and%20Education%20in%20India%20%28resized%29%20%28pdfresizer.com%29.pdf" },
+  { id: "p34", title: "THE AFGHANISTAN CRISIS", author: "PMML Research Team", category: "Policy & Politics", year: 1981, size: "3.0 MB", pdfUrl: BASE_PDF + "The%20Afghanistan%20Crisis%20Problems%20and%20Perspec.pdf" },
+  { id: "p35", title: "Jawaharlal Nehru on Science", author: "Nehru Memorial Museum & Library", category: "Selected Works", year: 1985, size: "2.8 MB", pdfUrl: BASE_PDF + "Jawaharlal%20Nehru%20or%20Science_compressed1.pdf" },
+  { id: "p36", title: "Bengal Famine of 1943: The American Response", author: "M. S. Venkataramani", category: "Studies", year: 1973, size: "3.5 MB", pdfUrl: BASE_PDF + "Bengal%20Famine%20of%201943.pdf" },
 ];
 
 export default function PublicationsContent() {
@@ -264,6 +267,7 @@ export default function PublicationsContent() {
                         <button
                           className="w-8 h-8 rounded-full bg-[#f37021] text-white flex items-center justify-center shadow-lg hover:bg-[#d85c15] transition-all duration-200 active:scale-90 cursor-pointer"
                           aria-label="View Publication"
+                          onClick={() => pub.pdfUrl && window.open(pub.pdfUrl, '_blank', 'noopener,noreferrer')}
                         >
                           <Eye className="w-4 h-4" />
                         </button>
@@ -321,7 +325,9 @@ export default function PublicationsContent() {
                           {/* Action column */}
                           <td className="py-4 px-6 text-center">
                             <button
-                              className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold tracking-wide transition-all select-none cursor-pointer"
+                              className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold tracking-wide transition-all select-none cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                              onClick={() => pub.pdfUrl && window.open(pub.pdfUrl, '_blank', 'noopener,noreferrer')}
+                              disabled={!pub.pdfUrl}
                             >
                               <Eye className="w-3.5 h-3.5" />
                               <span>VIEW</span>

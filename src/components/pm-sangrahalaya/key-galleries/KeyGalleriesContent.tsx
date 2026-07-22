@@ -465,7 +465,7 @@ const GALLERIES: Gallery[] = [
     title: "Security",
     menuLabel: "Security",
     description: "Standard security checks and scanners at the entrance gates to guarantee a safe experience.",
-    image: "/building 2/facilities/cisf.jpg",
+    image: "/building 2/facilities/cops.jpeg",
     building: 2,
     category: "Facilities"
   },

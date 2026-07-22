@@ -224,7 +224,9 @@ export default function OralHistoryDivisionContent() {
           
 
                 <a
-                  href="#"
+                  href="https://positive-mantra.com/PDF/Oral%20History/Finalised%20Transcript/FINALISED%20TRANSCRIPTS%20WORD%20%28OHD%29%20.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#FEEAE6] hover:bg-[#FCDAD2] text-[#f37021] font-bold text-xs sm:text-sm px-5 py-2.5 rounded-lg transition-all duration-300 shadow-[0_2px_8px_rgba(243,112,33,0.1)] active:scale-95 cursor-pointer ml-1"
                 >
                   <span>Finalised Transcripts</span>

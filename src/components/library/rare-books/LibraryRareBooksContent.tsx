@@ -21,25 +21,25 @@ interface RareBook {
 }
 
 const RARE_BOOKS_DATA: RareBook[] = [
-  { id: "rb-1", title: "A Friend in need: Friendship forgotten: An episode in Indian foreign office administration", author: "William Digby", year: 1890, accNo: "32876", url: "#" },
-  { id: "rb-2", title: "Account of the Districts of Bihar and Patna in 1811-1812(Vol.1)", author: "Francis Buchanan", year: 1811, accNo: "9967", url: "#" },
-  { id: "rb-3", title: "Account of the Districts of Bihar and Patna in 1811-1812 (Vol.2)", author: "Francis Buchanan", year: 1811, accNo: "9968", url: "#" },
-  { id: "rb-4", title: "Ain-I-Akbari (Vol.1): Translated from the original Persian by H. Blochmann", author: "Abul Fazl-I-Allami", year: 1873, accNo: "T-815", url: "#" },
-  { id: "rb-5", title: "Ain-I-Akbari (Vol.2): Translated from the original Persian by Colonel H.S. Jarrett", author: "Abul Fazl-I-Allami", year: 1891, accNo: "T-816", url: "#" },
-  { id: "rb-6", title: "Ain-I-Akbari (Vol.3): Translated from the original Persian by Colonel H.S. Jarrett", author: "Abul Fazl-I-Allami", year: 1894, accNo: "T-760", url: "#" },
+  { id: "rb-1", title: "A Friend in need: Friendship forgotten: An episode in Indian foreign office administration", author: "William Digby", year: 1890, accNo: "32876", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16679750187471662353913002A_Friend_in_need_Friendship_forgotten.pdf" },
+  { id: "rb-2", title: "Account of the Districts of Bihar and Patna in 1811-1812(Vol.1)", author: "Francis Buchanan", year: 1811, accNo: "9967", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680606640772-1662354597153Account_of_the_districts_of_Bihar_and_Patna_%28Vol.1%29.pdf" },
+  { id: "rb-3", title: "Account of the Districts of Bihar and Patna in 1811-1812 (Vol.2)", author: "Francis Buchanan", year: 1811, accNo: "9968", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680617124963--1662355246711Account_of_the_Districts_of_Bihar_and_Patna_in_1811-1812_%285%29.pdf" },
+  { id: "rb-4", title: "Ain-I-Akbari (Vol.1): Translated from the original Persian by H. Blochmann", author: "Abul Fazl-I-Allami", year: 1873, accNo: "T-815", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680691565867--1662356355084Ain-I-Akbari_%28Vol._1%29_%2810%29.pdf" },
+  { id: "rb-5", title: "Ain-I-Akbari (Vol.2): Translated from the original Persian by Colonel H.S. Jarrett", author: "Abul Fazl-I-Allami", year: 1891, accNo: "T-816", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680689556215--1662356123033Ain-I-Akbari_%282%29.pdf" },
+  { id: "rb-6", title: "Ain-I-Akbari (Vol.3): Translated from the original Persian by Colonel H.S. Jarrett", author: "Abul Fazl-I-Allami", year: 1894, accNo: "T-760", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680690453416--1662356231116Ain-I-Akbari_%287%29.pdf" },
   { id: "rb-7", title: "Ajmere regulation also notifications referring to the Ajmere-Merwara division, v.3", author: "-", year: 1898, accNo: "-", url: "#" },
-  { id: "rb-8", title: "Amarakosa, with the commentary of Mahesvara", author: "Vamanacharya Jhalakikar", year: 1890, accNo: "107064", url: "#" },
-  { id: "rb-9", title: "Among the Gods: Scenes of India: with legends by the way", author: "Augusta Klein", year: 1895, accNo: "11650", url: "#" },
-  { id: "rb-10", title: "Ancient and Medieval India (Vol.1)", author: "Manning", year: 1869, accNo: "T-883", url: "#" },
+  { id: "rb-8", title: "Amarakosa, with the commentary of Mahesvara", author: "Vamanacharya Jhalakikar", year: 1890, accNo: "107064", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/16680805647111662361508960Amarakosa%2C_with_the_commentary_of_Mahesvara_%284%29.pdf" },
+  { id: "rb-9", title: "Among the Gods: Scenes of India: with legends by the way", author: "Augusta Klein", year: 1895, accNo: "11650", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808082688911--1662361864744Among_the_Gods_%289%29.pdf" },
+  { id: "rb-10", title: "Ancient and Medieval India (Vol.1)", author: "Manning", year: 1869, accNo: "T-883", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808103459012--1662362144042Ancient_and_Medieval_India_%28Vol._1%29_%281%29.pdf" },
   { id: "rb-11", title: "Ancient and Medieval India (Vol.2)", author: "Manning", year: 1869, accNo: "-", url: "#" },
-  { id: "rb-12", title: "Annals of Rural Bengal", author: "W.W. Hunter", year: 1871, accNo: "IH30270", url: "#" },
-  { id: "rb-13", title: "Annual Report of the Madras Standing Congress Committee for 1889", author: "Indian National Congress", year: 1889, accNo: "46819", url: "#" },
+  { id: "rb-12", title: "Annals of Rural Bengal", author: "W.W. Hunter", year: 1871, accNo: "IH30270", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808133528514--1662362473891Annals_of_rural_Bengal_%289%29.pdf" },
+  { id: "rb-13", title: "Annual Report of the Madras Standing Congress Committee for 1889", author: "Indian National Congress", year: 1889, accNo: "46819", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808143729615--1662363262720Annual_report_of_the_Madras_Standing_Congress_Committee_for_1889_%2812%29.pdf" },
   { id: "rb-14", title: "Anglo-Indian Codes, V.1", author: "Stokes (Whitley)", year: 1887, accNo: "-", url: "#" },
-  { id: "rb-15", title: "Annexation of the Punjab and the Maharajah Duleep Singh", author: "Evans Bell", year: 1882, accNo: "27717", url: "#" },
-  { id: "rb-16", title: "Answer to the Abbe Dubois", author: "Henry Townley", year: 1824, accNo: "37755", url: "#" },
-  { id: "rb-17", title: "Appendix to the Itinerary for Western India", author: "John Clunes", year: 1828, accNo: "DS1459", url: "#" },
+  { id: "rb-15", title: "Annexation of the Punjab and the Maharajah Duleep Singh", author: "Evans Bell", year: 1882, accNo: "27717", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808174167317--1662364045825Annexation_of_the_Punjaub_%284%29.pdf" },
+  { id: "rb-16", title: "Answer to the Abbe Dubois", author: "Henry Townley", year: 1824, accNo: "37755", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808188233518--1662368755443Answer_to_the_Abbe_Dubois_%286%29.pdf" },
+  { id: "rb-17", title: "Appendix to the Itinerary for Western India", author: "John Clunes", year: 1828, accNo: "DS1459", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808196356219--1662368944647Appendix_to_the_itinerary_for_Western_%283%29.pdf" },
   { id: "rb-18", title: "Archeological Survey of India, V.1", author: "Cunningham (Alexander)", year: 1871, accNo: "-", url: "#" },
-  { id: "rb-19", title: "Autobiography of William Cobbett", author: "Edited by William Reitzel", year: 1835, accNo: "GI8368", url: "#" },
+  { id: "rb-19", title: "Autobiography of William Cobbett", author: "Edited by William Reitzel", year: 1835, accNo: "GI8368", url: "https://positive-mantra.com/PDF/List%20of%20Rare%20Books/166808231878622--1662369551798Autobiography_of_William_Cobbett__%288%29.pdf" },
   { id: "rb-20", title: "Avesta:The Religious Books Of the Parsees", author: "Bleeck (Arthur Henry)", year: 1864, accNo: "-", url: "#" },
   { id: "rb-21", title: "Bankruptcy of India: An Inquiry into the Administration of India under the Crown", author: "Hyndman (H.M.)", year: 1886, accNo: "-", url: "#" },
   { id: "rb-22", title: "Bengal Reversion Another 'Exceptional Case'", author: "Bell (E.)", year: 1872, accNo: "-", url: "#" }
@@ -180,6 +180,8 @@ export default function LibraryRareBooksContent() {
                           <div className="flex flex-col">
                             <a 
                               href={book.url} 
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="text-sm font-semibold text-gray-700 hover:text-blue-600 transition-colors leading-snug cursor-pointer"
                             >
                               {book.title}
@@ -208,6 +210,8 @@ export default function LibraryRareBooksContent() {
                         <td className="py-4 px-6 text-center">
                           <a
                             href={book.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-full border border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white text-xs font-bold tracking-wide transition-all select-none cursor-pointer"
                           >
                             <svg className="w-3.5 h-3.5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2.5">
