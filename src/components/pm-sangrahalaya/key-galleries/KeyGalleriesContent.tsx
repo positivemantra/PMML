@@ -207,7 +207,7 @@ const GALLERIES: Gallery[] = [
     title: "Shri Gulzarilal Nanda",
     menuLabel: "Gallery 2 - Shri Gulzarilal Nanda",
     description: "Highlights the selfless service of the two-time interim Prime Minister and his contribution to labor welfare and the Planning Commission as its first Deputy Chairman.",
-    image: "/building 2/pms/gujju.jpg",
+    image: "/building 2/pms/nanda.jpg",
     building: 2,
     category: "Prime Ministers Galleries"
   },
